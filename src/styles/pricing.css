@@ -11,18 +11,26 @@
 
 .pricing-title {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  color: #0a0f18;
-  letter-spacing: -2px;
-  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: -3.6px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 36px;
+  overflow: visible;
+  padding: 0 0 0.14em 4px;
 }
 
 .pricing-title-italic {
   font-family: 'Besley', serif;
-  font-style: italic;
   font-weight: 400;
-  color: #43B5BF;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 1.08;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Tabs */
