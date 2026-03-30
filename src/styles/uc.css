@@ -36,33 +36,6 @@
   max-width: 520px;
 }
 
-.uc-hero-subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #4B5563;
-  margin-bottom: 40px;
-  max-width: 520px;
-}
-
-.uc-hero-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 32px;
-  background: #0A0F1A;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.uc-hero-cta:hover {
-  opacity: 0.85;
-}
 
 .uc-hero-image {
   flex: 1;
