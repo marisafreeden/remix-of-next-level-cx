@@ -33,6 +33,15 @@ const megaMenuColumns = [
       { title: "AI Analyst", href: "#" },
     ],
   },
+  {
+    heading: "Integrations",
+    href: "#",
+    items: [
+      { title: "MS Dynamics", href: "#" },
+      { title: "Salesforce", href: "#", badge: "Coming Soon" },
+      { title: "Zoho", href: "#", badge: "Coming Soon" },
+    ],
+  },
 ];
 
 const Navbar = () => {
