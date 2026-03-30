@@ -112,10 +112,55 @@ const ccPlans = [
 
 
 
+const aiPlans = [
+  {
+    name: "Starter",
+    subtitle: "AI Agent",
+    price: "$29",
+    per: "/month/agent",
+    popular: false,
+    features: [
+      { text: "Voice AI Agent", included: true },
+      { text: "Basic Intent Recognition", included: true },
+      { text: "Call Routing Automation", included: true },
+      { text: "Standard Analytics", included: true },
+    ],
+  },
+  {
+    name: "Advanced",
+    subtitle: "AI Agent",
+    price: "$59",
+    per: "/month/agent",
+    popular: true,
+    features: [
+      { text: "Everything in Starter", included: true },
+      { text: "Natural Language Understanding", included: true },
+      { text: "Sentiment Analysis", included: true },
+      { text: "Multi-Language Support", included: true },
+      { text: "CRM Integration", included: true },
+      { text: "Post-Call AI Summaries", included: true },
+    ],
+  },
+  {
+    name: "Enterprise",
+    subtitle: "AI Agent",
+    price: "Custom",
+    per: "",
+    popular: false,
+    features: [
+      { text: "Everything in Advanced", included: true },
+      { text: "Custom AI Models", included: true },
+      { text: "Voice Cloning", included: true },
+      { text: "Advanced Analytics & BI", included: true },
+      { text: "Dedicated AI Engineer", included: true },
+      { text: "SLA Guarantee", included: true },
+    ],
+  },
+];
 
 const Pricing = () => {
-  const [activeTab, setActiveTab] = useState<"uc" | "cc">("uc");
-  const plans = activeTab === "uc" ? ucPlans : ccPlans;
+  const [activeTab, setActiveTab] = useState<"uc" | "cc" | "ai">("uc");
+  const plans = activeTab === "uc" ? ucPlans : activeTab === "cc" ? ccPlans : aiPlans;
 
   return (
     <div className="pricing-page">
