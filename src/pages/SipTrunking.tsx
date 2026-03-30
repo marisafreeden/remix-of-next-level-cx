@@ -80,13 +80,13 @@ const SipTrunking = () => {
       {/* Benefits - 3 cards */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">UPGRADE & SAVE</p>
+          <p className="promos-eyebrow">WHY SIP TRUNKING</p>
           <h2 className="promos-title">
-            Upgrade your phones<br />
-            <span className="promos-title-italic">and save.</span>
+            Modernize your phones.<br />
+            <span className="promos-title-italic">Keep everything else.</span>
           </h2>
           <p className="uc-hero-subtitle" style={{ marginTop: '16px', marginBottom: 0 }}>
-            SIP trunks replace your phone lines with the internet service you already have.
+            SIP trunks swap your phone lines for the internet you already pay for — simpler, cheaper, and infinitely more scalable.
           </p>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
