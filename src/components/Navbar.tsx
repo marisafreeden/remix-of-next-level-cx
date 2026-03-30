@@ -157,7 +157,7 @@ const Navbar = () => {
               </a>
             </div>
           )}
-          <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
+          <Link to="/pricing" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</Link>
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.resources")}</a>
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.partners")}</a>
           <div className="hero-nav-mobile-actions">
