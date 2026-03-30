@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const megaMenuColumns = [
   {
-    heading: "Contact Center",
+    heading: "Contact\nCenter",
     href: "#",
     items: [
       { title: "Omnichannel", href: "#" },
@@ -25,7 +25,7 @@ const megaMenuColumns = [
     ],
   },
   {
-    heading: "AI",
+    heading: "AI\nSolutions",
     href: "#",
     items: [
       { title: "Voice Chatbots", href: "#" },
