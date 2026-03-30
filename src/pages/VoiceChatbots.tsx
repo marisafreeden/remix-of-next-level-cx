@@ -11,12 +11,6 @@ import FAQSection from "../components/FAQSection";
 import CTABlock from "../components/CTABlock";
 import goengageImg from "@/assets/goengage-voice.png";
 import ucHeroImg from "@/assets/uc-hero.png";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import TestimonialsSection from "../components/TestimonialsSection";
-import FAQSection from "../components/FAQSection";
-import CTABlock from "../components/CTABlock";
-import ucHeroImg from "@/assets/uc-hero.png";
 import {
   Bot, PhoneOff, Brain, Zap, Clock, ShieldCheck, BarChart3,
   ArrowRight, TrendingUp, Headphones, MessageSquare, Settings2
