@@ -86,15 +86,24 @@ const Navbar = () => {
                 {megaMenuColumns.map((col) => (
                   <div key={col.heading} className="mega-col">
                     <a href={col.href} className="mega-col-heading-link" onClick={() => setMegaOpen(false)}>{col.heading}</a>
-                    {col.items.map((item) => (
-                      <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
-                        <span className="mega-col-link-title">
-                          {item.title}
-                          {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
-                        </span>
-                        {item.desc && <span className="mega-col-link-desc">{item.desc}</span>}
-                      </a>
-                    ))}
+                    {col.items.map((item) => {
+                      const isInternal = item.href.startsWith("/");
+                      const linkProps = { className: "mega-col-link", onClick: () => setMegaOpen(false) };
+                      const content = (
+                        <>
+                          <span className="mega-col-link-title">
+                            {item.title}
+                            {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                          </span>
+                          {item.desc && <span className="mega-col-link-desc">{item.desc}</span>}
+                        </>
+                      );
+                      return isInternal ? (
+                        <Link key={item.title} to={item.href} {...linkProps}>{content}</Link>
+                      ) : (
+                        <a key={item.title} href={item.href} {...linkProps}>{content}</a>
+                      );
+                    })}
                   </div>
                 ))}
                 </div>
