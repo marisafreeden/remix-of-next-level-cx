@@ -121,17 +121,22 @@ const Navbar = () => {
           </button>
           {mobileProductsOpen && (
             <div className="mobile-mega-menu">
-              {megaMenuData.map((col) => (
-                <div key={col.heading} className="mobile-mega-group">
-                  <p className="mobile-mega-heading">{col.heading}</p>
-                  {col.items.map((item) => (
-                    <a key={item.title} href="#" className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
-                      {item.title}
-                      {item.isNew && <span className="mega-badge">NEW</span>}
-                    </a>
-                  ))}
-                </div>
-              ))}
+              {megaMenuData.map((entry, i) =>
+                'heading' in entry && entry.heading ? (
+                  <div key={entry.heading} className="mobile-mega-group">
+                    <p className="mobile-mega-heading">{entry.heading}</p>
+                    {entry.children?.map((child) => (
+                      <a key={child.title} href={child.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
+                        {child.title}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a key={entry.title} href={(entry as any).href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
+                    {entry.title}
+                  </a>
+                )
+              )}
             </div>
           )}
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
