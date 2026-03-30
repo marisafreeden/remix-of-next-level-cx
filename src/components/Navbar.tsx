@@ -33,6 +33,15 @@ const megaMenuColumns = [
       { title: "AI Analyst", href: "#" },
     ],
   },
+  {
+    heading: "Integrations",
+    href: "#",
+    items: [
+      { title: "MS Dynamics", href: "#" },
+      { title: "Salesforce", href: "#", badge: "Coming Soon" },
+      { title: "Zoho", href: "#", badge: "Coming Soon" },
+    ],
+  },
 ];
 
 const Navbar = () => {
@@ -75,6 +84,7 @@ const Navbar = () => {
                     {col.items.map((item) => (
                       <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
                         {item.title}
+                        {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
                       </a>
                     ))}
                   </div>
