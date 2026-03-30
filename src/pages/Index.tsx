@@ -3,6 +3,7 @@ import "@/styles/platform.css";
 import "@/styles/goai.css";
 import "@/styles/sections.css";
 import "@/styles/footer.css";
+import "@/styles/responsive.css";
 import "@fontsource/instrument-sans/500.css";
 
 import "@fontsource/inter/500.css";
