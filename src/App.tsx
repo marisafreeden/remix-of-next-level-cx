@@ -28,6 +28,7 @@ const App = () => (
           <Route path="/sip-trunking" element={<SipTrunking />} />
           <Route path="/video-messaging" element={<VideoMessaging />} />
           <Route path="/business-sms" element={<BusinessSMS />} />
+          <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

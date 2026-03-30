@@ -14,6 +14,7 @@ const Footer = () => {
         { label: "Video & Messaging", href: "/video-messaging" },
         { label: "Business SMS", href: "/business-sms" },
         { label: "SIP Trunking", href: "/sip-trunking" },
+        { label: "Voice Chatbots", href: "/voice-chatbots" },
         { label: t("footer.product_ai_cx"), href: "#" },
       ],
     },
