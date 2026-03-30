@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -8,56 +9,56 @@ const Footer = () => {
     {
       title: t("footer.product"),
       links: [
-        t("footer.product_contact_center"),
-        t("footer.product_unified_comms"),
-        t("footer.product_ai_cx"),
+        { label: t("footer.product_contact_center"), href: "#" },
+        { label: t("footer.product_unified_comms"), href: "/unified-communications" },
+        { label: t("footer.product_ai_cx"), href: "#" },
       ],
     },
     {
       title: t("footer.industries"),
       links: [
-        t("footer.industries_financial"),
-        t("footer.industries_real_estate"),
-        t("footer.industries_logistics"),
-        t("footer.industries_healthcare"),
-        t("footer.industries_insurance"),
+        { label: t("footer.industries_financial"), href: "#" },
+        { label: t("footer.industries_real_estate"), href: "#" },
+        { label: t("footer.industries_logistics"), href: "#" },
+        { label: t("footer.industries_healthcare"), href: "#" },
+        { label: t("footer.industries_insurance"), href: "#" },
       ],
     },
     {
       title: t("footer.resources"),
       links: [
-        t("footer.resources_hub"),
-        t("footer.resources_blog"),
-        t("footer.resources_webinars"),
-        t("footer.resources_ebooks"),
-        t("footer.resources_release_notes"),
-        t("footer.resources_customer_stories"),
-        t("footer.resources_newsroom"),
+        { label: t("footer.resources_hub"), href: "#" },
+        { label: t("footer.resources_blog"), href: "#" },
+        { label: t("footer.resources_webinars"), href: "#" },
+        { label: t("footer.resources_ebooks"), href: "#" },
+        { label: t("footer.resources_release_notes"), href: "#" },
+        { label: t("footer.resources_customer_stories"), href: "#" },
+        { label: t("footer.resources_newsroom"), href: "#" },
       ],
     },
     {
       title: t("footer.partners"),
       links: [
-        t("footer.partners_hub"),
-        t("footer.partners_resources"),
-        t("footer.partners_login"),
+        { label: t("footer.partners_hub"), href: "#" },
+        { label: t("footer.partners_resources"), href: "#" },
+        { label: t("footer.partners_login"), href: "#" },
       ],
     },
     {
       title: t("footer.contact"),
       links: [
-        t("footer.contact_sales"),
-        t("footer.contact_status"),
-        t("footer.contact_faq"),
+        { label: t("footer.contact_sales"), href: "#" },
+        { label: t("footer.contact_status"), href: "#" },
+        { label: t("footer.contact_faq"), href: "#" },
       ],
     },
     {
       title: t("footer.pricing"),
-      links: [t("footer.pricing_link")],
+      links: [{ label: t("footer.pricing_link"), href: "/pricing" }],
     },
     {
       title: t("footer.use_cases"),
-      links: [t("footer.use_cases_posts")],
+      links: [{ label: t("footer.use_cases_posts"), href: "#" }],
     },
   ];
 
@@ -92,8 +93,12 @@ const Footer = () => {
               <h4 className="footer-column-title">{col.title}</h4>
               <ul className="footer-column-links">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="footer-column-link">{link}</a>
+                  <li key={link.label}>
+                    {link.href.startsWith("/") ? (
+                      <Link to={link.href} className="footer-column-link">{link.label}</Link>
+                    ) : (
+                      <a href={link.href} className="footer-column-link">{link.label}</a>
+                    )}
                   </li>
                 ))}
               </ul>

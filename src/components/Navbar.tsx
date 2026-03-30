@@ -18,12 +18,12 @@ const megaMenuColumns = [
   },
   {
     heading: "Unified Communications",
-    href: "#",
+    href: "/unified-communications",
     items: [
-      { title: "Business Phone", href: "#", desc: "Cloud PBX with enterprise features" },
-      { title: "Video & Messaging", href: "#", desc: "HD meetings & team collaboration" },
-      { title: "Bubble SMS", href: "#", desc: "Two-way business text messaging" },
-      { title: "SIP Trunking", href: "#", desc: "Flexible voice connectivity" },
+      { title: "Business Phone", href: "/unified-communications", desc: "Cloud PBX with enterprise features" },
+      { title: "Video & Messaging", href: "/unified-communications", desc: "HD meetings & team collaboration" },
+      { title: "Bubble SMS", href: "/unified-communications", desc: "Two-way business text messaging" },
+      { title: "SIP Trunking", href: "/unified-communications", desc: "Flexible voice connectivity" },
     ],
   },
   {
@@ -86,15 +86,24 @@ const Navbar = () => {
                 {megaMenuColumns.map((col) => (
                   <div key={col.heading} className="mega-col">
                     <a href={col.href} className="mega-col-heading-link" onClick={() => setMegaOpen(false)}>{col.heading}</a>
-                    {col.items.map((item) => (
-                      <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
-                        <span className="mega-col-link-title">
-                          {item.title}
-                          {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
-                        </span>
-                        {item.desc && <span className="mega-col-link-desc">{item.desc}</span>}
-                      </a>
-                    ))}
+                    {col.items.map((item) => {
+                      const isInternal = item.href.startsWith("/");
+                      const linkProps = { className: "mega-col-link", onClick: () => setMegaOpen(false) };
+                      const content = (
+                        <>
+                          <span className="mega-col-link-title">
+                            {item.title}
+                            {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                          </span>
+                          {item.desc && <span className="mega-col-link-desc">{item.desc}</span>}
+                        </>
+                      );
+                      return isInternal ? (
+                        <Link key={item.title} to={item.href} {...linkProps}>{content}</Link>
+                      ) : (
+                        <a key={item.title} href={item.href} {...linkProps}>{content}</a>
+                      );
+                    })}
                   </div>
                 ))}
                 </div>
