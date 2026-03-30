@@ -93,8 +93,12 @@ const Footer = () => {
               <h4 className="footer-column-title">{col.title}</h4>
               <ul className="footer-column-links">
                 {col.links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="footer-column-link">{link}</a>
+                  <li key={link.label}>
+                    {link.href.startsWith("/") ? (
+                      <Link to={link.href} className="footer-column-link">{link.label}</Link>
+                    ) : (
+                      <a href={link.href} className="footer-column-link">{link.label}</a>
+                    )}
                   </li>
                 ))}
               </ul>
