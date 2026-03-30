@@ -161,13 +161,11 @@ const Pricing = () => {
               <ul className="pricing-card-features">
                 {plan.features.map((f) => (
                   <li key={f.text} className="pricing-card-feature">
-                    {f.included ? (
-                      <Check size={16} className="pricing-check" />
-                    ) : (
-                      <Minus size={16} className="pricing-dash" />
-                    )}
+                    <Check size={16} className="pricing-check" />
                     {f.text}
                   </li>
+                ))}
+              </ul>
                 ))}
               </ul>
 
