@@ -4,14 +4,19 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const megaMenuData = [
-  { title: "Contact Center", href: "#" },
-  { title: "Unified Communications", href: "#" },
-  { title: "AI", href: "#" },
-  { title: "Integration", href: "#" },
+const megaMenuColumns = [
+  {
+    heading: "Products",
+    items: [
+      { title: "Contact Center", href: "#" },
+      { title: "Unified Communications", href: "#" },
+      { title: "AI", href: "#" },
+      { title: "Integration", href: "#" },
+    ],
+  },
   {
     heading: "Contact Center",
-    children: [
+    items: [
       { title: "Omnichannel", href: "#" },
       { title: "Dialer", href: "#" },
       { title: "Smart Scripting", href: "#" },
@@ -20,7 +25,7 @@ const megaMenuData = [
   },
   {
     heading: "Unified Communications",
-    children: [
+    items: [
       { title: "b-hive", href: "#" },
       { title: "Cloud PBX", href: "#" },
       { title: "SIP Trunking", href: "#" },
@@ -28,13 +33,18 @@ const megaMenuData = [
   },
   {
     heading: "AI",
-    children: [
+    items: [
       { title: "Voice Chatbots", href: "#" },
       { title: "Post Call AI", href: "#" },
       { title: "Analytics", href: "#" },
     ],
   },
-  { title: "Integrations", href: "#", isTopLevel: true },
+  {
+    heading: "More",
+    items: [
+      { title: "Integrations", href: "#" },
+    ],
+  },
 ];
 
 const Navbar = () => {
