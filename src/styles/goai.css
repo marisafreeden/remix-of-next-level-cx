@@ -1,0 +1,218 @@
+.goai-section {
+  background: #F9FAFB;
+  padding: 96px 48px 96px;
+}
+
+.goai-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.goai-columns {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  margin-bottom: 64px;
+}
+
+.goai-col-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.goai-col-right {
+  flex: 1;
+  min-width: 0;
+  padding-top: 48px;
+}
+
+.goai-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0A0F1A;
+  margin-bottom: 16px;
+}
+
+.goai-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.goai-title-italic {
+  font-family: 'Besley', serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 1.08;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  overflow: visible;
+  padding: 0 0.04em 0.16em 0.16em;
+  margin: 0 -0.04em -0.16em -0.16em;
+}
+
+.goai-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
+.goai-cta {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #43B5BF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.goai-cta:hover {
+  color: #1D5B94;
+}
+
+.goai-image-wrap {
+  border-radius: 20px;
+  overflow: visible;
+  background: transparent;
+  position: relative;
+  padding: 48px 40px;
+}
+
+.goai-image-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -40px;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse 60% 70% at 30% 60%, rgba(67, 181, 191, 0.25) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 70% 40%, rgba(67, 181, 191, 0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 80% at 50% 50%, rgba(67, 181, 191, 0.1) 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.goai-image-wrap > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Diagram layout */
+.goai-diagram {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.goai-diagram-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Glass cards */
+.goai-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 22px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(10, 15, 24, 0.08);
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.goai-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(67, 181, 191, 0.35);
+}
+
+.goai-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(67, 181, 191, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #43B5BF;
+}
+
+.goai-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0A0F1A;
+  margin-bottom: 4px;
+}
+
+.goai-card-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(10, 15, 24, 0.5);
+  line-height: 1.45;
+}
+
+/* Stacked diamond layers */
+.goai-layers-col {
+  flex: 0 0 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 10px 0;
+  position: relative;
+}
+
+.goai-diamond {
+  width: 180px;
+  height: 90px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  margin-top: -28px;
+  border: none;
+  position: relative;
+  animation: goai-float 3s ease-in-out infinite alternate;
+}
+
+.goai-diamond:first-child {
+  margin-top: 0;
+}
+
+.goai-diamond::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  background: rgba(249, 250, 251, 0.3);
+}
+
+@keyframes goai-float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}

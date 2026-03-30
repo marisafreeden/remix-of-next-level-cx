@@ -1,0 +1,139 @@
+.platform-section {
+  background: #ffffff;
+  padding: 96px 48px;
+}
+
+.platform-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.platform-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0A0F1A;
+  margin-bottom: 16px;
+}
+
+.platform-h2 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 64px;
+}
+
+.platform-h2-italic {
+  font-family: 'Besley', serif;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 1.08;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  overflow: visible;
+  padding: 0 0.04em 0.16em 0.16em;
+  margin: 0 -0.04em -0.16em -0.16em;
+}
+
+.platform-grid {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.platform-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 240px;
+  flex-shrink: 0;
+}
+
+.platform-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border: none;
+  background: transparent;
+  border-radius: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  width: 100%;
+}
+
+.platform-nav-item:hover {
+  background: #F3F4F6;
+  color: #0A0F1A;
+}
+
+.platform-nav-active {
+  background: #F0FDFA;
+  color: #0A0F1A;
+  font-weight: 600;
+  border-left: 3px solid #43B5BF;
+  padding-left: 17px;
+}
+
+.platform-display {
+  flex: 1;
+  min-width: 0;
+}
+
+.platform-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.platform-img-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  margin-bottom: 32px;
+}
+
+.platform-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.platform-cta {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #43B5BF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.platform-cta:hover {
+  color: #1D5B94;
+}

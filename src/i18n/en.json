@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "products": "Products",
+    "pricing": "Pricing",
+    "resources": "Resources",
+    "customers": "Customers",
+    "login": "Log In",
+    "demo": "Get a Demo"
+  },
+  "hero": {
+    "title_line1": "CX built for where your",
+    "title_line2": "business is going next",
+    "subtitle": "Replace overbuilt, underperforming platforms with a solution that's easy to use, quick to deploy, and built to deliver value from day one.",
+    "cta_platform": "See the Platform",
+    "cta_video": "Watch 2-min Overview"
+  },
+  "logos": {
+    "label": "Trusted by leading enterprises worldwide"
+  },
+  "platform": {
+    "label": "THE PLATFORM",
+    "title_line1": "Everything you need,",
+    "title_line2": "nothing you don't",
+    "contact_center": "Contact Center",
+    "contact_center_desc": "Omnichannel contact center with intelligent routing, real-time monitoring, and workforce management.",
+    "business_phone": "Business Phone",
+    "business_phone_desc": "Enterprise-grade VoIP with HD voice, call recording, voicemail transcription, and seamless integrations.",
+    "analytics": "Advanced Analytics",
+    "analytics_desc": "Deep insights into every interaction — real-time dashboards, custom reports, and predictive analytics.",
+    "goai": "GoAI",
+    "goai_desc": "AI-powered automation across your entire CX stack — from intelligent routing to real-time agent assist.",
+    "learn_more": "Learn more"
+  },
+  "goai": {
+    "eyebrow": "GoAI",
+    "title_line1": "Practical AI",
+    "title_line2": "built for how you operate",
+    "desc": "GoAI isn't bolted on — it's woven into every layer of the platform. From intelligent routing and real-time agent assist to automated quality scoring and predictive analytics, AI works behind the scenes so your team can focus on what matters most: your customers.",
+    "cta": "Explore GoAI"
+  },
+  "promos": {
+    "title_line1": "Why teams",
+    "title_line2": "switch to Broadvoice",
+    "promo1_title": "Deploy in Days, Not Months",
+    "promo1_desc": "Go live in under a week with guided onboarding, pre-built integrations, and a platform that just works — no consultants required.",
+    "promo2_title": "Cut Costs Without Cutting Corners",
+    "promo2_desc": "Consolidate your CX stack into one platform. Teams save an average of 40% compared to legacy solutions while getting more capabilities.",
+    "promo3_title": "Scale With Confidence",
+    "promo3_desc": "From 10 agents to 10,000 — our infrastructure grows with you. Enterprise-grade reliability with 99.999% uptime guaranteed."
+  },
+  "testimonials": {
+    "title_line1": "What our",
+    "title_line2": "customers say",
+    "t1_quote": "We replaced three separate tools with Broadvoice and saw a 35% improvement in first-call resolution within the first month.",
+    "t1_name": "Sarah Chen",
+    "t1_role": "VP of Customer Operations, TechFlow",
+    "t2_quote": "The AI-powered analytics alone paid for the entire platform. We're making decisions in minutes that used to take days.",
+    "t2_name": "Marcus Rivera",
+    "t2_role": "Director of CX, NovaCare Health",
+    "t3_quote": "Our agents love it. The interface is intuitive, the AI assist is genuinely helpful, and the deployment was the smoothest I've ever seen.",
+    "t3_name": "Emma Johansson",
+    "t3_role": "Contact Center Manager, Nordic Logistics"
+  },
+  "faq": {
+    "title_line1": "Frequently asked",
+    "title_line2": "questions",
+    "q1": "How long does deployment take?",
+    "a1": "Most teams are fully live within 5-7 business days. Our guided onboarding process handles migration, integration setup, and agent training so there's minimal disruption to your operations.",
+    "q2": "Can I keep my existing phone numbers?",
+    "a2": "Absolutely. We handle full number porting at no extra cost. Your customers won't notice a thing — except better service.",
+    "q3": "What integrations do you support?",
+    "a3": "We offer native integrations with Salesforce, HubSpot, Zendesk, Microsoft Teams, Slack, and 50+ other tools. Our open API lets you connect virtually anything.",
+    "q4": "Is there a minimum contract commitment?",
+    "a4": "We offer flexible monthly and annual plans. Annual plans come with a discount, but there's no long-term lock-in required.",
+    "q5": "How does GoAI differ from other AI solutions?",
+    "a5": "GoAI is built into the platform — not bolted on. It learns from your specific call patterns, agent behaviors, and customer interactions to deliver insights that are actually relevant to your business."
+  },
+  "cta_block": {
+    "title_line1": "Ready to transform",
+    "title_line2": "your CX?",
+    "subtitle": "Join thousands of teams delivering exceptional customer experiences with Broadvoice.",
+    "cta_primary": "Get a Demo",
+    "cta_secondary": "Talk to Sales"
+  },
+  "meta": {
+    "title": "Broadvoice — CX Platform for Modern Business",
+    "description": "Replace overbuilt, underperforming platforms with a CX solution that's easy to use, quick to deploy, and built to deliver value from day one."
+  },
+  "footer": {
+    "product": "Product",
+    "product_contact_center": "Contact Center",
+    "product_unified_comms": "Unified Communications",
+    "product_ai_cx": "AI-Powered CX",
+    "industries": "Industries",
+    "industries_financial": "Financial Services",
+    "industries_real_estate": "Real Estate",
+    "industries_logistics": "Logistics",
+    "industries_healthcare": "Healthcare",
+    "industries_insurance": "Insurance",
+    "resources": "Resources",
+    "resources_hub": "Resource Hub",
+    "resources_blog": "Blog",
+    "resources_webinars": "Webinars",
+    "resources_ebooks": "Ebooks & Guides",
+    "resources_release_notes": "Release Notes",
+    "resources_customer_stories": "Customer Stories",
+    "resources_newsroom": "Newsroom",
+    "partners": "Partners",
+    "partners_hub": "Global Partner Hub",
+    "partners_resources": "Partner Resources",
+    "partners_login": "Partner Login",
+    "contact": "Contact",
+    "contact_sales": "Talk to Sales",
+    "contact_status": "Status",
+    "contact_faq": "FAQs",
+    "pricing": "Pricing",
+    "pricing_link": "Pricing",
+    "use_cases": "Use Cases",
+    "use_cases_posts": "Posts",
+    "legal_security": "Security & Compliance",
+    "legal_privacy": "Privacy Policy",
+    "legal_terms": "Terms of Service"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "products": "Produtos",
+    "pricing": "Preços",
+    "resources": "Recursos",
+    "customers": "Clientes",
+    "login": "Entrar",
+    "demo": "Pedir Demo"
+  },
+  "hero": {
+    "title_line1": "CX construído para onde o",
+    "title_line2": "seu negócio vai a seguir",
+    "subtitle": "Substitua plataformas complexas e de baixo desempenho por uma solução fácil de usar, rápida de implementar e concebida para gerar valor desde o primeiro dia.",
+    "cta_platform": "Ver a Plataforma",
+    "cta_video": "Ver Vídeo de 2 min"
+  },
+  "logos": {
+    "label": "Empresas líderes em todo o mundo confiam em nós"
+  },
+  "platform": {
+    "label": "A PLATAFORMA",
+    "title_line1": "Tudo o que precisa,",
+    "title_line2": "nada que não precise",
+    "contact_center": "Centro de Contacto",
+    "contact_center_desc": "Centro de contacto omnicanal com encaminhamento inteligente, monitorização em tempo real e gestão de equipas.",
+    "business_phone": "Telefone Empresarial",
+    "business_phone_desc": "VoIP empresarial com voz HD, gravação de chamadas, transcrição de correio de voz e integrações perfeitas.",
+    "analytics": "Analítica Avançada",
+    "analytics_desc": "Informações aprofundadas sobre cada interação — painéis em tempo real, relatórios personalizados e analítica preditiva.",
+    "goai": "GoAI",
+    "goai_desc": "Automação impulsionada por IA em toda a sua plataforma CX — desde encaminhamento inteligente até assistência em tempo real.",
+    "learn_more": "Saber mais"
+  },
+  "goai": {
+    "eyebrow": "GoAI",
+    "title_line1": "IA Prática",
+    "title_line2": "concebida para a sua operação",
+    "desc": "O GoAI não é um extra — está integrado em cada camada da plataforma. Desde encaminhamento inteligente e assistência em tempo real até pontuação automática de qualidade e analítica preditiva, a IA trabalha nos bastidores para que a sua equipa se concentre no que mais importa: os seus clientes.",
+    "cta": "Explorar GoAI"
+  },
+  "promos": {
+    "title_line1": "Porque as equipas",
+    "title_line2": "escolhem a Broadvoice",
+    "promo1_title": "Implemente em Dias, Não em Meses",
+    "promo1_desc": "Comece em menos de uma semana com onboarding guiado, integrações pré-configuradas e uma plataforma que simplesmente funciona.",
+    "promo2_title": "Reduza Custos Sem Perder Qualidade",
+    "promo2_desc": "Consolide o seu stack de CX numa única plataforma. As equipas poupam em média 40% em comparação com soluções legacy.",
+    "promo3_title": "Escale Com Confiança",
+    "promo3_desc": "De 10 agentes a 10.000 — a nossa infraestrutura cresce consigo. Fiabilidade empresarial com 99,999% de uptime garantido."
+  },
+  "testimonials": {
+    "title_line1": "O que dizem",
+    "title_line2": "os nossos clientes",
+    "t1_quote": "Substituímos três ferramentas separadas pela Broadvoice e vimos uma melhoria de 35% na resolução à primeira chamada no primeiro mês.",
+    "t1_name": "Sarah Chen",
+    "t1_role": "VP de Operações de Cliente, TechFlow",
+    "t2_quote": "Só a analítica com IA justificou o custo de toda a plataforma. Tomamos decisões em minutos que antes demoravam dias.",
+    "t2_name": "Marcus Rivera",
+    "t2_role": "Diretor de CX, NovaCare Health",
+    "t3_quote": "Os nossos agentes adoram. A interface é intuitiva, o assistente IA é genuinamente útil e a implementação foi a mais suave que já vi.",
+    "t3_name": "Emma Johansson",
+    "t3_role": "Gestora de Centro de Contacto, Nordic Logistics"
+  },
+  "faq": {
+    "title_line1": "Perguntas",
+    "title_line2": "frequentes",
+    "q1": "Quanto tempo demora a implementação?",
+    "a1": "A maioria das equipas está totalmente operacional em 5-7 dias úteis. O nosso processo de onboarding guiado trata da migração, configuração de integrações e formação de agentes.",
+    "q2": "Posso manter os meus números de telefone atuais?",
+    "a2": "Claro que sim. Tratamos da portabilidade completa sem custo adicional. Os seus clientes não notarão nada — exceto um melhor serviço.",
+    "q3": "Que integrações suportam?",
+    "a3": "Oferecemos integrações nativas com Salesforce, HubSpot, Zendesk, Microsoft Teams, Slack e mais de 50 ferramentas. A nossa API aberta permite ligar praticamente qualquer coisa.",
+    "q4": "Existe um compromisso mínimo de contrato?",
+    "a4": "Oferecemos planos flexíveis mensais e anuais. Os planos anuais incluem desconto, mas não é necessário compromisso a longo prazo.",
+    "q5": "Como é que o GoAI difere de outras soluções de IA?",
+    "a5": "O GoAI está integrado na plataforma — não é um extra. Aprende com os seus padrões de chamadas, comportamentos dos agentes e interações com clientes para fornecer insights verdadeiramente relevantes."
+  },
+  "cta_block": {
+    "title_line1": "Pronto para transformar",
+    "title_line2": "o seu CX?",
+    "subtitle": "Junte-se a milhares de equipas que proporcionam experiências excecionais com a Broadvoice.",
+    "cta_primary": "Pedir Demo",
+    "cta_secondary": "Falar com Vendas"
+  },
+  "meta": {
+    "title": "Broadvoice — Plataforma CX para Empresas Modernas",
+    "description": "Substitua plataformas complexas por uma solução CX fácil de usar, rápida de implementar e concebida para gerar valor desde o primeiro dia."
+  },
+  "footer": {
+    "product": "Produto",
+    "product_contact_center": "Centro de Contacto",
+    "product_unified_comms": "Comunicações Unificadas",
+    "product_ai_cx": "CX com IA",
+    "industries": "Indústrias",
+    "industries_financial": "Serviços Financeiros",
+    "industries_real_estate": "Imobiliário",
+    "industries_logistics": "Logística",
+    "industries_healthcare": "Saúde",
+    "industries_insurance": "Seguros",
+    "resources": "Recursos",
+    "resources_hub": "Centro de Recursos",
+    "resources_blog": "Blog",
+    "resources_webinars": "Webinars",
+    "resources_ebooks": "Ebooks e Guias",
+    "resources_release_notes": "Notas de Lançamento",
+    "resources_customer_stories": "Histórias de Clientes",
+    "resources_newsroom": "Sala de Imprensa",
+    "partners": "Parceiros",
+    "partners_hub": "Hub de Parceiros Global",
+    "partners_resources": "Recursos para Parceiros",
+    "partners_login": "Acesso Parceiros",
+    "contact": "Contacto",
+    "contact_sales": "Falar com Vendas",
+    "contact_status": "Estado",
+    "contact_faq": "Perguntas Frequentes",
+    "pricing": "Preços",
+    "pricing_link": "Preços",
+    "use_cases": "Casos de Uso",
+    "use_cases_posts": "Publicações",
+    "legal_security": "Segurança e Conformidade",
+    "legal_privacy": "Política de Privacidade",
+    "legal_terms": "Termos de Serviço"
+  }
+}
