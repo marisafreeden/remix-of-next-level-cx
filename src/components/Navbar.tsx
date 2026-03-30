@@ -5,43 +5,36 @@ import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const megaMenuData = [
+  { title: "Contact Center", href: "#" },
+  { title: "Unified Communications", href: "#" },
+  { title: "AI", href: "#" },
+  { title: "Integration", href: "#" },
   {
-    heading: "Product",
-    items: [
-      { title: "NEXT Platform", desc: "Unified communications and CX solution.", isNew: true },
-      { title: "XBert", desc: "AI employee for customer conversations.", isNew: true },
-      { title: "Contact Center", desc: "Omnichannel customer experience platform." },
-      { title: "Business Phone", desc: "Phone service for any size business." },
+    heading: "Contact Center",
+    children: [
+      { title: "Omnichannel", href: "#" },
+      { title: "Dialer", href: "#" },
+      { title: "Smart Scripting", href: "#" },
+      { title: "Self Service", href: "#" },
     ],
   },
   {
-    heading: "AI Capabilities",
-    items: [
-      { title: "AI Employee", desc: "Works tasks start to finish." },
-      { title: "Agent Assist", desc: "Real-time agent guidance." },
-      { title: "AI Receptionist", desc: "Handle incoming calls 24/7." },
+    heading: "Unified Communications",
+    children: [
+      { title: "b-hive", href: "#" },
+      { title: "Cloud PBX", href: "#" },
+      { title: "SIP Trunking", href: "#" },
     ],
   },
   {
-    heading: "Channels",
-    items: [
-      { title: "Voice & Texting", desc: "Phone calls and texting." },
-      { title: "Live Chat", desc: "Interact with website visitors." },
-      { title: "Messenger", desc: "Help customers on every channel." },
-      { title: "Email", desc: "Unified customer inbox." },
-      { title: "Social & Reviews", desc: "Manage all social channels." },
-      { title: "Video Meetings", desc: "Instant virtual meetings." },
+    heading: "AI",
+    children: [
+      { title: "Voice Chatbots", href: "#" },
+      { title: "Post Call AI", href: "#" },
+      { title: "Analytics", href: "#" },
     ],
   },
-  {
-    heading: "Advanced",
-    items: [
-      { title: "Integrations", desc: "Apps and integrations." },
-      { title: "Analytics & Reporting", desc: "Insights and dashboards." },
-      { title: "Workforce Engagement", desc: "Scale your contact center." },
-      { title: "Journey Orchestration", desc: "End-to-end customer engagement." },
-    ],
-  },
+  { title: "Integrations", href: "#", isTopLevel: true },
 ];
 
 const Navbar = () => {
