@@ -24,20 +24,16 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #43B5BF;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
-.uc-hero-title {
-  font-family: 'Instrument Sans', sans-serif;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 1.1;
-  letter-spacing: -2px;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  margin-bottom: 24px;
+.uc-hero-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4B5563;
+  margin-bottom: 40px;
+  max-width: 520px;
 }
 
 .uc-hero-subtitle {
