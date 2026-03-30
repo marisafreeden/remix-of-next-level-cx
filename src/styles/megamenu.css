@@ -53,7 +53,7 @@
 }
 
 .mega-col {
-  min-width: 200px;
+  min-width: 240px;
   padding: 0 28px;
   border-right: 1px solid rgba(10, 15, 24, 0.06);
   display: flex;
