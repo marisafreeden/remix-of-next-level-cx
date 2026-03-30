@@ -61,11 +61,11 @@ const SipTrunking = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              Scale your operations.<br />
-              <span className="going-next">Cut your phone bill.</span>
+              Same phones.<br />
+              <span className="going-next">Smarter bill.</span>
             </h1>
             <p className="uc-hero-subtitle">
-              Keep your existing hardware and ditch your landlines for more flexible and affordable cloud-based business phone service.
+              Replace expensive landlines with cloud-powered SIP trunks. Keep your hardware, cut costs by up to 70%, and scale capacity on demand.
             </p>
             <button className="btn-hero-a">
               Schedule a Demo <span style={{ fontSize: '18px' }}>→</span>
