@@ -19,8 +19,9 @@ const megaMenuColumns = [
     heading: "Unified Communications",
     href: "#",
     items: [
-      { title: "b-hive", href: "#" },
-      { title: "Cloud PBX", href: "#" },
+      { title: "Business Phone", href: "#" },
+      { title: "Video & Messaging", href: "#" },
+      { title: "Bubble SMS", href: "#" },
       { title: "SIP Trunking", href: "#" },
     ],
   },
