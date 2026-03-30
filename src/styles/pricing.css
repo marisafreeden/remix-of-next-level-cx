@@ -219,7 +219,7 @@
 /* ===== Pricing Responsive ===== */
 @media (max-width: 1024px) {
   .pricing-hero { padding: 140px 24px 40px; }
-  .pricing-title { font-size: 44px; }
+  .pricing-title { font-size: 52px; letter-spacing: -2px; }
   .pricing-cards-section { padding: 24px 24px 72px; }
   .pricing-cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
