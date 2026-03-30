@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState, useRef, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Sparkles } from "lucide-react";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -95,6 +95,13 @@ const Navbar = () => {
                     ))}
                   </div>
                 ))}
+                <div className="mega-cta-row">
+                  <a href="#" className="mega-cta-pill" onClick={() => setMegaOpen(false)}>
+                    <Sparkles size={16} />
+                    Calculate the ROI of using an AI Agent in your Business
+                    <ChevronDown size={14} className="mega-cta-arrow" />
+                  </a>
+                </div>
               </div>
               </>
             )}
