@@ -61,24 +61,6 @@ const ucPlans = [
       { text: "Integrations", included: true },
     ],
   },
-  {
-    name: "Virtual",
-    subtitle: "b-hive Seat",
-    price: "$12",
-    per: "/month/user",
-    popular: false,
-    features: [
-      { text: "MS Teams", included: true },
-      { text: "Mobile App", included: true },
-      { text: "Communicator", included: true },
-      { text: "Voicemail", included: true },
-      { text: "Voicemail-to-Email Notification", included: true },
-      { text: "Free Local DID", included: true },
-      { text: "Unlimited Business SMS", included: true },
-      { text: "Unlimited Domestic Calling", included: true },
-      { text: "Hardware", included: false },
-    ],
-  },
 ];
 
 const ccPlans = [
