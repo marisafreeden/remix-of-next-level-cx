@@ -166,8 +166,6 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-                ))}
-              </ul>
 
               <a href="#" className="pricing-card-cta">Request a quote</a>
             </div>
