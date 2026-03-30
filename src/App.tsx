@@ -9,6 +9,7 @@ import UnifiedCommunications from "./pages/UnifiedCommunications.tsx";
 import SipTrunking from "./pages/SipTrunking.tsx";
 import VideoMessaging from "./pages/VideoMessaging.tsx";
 import BusinessSMS from "./pages/BusinessSMS.tsx";
+import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
