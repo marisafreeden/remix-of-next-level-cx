@@ -236,3 +236,26 @@
 .mobile-mega-item:hover {
   color: #0a0f18;
 }
+
+.mobile-mega-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #43B5BF;
+  background: rgba(67, 181, 191, 0.08);
+  border: 1px solid rgba(67, 181, 191, 0.2);
+  border-radius: 999px;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin-top: 8px;
+  white-space: normal;
+  line-height: 1.4;
+  transition: background 0.2s;
+}
+
+.mobile-mega-cta:hover {
+  background: rgba(67, 181, 191, 0.15);
+}
