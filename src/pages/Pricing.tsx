@@ -10,161 +10,81 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
-import PricingCTABanner from "@/components/PricingCTABanner";
 import Footer from "@/components/Footer";
 
-const ucPlans = [
+interface PlanDef {
+  nameKey: string;
+  subtitleKey: string;
+  priceKey: string | null; // null = custom
+  perKey: string;
+  popular: boolean;
+  featureKeys: string[];
+}
+
+const ucPlanDefs: PlanDef[] = [
   {
-    name: "Metered",
-    subtitle: "b-hive Seat",
-    price: "$10",
-    per: "/month/user",
-    popular: false,
-    features: [
-      { text: "Call Forwarding", included: true },
-      { text: "Find Me/Follow Me", included: true },
-      { text: "Hot Desking", included: true },
-      { text: "Web Portal", included: true },
-      { text: "SMS $.01/Message", included: true },
-      { text: "Domestic $.029/Min", included: true },
-      { text: "Mobile App", included: true },
-      { text: "Voicemail-to-Email", included: true },
-    ],
+    nameKey: "uc_metered", subtitleKey: "uc_metered_subtitle", priceKey: "uc_metered_price",
+    perKey: "per_month_user", popular: false,
+    featureKeys: ["uc_metered_f1","uc_metered_f2","uc_metered_f3","uc_metered_f4","uc_metered_f5","uc_metered_f6","uc_metered_f7","uc_metered_f8"],
   },
   {
-    name: "Standard",
-    subtitle: "b-hive Seat",
-    price: "$18",
-    per: "/month/user",
-    popular: true,
-    features: [
-      { text: "Unlimited Calling", included: true },
-      { text: "Local DID", included: true },
-      { text: "No-Cost SMS", included: true },
-      { text: "Communicator (Chat & Softphone)", included: true },
-      { text: "Priority Email Support", included: true },
-    ],
+    nameKey: "uc_standard", subtitleKey: "uc_standard_subtitle", priceKey: "uc_standard_price",
+    perKey: "per_month_user", popular: true,
+    featureKeys: ["uc_standard_f1","uc_standard_f2","uc_standard_f3","uc_standard_f4","uc_standard_f5"],
   },
   {
-    name: "Pro",
-    subtitle: "b-hive Seat",
-    price: "$23",
-    per: "/month/user",
-    popular: false,
-    features: [
-      { text: "Virtual Fax", included: true },
-      { text: "One Number", included: true },
-      { text: "Global Extension", included: true },
-      { text: "Call Recording", included: true },
-      { text: "Communicator (Video + Screen Share)", included: true },
-      { text: "Call Catch", included: true },
-      { text: "Integrations", included: true },
-    ],
+    nameKey: "uc_pro", subtitleKey: "uc_pro_subtitle", priceKey: "uc_pro_price",
+    perKey: "per_month_user", popular: false,
+    featureKeys: ["uc_pro_f1","uc_pro_f2","uc_pro_f3","uc_pro_f4","uc_pro_f5","uc_pro_f6","uc_pro_f7"],
   },
 ];
 
-const ccPlans = [
+const ccPlanDefs: PlanDef[] = [
   {
-    name: "Essential",
-    subtitle: "Agent Seat",
-    price: "$35",
-    per: "/month/agent",
-    popular: false,
-    features: [
-      { text: "Omnichannel Routing", included: true },
-      { text: "IVR Builder", included: true },
-      { text: "Real-Time Dashboards", included: true },
-      { text: "Call Recording", included: true },
-      { text: "Basic Reporting", included: true },
-    ],
+    nameKey: "cc_essential", subtitleKey: "cc_essential_subtitle", priceKey: "cc_essential_price",
+    perKey: "per_month_agent", popular: false,
+    featureKeys: ["cc_essential_f1","cc_essential_f2","cc_essential_f3","cc_essential_f4","cc_essential_f5"],
   },
   {
-    name: "Professional",
-    subtitle: "Agent Seat",
-    price: "$55",
-    per: "/month/agent",
-    popular: true,
-    features: [
-      { text: "Everything in Essential", included: true },
-      { text: "Smart Scripting", included: true },
-      { text: "Predictive Dialer", included: true },
-      { text: "Quality Management", included: true },
-      { text: "CRM Integrations", included: true },
-      { text: "Post Call AI", included: true },
-    ],
+    nameKey: "cc_professional", subtitleKey: "cc_professional_subtitle", priceKey: "cc_professional_price",
+    perKey: "per_month_agent", popular: true,
+    featureKeys: ["cc_professional_f1","cc_professional_f2","cc_professional_f3","cc_professional_f4","cc_professional_f5","cc_professional_f6"],
   },
   {
-    name: "Enterprise",
-    subtitle: "Agent Seat",
-    price: "Custom",
-    per: "",
-    popular: false,
-    features: [
-      { text: "Everything in Professional", included: true },
-      { text: "Voice Chatbots", included: true },
-      { text: "AI Analyst", included: true },
-      { text: "Custom Integrations", included: true },
-      { text: "Dedicated Success Manager", included: true },
-      { text: "SLA Guarantee", included: true },
-    ],
+    nameKey: "cc_enterprise", subtitleKey: "cc_enterprise_subtitle", priceKey: null,
+    perKey: "", popular: false,
+    featureKeys: ["cc_enterprise_f1","cc_enterprise_f2","cc_enterprise_f3","cc_enterprise_f4","cc_enterprise_f5","cc_enterprise_f6"],
   },
 ];
 
-
-
-const aiPlans = [
+const aiPlanDefs: PlanDef[] = [
   {
-    name: "Starter",
-    subtitle: "AI Agent",
-    price: "$29",
-    per: "/month/agent",
-    popular: false,
-    features: [
-      { text: "Voice AI Agent", included: true },
-      { text: "Basic Intent Recognition", included: true },
-      { text: "Call Routing Automation", included: true },
-      { text: "Standard Analytics", included: true },
-    ],
+    nameKey: "ai_starter", subtitleKey: "ai_starter_subtitle", priceKey: "ai_starter_price",
+    perKey: "per_month_agent", popular: false,
+    featureKeys: ["ai_starter_f1","ai_starter_f2","ai_starter_f3","ai_starter_f4"],
   },
   {
-    name: "Advanced",
-    subtitle: "AI Agent",
-    price: "$59",
-    per: "/month/agent",
-    popular: true,
-    features: [
-      { text: "Everything in Starter", included: true },
-      { text: "Natural Language Understanding", included: true },
-      { text: "Sentiment Analysis", included: true },
-      { text: "Multi-Language Support", included: true },
-      { text: "CRM Integration", included: true },
-      { text: "Post-Call AI Summaries", included: true },
-    ],
+    nameKey: "ai_advanced", subtitleKey: "ai_advanced_subtitle", priceKey: "ai_advanced_price",
+    perKey: "per_month_agent", popular: true,
+    featureKeys: ["ai_advanced_f1","ai_advanced_f2","ai_advanced_f3","ai_advanced_f4","ai_advanced_f5","ai_advanced_f6"],
   },
   {
-    name: "Enterprise",
-    subtitle: "AI Agent",
-    price: "Custom",
-    per: "",
-    popular: false,
-    features: [
-      { text: "Everything in Advanced", included: true },
-      { text: "Custom AI Models", included: true },
-      { text: "Voice Cloning", included: true },
-      { text: "Advanced Analytics & BI", included: true },
-      { text: "Dedicated AI Engineer", included: true },
-      { text: "SLA Guarantee", included: true },
-    ],
+    nameKey: "ai_enterprise", subtitleKey: "ai_enterprise_subtitle", priceKey: null,
+    perKey: "", popular: false,
+    featureKeys: ["ai_enterprise_f1","ai_enterprise_f2","ai_enterprise_f3","ai_enterprise_f4","ai_enterprise_f5","ai_enterprise_f6"],
   },
 ];
 
 const Pricing = () => {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState<"uc" | "cc" | "ai">("uc");
-  const plans = activeTab === "uc" ? ucPlans : activeTab === "cc" ? ccPlans : aiPlans;
+  const planDefs = activeTab === "uc" ? ucPlanDefs : activeTab === "cc" ? ccPlanDefs : aiPlanDefs;
+  const currency = t("pricing_page.currency");
 
   return (
     <div className="pricing-page">
@@ -172,7 +92,7 @@ const Pricing = () => {
 
       <section className="pricing-hero">
         <h1 className="pricing-title">
-          Plans and <em className="pricing-title-italic">pricing</em>
+          {t("pricing_page.title_pre")} <em className="pricing-title-italic">{t("pricing_page.title_em")}</em>
         </h1>
 
         <div className="pricing-tabs">
@@ -180,51 +100,57 @@ const Pricing = () => {
             className={`pricing-tab ${activeTab === "uc" ? "pricing-tab-active" : ""}`}
             onClick={() => setActiveTab("uc")}
           >
-            Unified Communications
+            {t("pricing_page.tab_uc")}
           </button>
           <button
             className={`pricing-tab ${activeTab === "cc" ? "pricing-tab-active" : ""}`}
             onClick={() => setActiveTab("cc")}
           >
-            Cloud Contact Center
+            {t("pricing_page.tab_cc")}
           </button>
           <button
             className={`pricing-tab ${activeTab === "ai" ? "pricing-tab-active" : ""}`}
             onClick={() => setActiveTab("ai")}
           >
-            AI Solutions
+            {t("pricing_page.tab_ai")}
           </button>
         </div>
       </section>
 
       <section className="pricing-cards-section">
         <div className="pricing-cards-grid">
-          {plans.map((plan) => (
-            <div
-              key={plan.name}
-              className={`pricing-card ${plan.popular ? "pricing-card-popular" : ""}`}
-            >
-              {plan.popular && <span className="pricing-popular-badge">Most Popular</span>}
-              <h3 className="pricing-card-name">{plan.name}</h3>
-              <p className="pricing-card-subtitle">{plan.subtitle}</p>
+          {planDefs.map((plan) => {
+            const isCustom = plan.priceKey === null;
+            const price = isCustom ? t("pricing_page.custom") : `${currency}${t(`pricing_page.${plan.priceKey}`)}`;
+            const per = plan.perKey ? t(`pricing_page.${plan.perKey}`) : "";
 
-              <div className="pricing-card-price-row">
-                <span className="pricing-card-price">{plan.price}</span>
-                {plan.per && <span className="pricing-card-per">{plan.per}</span>}
+            return (
+              <div
+                key={plan.nameKey}
+                className={`pricing-card ${plan.popular ? "pricing-card-popular" : ""}`}
+              >
+                {plan.popular && <span className="pricing-popular-badge">{t("pricing_page.most_popular")}</span>}
+                <h3 className="pricing-card-name">{t(`pricing_page.${plan.nameKey}`)}</h3>
+                <p className="pricing-card-subtitle">{t(`pricing_page.${plan.subtitleKey}`)}</p>
+
+                <div className="pricing-card-price-row">
+                  <span className="pricing-card-price">{price}</span>
+                  {per && <span className="pricing-card-per">{per}</span>}
+                </div>
+
+                <ul className="pricing-card-features">
+                  {plan.featureKeys.map((fk) => (
+                    <li key={fk} className="pricing-card-feature">
+                      <Check size={16} className="pricing-check" />
+                      {t(`pricing_page.${fk}`)}
+                    </li>
+                  ))}
+                </ul>
+
+                <a href="#" className="pricing-card-cta">{t("pricing_page.request_quote")}</a>
               </div>
-
-              <ul className="pricing-card-features">
-                {plan.features.map((f) => (
-                  <li key={f.text} className="pricing-card-feature">
-                    <Check size={16} className="pricing-check" />
-                    {f.text}
-                  </li>
-                ))}
-              </ul>
-
-              <a href="#" className="pricing-card-cta">Request a quote</a>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -232,7 +158,6 @@ const Pricing = () => {
 
       <FAQSection />
       <CTABlock />
-      
 
       <Footer />
     </div>
