@@ -24,19 +24,6 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #43B5BF;
-  margin-bottom: 16px;
-}
-
-.uc-hero-title {
-  font-family: 'Instrument Sans', sans-serif;
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 1.1;
-  letter-spacing: -2px;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   margin-bottom: 24px;
 }
 
@@ -49,24 +36,6 @@
   max-width: 520px;
 }
 
-.uc-hero-cta {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 32px;
-  background: #0A0F1A;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: opacity 0.2s;
-}
-
-.uc-hero-cta:hover {
-  opacity: 0.85;
-}
 
 .uc-hero-image {
   flex: 1;
