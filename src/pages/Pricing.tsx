@@ -11,6 +11,8 @@ import "@fontsource/inter/600.css";
 import { useState } from "react";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
+import FAQSection from "@/components/FAQSection";
+import CTABlock from "@/components/CTABlock";
 import Footer from "@/components/Footer";
 
 const ucPlans = [
@@ -223,6 +225,9 @@ const Pricing = () => {
           ))}
         </div>
       </section>
+
+      <FAQSection />
+      <CTABlock />
 
       <Footer />
     </div>
