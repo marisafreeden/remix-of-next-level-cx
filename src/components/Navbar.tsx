@@ -96,6 +96,7 @@ const Navbar = () => {
                   </div>
                 ))}
               </div>
+              </>
             )}
           </div>
           <a href="#" className="hero-nav-link">{t("nav.pricing")}</a>
