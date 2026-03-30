@@ -60,14 +60,14 @@
 }
 
 .pricing-tab-active {
-  background: #2b6e74;
-  color: #ffffff;
+  background: rgba(10, 15, 24, 0.06);
+  color: #0a0f18;
   border-radius: 999px;
 }
 
 .pricing-tab-active:hover {
-  color: #ffffff;
-  background: #24616a;
+  color: #0a0f18;
+  background: rgba(10, 15, 24, 0.09);
 }
 
 /* Cards Section */
