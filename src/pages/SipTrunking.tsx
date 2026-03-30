@@ -10,7 +10,7 @@ import "@fontsource/inter/600.css";
 
 import {
   Phone, DollarSign, TrendingUp, Mic, FileText, Settings,
-  PhoneForwarding, BarChart3, Globe, Zap, ChevronRight
+  PhoneForwarded, BarChart3, Globe, Zap, ChevronRight
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
