@@ -39,12 +39,6 @@ const megaMenuColumns = [
       { title: "Analytics", href: "#" },
     ],
   },
-  {
-    heading: "More",
-    items: [
-      { title: "Integrations", href: "#" },
-    ],
-  },
 ];
 
 const Navbar = () => {
