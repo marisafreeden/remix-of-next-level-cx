@@ -226,6 +226,8 @@ const Pricing = () => {
         </div>
       </section>
 
+      <img src="/images/pricing-gradient-bg.png" alt="" className="pricing-cards-bottom-gradient" />
+
       <FAQSection />
       <CTABlock />
 
