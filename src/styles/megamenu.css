@@ -76,7 +76,7 @@
   text-align: left;
   text-decoration: none;
   display: block;
-  white-space: pre-line;
+  white-space: nowrap;
   transition: color 0.15s;
 }
 
