@@ -71,20 +71,22 @@ const Navbar = () => {
             </button>
             {megaOpen && (
               <div className="mega-menu">
-                {megaMenuData.map((col) => (
-                  <div key={col.heading} className="mega-col">
-                    <p className="mega-col-heading">{col.heading}</p>
-                    {col.items.map((item) => (
-                      <a key={item.title} href="#" className="mega-item" onClick={() => setMegaOpen(false)}>
-                        <span className="mega-item-title">
-                          {item.title}
-                          {item.isNew && <span className="mega-badge">NEW</span>}
-                        </span>
-                        <span className="mega-item-desc">{item.desc}</span>
-                      </a>
-                    ))}
-                  </div>
-                ))}
+                {megaMenuData.map((entry, i) =>
+                  'heading' in entry && entry.heading ? (
+                    <div key={entry.heading} className="mega-group">
+                      <p className="mega-group-heading">{entry.heading}</p>
+                      {entry.children?.map((child) => (
+                        <a key={child.title} href={child.href} className="mega-child" onClick={() => setMegaOpen(false)}>
+                          {child.title}
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <a key={entry.title} href={(entry as any).href} className={`mega-top-link ${(entry as any).isTopLevel ? 'mega-top-link-standalone' : ''}`} onClick={() => setMegaOpen(false)}>
+                      {entry.title}
+                    </a>
+                  )
+                )}
               </div>
             )}
           </div>
