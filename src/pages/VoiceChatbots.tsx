@@ -9,8 +9,7 @@ import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTABlock from "../components/CTABlock";
-import goengageImg from "@/assets/goengage-voice.png";
-import callerMomImg from "@/assets/caller-mom.jpg";
+import callFlowImg from "@/assets/call-flow-visualization.png";
 import ucHeroImg from "@/assets/uc-hero.png";
 import {
   Bot, PhoneOff, Brain, Zap, Clock, ShieldCheck, BarChart3,
@@ -39,36 +38,23 @@ const VoiceChatbots = () => {
   return (
     <div>
       {/* Hero */}
-      <section className="hero-section" style={{ minHeight: "auto", paddingBottom: 80 }}>
+      <section className="uc-hero-section">
         <Navbar />
-
-        <div className="hero-bg-wrap">
-          <div className="hero-ellipse hero-e52" />
-          <div className="hero-ellipse hero-e56" />
-          <div className="hero-ellipse hero-e10" />
-          <div className="hero-ellipse hero-e11" />
-          <div className="hero-ellipse hero-e13" />
-          <div className="hero-ellipse hero-e9" />
-          <div className="hero-ellipse hero-e14" />
-        </div>
-
-        <div className="uc-hero-inner" style={{ position: "relative", zIndex: 1, textAlign: "left" }}>
-          <div className="uc-hero-text" style={{ alignItems: "flex-start" }}>
-            <h1 className="hero-h1" style={{ textAlign: "left" }}>
+        <div className="uc-hero-inner">
+          <div className="uc-hero-text">
+            <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
               GoEngage<br />
               <span className="going-next">Voice.</span>
             </h1>
-            <p className="hero-sub" style={{ maxWidth: 520, textAlign: "left" }}>
+            <p className="uc-hero-subtitle">
               Your IVR routes calls. GoEngage resolves them. AI-powered voice that handles the calls your agents shouldn't have to take.
             </p>
-            <div className="hero-ctas">
-              <button className="btn-hero-a">
-                Request a Demo <span style={{ fontSize: "18px" }}>→</span>
-              </button>
-            </div>
+            <button className="btn-hero-a">
+              Request a Demo <span style={{ fontSize: "18px" }}>→</span>
+            </button>
           </div>
           <div className="uc-hero-image">
-            <img src={callerMomImg} alt="GoEngage Voice AI" loading="lazy" style={{ maxWidth: 520, width: "100%", borderRadius: 20 }} />
+            <img src={callFlowImg} alt="GoEngage Voice AI call flow" style={{ maxWidth: 520, width: "100%" }} />
           </div>
         </div>
       </section>
