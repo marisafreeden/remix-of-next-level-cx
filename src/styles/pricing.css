@@ -226,7 +226,7 @@
 
 @media (max-width: 768px) {
   .pricing-hero { padding: 120px 20px 32px; }
-  .pricing-title { font-size: 34px; letter-spacing: -1.5px; }
+  .pricing-title { font-size: 36px; letter-spacing: -1.5px; }
   .pricing-tabs { flex-direction: column; border-radius: 14px; }
   .pricing-tab { padding: 12px 24px; font-size: 14px; }
   .pricing-tab-active { border-radius: 14px; }
