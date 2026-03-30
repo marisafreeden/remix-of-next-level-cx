@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="#" className="hero-nav-link">{t("nav.products")}</a>
           <a href="#" className="hero-nav-link">{t("nav.pricing")}</a>
           <a href="#" className="hero-nav-link">{t("nav.resources")}</a>
-          <a href="#" className="hero-nav-link">{t("nav.customers")}</a>
+          <a href="#" className="hero-nav-link">{t("nav.partners")}</a>
         </div>
 
         <div className="hero-nav-right">
