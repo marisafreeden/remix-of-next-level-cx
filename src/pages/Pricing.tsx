@@ -258,7 +258,10 @@ const Pricing = () => {
       </section>
 
       <section className="matrix-section">
-        <h2 className="matrix-title">Compare all features</h2>
+        <div className="matrix-header">
+          <h2 className="matrix-title">Full Plan Comparison</h2>
+          <p className="matrix-subtitle">Included Features</p>
+        </div>
         <div className="matrix-scroll">
           <table className="matrix-table">
             <thead>
@@ -266,8 +269,11 @@ const Pricing = () => {
                 <th className="matrix-corner"></th>
                 {plans.map((p) => (
                   <th key={p.name} className="matrix-plan-header">
-                    {p.name}
-                    <span className="matrix-plan-price">{p.price}{p.per}</span>
+                    <span className="matrix-plan-name">{p.name}</span>
+                    <div className="matrix-plan-price-wrap">
+                      <span className="matrix-plan-price-lg">{p.price}</span>
+                      {p.per && <span className="matrix-plan-per">{p.per}</span>}
+                    </div>
                   </th>
                 ))}
               </tr>
@@ -284,9 +290,9 @@ const Pricing = () => {
                       {feat.values.map((val, i) => (
                         <td key={i} className="matrix-cell">
                           {val === true ? (
-                            <Check size={18} className="matrix-check" />
+                            <Check size={20} className="matrix-check" />
                           ) : val === false ? (
-                            <Minus size={18} className="matrix-minus" />
+                            <Minus size={20} className="matrix-minus" />
                           ) : (
                             <span className="matrix-text-val">{val}</span>
                           )}
