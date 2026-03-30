@@ -2,6 +2,7 @@ import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
 import "@/styles/pricing.css";
+import "@/styles/feature-matrix.css";
 import "@/styles/responsive.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
@@ -127,6 +128,71 @@ const ccPlans = [
   },
 ];
 
+const ucMatrix = [
+  { category: "Calling", features: [
+    { name: "Domestic Calling", values: ["Metered", "Unlimited", "Unlimited", "Unlimited"] },
+    { name: "International Calling", values: ["Add-on", "Add-on", "Add-on", "—"] },
+    { name: "Call Forwarding", values: [true, true, true, true] },
+    { name: "Find Me/Follow Me", values: [true, true, true, false] },
+    { name: "Call Recording", values: [false, false, true, false] },
+    { name: "Call Catch", values: [false, false, true, false] },
+  ]},
+  { category: "Messaging", features: [
+    { name: "SMS", values: ["$.01/msg", "Included", "Included", "Unlimited"] },
+    { name: "Team Chat", values: [false, true, true, true] },
+    { name: "Virtual Fax", values: [false, false, true, false] },
+  ]},
+  { category: "Collaboration", features: [
+    { name: "Video Conferencing", values: [false, false, true, false] },
+    { name: "Screen Share", values: [false, false, true, false] },
+    { name: "Communicator App", values: [false, true, true, true] },
+    { name: "Mobile App", values: [true, false, false, true] },
+    { name: "MS Teams Integration", values: [false, false, false, true] },
+  ]},
+  { category: "Management", features: [
+    { name: "Web Portal", values: [true, true, true, true] },
+    { name: "Hot Desking", values: [true, true, true, false] },
+    { name: "Local DID", values: [false, true, true, true] },
+    { name: "Voicemail-to-Email", values: [true, true, true, true] },
+    { name: "Integrations", values: [false, false, true, false] },
+    { name: "Priority Support", values: [false, true, true, true] },
+    { name: "Hardware", values: [true, true, true, false] },
+  ]},
+];
+
+const ccMatrix = [
+  { category: "Routing & Channels", features: [
+    { name: "Omnichannel Routing", values: [true, true, true] },
+    { name: "IVR Builder", values: [true, true, true] },
+    { name: "Skills-Based Routing", values: [false, true, true] },
+    { name: "Callback Queue", values: [false, true, true] },
+  ]},
+  { category: "Outbound", features: [
+    { name: "Preview Dialer", values: [true, true, true] },
+    { name: "Predictive Dialer", values: [false, true, true] },
+    { name: "Campaign Management", values: [false, true, true] },
+  ]},
+  { category: "AI & Automation", features: [
+    { name: "Smart Scripting", values: [false, true, true] },
+    { name: "Post Call AI", values: [false, true, true] },
+    { name: "Voice Chatbots", values: [false, false, true] },
+    { name: "AI Analyst", values: [false, false, true] },
+  ]},
+  { category: "Analytics & Quality", features: [
+    { name: "Real-Time Dashboards", values: [true, true, true] },
+    { name: "Basic Reporting", values: [true, true, true] },
+    { name: "Advanced Analytics", values: [false, true, true] },
+    { name: "Quality Management", values: [false, true, true] },
+    { name: "Call Recording", values: [true, true, true] },
+  ]},
+  { category: "Integrations & Support", features: [
+    { name: "CRM Integrations", values: [false, true, true] },
+    { name: "Custom Integrations", values: [false, false, true] },
+    { name: "Dedicated Success Manager", values: [false, false, true] },
+    { name: "SLA Guarantee", values: [false, false, true] },
+  ]},
+];
+
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState<"uc" | "cc">("uc");
   const plans = activeTab === "uc" ? ucPlans : ccPlans;
@@ -188,6 +254,50 @@ const Pricing = () => {
               <a href="#" className="pricing-card-cta">Request a quote</a>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="matrix-section">
+        <h2 className="matrix-title">Compare all features</h2>
+        <div className="matrix-scroll">
+          <table className="matrix-table">
+            <thead>
+              <tr>
+                <th className="matrix-corner"></th>
+                {plans.map((p) => (
+                  <th key={p.name} className="matrix-plan-header">
+                    {p.name}
+                    <span className="matrix-plan-price">{p.price}{p.per}</span>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {(activeTab === "uc" ? ucMatrix : ccMatrix).map((group) => (
+                <>
+                  <tr key={group.category} className="matrix-category-row">
+                    <td colSpan={plans.length + 1} className="matrix-category">{group.category}</td>
+                  </tr>
+                  {group.features.map((feat) => (
+                    <tr key={feat.name} className="matrix-feature-row">
+                      <td className="matrix-feature-name">{feat.name}</td>
+                      {feat.values.map((val, i) => (
+                        <td key={i} className="matrix-cell">
+                          {val === true ? (
+                            <Check size={18} className="matrix-check" />
+                          ) : val === false ? (
+                            <Minus size={18} className="matrix-minus" />
+                          ) : (
+                            <span className="matrix-text-val">{val}</span>
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 

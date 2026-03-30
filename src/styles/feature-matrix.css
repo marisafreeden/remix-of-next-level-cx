@@ -1,0 +1,123 @@
+/* ===== Feature Matrix ===== */
+.matrix-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 48px 96px;
+}
+
+.matrix-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #0a0f18;
+  letter-spacing: -1.2px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.matrix-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.matrix-corner {
+  width: 240px;
+}
+
+.matrix-plan-header {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a0f18;
+  text-align: center;
+  padding: 16px 12px 20px;
+  border-bottom: 2px solid rgba(10, 15, 24, 0.08);
+  vertical-align: bottom;
+}
+
+.matrix-plan-price {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(10, 15, 24, 0.4);
+  margin-top: 4px;
+}
+
+/* Category row */
+.matrix-category-row td {
+  padding: 0;
+}
+
+.matrix-category {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(10, 15, 24, 0.35);
+  padding: 28px 0 10px;
+  border-bottom: 1px solid rgba(10, 15, 24, 0.06);
+}
+
+/* Feature rows */
+.matrix-feature-row {
+  border-bottom: 1px solid rgba(10, 15, 24, 0.05);
+  transition: background 0.15s;
+}
+
+.matrix-feature-row:hover {
+  background: rgba(10, 15, 24, 0.015);
+}
+
+.matrix-feature-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(10, 15, 24, 0.65);
+  padding: 14px 16px 14px 0;
+  white-space: nowrap;
+}
+
+.matrix-cell {
+  text-align: center;
+  padding: 14px 12px;
+  vertical-align: middle;
+}
+
+.matrix-check {
+  color: #43B5BF;
+  display: inline-block;
+}
+
+.matrix-minus {
+  color: rgba(10, 15, 24, 0.15);
+  display: inline-block;
+}
+
+.matrix-text-val {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(10, 15, 24, 0.55);
+}
+
+/* ===== Matrix Responsive ===== */
+@media (max-width: 1024px) {
+  .matrix-section { padding: 24px 24px 72px; }
+  .matrix-title { font-size: 30px; }
+}
+
+@media (max-width: 768px) {
+  .matrix-section { padding: 20px 20px 64px; }
+  .matrix-title { font-size: 26px; margin-bottom: 32px; }
+  .matrix-corner { width: 160px; }
+  .matrix-feature-name { font-size: 13px; }
+  .matrix-plan-header { font-size: 14px; padding: 12px 8px 16px; }
+}
