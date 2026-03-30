@@ -20,7 +20,7 @@ const UnifiedCommunications = () => {
       <section className="uc-hero-section">
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
-            <p className="uc-hero-eyebrow">b-hive cloud communications</p>
+            <p className="uc-hero-eyebrow">UNIFIED COMMUNICATIONS</p>
             <h1 className="hero-h1" style={{ textAlign: 'left' }}>
               Your team in<br />
               <span className="going-next">one app.</span>
