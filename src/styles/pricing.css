@@ -11,18 +11,26 @@
 
 .pricing-title {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 56px;
-  font-weight: 600;
-  color: #0a0f18;
-  letter-spacing: -2px;
-  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: -3.6px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 36px;
+  overflow: visible;
+  padding: 0 0 0.14em 4px;
 }
 
 .pricing-title-italic {
   font-family: 'Besley', serif;
-  font-style: italic;
   font-weight: 400;
-  color: #43B5BF;
+  font-style: italic;
+  letter-spacing: 0.2px;
+  line-height: 1.08;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Tabs */
@@ -138,7 +146,7 @@
   font-family: 'Instrument Sans', sans-serif;
   font-size: 48px;
   font-weight: 700;
-  color: #2b6e74;
+  color: #0a0f18;
   letter-spacing: -2px;
   line-height: 1;
 }
@@ -184,36 +192,41 @@
   margin-top: 1px;
 }
 
-/* CTA Button */
+/* CTA Button — matches promo-row-cta */
 .pricing-card-cta {
-  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #2b6e74;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
-  border: 1.5px solid rgba(10, 15, 24, 0.12);
-  border-radius: 999px;
-  padding: 12px 24px;
-  text-align: center;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 .pricing-card-cta:hover {
-  border-color: #43B5BF;
-  background: rgba(67, 181, 191, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(65, 173, 186, 0.25);
 }
 
 /* ===== Pricing Responsive ===== */
 @media (max-width: 1024px) {
   .pricing-hero { padding: 140px 24px 40px; }
-  .pricing-title { font-size: 44px; }
+  .pricing-title { font-size: 52px; letter-spacing: -2px; }
   .pricing-cards-section { padding: 24px 24px 72px; }
   .pricing-cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
   .pricing-hero { padding: 120px 20px 32px; }
-  .pricing-title { font-size: 34px; letter-spacing: -1.5px; }
+  .pricing-title { font-size: 36px; letter-spacing: -1.5px; }
   .pricing-tabs { flex-direction: column; border-radius: 14px; }
   .pricing-tab { padding: 12px 24px; font-size: 14px; }
   .pricing-tab-active { border-radius: 14px; }
