@@ -43,7 +43,7 @@ const VoiceChatbots = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
-              GoEngage <span className="going-next">Voice.</span>
+              GoEngage <span className="going-next">Voice</span>
             </h1>
             <p className="uc-hero-subtitle">
               Your IVR routes calls. GoEngage resolves them. AI-powered voice that handles the calls your agents shouldn't have to take.
