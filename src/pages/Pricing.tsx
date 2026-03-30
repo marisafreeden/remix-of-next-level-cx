@@ -238,56 +238,6 @@ const Pricing = () => {
         </div>
       </section>
 
-      <section className="matrix-section">
-        <div className="matrix-header">
-          <h2 className="matrix-title">Full Plan Comparison</h2>
-          <p className="matrix-subtitle">Included Features</p>
-        </div>
-        <div className="matrix-scroll">
-          <table className="matrix-table">
-            <thead>
-              <tr>
-                <th className="matrix-corner"></th>
-                {plans.map((p) => (
-                  <th key={p.name} className="matrix-plan-header">
-                    <span className="matrix-plan-name">{p.name}</span>
-                    <div className="matrix-plan-price-wrap">
-                      <span className="matrix-plan-price-lg">{p.price}</span>
-                      {p.per && <span className="matrix-plan-per">{p.per}</span>}
-                    </div>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {(activeTab === "uc" ? ucMatrix : ccMatrix).map((group) => (
-                <>
-                  <tr key={group.category} className="matrix-category-row">
-                    <td colSpan={plans.length + 1} className="matrix-category">{group.category}</td>
-                  </tr>
-                  {group.features.map((feat) => (
-                    <tr key={feat.name} className="matrix-feature-row">
-                      <td className="matrix-feature-name">{feat.name}</td>
-                      {feat.values.map((val, i) => (
-                        <td key={i} className="matrix-cell">
-                          {val === true ? (
-                            <Check size={20} className="matrix-check" />
-                          ) : val === false ? (
-                            <Minus size={20} className="matrix-minus" />
-                          ) : (
-                            <span className="matrix-text-val">{val}</span>
-                          )}
-                        </td>
-                      ))}
-                    </tr>
-                  ))}
-                </>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
