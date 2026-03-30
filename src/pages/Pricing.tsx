@@ -14,6 +14,7 @@ import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
+import PricingCTABanner from "@/components/PricingCTABanner";
 import Footer from "@/components/Footer";
 
 const ucPlans = [
