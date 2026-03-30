@@ -81,6 +81,7 @@ const Navbar = () => {
               <>
               <div className="mega-backdrop" onClick={() => setMegaOpen(false)} />
               <div className="mega-menu">
+                <div className="mega-columns">
                 {megaMenuColumns.map((col) => (
                   <div key={col.heading} className="mega-col">
                     <a href={col.href} className="mega-col-heading-link" onClick={() => setMegaOpen(false)}>{col.heading}</a>
@@ -95,6 +96,7 @@ const Navbar = () => {
                     ))}
                   </div>
                 ))}
+                </div>
                 <div className="mega-cta-row">
                   <a href="#" className="mega-cta-pill" onClick={() => setMegaOpen(false)}>
                     <Sparkles size={16} />
