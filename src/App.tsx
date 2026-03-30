@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import UnifiedCommunications from "./pages/UnifiedCommunications.tsx";
 import SipTrunking from "./pages/SipTrunking.tsx";
+import VideoMessaging from "./pages/VideoMessaging.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/unified-communications" element={<UnifiedCommunications />} />
           <Route path="/sip-trunking" element={<SipTrunking />} />
+          <Route path="/video-messaging" element={<VideoMessaging />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

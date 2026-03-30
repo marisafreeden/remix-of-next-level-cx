@@ -37,6 +37,24 @@
 }
 
 
+/* ===== Big Feature Image ===== */
+.uc-big-feature-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background: #F3F4F6;
+}
+
+.uc-big-feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .uc-hero-image {
   flex: 1;
   min-width: 0;
