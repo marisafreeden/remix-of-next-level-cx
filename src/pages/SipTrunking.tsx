@@ -109,14 +109,7 @@ const SipTrunking = () => {
             <div key={f.title} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
               <div className="promo-row-text">
                 <h3 className="promo-row-title">{f.title}</h3>
-                <p className="promo-row-desc">{f.desc}</p>
-                <ul className="uc-feature-points">
-                  {f.points.map((p) => (
-                    <li key={p} className="uc-feature-point">
-                      <span className="uc-feature-check">✓</span> {p}
-                    </li>
-                  ))}
-                </ul>
+                <p className="promo-row-desc" style={{ maxWidth: '520px' }}>{f.desc}</p>
                 <button className="promo-row-cta">
                   Learn more <ChevronRight size={16} />
                 </button>
