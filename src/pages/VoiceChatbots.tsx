@@ -52,13 +52,13 @@ const VoiceChatbots = () => {
           <div className="hero-ellipse hero-e14" />
         </div>
 
-        <div className="uc-hero-inner" style={{ position: "relative", zIndex: 1 }}>
-          <div className="uc-hero-text">
-            <h1 className="hero-h1">
+        <div className="uc-hero-inner" style={{ position: "relative", zIndex: 1, textAlign: "left" }}>
+          <div className="uc-hero-text" style={{ alignItems: "flex-start" }}>
+            <h1 className="hero-h1" style={{ textAlign: "left" }}>
               GoEngage<br />
               <span className="going-next">Voice.</span>
             </h1>
-            <p className="hero-sub" style={{ maxWidth: 520 }}>
+            <p className="hero-sub" style={{ maxWidth: 520, textAlign: "left" }}>
               Your IVR routes calls. GoEngage resolves them. AI-powered voice that handles the calls your agents shouldn't have to take.
             </p>
             <div className="hero-ctas">
@@ -68,7 +68,7 @@ const VoiceChatbots = () => {
             </div>
           </div>
           <div className="uc-hero-image">
-            <img src={goengageImg} alt="GoEngage Voice AI" loading="lazy" style={{ maxWidth: 520, width: "100%" }} />
+            <img src={callerMomImg} alt="GoEngage Voice AI" loading="lazy" style={{ maxWidth: 520, width: "100%", borderRadius: 20 }} />
           </div>
         </div>
       </section>
