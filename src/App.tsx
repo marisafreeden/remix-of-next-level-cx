@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import UnifiedCommunications from "./pages/UnifiedCommunications.tsx";
 import SipTrunking from "./pages/SipTrunking.tsx";
+import VideoMessaging from "./pages/VideoMessaging.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
