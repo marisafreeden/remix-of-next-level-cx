@@ -21,7 +21,7 @@ const megaMenuColumns = [
     href: "/unified-communications",
     items: [
       { title: "Business Phone", href: "/unified-communications", desc: "Cloud PBX with enterprise features" },
-      { title: "Video & Messaging", href: "/unified-communications", desc: "HD meetings & team collaboration" },
+      { title: "Video & Messaging", href: "/video-messaging", desc: "HD meetings & team collaboration" },
       { title: "Bubble SMS", href: "/unified-communications", desc: "Two-way business text messaging" },
       { title: "SIP Trunking", href: "/sip-trunking", desc: "Flexible voice connectivity" },
     ],
