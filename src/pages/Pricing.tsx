@@ -232,7 +232,7 @@ const Pricing = () => {
 
       <PricingCTABanner />
       <FAQSection />
-      <CTABlock />
+      
 
       <Footer />
     </div>
