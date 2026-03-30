@@ -192,23 +192,28 @@
   margin-top: 1px;
 }
 
-/* CTA Button */
+/* CTA Button — matches promo-row-cta */
 .pricing-card-cta {
-  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 600;
-  color: #2b6e74;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
-  border: 1.5px solid rgba(10, 15, 24, 0.12);
-  border-radius: 999px;
-  padding: 12px 24px;
-  text-align: center;
-  transition: all 0.25s;
+  transition: all 0.3s;
 }
 
 .pricing-card-cta:hover {
-  border-color: #43B5BF;
-  background: rgba(67, 181, 191, 0.06);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(65, 173, 186, 0.25);
 }
 
 /* ===== Pricing Responsive ===== */
