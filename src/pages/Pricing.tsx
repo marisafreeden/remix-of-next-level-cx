@@ -184,6 +184,12 @@ const Pricing = () => {
           >
             Cloud Contact Center
           </button>
+          <button
+            className={`pricing-tab ${activeTab === "ai" ? "pricing-tab-active" : ""}`}
+            onClick={() => setActiveTab("ai")}
+          >
+            AI Solutions
+          </button>
         </div>
       </section>
 
