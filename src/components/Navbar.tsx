@@ -71,7 +71,7 @@ const Navbar = () => {
               <div className="mega-menu">
                 {megaMenuColumns.map((col) => (
                   <div key={col.heading} className="mega-col">
-                    <p className="mega-col-heading">{col.heading}</p>
+                    <a href={col.href} className="mega-col-heading-link" onClick={() => setMegaOpen(false)}>{col.heading}</a>
                     {col.items.map((item) => (
                       <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
                         {item.title}
