@@ -9,7 +9,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
 import { useState } from "react";
-import { Check, Minus } from "lucide-react";
+import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
