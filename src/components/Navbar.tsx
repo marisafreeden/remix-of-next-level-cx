@@ -28,9 +28,9 @@ const megaMenuColumns = [
     heading: "AI Solutions",
     href: "#",
     items: [
-      { title: "Voice Chatbots", href: "#" },
+      { title: "GoEngage Voice", href: "#" },
       { title: "Post Call AI", href: "#" },
-      { title: "Analytics", href: "#" },
+      { title: "AI Analyst", href: "#" },
     ],
   },
 ];
