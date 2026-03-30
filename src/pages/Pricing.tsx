@@ -226,6 +226,9 @@ const Pricing = () => {
         </div>
       </section>
 
+      <FAQSection />
+      <CTABlock />
+
       <Footer />
     </div>
   );
