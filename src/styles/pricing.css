@@ -76,12 +76,13 @@
   margin: 0 auto;
   padding: 32px 48px 0;
   position: relative;
+  z-index: 1;
 }
 
 .pricing-cards-bottom-gradient {
   width: 100%;
   display: block;
-  margin-top: -40px;
+  margin-top: -200px;
   position: relative;
   z-index: 0;
 }
