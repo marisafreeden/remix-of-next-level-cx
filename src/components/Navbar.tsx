@@ -84,8 +84,11 @@ const Navbar = () => {
                     <a href={col.href} className="mega-col-heading-link" onClick={() => setMegaOpen(false)}>{col.heading}</a>
                     {col.items.map((item) => (
                       <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
-                        {item.title}
-                        {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                        <span className="mega-col-link-title">
+                          {item.title}
+                          {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                        </span>
+                        {item.desc && <span className="mega-col-link-desc">{item.desc}</span>}
                       </a>
                     ))}
                   </div>
