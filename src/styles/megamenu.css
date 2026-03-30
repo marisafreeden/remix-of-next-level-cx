@@ -64,16 +64,23 @@
   border-right: none;
 }
 
-.mega-col-heading {
+.mega-col-heading-link {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(10, 15, 24, 0.4);
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a0f18;
   letter-spacing: 0.3px;
   margin-bottom: 14px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(10, 15, 24, 0.06);
   text-align: left;
+  text-decoration: none;
+  display: block;
+  transition: color 0.15s;
+}
+
+.mega-col-heading-link:hover {
+  color: #43B5BF;
 }
 
 .mega-col-link {
