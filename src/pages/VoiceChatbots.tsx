@@ -9,8 +9,7 @@ import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTABlock from "../components/CTABlock";
-import goengageImg from "@/assets/goengage-voice.png";
-import callerMomImg from "@/assets/caller-mom.jpg";
+import callFlowImg from "@/assets/call-flow-visualization.png";
 import ucHeroImg from "@/assets/uc-hero.png";
 import {
   Bot, PhoneOff, Brain, Zap, Clock, ShieldCheck, BarChart3,
