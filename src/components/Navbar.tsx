@@ -78,6 +78,8 @@ const Navbar = () => {
               {t("nav.products")} <ChevronDown size={14} className={`mega-chevron ${megaOpen ? "mega-chevron-open" : ""}`} />
             </button>
             {megaOpen && (
+              <>
+              <div className="mega-backdrop" onClick={() => setMegaOpen(false)} />
               <div className="mega-menu">
                 {megaMenuColumns.map((col) => (
                   <div key={col.heading} className="mega-col">
@@ -94,6 +96,7 @@ const Navbar = () => {
                   </div>
                 ))}
               </div>
+              </>
             )}
           </div>
           <a href="#" className="hero-nav-link">{t("nav.pricing")}</a>

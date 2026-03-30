@@ -31,6 +31,16 @@
   transform: rotate(180deg);
 }
 
+.mega-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 24, 0.18);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 199;
+  animation: megaFadeIn 0.2s ease-out;
+}
+
 /* Dropdown — horizontal columns, left-aligned */
 .mega-menu {
   position: fixed;
