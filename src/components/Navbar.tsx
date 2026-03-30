@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="#" className="hero-nav-link">{t("nav.products")}</a>
           <a href="#" className="hero-nav-link">{t("nav.pricing")}</a>
           <a href="#" className="hero-nav-link">{t("nav.resources")}</a>
-          <a href="#" className="hero-nav-link">{t("nav.customers")}</a>
+          <a href="#" className="hero-nav-link">{t("nav.partners")}</a>
         </div>
 
         <div className="hero-nav-right">
@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.products")}</a>
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.resources")}</a>
-          <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.customers")}</a>
+          <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.partners")}</a>
           <div className="hero-nav-mobile-actions">
             <a href="#" className="hero-nav-login">{t("nav.login")}</a>
             <a href="#" className="hero-nav-cta">{t("nav.demo")}</a>
