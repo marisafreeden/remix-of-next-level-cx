@@ -1,0 +1,224 @@
+/* ===== Pricing Page ===== */
+.pricing-page {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.pricing-hero {
+  padding: 160px 48px 48px;
+  text-align: center;
+}
+
+.pricing-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  color: #0a0f18;
+  letter-spacing: -2px;
+  margin-bottom: 32px;
+}
+
+.pricing-title-italic {
+  font-family: 'Besley', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #43B5BF;
+}
+
+/* Tabs */
+.pricing-tabs {
+  display: inline-flex;
+  gap: 0;
+  border-radius: 999px;
+  border: 1.5px solid rgba(10, 15, 24, 0.1);
+  overflow: hidden;
+}
+
+.pricing-tab {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(10, 15, 24, 0.55);
+  transition: all 0.25s;
+  white-space: nowrap;
+}
+
+.pricing-tab:hover {
+  color: #0a0f18;
+}
+
+.pricing-tab-active {
+  background: #2b6e74;
+  color: #ffffff;
+  border-radius: 999px;
+}
+
+.pricing-tab-active:hover {
+  color: #ffffff;
+  background: #24616a;
+}
+
+/* Cards Section */
+.pricing-cards-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 48px 96px;
+}
+
+.pricing-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+/* Card */
+.pricing-card {
+  position: relative;
+  background: #ffffff;
+  border: 1.5px solid rgba(10, 15, 24, 0.08);
+  border-radius: 16px;
+  padding: 36px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-card-popular {
+  border-color: #43B5BF;
+  border-width: 2px;
+}
+
+.pricing-popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 24px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  background: #43B5BF;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+.pricing-card-name {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #0a0f18;
+  margin-bottom: 4px;
+}
+
+.pricing-card-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(10, 15, 24, 0.45);
+  margin-bottom: 24px;
+}
+
+.pricing-card-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 28px;
+}
+
+.pricing-card-price {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #2b6e74;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.pricing-card-per {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(10, 15, 24, 0.45);
+}
+
+/* Features */
+.pricing-card-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.pricing-card-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(10, 15, 24, 0.6);
+  line-height: 1.4;
+}
+
+.pricing-check {
+  color: #43B5BF;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.pricing-dash {
+  color: rgba(10, 15, 24, 0.25);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* CTA Button */
+.pricing-card-cta {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2b6e74;
+  text-decoration: none;
+  border: 1.5px solid rgba(10, 15, 24, 0.12);
+  border-radius: 999px;
+  padding: 12px 24px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.pricing-card-cta:hover {
+  border-color: #43B5BF;
+  background: rgba(67, 181, 191, 0.06);
+}
+
+/* ===== Pricing Responsive ===== */
+@media (max-width: 1024px) {
+  .pricing-hero { padding: 140px 24px 40px; }
+  .pricing-title { font-size: 44px; }
+  .pricing-cards-section { padding: 24px 24px 72px; }
+  .pricing-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .pricing-hero { padding: 120px 20px 32px; }
+  .pricing-title { font-size: 34px; letter-spacing: -1.5px; }
+  .pricing-tabs { flex-direction: column; border-radius: 14px; }
+  .pricing-tab { padding: 12px 24px; font-size: 14px; }
+  .pricing-tab-active { border-radius: 14px; }
+  .pricing-cards-section { padding: 20px 20px 64px; }
+  .pricing-cards-grid { grid-template-columns: 1fr; }
+  .pricing-card { padding: 28px 22px 28px; }
+  .pricing-card-price { font-size: 40px; }
+}
