@@ -12,6 +12,7 @@ const Footer = () => {
         { label: t("footer.product_contact_center"), href: "#" },
         { label: t("footer.product_unified_comms"), href: "/unified-communications" },
         { label: "Video & Messaging", href: "/video-messaging" },
+        { label: "Business SMS", href: "/business-sms" },
         { label: "SIP Trunking", href: "/sip-trunking" },
         { label: t("footer.product_ai_cx"), href: "#" },
       ],

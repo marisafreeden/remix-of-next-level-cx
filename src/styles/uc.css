@@ -36,6 +36,19 @@
   max-width: 520px;
 }
 
+/* ===== Integrations Image ===== */
+.uc-integrations-image {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.uc-integrations-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 /* ===== Big Feature Image ===== */
 .uc-big-feature-image {

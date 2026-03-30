@@ -8,6 +8,7 @@ import Pricing from "./pages/Pricing.tsx";
 import UnifiedCommunications from "./pages/UnifiedCommunications.tsx";
 import SipTrunking from "./pages/SipTrunking.tsx";
 import VideoMessaging from "./pages/VideoMessaging.tsx";
+import BusinessSMS from "./pages/BusinessSMS.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/unified-communications" element={<UnifiedCommunications />} />
           <Route path="/sip-trunking" element={<SipTrunking />} />
           <Route path="/video-messaging" element={<VideoMessaging />} />
+          <Route path="/business-sms" element={<BusinessSMS />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
