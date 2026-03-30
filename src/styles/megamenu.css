@@ -63,6 +63,11 @@
   to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
+.mega-columns {
+  display: flex;
+  flex-direction: row;
+}
+
 .mega-col {
   min-width: 240px;
   padding: 0 28px;
