@@ -84,6 +84,7 @@ const Navbar = () => {
                     {col.items.map((item) => (
                       <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
                         {item.title}
+                        {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
                       </a>
                     ))}
                   </div>
