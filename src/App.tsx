@@ -9,6 +9,7 @@ import UnifiedCommunications from "./pages/UnifiedCommunications.tsx";
 import SipTrunking from "./pages/SipTrunking.tsx";
 import VideoMessaging from "./pages/VideoMessaging.tsx";
 import BusinessSMS from "./pages/BusinessSMS.tsx";
+import Resources from "./pages/Resources.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
