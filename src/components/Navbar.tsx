@@ -4,14 +4,19 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const megaMenuData = [
-  { title: "Contact Center", href: "#" },
-  { title: "Unified Communications", href: "#" },
-  { title: "AI", href: "#" },
-  { title: "Integration", href: "#" },
+const megaMenuColumns = [
+  {
+    heading: "Products",
+    items: [
+      { title: "Contact Center", href: "#" },
+      { title: "Unified Communications", href: "#" },
+      { title: "AI", href: "#" },
+      { title: "Integration", href: "#" },
+    ],
+  },
   {
     heading: "Contact Center",
-    children: [
+    items: [
       { title: "Omnichannel", href: "#" },
       { title: "Dialer", href: "#" },
       { title: "Smart Scripting", href: "#" },
@@ -20,7 +25,7 @@ const megaMenuData = [
   },
   {
     heading: "Unified Communications",
-    children: [
+    items: [
       { title: "b-hive", href: "#" },
       { title: "Cloud PBX", href: "#" },
       { title: "SIP Trunking", href: "#" },
@@ -28,13 +33,18 @@ const megaMenuData = [
   },
   {
     heading: "AI",
-    children: [
+    items: [
       { title: "Voice Chatbots", href: "#" },
       { title: "Post Call AI", href: "#" },
       { title: "Analytics", href: "#" },
     ],
   },
-  { title: "Integrations", href: "#", isTopLevel: true },
+  {
+    heading: "More",
+    items: [
+      { title: "Integrations", href: "#" },
+    ],
+  },
 ];
 
 const Navbar = () => {
@@ -71,22 +81,16 @@ const Navbar = () => {
             </button>
             {megaOpen && (
               <div className="mega-menu">
-                {megaMenuData.map((entry, i) =>
-                  'heading' in entry && entry.heading ? (
-                    <div key={entry.heading} className="mega-group">
-                      <p className="mega-group-heading">{entry.heading}</p>
-                      {entry.children?.map((child) => (
-                        <a key={child.title} href={child.href} className="mega-child" onClick={() => setMegaOpen(false)}>
-                          {child.title}
-                        </a>
-                      ))}
-                    </div>
-                  ) : (
-                    <a key={entry.title} href={(entry as any).href} className={`mega-top-link ${(entry as any).isTopLevel ? 'mega-top-link-standalone' : ''}`} onClick={() => setMegaOpen(false)}>
-                      {entry.title}
-                    </a>
-                  )
-                )}
+                {megaMenuColumns.map((col) => (
+                  <div key={col.heading} className="mega-col">
+                    <p className="mega-col-heading">{col.heading}</p>
+                    {col.items.map((item) => (
+                      <a key={item.title} href={item.href} className="mega-col-link" onClick={() => setMegaOpen(false)}>
+                        {item.title}
+                      </a>
+                    ))}
+                  </div>
+                ))}
               </div>
             )}
           </div>
@@ -121,22 +125,16 @@ const Navbar = () => {
           </button>
           {mobileProductsOpen && (
             <div className="mobile-mega-menu">
-              {megaMenuData.map((entry, i) =>
-                'heading' in entry && entry.heading ? (
-                  <div key={entry.heading} className="mobile-mega-group">
-                    <p className="mobile-mega-heading">{entry.heading}</p>
-                    {entry.children?.map((child) => (
-                      <a key={child.title} href={child.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
-                        {child.title}
-                      </a>
-                    ))}
-                  </div>
-                ) : (
-                  <a key={entry.title} href={(entry as any).href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
-                    {entry.title}
-                  </a>
-                )
-              )}
+              {megaMenuColumns.map((col) => (
+                <div key={col.heading} className="mobile-mega-group">
+                  <p className="mobile-mega-heading">{col.heading}</p>
+                  {col.items.map((item) => (
+                    <a key={item.title} href={item.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
+                      {item.title}
+                    </a>
+                  ))}
+                </div>
+              ))}
             </div>
           )}
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
