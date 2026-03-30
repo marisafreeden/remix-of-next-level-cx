@@ -110,69 +110,8 @@ const ccPlans = [
   },
 ];
 
-const ucMatrix = [
-  { category: "Calling", features: [
-    { name: "Domestic Calling", values: ["Metered", "Unlimited", "Unlimited"] },
-    { name: "International Calling", values: ["Add-on", "Add-on", "Add-on"] },
-    { name: "Call Forwarding", values: [true, true, true] },
-    { name: "Find Me/Follow Me", values: [true, true, true] },
-    { name: "Call Recording", values: [false, false, true] },
-    { name: "Call Catch", values: [false, false, true] },
-  ]},
-  { category: "Messaging", features: [
-    { name: "SMS", values: ["$.01/msg", "Included", "Included"] },
-    { name: "Team Chat", values: [false, true, true] },
-    { name: "Virtual Fax", values: [false, false, true] },
-  ]},
-  { category: "Collaboration", features: [
-    { name: "Video Conferencing", values: [false, false, true] },
-    { name: "Screen Share", values: [false, false, true] },
-    { name: "Communicator App", values: [false, true, true] },
-    { name: "Mobile App", values: [true, false, false] },
-  ]},
-  { category: "Management", features: [
-    { name: "Web Portal", values: [true, true, true] },
-    { name: "Hot Desking", values: [true, true, true] },
-    { name: "Local DID", values: [false, true, true] },
-    { name: "Voicemail-to-Email", values: [true, true, true] },
-    { name: "Integrations", values: [false, false, true] },
-    { name: "Priority Support", values: [false, true, true] },
-    { name: "Hardware", values: [true, true, true] },
-  ]},
-];
 
-const ccMatrix = [
-  { category: "Routing & Channels", features: [
-    { name: "Omnichannel Routing", values: [true, true, true] },
-    { name: "IVR Builder", values: [true, true, true] },
-    { name: "Skills-Based Routing", values: [false, true, true] },
-    { name: "Callback Queue", values: [false, true, true] },
-  ]},
-  { category: "Outbound", features: [
-    { name: "Preview Dialer", values: [true, true, true] },
-    { name: "Predictive Dialer", values: [false, true, true] },
-    { name: "Campaign Management", values: [false, true, true] },
-  ]},
-  { category: "AI & Automation", features: [
-    { name: "Smart Scripting", values: [false, true, true] },
-    { name: "Post Call AI", values: [false, true, true] },
-    { name: "Voice Chatbots", values: [false, false, true] },
-    { name: "AI Analyst", values: [false, false, true] },
-  ]},
-  { category: "Analytics & Quality", features: [
-    { name: "Real-Time Dashboards", values: [true, true, true] },
-    { name: "Basic Reporting", values: [true, true, true] },
-    { name: "Advanced Analytics", values: [false, true, true] },
-    { name: "Quality Management", values: [false, true, true] },
-    { name: "Call Recording", values: [true, true, true] },
-  ]},
-  { category: "Integrations & Support", features: [
-    { name: "CRM Integrations", values: [false, true, true] },
-    { name: "Custom Integrations", values: [false, false, true] },
-    { name: "Dedicated Success Manager", values: [false, false, true] },
-    { name: "SLA Guarantee", values: [false, false, true] },
-  ]},
-];
+
 
 const Pricing = () => {
   const [activeTab, setActiveTab] = useState<"uc" | "cc">("uc");
