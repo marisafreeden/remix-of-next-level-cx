@@ -87,19 +87,35 @@
 
 .mega-col-link {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 14.5px;
-  font-weight: 400;
-  color: rgba(10, 15, 24, 0.55);
   text-decoration: none;
-  padding: 7px 0;
+  padding: 8px 0;
   text-align: left;
   transition: color 0.15s;
-  display: block;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.mega-col-link:hover {
+.mega-col-link-title {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: rgba(10, 15, 24, 0.7);
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+}
+
+.mega-col-link:hover .mega-col-link-title {
   color: #43B5BF;
+}
+
+.mega-col-link-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(10, 15, 24, 0.38);
+  line-height: 1.4;
+  white-space: normal;
+  max-width: 220px;
 }
 
 .mega-coming-soon {
