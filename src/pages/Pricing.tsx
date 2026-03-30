@@ -61,24 +61,6 @@ const ucPlans = [
       { text: "Integrations", included: true },
     ],
   },
-  {
-    name: "Virtual",
-    subtitle: "b-hive Seat",
-    price: "$12",
-    per: "/month/user",
-    popular: false,
-    features: [
-      { text: "MS Teams", included: true },
-      { text: "Mobile App", included: true },
-      { text: "Communicator", included: true },
-      { text: "Voicemail", included: true },
-      { text: "Voicemail-to-Email Notification", included: true },
-      { text: "Free Local DID", included: true },
-      { text: "Unlimited Business SMS", included: true },
-      { text: "Unlimited Domestic Calling", included: true },
-      { text: "Hardware", included: false },
-    ],
-  },
 ];
 
 const ccPlans = [
@@ -130,33 +112,32 @@ const ccPlans = [
 
 const ucMatrix = [
   { category: "Calling", features: [
-    { name: "Domestic Calling", values: ["Metered", "Unlimited", "Unlimited", "Unlimited"] },
-    { name: "International Calling", values: ["Add-on", "Add-on", "Add-on", "—"] },
-    { name: "Call Forwarding", values: [true, true, true, true] },
-    { name: "Find Me/Follow Me", values: [true, true, true, false] },
-    { name: "Call Recording", values: [false, false, true, false] },
-    { name: "Call Catch", values: [false, false, true, false] },
+    { name: "Domestic Calling", values: ["Metered", "Unlimited", "Unlimited"] },
+    { name: "International Calling", values: ["Add-on", "Add-on", "Add-on"] },
+    { name: "Call Forwarding", values: [true, true, true] },
+    { name: "Find Me/Follow Me", values: [true, true, true] },
+    { name: "Call Recording", values: [false, false, true] },
+    { name: "Call Catch", values: [false, false, true] },
   ]},
   { category: "Messaging", features: [
-    { name: "SMS", values: ["$.01/msg", "Included", "Included", "Unlimited"] },
-    { name: "Team Chat", values: [false, true, true, true] },
-    { name: "Virtual Fax", values: [false, false, true, false] },
+    { name: "SMS", values: ["$.01/msg", "Included", "Included"] },
+    { name: "Team Chat", values: [false, true, true] },
+    { name: "Virtual Fax", values: [false, false, true] },
   ]},
   { category: "Collaboration", features: [
-    { name: "Video Conferencing", values: [false, false, true, false] },
-    { name: "Screen Share", values: [false, false, true, false] },
-    { name: "Communicator App", values: [false, true, true, true] },
-    { name: "Mobile App", values: [true, false, false, true] },
-    { name: "MS Teams Integration", values: [false, false, false, true] },
+    { name: "Video Conferencing", values: [false, false, true] },
+    { name: "Screen Share", values: [false, false, true] },
+    { name: "Communicator App", values: [false, true, true] },
+    { name: "Mobile App", values: [true, false, false] },
   ]},
   { category: "Management", features: [
-    { name: "Web Portal", values: [true, true, true, true] },
-    { name: "Hot Desking", values: [true, true, true, false] },
-    { name: "Local DID", values: [false, true, true, true] },
-    { name: "Voicemail-to-Email", values: [true, true, true, true] },
-    { name: "Integrations", values: [false, false, true, false] },
-    { name: "Priority Support", values: [false, true, true, true] },
-    { name: "Hardware", values: [true, true, true, false] },
+    { name: "Web Portal", values: [true, true, true] },
+    { name: "Hot Desking", values: [true, true, true] },
+    { name: "Local DID", values: [false, true, true] },
+    { name: "Voicemail-to-Email", values: [true, true, true] },
+    { name: "Integrations", values: [false, false, true] },
+    { name: "Priority Support", values: [false, true, true] },
+    { name: "Hardware", values: [true, true, true] },
   ]},
 ];
 
