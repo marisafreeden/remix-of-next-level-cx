@@ -20,52 +20,35 @@ import CTABlock from "@/components/CTABlock";
 import ucHeroImg from "@/assets/uc-hero.png";
 
 const benefits = [
-  { icon: Phone, title: "Keep Your Phones", desc: "Modernize your existing phone hardware with basic cloud features of SIP trunking." },
-  { icon: DollarSign, title: "Save Big", desc: "Unlimited SIP trunks can save you up to 70% monthly compared to legacy phone providers." },
-  { icon: TrendingUp, title: "Scale Instantly", desc: "Automatically add capacity to handle large bursts in traffic or seasonal changes." },
+  { icon: Phone, title: "Keep Your Hardware", desc: "No rip-and-replace. SIP trunking layers cloud power onto the phones you already own — zero disruption, instant upgrade." },
+  { icon: DollarSign, title: "Save Up to 70%", desc: "Ditch expensive landlines. Unlimited SIP trunks slash your monthly phone bill while delivering better call quality." },
+  { icon: TrendingUp, title: "Scale on Demand", desc: "Spin up new lines in seconds. Handle seasonal spikes and sudden call surges without calling your provider." },
 ];
 
 const features = [
   {
-    title: "Your business phones. Now more connected.",
-    desc: "The features you expect and more, with the ability to scale instantly.",
-    points: [
-      "Business phone essentials like voicemail, caller ID, auto attendant, call recording and virtual fax",
-      "Virtual phone numbers with local ZIP codes",
-      "Call bursting to automatically support sudden increases in call volume",
-      "Mix and match with other cloud-based seat types",
-    ],
+    title: "Every feature. One connection.",
+    desc: "SIP trunking gives your existing phone system the full power of the cloud — voicemail, caller ID, auto attendant, call recording, virtual fax, and local numbers in any ZIP code. When call volume spikes, bursting kicks in automatically so you never miss a customer.",
   },
   {
-    title: "Painless portal management.",
-    desc: "Control your phone services across multiple locations and teams from a single dashboard.",
-    points: [
-      "Manage call menus, add & manage users, extensions, call recordings and virtual fax",
-      "Oversee multiple locations together in the same portal",
-      "Users can edit their individual phone preferences",
-      "Review inbound call analytics to gain insight into communications",
-    ],
+    title: "One portal. Total control.",
+    desc: "Manage every location, every user, and every call flow from a single intuitive dashboard. Add extensions, configure menus, review real-time analytics, and let team members personalize their own settings — all without waiting on IT.",
   },
   {
-    title: "Cut your phone bill and scale when you need to.",
-    desc: "SIP trunks eliminate your traditional phone provider and provide a flexible, scalable setup so you only pay for what you need — and only when you need it.",
-    points: [
-      "Call path pricing for businesses with limited phone traffic",
-      "Call bursting for instant capacity expansion during busy times",
-      "Flexible pricing that adapts to your needs",
-    ],
+    title: "Pay only for what you use.",
+    desc: "SIP trunks replace your legacy provider with pricing that actually makes sense. Choose call-path pricing for lighter usage or unlimited trunks for high-volume teams. Bursting lets you expand capacity instantly during peak periods — and scale back down when things quiet down.",
   },
 ];
 
 const featureGrid = [
-  { icon: Mic, title: "Call Recording", desc: "Add call recording for training and record-keeping." },
-  { icon: FileText, title: "Virtual Fax", desc: "Send and receive faxes through email." },
-  { icon: Settings, title: "Auto Attendant", desc: "Manage your company call menus from the admin panel." },
-  { icon: Phone, title: "Keep Your Phones", desc: "Use your existing devices and hardware." },
-  { icon: DollarSign, title: "Flexible Price", desc: "Mix and match cloud seats and unlimited SIP trunks across locations." },
-  { icon: Zap, title: "Bursting", desc: "Our virtual connections enable you to quickly scale up or down." },
-  { icon: Globe, title: "International DIDs", desc: "For the global business, international DIDs originating in the US." },
-  { icon: BarChart3, title: "Call Analytics", desc: "Track inbound calls breakdown, origin and demographics." },
+  { icon: Mic, title: "Call Recording", desc: "Capture every conversation for training, compliance, and quality assurance." },
+  { icon: FileText, title: "Virtual Fax", desc: "Send and receive faxes directly through email — no machine needed." },
+  { icon: Settings, title: "Auto Attendant", desc: "Route callers with professional menus you build in minutes." },
+  { icon: Phone, title: "Keep Your Phones", desc: "Plug your existing hardware into the cloud. No new equipment required." },
+  { icon: DollarSign, title: "Flexible Pricing", desc: "Mix cloud seats, unlimited trunks, and call paths across every location." },
+  { icon: Zap, title: "Call Bursting", desc: "Automatically expand capacity the moment traffic spikes hit." },
+  { icon: Globe, title: "International DIDs", desc: "Give your global teams local presence with US-originating international numbers." },
+  { icon: BarChart3, title: "Call Analytics", desc: "See exactly where calls come from, when they peak, and how they convert." },
 ];
 
 const SipTrunking = () => {
@@ -78,11 +61,11 @@ const SipTrunking = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              Scale your operations.<br />
-              <span className="going-next">Cut your phone bill.</span>
+              Same phones.<br />
+              <span className="going-next">Smarter bill.</span>
             </h1>
             <p className="uc-hero-subtitle">
-              Keep your existing hardware and ditch your landlines for more flexible and affordable cloud-based business phone service.
+              Replace expensive landlines with cloud-powered SIP trunks. Keep your hardware, cut costs by up to 70%, and scale capacity on demand.
             </p>
             <button className="btn-hero-a">
               Schedule a Demo <span style={{ fontSize: '18px' }}>→</span>
@@ -97,13 +80,13 @@ const SipTrunking = () => {
       {/* Benefits - 3 cards */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">UPGRADE & SAVE</p>
+          <p className="promos-eyebrow">WHY SIP TRUNKING</p>
           <h2 className="promos-title">
-            Upgrade your phones<br />
-            <span className="promos-title-italic">and save.</span>
+            Modernize your phones.<br />
+            <span className="promos-title-italic">Keep everything else.</span>
           </h2>
           <p className="uc-hero-subtitle" style={{ marginTop: '16px', marginBottom: 0 }}>
-            SIP trunks replace your phone lines with the internet service you already have.
+            SIP trunks swap your phone lines for the internet you already pay for — simpler, cheaper, and infinitely more scalable.
           </p>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
@@ -126,14 +109,7 @@ const SipTrunking = () => {
             <div key={f.title} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
               <div className="promo-row-text">
                 <h3 className="promo-row-title">{f.title}</h3>
-                <p className="promo-row-desc">{f.desc}</p>
-                <ul className="uc-feature-points">
-                  {f.points.map((p) => (
-                    <li key={p} className="uc-feature-point">
-                      <span className="uc-feature-check">✓</span> {p}
-                    </li>
-                  ))}
-                </ul>
+                <p className="promo-row-desc" style={{ maxWidth: '520px' }}>{f.desc}</p>
                 <button className="promo-row-cta">
                   Learn more <ChevronRight size={16} />
                 </button>
@@ -151,10 +127,10 @@ const SipTrunking = () => {
       {/* Feature Grid */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">FEATURES</p>
+          <p className="promos-eyebrow">BUILT FOR BUSINESS</p>
           <h2 className="promos-title">
-            Bring your business phones<br />
-            <span className="promos-title-italic">up to speed.</span>
+            Everything you need.<br />
+            <span className="promos-title-italic">Nothing you don't.</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
