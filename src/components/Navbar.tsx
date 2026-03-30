@@ -145,10 +145,15 @@ const Navbar = () => {
                   {col.items.map((item) => (
                     <a key={item.title} href={item.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
                       {item.title}
+                      {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
                     </a>
                   ))}
                 </div>
               ))}
+              <a href="#" className="mobile-mega-cta" onClick={() => setMobileOpen(false)}>
+                <Sparkles size={14} />
+                Calculate the ROI of using an AI Agent in your Business
+              </a>
             </div>
           )}
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
