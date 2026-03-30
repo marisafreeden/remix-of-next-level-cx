@@ -127,10 +127,10 @@ const SipTrunking = () => {
       {/* Feature Grid */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">FEATURES</p>
+          <p className="promos-eyebrow">BUILT FOR BUSINESS</p>
           <h2 className="promos-title">
-            Bring your business phones<br />
-            <span className="promos-title-italic">up to speed.</span>
+            Everything you need.<br />
+            <span className="promos-title-italic">Nothing you don't.</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
