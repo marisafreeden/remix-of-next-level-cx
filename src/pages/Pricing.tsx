@@ -2,6 +2,7 @@ import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
 import "@/styles/pricing.css";
+import "@/styles/pricing-banner.css";
 
 import "@/styles/responsive.css";
 import "@fontsource/instrument-sans/500.css";
@@ -13,6 +14,7 @@ import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
+import PricingCTABanner from "@/components/PricingCTABanner";
 import Footer from "@/components/Footer";
 
 const ucPlans = [
@@ -228,6 +230,7 @@ const Pricing = () => {
 
       <img src="/images/pricing-gradient-bg.png" alt="" className="pricing-cards-bottom-gradient" />
 
+      <PricingCTABanner />
       <FAQSection />
       <CTABlock />
 
