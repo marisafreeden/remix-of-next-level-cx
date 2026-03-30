@@ -5,43 +5,36 @@ import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const megaMenuData = [
+  { title: "Contact Center", href: "#" },
+  { title: "Unified Communications", href: "#" },
+  { title: "AI", href: "#" },
+  { title: "Integration", href: "#" },
   {
-    heading: "Product",
-    items: [
-      { title: "NEXT Platform", desc: "Unified communications and CX solution.", isNew: true },
-      { title: "XBert", desc: "AI employee for customer conversations.", isNew: true },
-      { title: "Contact Center", desc: "Omnichannel customer experience platform." },
-      { title: "Business Phone", desc: "Phone service for any size business." },
+    heading: "Contact Center",
+    children: [
+      { title: "Omnichannel", href: "#" },
+      { title: "Dialer", href: "#" },
+      { title: "Smart Scripting", href: "#" },
+      { title: "Self Service", href: "#" },
     ],
   },
   {
-    heading: "AI Capabilities",
-    items: [
-      { title: "AI Employee", desc: "Works tasks start to finish." },
-      { title: "Agent Assist", desc: "Real-time agent guidance." },
-      { title: "AI Receptionist", desc: "Handle incoming calls 24/7." },
+    heading: "Unified Communications",
+    children: [
+      { title: "b-hive", href: "#" },
+      { title: "Cloud PBX", href: "#" },
+      { title: "SIP Trunking", href: "#" },
     ],
   },
   {
-    heading: "Channels",
-    items: [
-      { title: "Voice & Texting", desc: "Phone calls and texting." },
-      { title: "Live Chat", desc: "Interact with website visitors." },
-      { title: "Messenger", desc: "Help customers on every channel." },
-      { title: "Email", desc: "Unified customer inbox." },
-      { title: "Social & Reviews", desc: "Manage all social channels." },
-      { title: "Video Meetings", desc: "Instant virtual meetings." },
+    heading: "AI",
+    children: [
+      { title: "Voice Chatbots", href: "#" },
+      { title: "Post Call AI", href: "#" },
+      { title: "Analytics", href: "#" },
     ],
   },
-  {
-    heading: "Advanced",
-    items: [
-      { title: "Integrations", desc: "Apps and integrations." },
-      { title: "Analytics & Reporting", desc: "Insights and dashboards." },
-      { title: "Workforce Engagement", desc: "Scale your contact center." },
-      { title: "Journey Orchestration", desc: "End-to-end customer engagement." },
-    ],
-  },
+  { title: "Integrations", href: "#", isTopLevel: true },
 ];
 
 const Navbar = () => {
@@ -78,20 +71,22 @@ const Navbar = () => {
             </button>
             {megaOpen && (
               <div className="mega-menu">
-                {megaMenuData.map((col) => (
-                  <div key={col.heading} className="mega-col">
-                    <p className="mega-col-heading">{col.heading}</p>
-                    {col.items.map((item) => (
-                      <a key={item.title} href="#" className="mega-item" onClick={() => setMegaOpen(false)}>
-                        <span className="mega-item-title">
-                          {item.title}
-                          {item.isNew && <span className="mega-badge">NEW</span>}
-                        </span>
-                        <span className="mega-item-desc">{item.desc}</span>
-                      </a>
-                    ))}
-                  </div>
-                ))}
+                {megaMenuData.map((entry, i) =>
+                  'heading' in entry && entry.heading ? (
+                    <div key={entry.heading} className="mega-group">
+                      <p className="mega-group-heading">{entry.heading}</p>
+                      {entry.children?.map((child) => (
+                        <a key={child.title} href={child.href} className="mega-child" onClick={() => setMegaOpen(false)}>
+                          {child.title}
+                        </a>
+                      ))}
+                    </div>
+                  ) : (
+                    <a key={entry.title} href={(entry as any).href} className={`mega-top-link ${(entry as any).isTopLevel ? 'mega-top-link-standalone' : ''}`} onClick={() => setMegaOpen(false)}>
+                      {entry.title}
+                    </a>
+                  )
+                )}
               </div>
             )}
           </div>
@@ -126,17 +121,22 @@ const Navbar = () => {
           </button>
           {mobileProductsOpen && (
             <div className="mobile-mega-menu">
-              {megaMenuData.map((col) => (
-                <div key={col.heading} className="mobile-mega-group">
-                  <p className="mobile-mega-heading">{col.heading}</p>
-                  {col.items.map((item) => (
-                    <a key={item.title} href="#" className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
-                      {item.title}
-                      {item.isNew && <span className="mega-badge">NEW</span>}
-                    </a>
-                  ))}
-                </div>
-              ))}
+              {megaMenuData.map((entry, i) =>
+                'heading' in entry && entry.heading ? (
+                  <div key={entry.heading} className="mobile-mega-group">
+                    <p className="mobile-mega-heading">{entry.heading}</p>
+                    {entry.children?.map((child) => (
+                      <a key={child.title} href={child.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
+                        {child.title}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <a key={entry.title} href={(entry as any).href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
+                    {entry.title}
+                  </a>
+                )
+              )}
             </div>
           )}
           <a href="#" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</a>
