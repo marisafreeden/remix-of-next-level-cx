@@ -30,7 +30,7 @@ const Footer = () => {
     {
       title: t("footer.resources"),
       links: [
-        { label: t("footer.resources_hub"), href: "#" },
+        { label: t("footer.resources_hub"), href: "/resources" },
         { label: t("footer.resources_blog"), href: "#" },
         { label: t("footer.resources_webinars"), href: "#" },
         { label: t("footer.resources_ebooks"), href: "#" },
