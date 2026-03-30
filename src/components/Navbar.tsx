@@ -119,7 +119,7 @@ const Navbar = () => {
             )}
           </div>
           <Link to="/pricing" className="hero-nav-link">{t("nav.pricing")}</Link>
-          <a href="#" className="hero-nav-link">{t("nav.resources")}</a>
+          <Link to="/resources" className="hero-nav-link">{t("nav.resources")}</Link>
           <a href="#" className="hero-nav-link">{t("nav.partners")}</a>
         </div>
 
