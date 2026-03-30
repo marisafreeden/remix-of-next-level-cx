@@ -1,6 +1,7 @@
 import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
+import "@/styles/uc.css";
 import "@/styles/responsive.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
