@@ -95,6 +95,13 @@ const Navbar = () => {
                     ))}
                   </div>
                 ))}
+                <div className="mega-cta-row">
+                  <a href="#" className="mega-cta-pill" onClick={() => setMegaOpen(false)}>
+                    <Sparkles size={16} />
+                    Calculate the ROI of using an AI Agent in your Business
+                    <ChevronDown size={14} className="mega-cta-arrow" />
+                  </a>
+                </div>
               </div>
               </>
             )}

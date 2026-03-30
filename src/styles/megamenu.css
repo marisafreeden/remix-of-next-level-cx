@@ -115,6 +115,42 @@
   align-items: center;
 }
 
+/* Mega Menu CTA */
+.mega-cta-row {
+  width: 100%;
+  padding: 20px 28px 0;
+  border-top: 1px solid rgba(10, 15, 24, 0.06);
+  margin-top: 12px;
+  grid-column: 1 / -1;
+}
+
+.mega-cta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #43B5BF;
+  background: rgba(67, 181, 191, 0.08);
+  border: 1px solid rgba(67, 181, 191, 0.2);
+  border-radius: 999px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.mega-cta-pill:hover {
+  background: rgba(67, 181, 191, 0.15);
+  border-color: rgba(67, 181, 191, 0.35);
+}
+
+.mega-cta-arrow {
+  transform: rotate(-90deg);
+  opacity: 0.6;
+}
+
 .mega-col-link:hover .mega-col-link-title {
   color: #43B5BF;
 }
