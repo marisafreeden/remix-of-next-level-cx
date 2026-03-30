@@ -6,16 +6,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const megaMenuColumns = [
   {
-    heading: "Products",
-    items: [
-      { title: "Contact Center", href: "#" },
-      { title: "Unified Communications", href: "#" },
-      { title: "AI", href: "#" },
-      { title: "Integration", href: "#" },
-    ],
-  },
-  {
     heading: "Contact Center",
+    href: "#",
     items: [
       { title: "Omnichannel", href: "#" },
       { title: "Dialer", href: "#" },
@@ -25,6 +17,7 @@ const megaMenuColumns = [
   },
   {
     heading: "Unified Communications",
+    href: "#",
     items: [
       { title: "b-hive", href: "#" },
       { title: "Cloud PBX", href: "#" },
@@ -33,6 +26,7 @@ const megaMenuColumns = [
   },
   {
     heading: "AI",
+    href: "#",
     items: [
       { title: "Voice Chatbots", href: "#" },
       { title: "Post Call AI", href: "#" },
