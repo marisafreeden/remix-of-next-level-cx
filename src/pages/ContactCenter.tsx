@@ -8,6 +8,7 @@ import "@/styles/contact-center.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
+import gocontactDashboard from "@/assets/gocontact-dashboard.png";
 
 import {
   Headphones, MessageSquare, Phone, Bot, BarChart3, Globe,
@@ -25,6 +26,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 const statKeys = ["s1", "s2", "s3"];
 const howItWorksKeys = ["hw1", "hw2", "hw3", "hw4"];
 const howItWorksIcons = [Headphones, Bot, Phone, Settings];
+const platformPillKeys = ["hw1", "hw2", "hw3", "hw4"];
 const smarterKeys = ["sm1", "sm2", "sm3"];
 const smarterIcons = [BarChart3, Globe, FileText];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6"];
@@ -74,6 +76,14 @@ const ContactCenter = () => {
               <EditableText value={c("platform_title2", "cc_page.platform_title2")} copyKey="platform_title2" onSave={save} />
             </span>
           </h2>
+        </div>
+        <div className="cc-platform-pills">
+          {platformPillKeys.map((key) => (
+            <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
+          ))}
+        </div>
+        <div className="cc-platform-image-wrap">
+          <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
         </div>
         <div className="cc-platform-copy">
           <p>{t("cc_page.platform_desc1")}</p>
