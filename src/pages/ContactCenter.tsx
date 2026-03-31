@@ -108,27 +108,8 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="uc-features-section">
-        <div className="uc-features-header">
-          <p className="promos-eyebrow">{t("cc_page.how_eyebrow")}</p>
-          <h2 className="promos-title">
-            <EditableText value={c("how_title", "cc_page.how_title")} copyKey="how_title" onSave={save} />
-          </h2>
-        </div>
-        <div className="uc-benefits-grid">
-          {howItWorksKeys.map((key, i) => {
-            const Icon = howItWorksIcons[i];
-            return (
-              <div key={key} className="uc-benefit-card">
-                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
-                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
-                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+
+
 
       {/* What Makes It Smarter */}
       <section className="uc-benefits-section">
