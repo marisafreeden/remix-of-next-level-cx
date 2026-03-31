@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { ChevronRight } from "lucide-react";
 import promoChartsImg from "@/assets/promo-charts.png";
+import deploymentGanttImg from "@/assets/deployment-gantt.png";
 
 const promoData = [
-  { key: "promo1" },
-  { key: "promo2" },
-  { key: "promo3" },
+  { key: "promo1", img: deploymentGanttImg },
+  { key: "promo2", img: promoChartsImg },
+  { key: "promo3", img: promoChartsImg },
 ];
 
 const PromosSection = () => {
