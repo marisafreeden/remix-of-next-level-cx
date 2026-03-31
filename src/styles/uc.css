@@ -1,6 +1,6 @@
 /* ===== UC Hero Section ===== */
 .uc-hero-section {
-  padding: 140px 48px 96px;
+  padding: 180px 48px 96px;
   background: #ffffff;
 }
 
@@ -181,7 +181,7 @@
 /* ===== Tablet: <= 1024px ===== */
 @media (max-width: 1024px) {
   .uc-hero-section {
-    padding: 140px 24px 64px;
+    padding: 160px 24px 64px;
   }
 
   .uc-hero-inner {
@@ -205,7 +205,7 @@
 /* ===== Mobile: <= 768px ===== */
 @media (max-width: 768px) {
   .uc-hero-section {
-    padding: 120px 20px 48px;
+    padding: 148px 20px 48px;
   }
 
   .uc-hero-inner {

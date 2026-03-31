@@ -5,7 +5,7 @@
 }
 
 .pricing-hero {
-  padding: 180px 48px 24px;
+  padding: 200px 48px 24px;
   text-align: center;
 }
 
@@ -228,14 +228,14 @@
 
 /* ===== Pricing Responsive ===== */
 @media (max-width: 1024px) {
-  .pricing-hero { padding: 140px 24px 40px; }
+  .pricing-hero { padding: 170px 24px 40px; }
   .pricing-title { font-size: 52px; letter-spacing: -2px; }
   .pricing-cards-section { padding: 24px 24px 72px; }
   .pricing-cards-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
-  .pricing-hero { padding: 120px 20px 32px; }
+  .pricing-hero { padding: 148px 20px 32px; }
   .pricing-title { font-size: 36px; letter-spacing: -1.5px; }
   .pricing-tabs { flex-direction: column; border-radius: 14px; }
   .pricing-tab { padding: 12px 24px; font-size: 14px; }

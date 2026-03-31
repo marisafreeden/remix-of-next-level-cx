@@ -1,6 +1,6 @@
 /* ===== Resources Hero ===== */
 .res-hero {
-  padding: 140px 48px 64px;
+  padding: 180px 48px 64px;
   background: #F9FAFB;
   text-align: center;
   border-radius: 0 0 28px 28px;
@@ -284,7 +284,7 @@
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .res-hero {
-    padding: 140px 24px 48px;
+    padding: 160px 24px 48px;
   }
 
   .res-featured-section {
@@ -311,7 +311,7 @@
 
 @media (max-width: 768px) {
   .res-hero {
-    padding: 120px 20px 40px;
+    padding: 148px 20px 40px;
     border-radius: 0 0 16px 16px;
   }
 
