@@ -48,9 +48,8 @@ const ContactCenter = () => {
     <div className="cc-page-wrap" style={{ background: "#ffffff", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* Hero */}
-      <section className="uc-hero-section" style={{ position: "relative", overflow: "hidden" }}>
-        <img src="/images/ellipse-blur.png" alt="" className="cc-hero-blur" />
+      {/* Hero + Platform Combined */}
+      <section className="cc-platform-section cc-hero-platform-combined">
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
@@ -60,7 +59,7 @@ const ContactCenter = () => {
               </span>
             </h1>
             <p className="uc-hero-subtitle">{t("cc_page.hero_subtitle_combined")}</p>
-            <button className="btn-hero-a">
+            <button className="btn-hero-a btn-hero-a-light">
               {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
             </button>
           </div>
@@ -70,39 +69,38 @@ const ContactCenter = () => {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Platform Section */}
-      <section className="uc-benefits-section cc-platform-section">
-        <div className="uc-benefits-header">
-          <p className="promos-eyebrow">{t("cc_page.platform_eyebrow")}</p>
-          <h2 className="promos-title">
-            <EditableText value={c("platform_title1", "cc_page.platform_title1")} copyKey="platform_title1" onSave={save} /><br />
-            <span className="promos-title-italic">
-              <EditableText value={c("platform_title2", "cc_page.platform_title2")} copyKey="platform_title2" onSave={save} />
-            </span>
-          </h2>
-        </div>
-        <div className="cc-platform-pills">
-          {platformPillKeys.map((key) => (
-            <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
-          ))}
-        </div>
-        <div className="cc-platform-image-wrap">
-          <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
-        </div>
-        <div className="cc-platform-copy">
-          <p>{t("cc_page.platform_desc1")}</p>
-          <p>{t("cc_page.platform_desc2")}</p>
-        </div>
-        <div className="cc-stats-grid-horizontal">
-          {statKeys.map((key) => (
-            <div key={key} className="cc-stat-card">
-              <span className="cc-stat-number">{t(`cc_page.${key}_number`)}</span>
-              <span className="cc-stat-label">{t(`cc_page.${key}_label`)}</span>
-              <span className="cc-stat-source">{t(`cc_page.${key}_source`)}</span>
-            </div>
-          ))}
+        <div className="cc-platform-inner">
+          <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+            <p className="promos-eyebrow">{t("cc_page.platform_eyebrow")}</p>
+            <h2 className="promos-title">
+              <EditableText value={c("platform_title1", "cc_page.platform_title1")} copyKey="platform_title1" onSave={save} /><br />
+              <span className="promos-title-italic">
+                <EditableText value={c("platform_title2", "cc_page.platform_title2")} copyKey="platform_title2" onSave={save} />
+              </span>
+            </h2>
+          </div>
+          <div className="cc-platform-pills">
+            {platformPillKeys.map((key) => (
+              <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
+            ))}
+          </div>
+          <div className="cc-platform-image-wrap">
+            <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
+          </div>
+          <div className="cc-platform-copy">
+            <p>{t("cc_page.platform_desc1")}</p>
+            <p>{t("cc_page.platform_desc2")}</p>
+          </div>
+          <div className="cc-stats-grid-horizontal">
+            {statKeys.map((key) => (
+              <div key={key} className="cc-stat-card">
+                <span className="cc-stat-number">{t(`cc_page.${key}_number`)}</span>
+                <span className="cc-stat-label">{t(`cc_page.${key}_label`)}</span>
+                <span className="cc-stat-source">{t(`cc_page.${key}_source`)}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
