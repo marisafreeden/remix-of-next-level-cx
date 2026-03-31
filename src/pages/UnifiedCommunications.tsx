@@ -75,8 +75,8 @@ const UnifiedCommunications = () => {
         <div className="uc-features-header">
           <p className="promos-eyebrow">{t("uc_page.features_eyebrow")}</p>
           <h2 className="promos-title">
-            {c("features_title1", "uc_page.features_title1")}<br />
-            <span className="promos-title-italic">{c("features_title2", "uc_page.features_title2")}</span>
+            <EditableText value={c("features_title1", "uc_page.features_title1")} copyKey="features_title1" onSave={save} /><br />
+            <span className="promos-title-italic"><EditableText value={c("features_title2", "uc_page.features_title2")} copyKey="features_title2" onSave={save} /></span>
           </h2>
         </div>
         <div className="promos-stack">

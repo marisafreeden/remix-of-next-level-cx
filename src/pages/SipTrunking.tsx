@@ -104,8 +104,8 @@ const SipTrunking = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sip_page.grid_eyebrow")}</p>
           <h2 className="promos-title">
-            {c("grid_title1", "sip_page.grid_title1")}<br />
-            <span className="promos-title-italic">{c("grid_title2", "sip_page.grid_title2")}</span>
+            <EditableText value={c("grid_title1", "sip_page.grid_title1")} copyKey="grid_title1" onSave={save} /><br />
+            <span className="promos-title-italic"><EditableText value={c("grid_title2", "sip_page.grid_title2")} copyKey="grid_title2" onSave={save} /></span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
