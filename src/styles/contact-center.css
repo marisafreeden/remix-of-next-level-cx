@@ -50,31 +50,31 @@
 
 /* ===== Platform Pills ===== */
 .cc-platform-pills {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 0;
+  border-radius: 999px;
+  border: 1.5px solid rgba(10, 15, 24, 0.1);
+  overflow: hidden;
   margin: -16px auto 40px;
-  max-width: 900px;
-  padding: 0 48px;
+  justify-content: center;
 }
 
 .cc-platform-pill {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  color: rgba(10, 15, 24, 0.7);
-  background: #F3F4F6;
-  border: 1px solid rgba(10, 15, 24, 0.08);
-  border-radius: 100px;
-  padding: 10px 24px;
-  cursor: default;
-  transition: background 0.2s, color 0.2s;
+  padding: 12px 28px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: rgba(10, 15, 24, 0.55);
+  transition: all 0.25s;
+  white-space: nowrap;
 }
 
 .cc-platform-pill:hover {
-  background: linear-gradient(135deg, rgba(67, 181, 191, 0.12), rgba(112, 66, 210, 0.1));
-  color: rgba(10, 15, 24, 0.85);
+  color: #0a0f18;
+  background: rgba(10, 15, 24, 0.04);
 }
 
 /* ===== Platform Image ===== */
@@ -140,14 +140,14 @@
   }
 
   .cc-platform-pills {
-    padding: 0 20px;
-    gap: 8px;
+    flex-direction: column;
+    border-radius: 14px;
     margin-bottom: 24px;
   }
 
   .cc-platform-pill {
-    font-size: 13px;
-    padding: 8px 16px;
+    padding: 12px 24px;
+    font-size: 14px;
   }
 
   .cc-platform-image-wrap {
