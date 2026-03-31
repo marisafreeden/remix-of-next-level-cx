@@ -54,7 +54,7 @@ const UnifiedCommunications = () => {
               <span className="going-next">one app.</span>
             </h1>
             <p className="uc-hero-subtitle">
-              Call and collaborate from anywhere with a single cloud PBX communication solution that unifies business phones, video conferencing, texting and collaboration under a single phone number.
+              One cloud platform for calls, video, messaging, and collaboration — all under a single number. Your team stays connected everywhere. Your customers never notice the difference.
             </p>
             <button className="btn-hero-a">
               Request a Demo <span style={{fontSize: '18px'}}>→</span>
