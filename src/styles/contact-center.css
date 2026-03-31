@@ -60,10 +60,21 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .cc-stats-section {
+    padding: 48px 24px;
+  }
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
-  .cc-stats-grid {
-    max-width: 100%;
+  .cc-stats-section {
+    padding: 40px 20px;
+  }
+
+  .cc-stats-grid-horizontal {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .cc-stat-card {
