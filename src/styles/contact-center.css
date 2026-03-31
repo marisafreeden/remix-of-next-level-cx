@@ -1,25 +1,31 @@
-/* ===== Contact Center Stats Grid ===== */
-.cc-stats-grid {
+/* ===== Contact Center Stats Section ===== */
+.cc-stats-section {
+  background: #F9FAFB;
+  padding: 64px 48px;
+}
+
+.cc-stats-grid-horizontal {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  width: 100%;
-  max-width: 420px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
 .cc-stat-card {
-  background: #F9FAFB;
+  background: #ffffff;
   border: 1px solid rgba(10, 15, 24, 0.06);
   border-radius: 16px;
-  padding: 28px 24px;
+  padding: 32px 28px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  text-align: center;
 }
 
 .cc-stat-number {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 500;
   color: #43B5BF;
   letter-spacing: -1px;
@@ -54,10 +60,21 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1024px) {
+  .cc-stats-section {
+    padding: 48px 24px;
+  }
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
-  .cc-stats-grid {
-    max-width: 100%;
+  .cc-stats-section {
+    padding: 40px 20px;
+  }
+
+  .cc-stats-grid-horizontal {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .cc-stat-card {

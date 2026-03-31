@@ -45,32 +45,35 @@ const ContactCenter = () => {
       <section className="uc-hero-section">
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
-            <p className="uc-hero-eyebrow">{t("cc_page.hero_eyebrow")}</p>
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
               <EditableText value={c("hero_title1", "cc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
               <span className="going-next">
                 <EditableText value={c("hero_title2", "cc_page.hero_title2")} copyKey="hero_title2" onSave={save} />
               </span>
             </h1>
-            <p className="uc-hero-subtitle">{t("cc_page.hero_subtitle")}</p>
-            <p className="uc-hero-subtitle" style={{ marginBottom: "32px", marginTop: "-16px" }}>
-              {t("cc_page.hero_subtitle2")}
-            </p>
+            <p className="uc-hero-subtitle">{t("cc_page.hero_subtitle_combined")}</p>
             <button className="btn-hero-a">
               {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
             </button>
           </div>
           <div className="uc-hero-image">
-            <div className="cc-stats-grid">
-              {statKeys.map((key) => (
-                <div key={key} className="cc-stat-card">
-                  <span className="cc-stat-number">{t(`cc_page.${key}_number`)}</span>
-                  <span className="cc-stat-label">{t(`cc_page.${key}_label`)}</span>
-                  <span className="cc-stat-source">{t(`cc_page.${key}_source`)}</span>
-                </div>
-              ))}
+            <div className="uc-big-feature-image">
+              <img src="https://placehold.co/600x400/F3F4F6/9CA3AF?text=GoContact+Platform" alt="GoContact Platform" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="cc-stats-section">
+        <div className="cc-stats-grid-horizontal">
+          {statKeys.map((key) => (
+            <div key={key} className="cc-stat-card">
+              <span className="cc-stat-number">{t(`cc_page.${key}_number`)}</span>
+              <span className="cc-stat-label">{t(`cc_page.${key}_label`)}</span>
+              <span className="cc-stat-source">{t(`cc_page.${key}_source`)}</span>
+            </div>
+          ))}
         </div>
       </section>
 
