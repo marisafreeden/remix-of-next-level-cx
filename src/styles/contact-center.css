@@ -125,7 +125,7 @@
   border: none;
   cursor: pointer;
   background: transparent;
-  color: rgba(10, 15, 24, 0.55);
+  color: rgba(255, 255, 255, 0.55);
   transition: all 0.25s;
   white-space: nowrap;
 }
