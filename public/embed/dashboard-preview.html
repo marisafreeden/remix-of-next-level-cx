@@ -1,0 +1,307 @@
+<!--
+  Broadvoice AI Analyst – Dashboard Preview (Embeddable)
+  ======================================================
+  Copy each section (CSS, HTML, JS) into your CMS custom-code blocks.
+  
+  ASSETS: Replace the two image URLs below with your own hosted versions:
+    1. b-icon.png   → AI Analyst avatar icon
+    2. supervisor-avatar.jpg → User avatar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard Preview – Embed</title>
+
+<!-- ═══════════════════════════════════════════
+     FONTS (paste into <head> or CMS head code)
+     ═══════════════════════════════════════════ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<!-- ═══════════════════════════════════════════
+     CSS (paste into a <style> block or CMS style section)
+     ═══════════════════════════════════════════ -->
+<style>
+/* ── Reset ── */
+.dp-embed, .dp-embed * { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ── Container ── */
+.dp-embed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Window ── */
+.dp-window {
+  width: 72%;
+  max-width: 1440px;
+  border-radius: 16px;
+  border: 2.5px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  overflow: hidden;
+  box-shadow:
+    0 -20px 40px 10px rgba(255,255,255,0.45),
+    0 8px 40px rgba(67,181,191,0.15),
+    0 8px 40px rgba(112,66,210,0.12),
+    0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* ── Top bar ── */
+.dp-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 2px solid rgba(255,255,255,0.4);
+}
+.dp-topbar-left { display: flex; align-items: center; gap: 10px; }
+.dp-ai-icon { width: 32px; height: 32px; border-radius: 10px; object-fit: cover; }
+.dp-ai-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 13px; font-weight: 500; color: #0a0f18;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.dp-ai-sub { font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(10,15,24,0.5); }
+.dp-search-bar {
+  display: flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px; padding: 6px 14px;
+  font-family: 'Inter', sans-serif; font-size: 11px; color: rgba(10,15,24,0.4);
+}
+.dp-search-icon { font-size: 13px; opacity: 0.5; }
+
+/* ── Chat body ── */
+.dp-chat-body {
+  display: flex; flex-direction: column;
+  padding: 16px 82px;
+  overflow-y: auto; height: 460px;
+  scrollbar-width: none;
+}
+.dp-chat-body::-webkit-scrollbar { display: none; }
+
+.dp-messages { display: flex; flex-direction: column; gap: 6px; }
+
+/* ── Messages ── */
+.dp-msg { display: flex; gap: 10px; font-family: 'Inter', sans-serif; }
+.dp-msg-user { flex-direction: row-reverse; }
+
+.dp-msg-animate {
+  animation: dpFadeIn 0.5s ease-out both;
+}
+@keyframes dpFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Avatars */
+.dp-msg-ai-avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: linear-gradient(135deg, #43B5BF, #1D5B94);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 2px;
+}
+.dp-msg-user-avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  overflow: hidden; flex-shrink: 0; margin-top: 2px;
+  border: 1.5px solid rgba(10,15,24,0.15);
+}
+.dp-msg-user-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Bubbles */
+.dp-bubble {
+  border-radius: 18px; padding: 14px 20px; max-width: 75%;
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+}
+.dp-bubble-user {
+  background: rgba(255,255,255,0.2);
+  border: 2px solid rgba(255,255,255,0.35);
+  color: #0a0f18; font-size: 13px; line-height: 1.5;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+.dp-bubble-ai {
+  background: rgba(255,255,255,0.18);
+  border: 2px solid rgba(255,255,255,0.35);
+  max-width: 520px; text-align: left;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+.dp-line { font-size: 12.5px; line-height: 1.6; color: #0a0f18; }
+.dp-line strong { font-weight: 600; color: #0a0f18; }
+.dp-spacer { height: 6px; }
+
+/* ── Typing indicator ── */
+.dp-typing {
+  display: flex; gap: 4px; padding: 12px 16px 12px 44px;
+}
+.dp-typing-user {
+  flex-direction: row-reverse;
+  padding: 12px 16px; align-self: flex-end;
+}
+.dp-typing span {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: rgba(67,181,191,0.5);
+  animation: dpDot 1.4s ease-in-out infinite;
+}
+.dp-typing-user span { background: rgba(67,181,191,0.7); }
+.dp-typing span:nth-child(2) { animation-delay: 0.2s; }
+.dp-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes dpDot {
+  0%, 60%, 100% { opacity: 0.3; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-4px); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .dp-window { width: 95%; }
+  .dp-chat-body { padding: 12px 16px; height: 360px; }
+  .dp-search-bar { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     HTML (paste into CMS body / embed block)
+     ═══════════════════════════════════════════ -->
+<div class="dp-embed">
+  <div class="dp-window">
+    <!-- Top Bar -->
+    <div class="dp-topbar">
+      <div class="dp-topbar-left">
+        <!-- REPLACE src with your hosted b-icon.png URL -->
+        <img src="../src/assets/b-icon.png" alt="" class="dp-ai-icon" />
+        <div>
+          <div class="dp-ai-title">AI Analyst</div>
+          <div class="dp-ai-sub">AI-Powered Analytics</div>
+        </div>
+      </div>
+      <div>
+        <div class="dp-search-bar">
+          <span class="dp-search-icon">⌕</span>
+          <span>Search dashboards, reports...</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Area -->
+    <div class="dp-chat-body" id="dpChatBody">
+      <div class="dp-messages" id="dpMessages"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT (paste before </body> or in CMS footer code)
+     ═══════════════════════════════════════════ -->
+<script>
+(function () {
+  // ── CONFIG: Replace image URLs with your hosted versions ──
+  var AVATAR_URL = "../src/assets/supervisor-avatar.jpg";
+
+  var conversation = [
+    { from: "user", text: "How has today been going so far?", delay: 0 },
+    { from: "ai",   text: "Here's a summary of today's call activity so far:\n\n• **Total Calls:** 1,847\n• **Answered:** 1,643\n• **Abandoned:** 128\n• **Answer Rate:** 89%\n• **Avg Handle Time:** 5 min 26 sec\n• **CSAT (live):** 4.3/5\n\nThe Billing queue saw a brief spike around 11am — handle times jumped to 7 minutes before settling back down.", delay: 1400 },
+    { from: "user", text: "Where is most of today's call volume coming from?", delay: 4800 },
+    { from: "ai",   text: "Top queues by volume today:\n\n1. **Billing & Payments** — 612 calls (33%)\n2. **Technical Support** — 489 calls (26%)\n3. **New Accounts** — 298 calls (16%)\n4. **Retention** — 241 calls (13%)\n5. **General Inquiry** — 207 calls (12%)\n\nBilling is running about 18% above its daily average.", delay: 6400 },
+    { from: "user", text: "What's driving low CSAT in the billing queue?", delay: 9000 },
+    { from: "ai",   text: "Three main drivers of low CSAT in Billing:\n\n1. **Long wait times** — avg 4:12 vs 2:30 target\n2. **First call resolution** — only 61% (target: 80%)\n3. **Agent knowledge gaps** — 23% of calls escalated to Tier 2\n\nRecommendation: Route overflow to trained backup agents during peak hours.", delay: 10800 }
+  ];
+
+  var LOOP_PAUSE  = 3000;
+  var TOTAL_DURATION = 13500;
+  var INITIAL_DELAY = 600;
+
+  var container = document.getElementById("dpMessages");
+  var chatBody  = document.getElementById("dpChatBody");
+
+  function renderBold(text) {
+    return text.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  }
+
+  function createBubble(msg) {
+    var row = document.createElement("div");
+    row.className = "dp-msg dp-msg-" + msg.from + " dp-msg-animate";
+
+    // Avatar
+    var avatar = document.createElement("div");
+    if (msg.from === "ai") {
+      avatar.className = "dp-msg-ai-avatar";
+      avatar.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.2L22 12l-7.6 2.8L12 22l-2.4-7.2L2 12l7.6-2.8z"/></svg>';
+    } else {
+      avatar.className = "dp-msg-user-avatar";
+      avatar.innerHTML = '<img src="' + AVATAR_URL + '" alt="User" />';
+    }
+
+    // Bubble
+    var bubble = document.createElement("div");
+    bubble.className = "dp-bubble dp-bubble-" + msg.from;
+    var lines = msg.text.split("\n");
+    for (var i = 0; i < lines.length; i++) {
+      var div = document.createElement("div");
+      div.className = lines[i] === "" ? "dp-spacer" : "dp-line";
+      div.innerHTML = renderBold(lines[i]);
+      bubble.appendChild(div);
+    }
+
+    row.appendChild(avatar);
+    row.appendChild(bubble);
+    return row;
+  }
+
+  function showTyping(from) {
+    var el = document.createElement("div");
+    el.className = "dp-typing" + (from === "user" ? " dp-typing-user" : "");
+    el.id = "dpTyping";
+    el.innerHTML = "<span></span><span></span><span></span>";
+    container.appendChild(el);
+    scrollDown();
+  }
+
+  function removeTyping() {
+    var el = document.getElementById("dpTyping");
+    if (el) el.remove();
+  }
+
+  function scrollDown() {
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
+  }
+
+  function runCycle() {
+    container.innerHTML = "";
+    var timers = [];
+
+    conversation.forEach(function (msg, i) {
+      // Show typing indicator slightly before
+      if (i > 0) {
+        timers.push(setTimeout(function () {
+          showTyping(msg.from);
+        }, msg.delay + INITIAL_DELAY - 400));
+      }
+
+      timers.push(setTimeout(function () {
+        removeTyping();
+        container.appendChild(createBubble(msg));
+        scrollDown();
+      }, msg.delay + INITIAL_DELAY));
+    });
+
+    // Show typing for "next" message near end
+    timers.push(setTimeout(function () {
+      // Loop
+      runCycle();
+    }, TOTAL_DURATION + LOOP_PAUSE));
+  }
+
+  runCycle();
+})();
+</script>
+
+</body>
+</html>
