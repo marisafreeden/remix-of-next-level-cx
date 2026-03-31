@@ -11,6 +11,7 @@ import "@fontsource/inter/600.css";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
