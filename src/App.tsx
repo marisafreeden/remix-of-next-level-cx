@@ -31,6 +31,7 @@ const App = () => (
           <Route path="/business-sms" element={<BusinessSMS />} />
           <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/contact-center" element={<ContactCenter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
