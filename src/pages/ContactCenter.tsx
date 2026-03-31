@@ -77,6 +77,14 @@ const ContactCenter = () => {
             </span>
           </h2>
         </div>
+        <div className="cc-platform-pills">
+          {platformPillKeys.map((key) => (
+            <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
+          ))}
+        </div>
+        <div className="cc-platform-image-wrap">
+          <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
+        </div>
         <div className="cc-platform-copy">
           <p>{t("cc_page.platform_desc1")}</p>
           <p>{t("cc_page.platform_desc2")}</p>
