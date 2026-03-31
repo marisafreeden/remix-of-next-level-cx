@@ -30,7 +30,7 @@ const gridKeys = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"];
 
 const SipTrunking = () => {
   const { t } = useTranslation();
-  const { c } = useSiteCopy("sip");
+  const { c, save } = useSiteCopy("sip");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
