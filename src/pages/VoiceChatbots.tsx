@@ -11,7 +11,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTABlock from "../components/CTABlock";
 import callFlowImg from "@/assets/call-flow-visualization.png";
-import ucHeroImg from "@/assets/uc-hero.png";
+import DeploymentChart from "@/components/DeploymentChart";
 import {
   Bot, Brain, Zap, Clock, ShieldCheck, BarChart3,
   ArrowRight, TrendingUp, Headphones, MessageSquare, Settings2
@@ -88,7 +88,7 @@ const VoiceChatbots = () => {
       <section className="vc-payback-section">
         <div className="vc-payback-inner">
           <div className="vc-payback-visual">
-            <img src={ucHeroImg} alt="GoEngage Voice ROI" loading="lazy" />
+            <DeploymentChart />
           </div>
           <div className="vc-payback-content">
             <div className="vc-payback-badge">
