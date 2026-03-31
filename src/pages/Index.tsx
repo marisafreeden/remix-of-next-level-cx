@@ -24,6 +24,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   const { t, i18n } = useTranslation();
+  const { c } = useSiteCopy("home");
 
   useEffect(() => {
     document.documentElement.lang = i18n.language || "en";

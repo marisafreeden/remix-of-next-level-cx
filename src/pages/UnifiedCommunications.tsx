@@ -24,6 +24,7 @@ const featureKeys = ["f1", "f2", "f3"];
 
 const UnifiedCommunications = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("uc");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
