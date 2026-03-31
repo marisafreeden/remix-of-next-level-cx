@@ -12,6 +12,7 @@ import "@fontsource/inter/600.css";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
+import EditableText from "@/components/EditableText";
 import Navbar from "@/components/Navbar";
 import DashboardPreview from "@/components/DashboardPreview";
 import PlatformSection from "@/components/PlatformSection";
