@@ -233,8 +233,8 @@
     font-size: 14px;
   }
 
-  .cc-platform-image-wrap {
+  .cc-persona-grid {
+    grid-template-columns: 1fr;
     padding: 0 20px;
-    margin-bottom: 32px;
   }
 }
