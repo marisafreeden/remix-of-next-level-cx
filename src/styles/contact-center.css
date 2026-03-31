@@ -177,19 +177,19 @@
 }
 
 .cc-persona-text {
-  padding: 28px 24px 20px;
+  padding: 20px 24px 28px;
 }
 
 .cc-persona-img-wrap {
-  margin-top: auto;
-  padding: 0 16px 16px;
+  width: 100%;
 }
 
 .cc-persona-img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  border: 1px solid rgba(10, 15, 24, 0.06);
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
 }
 
 @media (max-width: 1024px) {
