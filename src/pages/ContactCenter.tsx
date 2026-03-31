@@ -147,31 +147,6 @@ const ContactCenter = () => {
 
       <div className="cc-section-divider" />
 
-      {/* Personas */}
-      <section className="uc-benefits-section">
-        <div className="uc-benefits-header">
-          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
-          <h2 className="promos-title" style={{ whiteSpace: "nowrap" }}>
-            Built for <span className="promos-title-italic">Everyone</span>
-          </h2>
-        </div>
-        <div className="cc-persona-grid">
-          {personaKeys.map((key, i) => (
-            <div key={key} className="cc-persona-card">
-              <div className="cc-persona-img-wrap">
-                <img src={personaImages[i]} alt={t(`cc_page.${key}_title`)} loading="lazy" width={800} height={512} className="cc-persona-img" />
-              </div>
-              <div className="cc-persona-text">
-                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
-                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <div className="cc-section-divider" />
-
       {/* Security & Compliance */}
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
@@ -195,6 +170,31 @@ const ContactCenter = () => {
             <h3>HIPAA Compliant</h3>
             <p>Meets healthcare industry requirements for protecting sensitive patient information.</p>
           </div>
+        </div>
+      </section>
+
+      <div className="cc-section-divider" />
+
+      {/* Personas */}
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header">
+          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
+          <h2 className="promos-title" style={{ whiteSpace: "nowrap" }}>
+            Built for <span className="promos-title-italic">Everyone</span>
+          </h2>
+        </div>
+        <div className="cc-persona-grid">
+          {personaKeys.map((key, i) => (
+            <div key={key} className="cc-persona-card">
+              <div className="cc-persona-img-wrap">
+                <img src={personaImages[i]} alt={t(`cc_page.${key}_title`)} loading="lazy" width={800} height={512} className="cc-persona-img" />
+              </div>
+              <div className="cc-persona-text">
+                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
+                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
