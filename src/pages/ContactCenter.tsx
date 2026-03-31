@@ -131,7 +131,8 @@ const ContactCenter = () => {
                 <img src={`https://placehold.co/600x400/F3F4F6/9CA3AF?text=Feature+${i + 1}`} alt={t(`cc_page.${key}_title`)} />
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
