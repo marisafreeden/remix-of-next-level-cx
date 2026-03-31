@@ -11,6 +11,7 @@ import "@fontsource/inter/600.css";
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
@@ -82,6 +83,7 @@ const aiPlanDefs: PlanDef[] = [
 
 const Pricing = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("pricing");
   const [activeTab, setActiveTab] = useState<"uc" | "cc" | "ai">("uc");
   const planDefs = activeTab === "uc" ? ucPlanDefs : activeTab === "cc" ? ccPlanDefs : aiPlanDefs;
   const currency = t("pricing_page.currency");
@@ -92,7 +94,7 @@ const Pricing = () => {
 
       <section className="pricing-hero">
         <h1 className="pricing-title">
-          {t("pricing_page.title_pre")} <em className="pricing-title-italic">{t("pricing_page.title_em")}</em>
+          {c("title_pre", "pricing_page.title_pre")} <em className="pricing-title-italic">{c("title_em", "pricing_page.title_em")}</em>
         </h1>
 
         <div className="pricing-tabs">

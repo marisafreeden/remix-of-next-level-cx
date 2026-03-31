@@ -11,6 +11,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "@/components/Navbar";
 import DashboardPreview from "@/components/DashboardPreview";
 import PlatformSection from "@/components/PlatformSection";
@@ -23,6 +24,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   const { t, i18n } = useTranslation();
+  const { c } = useSiteCopy("home");
 
   useEffect(() => {
     document.documentElement.lang = i18n.language || "en";
@@ -49,8 +51,8 @@ const Index = () => {
 
         <div className="hero-content">
           <h1 className="hero-h1">
-            {t("hero.title_line1")}<br />
-            <span className="going-next">{t("hero.title_line2")}</span>
+            {c("hero_title1", "hero.title_line1")}<br />
+            <span className="going-next">{c("hero_title2", "hero.title_line2")}</span>
           </h1>
 
           <p className="hero-sub">{t("hero.subtitle")}</p>

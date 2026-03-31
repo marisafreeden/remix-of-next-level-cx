@@ -13,6 +13,7 @@ import {
   Shield, Mic, History, Voicemail, Eye, FileText, ChevronRight, Smartphone
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -28,6 +29,7 @@ const gridKeys = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "
 
 const VideoMessaging = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("video");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
@@ -37,8 +39,8 @@ const VideoMessaging = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {t("video_page.hero_title1")}<br />
-              <span className="going-next">{t("video_page.hero_title2")}</span>
+              {c("hero_title1", "video_page.hero_title1")}<br />
+              <span className="going-next">{c("hero_title2", "video_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("video_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
@@ -55,8 +57,8 @@ const VideoMessaging = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("video_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("video_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{t("video_page.benefits_title2")}</span>
+            {c("benefits_title1", "video_page.benefits_title1")}<br />
+            <span className="promos-title-italic">{c("benefits_title2", "video_page.benefits_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
@@ -78,8 +80,8 @@ const VideoMessaging = () => {
           <div className="uc-benefits-header" style={{ textAlign: 'center', marginBottom: '48px' }}>
             <p className="promos-eyebrow" style={{ textAlign: 'center' }}>{t("video_page.platform_eyebrow")}</p>
             <h2 className="promos-title" style={{ textAlign: 'center' }}>
-              {t("video_page.platform_title1")}<br />
-              <span className="promos-title-italic">{t("video_page.platform_title2")}</span>
+              {c("platform_title1", "video_page.platform_title1")}<br />
+              <span className="promos-title-italic">{c("platform_title2", "video_page.platform_title2")}</span>
             </h2>
           </div>
           <div className="uc-big-feature-image">
@@ -113,8 +115,8 @@ const VideoMessaging = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("video_page.grid_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("video_page.grid_title1")}<br />
-            <span className="promos-title-italic">{t("video_page.grid_title2")}</span>
+            {c("grid_title1", "video_page.grid_title1")}<br />
+            <span className="promos-title-italic">{c("grid_title2", "video_page.grid_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>

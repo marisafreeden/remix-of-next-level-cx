@@ -10,6 +10,7 @@ import "@fontsource/inter/600.css";
 
 import { Phone, Video, MessageSquare, Users, Shield, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -23,6 +24,7 @@ const featureKeys = ["f1", "f2", "f3"];
 
 const UnifiedCommunications = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("uc");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
@@ -32,8 +34,8 @@ const UnifiedCommunications = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {t("uc_page.hero_title1")}<br />
-              <span className="going-next">{t("uc_page.hero_title2")}</span>
+              {c("hero_title1", "uc_page.hero_title1")}<br />
+              <span className="going-next">{c("hero_title2", "uc_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("uc_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
@@ -50,8 +52,8 @@ const UnifiedCommunications = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("uc_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("uc_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{t("uc_page.benefits_title2")}</span>
+            {c("benefits_title1", "uc_page.benefits_title1")}<br />
+            <span className="promos-title-italic">{c("benefits_title2", "uc_page.benefits_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid">
@@ -72,8 +74,8 @@ const UnifiedCommunications = () => {
         <div className="uc-features-header">
           <p className="promos-eyebrow">{t("uc_page.features_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("uc_page.features_title1")}<br />
-            <span className="promos-title-italic">{t("uc_page.features_title2")}</span>
+            {c("features_title1", "uc_page.features_title1")}<br />
+            <span className="promos-title-italic">{c("features_title2", "uc_page.features_title2")}</span>
           </h2>
         </div>
         <div className="promos-stack">

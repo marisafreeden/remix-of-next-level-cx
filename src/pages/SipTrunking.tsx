@@ -13,6 +13,7 @@ import {
   BarChart3, Globe, Zap, ChevronRight
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -28,6 +29,7 @@ const gridKeys = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"];
 
 const SipTrunking = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("sip");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
@@ -37,8 +39,8 @@ const SipTrunking = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {t("sip_page.hero_title1")}<br />
-              <span className="going-next">{t("sip_page.hero_title2")}</span>
+              {c("hero_title1", "sip_page.hero_title1")}<br />
+              <span className="going-next">{c("hero_title2", "sip_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("sip_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
@@ -55,8 +57,8 @@ const SipTrunking = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sip_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("sip_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{t("sip_page.benefits_title2")}</span>
+            {c("benefits_title1", "sip_page.benefits_title1")}<br />
+            <span className="promos-title-italic">{c("benefits_title2", "sip_page.benefits_title2")}</span>
           </h2>
           <p className="uc-hero-subtitle" style={{ marginTop: '16px', marginBottom: 0 }}>
             {t("sip_page.benefits_subtitle")}
@@ -101,8 +103,8 @@ const SipTrunking = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sip_page.grid_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("sip_page.grid_title1")}<br />
-            <span className="promos-title-italic">{t("sip_page.grid_title2")}</span>
+            {c("grid_title1", "sip_page.grid_title1")}<br />
+            <span className="promos-title-italic">{c("grid_title2", "sip_page.grid_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>

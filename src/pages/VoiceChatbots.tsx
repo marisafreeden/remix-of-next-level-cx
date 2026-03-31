@@ -5,6 +5,7 @@ import "@fontsource/instrument-sans/400.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/instrument-sans/600.css";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
@@ -23,6 +24,7 @@ const resultKeys = ["r1", "r2", "r3", "r4"];
 
 const VoiceChatbots = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("voice");
 
   return (
     <div>
@@ -31,7 +33,7 @@ const VoiceChatbots = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
-              {t("voice_page.hero_title1")} <span className="going-next">{t("voice_page.hero_title2")}</span>
+              {c("hero_title1", "voice_page.hero_title1")} <span className="going-next">{c("hero_title2", "voice_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("voice_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
@@ -66,8 +68,8 @@ const VoiceChatbots = () => {
           <div className="vc-split-header">
             <p className="goai-eyebrow">{t("voice_page.challenge_eyebrow")}</p>
             <h2 className="goai-title" style={{ fontSize: 40 }}>
-              {t("voice_page.challenge_title1")}
-              <span className="goai-title-italic"> {t("voice_page.challenge_title2")}</span>
+              {c("challenge_title1", "voice_page.challenge_title1")}
+              <span className="goai-title-italic"> {c("challenge_title2", "voice_page.challenge_title2")}</span>
             </h2>
           </div>
           <div className="vc-split-grid">
