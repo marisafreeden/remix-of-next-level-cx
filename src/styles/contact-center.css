@@ -5,13 +5,26 @@
   padding-top: 80px;
 }
 
-/* ===== Bottom Blur Image ===== */
-.cc-bottom-blur {
-  width: 100%;
+/* ===== Hero Blur Image ===== */
+.cc-hero-blur {
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
   height: auto;
-  display: block;
-  margin-top: -80px;
   pointer-events: none;
+  z-index: 0;
+}
+
+.cc-page-wrap .uc-hero-section .uc-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Bottom Blur Image (legacy) ===== */
+.cc-bottom-blur {
+  display: none;
 }
 
 /* ===== Contact Center Stats Section ===== */
