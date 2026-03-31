@@ -9,6 +9,7 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import gocontactDashboard from "@/assets/gocontact-dashboard.png";
+import ccFeatureCharts from "@/assets/cc-feature-charts.png";
 import personaAgentsImg from "@/assets/persona-agents.jpg";
 import personaManagersImg from "@/assets/persona-managers.jpg";
 import personaItImg from "@/assets/persona-it.jpg";
