@@ -93,10 +93,6 @@ const ContactCenter = () => {
           <p>{t("cc_page.platform_desc1")}</p>
           <p>{t("cc_page.platform_desc2")}</p>
         </div>
-      </section>
-
-      {/* Stats */}
-      <section className="cc-stats-section">
         <div className="cc-stats-grid-horizontal">
           {statKeys.map((key) => (
             <div key={key} className="cc-stat-card">
