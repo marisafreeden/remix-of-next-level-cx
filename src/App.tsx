@@ -11,6 +11,7 @@ import VideoMessaging from "./pages/VideoMessaging.tsx";
 import BusinessSMS from "./pages/BusinessSMS.tsx";
 import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
+import AdminCopy from "./pages/AdminCopy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/business-sms" element={<BusinessSMS />} />
           <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/admin/copy" element={<AdminCopy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
