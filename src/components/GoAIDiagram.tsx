@@ -1,15 +1,15 @@
 import { Brain, Database, Workflow, Shield, BarChart3, Layers } from "lucide-react";
 
 const leftCards = [
-  { icon: Brain, title: "Conversation Intelligence", desc: "Natural language understanding & reasoning" },
-  { icon: Workflow, title: "Action & Orchestration", desc: "Executes workflows & system updates securely" },
-  { icon: BarChart3, title: "Measurement & Monetization", desc: "Usage tracking and operational visibility" },
+  { icon: Brain, title: "Conversation Intelligence", desc: "Natural language understanding & reasoning that follows context, not scripts" },
+  { icon: Workflow, title: "Action & Orchestration", desc: "Executes workflows & system updates securely, without manual steps" },
+  { icon: BarChart3, title: "Measurement & Monetization", desc: "Usage tracking and operational visibility, so you can see what's working" },
 ];
 
 const rightCards = [
-  { icon: Database, title: "Context & Data", desc: "Aggregates customer data & knowledge sources" },
-  { icon: Shield, title: "Governance & Control", desc: "Guardrails, configuration, & compliance controls" },
-  { icon: Layers, title: "Platform Abstraction", desc: "LLM-agnostic and scalable architecture" },
+  { icon: Database, title: "Context & Data", desc: "Aggregates customer data & knowledge sources before your agents say hello" },
+  { icon: Shield, title: "Governance & Control", desc: "Guardrails, configuration, & compliance controls so your ops team stays in charge" },
+  { icon: Layers, title: "Platform Abstraction", desc: "LLM-agnostic and scalable architecture for flexibility" },
 ];
 
 const GoAIDiagram = () => {
