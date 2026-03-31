@@ -1,7 +1,8 @@
 /* ===== CC Hero Height ===== */
 .cc-page-wrap .uc-hero-section {
   min-height: auto;
-  padding-bottom: 96px;
+  padding-bottom: 140px;
+  padding-top: 80px;
 }
 
 /* ===== Bottom Blur Image ===== */
