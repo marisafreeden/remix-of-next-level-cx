@@ -28,17 +28,13 @@ import CTABlock from "@/components/CTABlock";
 import TestimonialsSection from "@/components/TestimonialsSection";
 
 const statKeys = ["s1", "s2", "s3"];
-const howItWorksKeys = ["hw1", "hw2", "hw3", "hw4"];
-const howItWorksIcons = [Headphones, Bot, Phone, Settings];
 const platformPillKeys = ["hw1", "hw2", "hw3", "hw4"];
 const smarterKeys = ["sm1", "sm2", "sm3"];
 const smarterIcons = [BarChart3, Globe, FileText];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"];
 const featureIcons = [Headphones, Zap, Shield, Bot, Settings, BarChart3, Globe, Users, Phone, FileText, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
-const personaIcons = [Users, MonitorSmartphone, Settings];
 const personaImages = [personaAgentsImg, personaManagersImg, personaItImg];
-const faqKeys = ["fq1", "fq2", "fq3", "fq4", "fq5"];
 
 const ContactCenter = () => {
   const { t } = useTranslation();
@@ -90,38 +86,42 @@ const ContactCenter = () => {
         </div>
       </section>
 
-
-
-
-      {/* What Makes It Smarter */}
-      <section className="uc-benefits-section">
-        <div className="uc-benefits-header">
+      {/* What Makes It Smarter — UC promo style */}
+      <section className="uc-features-section">
+        <div className="uc-features-header">
           <p className="promos-eyebrow">{t("cc_page.smarter_eyebrow")}</p>
           <h2 className="promos-title">
             <EditableText value={c("smarter_title", "cc_page.smarter_title")} copyKey="smarter_title" onSave={save} />
           </h2>
         </div>
-        <div className="cc-smarter-promos">
+        <div className="promos-stack">
           {smarterKeys.map((key, i) => {
-            const SmarterIcon = smarterIcons[i];
+            const Icon = smarterIcons[i];
             return (
-            <div key={key} className={`cc-smarter-row ${i % 2 === 1 ? "cc-smarter-row-reverse" : ""}`}>
-              <div className="cc-smarter-text">
-                <div className="uc-benefit-icon"><SmarterIcon size={24} strokeWidth={1.5} /></div>
-                <h3 className="cc-smarter-heading">{t(`cc_page.${key}_title`)}</h3>
-                <p className="cc-smarter-desc">{t(`cc_page.${key}_desc`)}</p>
+              <div key={key} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
+                <div className="promo-row-text">
+                  <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                  <h3 className="promo-row-title">{t(`cc_page.${key}_title`)}</h3>
+                  <p className="promo-row-desc">{t(`cc_page.${key}_desc`)}</p>
+                  <button className="promo-row-cta">
+                    {t("common.learn_more")} <span style={{ fontSize: "14px" }}>→</span>
+                  </button>
+                </div>
+                <div className="promo-row-image-wrap">
+                  <div className="uc-feature-placeholder">
+                    <img src={gocontactDashboard} alt={t(`cc_page.${key}_title`)} className="promo-row-image" />
+                  </div>
+                </div>
               </div>
-              <div className="cc-smarter-image">
-                <img src={`https://placehold.co/600x400/F3F4F6/9CA3AF?text=Feature+${i + 1}`} alt={t(`cc_page.${key}_title`)} />
-              </div>
-            </div>
             );
           })}
         </div>
       </section>
 
+      <div className="cc-section-divider" />
+
       {/* Feature Grid */}
-      <section className="uc-features-section">
+      <section className="uc-features-section cc-features-gray">
         <div className="uc-features-header">
           <p className="promos-eyebrow">{t("cc_page.features_eyebrow")}</p>
           <h2 className="promos-title">
@@ -145,6 +145,8 @@ const ContactCenter = () => {
         </div>
       </section>
 
+      <div className="cc-section-divider" />
+
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
@@ -154,21 +156,21 @@ const ContactCenter = () => {
           </h2>
         </div>
         <div className="cc-persona-grid">
-          {personaKeys.map((key, i) => {
-            return (
-              <div key={key} className="cc-persona-card">
-                <div className="cc-persona-img-wrap">
-                  <img src={personaImages[i]} alt={t(`cc_page.${key}_title`)} loading="lazy" width={800} height={512} className="cc-persona-img" />
-                </div>
-                <div className="cc-persona-text">
-                  <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
-                  <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
-                </div>
+          {personaKeys.map((key, i) => (
+            <div key={key} className="cc-persona-card">
+              <div className="cc-persona-img-wrap">
+                <img src={personaImages[i]} alt={t(`cc_page.${key}_title`)} loading="lazy" width={800} height={512} className="cc-persona-img" />
               </div>
-            );
-          })}
+              <div className="cc-persona-text">
+                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
+                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
+
+      <div className="cc-section-divider" />
 
       {/* Security & Compliance */}
       <section className="cc-security-section">
@@ -201,26 +203,6 @@ const ContactCenter = () => {
 
       <CTABlock />
       <Footer />
-    </div>
-  );
-};
-
-// Small FAQ item with local state
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-
-const CCFaqItem = ({ qKey }: { qKey: string }) => {
-  const { t } = useTranslation();
-  const [open, setOpen] = useState(false);
-  return (
-    <div className={`faq-item ${open ? "faq-item-open" : ""}`}>
-      <button className="faq-question" onClick={() => setOpen(!open)}>
-        <span>{t(`cc_page.${qKey}_q`)}</span>
-        <ChevronDown size={18} className={`faq-chevron ${open ? "faq-chevron-open" : ""}`} />
-      </button>
-      <div className={`faq-answer-wrap ${open ? "faq-answer-open" : ""}`}>
-        <p className="faq-answer">{t(`cc_page.${qKey}_a`)}</p>
-      </div>
     </div>
   );
 };
