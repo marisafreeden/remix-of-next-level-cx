@@ -45,7 +45,6 @@ const BusinessSMS = () => {
               <EditableText value={c("hero_title1", "sms_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
               <span className="going-next"><EditableText value={c("hero_title2", "sms_page.hero_title2")} copyKey="hero_title2" onSave={save} /></span>
             </h1>
-            </h1>
             <p className="uc-hero-subtitle">{t("sms_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
               {t("common.schedule_demo")} <span style={{ fontSize: '18px' }}>→</span>
