@@ -1,25 +1,52 @@
-/* ===== CC Hero Height ===== */
-.cc-page-wrap .uc-hero-section {
-  min-height: auto;
-  padding-bottom: 140px;
-  padding-top: 80px;
+/* ===== Combined Hero + Platform ===== */
+.cc-hero-platform-combined {
+  padding-top: 160px !important;
+  padding-bottom: 96px !important;
+}
+
+.cc-hero-platform-combined .uc-hero-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 0 48px 96px;
+  position: relative;
+  z-index: 1;
+}
+
+.cc-hero-platform-combined .hero-h1,
+.cc-hero-platform-combined .uc-hero-subtitle {
+  color: #ffffff !important;
+}
+
+.cc-hero-platform-combined .uc-hero-subtitle {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.btn-hero-a-light {
+  background: #ffffff !important;
+  color: #0a0f18 !important;
+}
+
+.btn-hero-a-light:hover {
+  background: rgba(255, 255, 255, 0.9) !important;
+}
+
+.cc-platform-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.cc-hero-platform-combined .cc-stats-grid-horizontal {
+  padding: 0 48px;
+  margin-top: 48px;
 }
 
 /* ===== Hero Blur Image ===== */
 .cc-hero-blur {
-  position: absolute;
-  bottom: -40%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120%;
-  height: auto;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.cc-page-wrap .uc-hero-section .uc-hero-inner {
-  position: relative;
-  z-index: 1;
+  display: none;
 }
 
 /* ===== Bottom Blur Image (legacy) ===== */
