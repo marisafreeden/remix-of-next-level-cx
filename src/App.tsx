@@ -12,7 +12,6 @@ import BusinessSMS from "./pages/BusinessSMS.tsx";
 import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
 import NotFound from "./pages/NotFound.tsx";
-import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
