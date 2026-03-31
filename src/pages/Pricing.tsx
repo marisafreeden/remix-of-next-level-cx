@@ -84,7 +84,7 @@ const aiPlanDefs: PlanDef[] = [
 
 const Pricing = () => {
   const { t } = useTranslation();
-  const { c } = useSiteCopy("pricing");
+  const { c, save } = useSiteCopy("pricing");
   const [activeTab, setActiveTab] = useState<"uc" | "cc" | "ai">("uc");
   const planDefs = activeTab === "uc" ? ucPlanDefs : activeTab === "cc" ? ccPlanDefs : aiPlanDefs;
   const currency = t("pricing_page.currency");
