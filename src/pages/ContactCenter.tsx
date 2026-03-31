@@ -111,7 +111,6 @@ const ContactCenter = () => {
             </div>
           ))}
         </div>
-        </div>
       </section>
 
       <div className="cc-section-divider" />

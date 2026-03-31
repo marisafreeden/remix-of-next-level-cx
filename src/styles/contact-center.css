@@ -287,6 +287,126 @@
 
 
 
+/* ===== Alternating Features (Figma style) ===== */
+.cc-alt-features {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  padding: 0 48px;
+}
+
+.cc-alt-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.cc-alt-row-reverse {
+  direction: rtl;
+}
+
+.cc-alt-row-reverse > * {
+  direction: ltr;
+}
+
+.cc-alt-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cc-alt-heading {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  color: #151D48;
+  letter-spacing: -0.3px;
+}
+
+.cc-alt-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #151D48;
+  opacity: 0.75;
+}
+
+.cc-alt-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #F8FAFC;
+  transition: opacity 0.2s;
+  width: fit-content;
+}
+
+.cc-alt-cta:hover {
+  opacity: 0.9;
+}
+
+.cc-alt-cta span {
+  font-size: 20px;
+}
+
+.cc-alt-image-side {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.cc-alt-blur {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  background: #3FABBA;
+  filter: blur(76px);
+  border-radius: 20px;
+  transform: rotate(23deg);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.cc-alt-img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border: 1px solid #E0E0E0;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 768px) {
+  .cc-alt-features {
+    padding: 0 20px;
+    gap: 48px;
+  }
+  .cc-alt-row,
+  .cc-alt-row-reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 32px;
+  }
+  .cc-alt-image-side {
+    min-height: 280px;
+  }
+}
 
 /* ===== Security Section ===== */
 .cc-security-section {
