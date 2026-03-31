@@ -65,14 +65,25 @@
 
 /* ===== Platform Section Override ===== */
 .cc-platform-section {
-  background: #ffffff !important;
+  background: linear-gradient(135deg, #0a0f18 0%, #1a2740 40%, #1D5B94 75%, #43B5BF 100%) !important;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-radius: 0;
 }
 
 .cc-platform-section .uc-benefits-header {
   text-align: center;
+}
+
+.cc-platform-section .promos-eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cc-platform-section .promos-title,
+.cc-platform-section .promos-title-italic {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .cc-platform-section::before {
@@ -83,7 +94,7 @@
   transform: translate(-50%, -50%);
   width: 110%;
   height: 800px;
-  background: rgba(61, 167, 184, 0.15);
+  background: rgba(67, 181, 191, 0.12);
   border-radius: 50%;
   filter: blur(111px);
   pointer-events: none;
