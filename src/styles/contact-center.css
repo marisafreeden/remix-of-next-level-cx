@@ -16,8 +16,12 @@
 
 /* ===== Contact Center Stats Section ===== */
 .cc-stats-section {
-  background: #F9FAFB;
   padding: 64px 48px;
+}
+
+.cc-platform-section .cc-stats-grid-horizontal {
+  padding: 0 48px;
+  margin-top: 48px;
 }
 
 .cc-stats-grid-horizontal {
