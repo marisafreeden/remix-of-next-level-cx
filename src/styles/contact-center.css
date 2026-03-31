@@ -219,6 +219,75 @@
   border-radius: 16px 16px 0 0;
 }
 
+/* ===== Security Section ===== */
+.cc-security-section {
+  padding: 96px 48px;
+  background: #F9FAFB;
+  text-align: center;
+}
+
+.cc-security-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  color: rgba(10, 15, 24, 0.6);
+  margin-top: 12px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cc-security-grid {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.cc-security-card {
+  background: #ffffff;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 16px;
+  padding: 40px 28px;
+  text-align: center;
+}
+
+.cc-security-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(67, 181, 191, 0.1), rgba(29, 91, 148, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: #1D5B94;
+}
+
+.cc-security-card h3 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0a0f18;
+  margin-bottom: 10px;
+}
+
+.cc-security-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(10, 15, 24, 0.6);
+}
+
+@media (max-width: 768px) {
+  .cc-security-section {
+    padding: 64px 20px;
+  }
+  .cc-security-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 1024px) {
   .cc-stats-section {
     padding: 48px 24px;
