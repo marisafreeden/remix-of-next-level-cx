@@ -14,7 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      site_copy: {
+        Row: {
+          content: string
+          copy_key: string
+          created_at: string
+          id: string
+          language: string
+          page_key: string
+          updated_at: string
+        }
+        Insert: {
+          content: string
+          copy_key: string
+          created_at?: string
+          id?: string
+          language?: string
+          page_key: string
+          updated_at?: string
+        }
+        Update: {
+          content?: string
+          copy_key?: string
+          created_at?: string
+          id?: string
+          language?: string
+          page_key?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
