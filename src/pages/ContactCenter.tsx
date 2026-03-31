@@ -117,17 +117,19 @@ const ContactCenter = () => {
             <EditableText value={c("smarter_title", "cc_page.smarter_title")} copyKey="smarter_title" onSave={save} />
           </h2>
         </div>
-        <div className="uc-benefits-grid">
-          {smarterKeys.map((key, i) => {
-            const Icon = smarterIcons[i];
-            return (
-              <div key={key} className="uc-benefit-card">
+        <div className="cc-smarter-promos">
+          {smarterKeys.map((key, i) => (
+            <div key={key} className={`cc-smarter-row ${i % 2 === 1 ? "cc-smarter-row-reverse" : ""}`}>
+              <div className="cc-smarter-text">
                 <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
-                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
-                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
+                <h3 className="cc-smarter-heading">{t(`cc_page.${key}_title`)}</h3>
+                <p className="cc-smarter-desc">{t(`cc_page.${key}_desc`)}</p>
               </div>
-            );
-          })}
+              <div className="cc-smarter-image">
+                <img src={`https://placehold.co/600x400/F3F4F6/9CA3AF?text=Feature+${i + 1}`} alt={t(`cc_page.${key}_title`)} />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
