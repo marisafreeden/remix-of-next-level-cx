@@ -9,6 +9,9 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import gocontactDashboard from "@/assets/gocontact-dashboard.png";
+import personaAgentsImg from "@/assets/persona-agents.jpg";
+import personaManagersImg from "@/assets/persona-managers.jpg";
+import personaItImg from "@/assets/persona-it.jpg";
 
 import {
   Headphones, MessageSquare, Phone, Bot, BarChart3, Globe,
