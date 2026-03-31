@@ -52,8 +52,8 @@ const Index = () => {
 
         <div className="hero-content">
           <h1 className="hero-h1">
-            {c("hero_title1", "hero.title_line1")}<br />
-            <span className="going-next">{c("hero_title2", "hero.title_line2")}</span>
+            <EditableText value={c("hero_title1", "hero.title_line1")} copyKey="hero_title1" onSave={save} /><br />
+            <span className="going-next"><EditableText value={c("hero_title2", "hero.title_line2")} copyKey="hero_title2" onSave={save} /></span>
           </h1>
 
           <p className="hero-sub">{t("hero.subtitle")}</p>
