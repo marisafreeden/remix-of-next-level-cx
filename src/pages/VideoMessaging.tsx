@@ -13,6 +13,7 @@ import {
   Shield, Mic, History, Voicemail, Eye, FileText, ChevronRight, Smartphone
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useSiteCopy } from "@/hooks/useSiteCopy";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
