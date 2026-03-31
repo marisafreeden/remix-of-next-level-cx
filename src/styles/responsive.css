@@ -137,8 +137,8 @@
   /* Platform */
   .platform-section { padding: 48px 20px; }
   .platform-h2 { font-size: 32px; margin-bottom: 36px; }
-  .platform-nav { flex-direction: row; overflow-x: auto; min-width: 0; gap: 6px; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
-  .platform-nav-item { white-space: nowrap; padding: 8px 14px; font-size: 13px; }
+  .platform-nav { flex-direction: row; flex-wrap: wrap; min-width: 0; gap: 6px; padding-bottom: 8px; }
+  .platform-nav-item { white-space: nowrap; padding: 8px 12px; font-size: 12px; flex: 0 0 auto; }
   .platform-nav-active { border-left: none; border-bottom: 3px solid #43B5BF; padding-left: 14px; border-radius: 8px; }
   .platform-desc { font-size: 15px; }
 
