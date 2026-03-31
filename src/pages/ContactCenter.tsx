@@ -8,6 +8,7 @@ import "@/styles/contact-center.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
+import gocontactDashboard from "@/assets/gocontact-dashboard.png";
 
 import {
   Headphones, MessageSquare, Phone, Bot, BarChart3, Globe,
