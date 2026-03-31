@@ -17,29 +17,26 @@ import CTABlock from "@/components/CTABlock";
 import ucHeroImg from "@/assets/uc-hero.png";
 
 const benefits = [
-  { icon: Phone, title: "Business Phone", desc: "Enterprise-grade VoIP with HD call quality, call routing, auto-attendant and voicemail-to-email." },
-  { icon: Video, title: "Video Conferencing", desc: "Crystal-clear HD video meetings with screen sharing, recording, and virtual backgrounds." },
-  { icon: MessageSquare, title: "Team Messaging", desc: "Real-time chat with channels, file sharing, and threaded conversations to keep teams aligned." },
-  { icon: Users, title: "Collaboration", desc: "Presence indicators, shared contacts, and unified directory so your team stays connected." },
-  { icon: Shield, title: "Enterprise Security", desc: "End-to-end encryption, SSO, compliance certifications, and role-based access controls." },
-  { icon: Globe, title: "Work From Anywhere", desc: "Desktop, mobile, and web apps let your team communicate seamlessly from any device, any location." },
+  { icon: Phone, title: "Business Phone", desc: "Crystal-clear HD voice that travels with your team. Smart call routing, auto-attendant, and voicemail-to-email keep every conversation moving — even when you can't pick up." },
+  { icon: Video, title: "Video Conferencing", desc: "Face-to-face meetings without the commute. HD video with screen sharing, recording, and virtual backgrounds turns any space into a boardroom." },
+  { icon: MessageSquare, title: "Team Messaging", desc: "Conversations that drive decisions, not clutter. Channels, threads, and instant file sharing keep your team aligned and moving fast." },
+  { icon: Users, title: "Collaboration", desc: "Know who's available before you reach out. Shared contacts, presence indicators, and a unified directory eliminate the guesswork of working together." },
+  { icon: Shield, title: "Enterprise Security", desc: "Your conversations are your business — literally. End-to-end encryption, SSO, compliance certifications, and granular access controls protect every interaction." },
+  { icon: Globe, title: "Work From Anywhere", desc: "Office, home, airport, coffee shop — it doesn't matter. Desktop, mobile, and web apps deliver the same powerful experience on every device, everywhere." },
 ];
 
 const features = [
   {
     title: "One number. Every channel.",
-    desc: "Unify voice, video, SMS, and chat under a single business number. Customers reach you on one line — your team responds from any device.",
-    points: ["Single business identity", "Seamless channel switching", "Consistent caller experience"],
+    desc: "Stop juggling separate tools for voice, video, SMS, and chat. b-hive unifies every channel under a single business number — so customers always know how to reach you, and your team can respond from any device without missing a beat.",
   },
   {
     title: "Built for hybrid teams.",
-    desc: "Whether your team is in the office, at home, or on the road, b-hive keeps everyone connected with the same powerful tools.",
-    points: ["Desktop & mobile apps", "Hot desking support", "Real-time presence & status"],
+    desc: "Your workforce isn't tied to a desk anymore — your phone system shouldn't be either. b-hive delivers the same powerful experience whether your team is in headquarters, working from home, or closing deals on the road. Real-time presence and hot desking mean no one ever falls out of the loop.",
   },
   {
     title: "Admin without the headache.",
-    desc: "Manage your entire phone system from an intuitive web portal. Add users, configure call flows, and view analytics in minutes — not hours.",
-    points: ["Self-service admin portal", "Real-time call analytics", "Drag-and-drop call routing"],
+    desc: "Forget waiting on IT tickets or vendor support calls. b-hive's intuitive web portal puts you in control — add users, build call flows with drag-and-drop, and track performance with real-time analytics. What used to take hours now takes minutes.",
   },
 ];
 
