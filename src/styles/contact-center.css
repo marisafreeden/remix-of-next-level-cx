@@ -52,6 +52,28 @@
 .cc-platform-section {
   background: #ffffff !important;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cc-platform-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  height: 1160px;
+  background: rgba(61, 167, 184, 0.15);
+  border-radius: 50%;
+  filter: blur(111px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cc-platform-section > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== Platform Pills ===== */
