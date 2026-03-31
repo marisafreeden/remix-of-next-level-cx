@@ -6,6 +6,7 @@ type CopyMap = Record<string, string>;
 
 export const useSiteCopy = (pageKey: string) => {
   const { i18n, t } = useTranslation();
+  const queryClient = useQueryClient();
   const lang = i18n.language?.split("-")[0] || "en";
 
   const { data: dbCopy = {} } = useQuery<CopyMap>({
@@ -28,61 +29,28 @@ export const useSiteCopy = (pageKey: string) => {
     staleTime: 1000 * 60 * 5,
   });
 
-  // Returns DB value if it exists, otherwise falls back to i18n
+  const saveMutation = useMutation({
+    mutationFn: async ({ copyKey, content }: { copyKey: string; content: string }) => {
+      const { error } = await supabase.from("site_copy").upsert(
+        { page_key: pageKey, copy_key: copyKey, language: lang, content },
+        { onConflict: "page_key,copy_key,language" }
+      );
+      if (error) throw error;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["site-copy", pageKey, lang] });
+    },
+  });
+
   const c = (copyKey: string, i18nKey?: string): string => {
     if (dbCopy[copyKey]) return dbCopy[copyKey];
     if (i18nKey) return t(i18nKey);
     return t(copyKey);
   };
 
-  return { c, dbCopy };
-};
+  const save = (copyKey: string, content: string) => {
+    saveMutation.mutate({ copyKey, content });
+  };
 
-// Hook for admin editing
-export const useSiteCopyAdmin = () => {
-  const queryClient = useQueryClient();
-
-  const allCopy = useQuery({
-    queryKey: ["site-copy-all"],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from("site_copy")
-        .select("*")
-        .order("page_key")
-        .order("copy_key");
-      if (error) throw error;
-      return data;
-    },
-  });
-
-  const upsert = useMutation({
-    mutationFn: async (row: {
-      page_key: string;
-      copy_key: string;
-      language: string;
-      content: string;
-    }) => {
-      const { error } = await supabase.from("site_copy").upsert(row, {
-        onConflict: "page_key,copy_key,language",
-      });
-      if (error) throw error;
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["site-copy"] });
-      queryClient.invalidateQueries({ queryKey: ["site-copy-all"] });
-    },
-  });
-
-  const remove = useMutation({
-    mutationFn: async (id: string) => {
-      const { error } = await supabase.from("site_copy").delete().eq("id", id);
-      if (error) throw error;
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["site-copy"] });
-      queryClient.invalidateQueries({ queryKey: ["site-copy-all"] });
-    },
-  });
-
-  return { allCopy, upsert, remove };
+  return { c, save, pageKey };
 };
