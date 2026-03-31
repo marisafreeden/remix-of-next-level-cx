@@ -59,8 +59,8 @@ const BusinessSMS = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sms_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("sms_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{t("sms_page.benefits_title2")}</span>
+            {c("benefits_title1", "sms_page.benefits_title1")}<br />
+            <span className="promos-title-italic">{c("benefits_title2", "sms_page.benefits_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>

@@ -94,7 +94,7 @@ const Pricing = () => {
 
       <section className="pricing-hero">
         <h1 className="pricing-title">
-          {t("pricing_page.title_pre")} <em className="pricing-title-italic">{t("pricing_page.title_em")}</em>
+          {c("title_pre", "pricing_page.title_pre")} <em className="pricing-title-italic">{c("title_em", "pricing_page.title_em")}</em>
         </h1>
 
         <div className="pricing-tabs">
