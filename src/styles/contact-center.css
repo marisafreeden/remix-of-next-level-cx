@@ -25,10 +25,13 @@
 
 .cc-stat-number {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 42px;
+  font-size: 56px;
   font-weight: 500;
-  color: #43B5BF;
-  letter-spacing: -1px;
+  letter-spacing: -2px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .cc-stat-label {
