@@ -160,7 +160,8 @@ const ContactCenter = () => {
 
       {/* Personas */}
       <section className="uc-benefits-section">
-        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+        <div className="uc-benefits-header">
+          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
           <h2 className="promos-title" style={{ whiteSpace: "nowrap" }}>
             Built for <span className="promos-title-italic">Everyone</span>
           </h2>
