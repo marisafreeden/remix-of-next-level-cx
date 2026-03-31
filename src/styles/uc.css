@@ -181,7 +181,7 @@
 /* ===== Tablet: <= 1024px ===== */
 @media (max-width: 1024px) {
   .uc-hero-section {
-    padding: 140px 24px 64px;
+    padding: 160px 24px 64px;
   }
 
   .uc-hero-inner {
