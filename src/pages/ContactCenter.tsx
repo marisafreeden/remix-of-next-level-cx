@@ -211,6 +211,7 @@ const ContactCenter = () => {
 
       <CTABlock />
       <Footer />
+      <img src="/images/ellipse-blur.png" alt="" className="cc-bottom-blur" />
     </div>
   );
 };
