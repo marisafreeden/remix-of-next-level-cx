@@ -388,6 +388,19 @@
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
+  .cc-hero-platform-combined {
+    padding-top: 120px !important;
+  }
+
+  .cc-hero-platform-combined .uc-hero-inner {
+    grid-template-columns: 1fr;
+    padding: 0 20px 48px;
+  }
+
+  .cc-hero-platform-combined .cc-stats-grid-horizontal {
+    padding: 0 20px;
+  }
+
   .cc-stats-section {
     padding: 40px 20px;
   }
