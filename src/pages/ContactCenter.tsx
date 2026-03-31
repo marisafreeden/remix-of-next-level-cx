@@ -9,6 +9,9 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import gocontactDashboard from "@/assets/gocontact-dashboard.png";
+import personaAgentsImg from "@/assets/persona-agents.jpg";
+import personaManagersImg from "@/assets/persona-managers.jpg";
+import personaItImg from "@/assets/persona-it.jpg";
 
 import {
   Headphones, MessageSquare, Phone, Bot, BarChart3, Globe,
@@ -33,6 +36,7 @@ const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"
 const featureIcons = [Headphones, Zap, Shield, Bot, Settings, BarChart3, Globe, Users, Phone, FileText, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
 const personaIcons = [Users, MonitorSmartphone, Settings];
+const personaImages = [personaAgentsImg, personaManagersImg, personaItImg];
 const faqKeys = ["fq1", "fq2", "fq3", "fq4", "fq5"];
 
 const ContactCenter = () => {
@@ -181,14 +185,19 @@ const ContactCenter = () => {
             <EditableText value={c("persona_title", "cc_page.persona_title")} copyKey="persona_title" onSave={save} />
           </h2>
         </div>
-        <div className="uc-benefits-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+        <div className="cc-persona-grid">
           {personaKeys.map((key, i) => {
             const Icon = personaIcons[i];
             return (
-              <div key={key} className="uc-benefit-card">
-                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
-                <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
-                <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
+              <div key={key} className="cc-persona-card">
+                <div className="cc-persona-text">
+                  <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                  <h3 className="uc-benefit-title">{t(`cc_page.${key}_title`)}</h3>
+                  <p className="uc-benefit-desc">{t(`cc_page.${key}_desc`)}</p>
+                </div>
+                <div className="cc-persona-img-wrap">
+                  <img src={personaImages[i]} alt={t(`cc_page.${key}_title`)} loading="lazy" width={800} height={512} className="cc-persona-img" />
+                </div>
               </div>
             );
           })}
