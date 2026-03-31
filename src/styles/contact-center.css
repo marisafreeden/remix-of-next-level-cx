@@ -408,6 +408,66 @@
   }
 }
 
+/* ===== Stats V2 (Figma style) ===== */
+.cc-stats-section-v2 {
+  padding: 80px 48px;
+  background: #ffffff;
+}
+
+.cc-stats-grid-v2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  text-align: center;
+}
+
+.cc-stat-v2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cc-stat-v2-number {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 81px;
+  line-height: 1;
+  letter-spacing: -4px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cc-stat-v2-label {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.36;
+  color: #151D48;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cc-stats-section-v2 {
+    padding: 48px 20px;
+  }
+  .cc-stats-grid-v2 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .cc-stat-v2-number {
+    font-size: 56px;
+    letter-spacing: -2px;
+  }
+  .cc-stat-v2-label {
+    font-size: 20px;
+  }
+}
+
 /* ===== Security Section ===== */
 .cc-security-section {
   padding: 96px 48px;
