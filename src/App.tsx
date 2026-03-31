@@ -11,7 +11,7 @@ import VideoMessaging from "./pages/VideoMessaging.tsx";
 import BusinessSMS from "./pages/BusinessSMS.tsx";
 import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
-import AdminCopy from "./pages/AdminCopy.tsx";
+import NotFound from "./pages/NotFound.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
