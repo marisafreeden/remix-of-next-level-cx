@@ -201,6 +201,7 @@ const ContactCenter = () => {
         </div>
       </section>
 
+      <TestimonialsSection />
       <FAQSection />
 
       <CTABlock />
