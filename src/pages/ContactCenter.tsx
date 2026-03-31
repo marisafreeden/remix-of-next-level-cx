@@ -118,10 +118,12 @@ const ContactCenter = () => {
           </h2>
         </div>
         <div className="cc-smarter-promos">
-          {smarterKeys.map((key, i) => (
+          {smarterKeys.map((key, i) => {
+            const SmarterIcon = smarterIcons[i];
+            return (
             <div key={key} className={`cc-smarter-row ${i % 2 === 1 ? "cc-smarter-row-reverse" : ""}`}>
               <div className="cc-smarter-text">
-                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <div className="uc-benefit-icon"><SmarterIcon size={24} strokeWidth={1.5} /></div>
                 <h3 className="cc-smarter-heading">{t(`cc_page.${key}_title`)}</h3>
                 <p className="cc-smarter-desc">{t(`cc_page.${key}_desc`)}</p>
               </div>
