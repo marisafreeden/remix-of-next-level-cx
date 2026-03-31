@@ -203,19 +203,7 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      {/* CC-specific FAQ */}
-      <section className="faq-section">
-        <p className="faq-eyebrow">{t("cc_page.faq_eyebrow")}</p>
-        <h2 className="faq-title">
-          {t("cc_page.faq_title1")}<br />
-          <span className="faq-title-italic">{t("cc_page.faq_title2")}</span>
-        </h2>
-        <div className="faq-list">
-          {faqKeys.map((key, i) => (
-            <CCFaqItem key={key} qKey={key} />
-          ))}
-        </div>
-      </section>
+      <FAQSection />
 
       <CTABlock />
       <Footer />
