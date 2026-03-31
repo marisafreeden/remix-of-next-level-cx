@@ -52,17 +52,8 @@ const VoiceChatbots = () => {
               Request a Demo <span style={{ fontSize: "18px" }}>→</span>
             </button>
           </div>
-          <div className="uc-hero-image" style={{ position: "relative" }}>
-            <div style={{
-              position: "absolute",
-              inset: "-40px",
-              borderRadius: "50%",
-              background: "radial-gradient(ellipse 70% 70% at 50% 50%, rgba(67,181,191,0.25) 0%, rgba(112,66,210,0.12) 40%, transparent 70%)",
-              filter: "blur(50px)",
-              zIndex: 0,
-              pointerEvents: "none" as const,
-            }} />
-            <img src={callFlowImg} alt="GoEngage Voice AI call flow" style={{ maxWidth: 520, width: "100%", position: "relative", zIndex: 1 }} />
+          <div className="uc-hero-image">
+            <img src={callFlowImg} alt="GoEngage Voice AI call flow" style={{ maxWidth: 520, width: "100%" }} />
           </div>
         </div>
       </section>
