@@ -9,7 +9,7 @@ const Footer = () => {
     {
       title: t("footer.product"),
       links: [
-        { label: t("footer.product_contact_center"), href: "#" },
+        { label: t("footer.product_contact_center"), href: "/contact-center" },
         { label: t("footer.product_unified_comms"), href: "/unified-communications" },
         { label: "Video & Messaging", href: "/video-messaging" },
         { label: "Business SMS", href: "/business-sms" },
