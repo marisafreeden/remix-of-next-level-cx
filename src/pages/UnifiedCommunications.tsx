@@ -103,13 +103,6 @@ const UnifiedCommunications = () => {
               <div className="promo-row-text">
                 <h3 className="promo-row-title">{f.title}</h3>
                 <p className="promo-row-desc">{f.desc}</p>
-                <ul className="uc-feature-points">
-                  {f.points.map((p) => (
-                    <li key={p} className="uc-feature-point">
-                      <span className="uc-feature-check">✓</span> {p}
-                    </li>
-                  ))}
-                </ul>
                 <button className="promo-row-cta">
                   Learn more <span style={{ fontSize: '14px' }}>→</span>
                 </button>
