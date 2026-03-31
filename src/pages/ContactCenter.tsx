@@ -181,6 +181,32 @@ const ContactCenter = () => {
         </div>
       </section>
 
+      {/* Security & Compliance */}
+      <section className="cc-security-section">
+        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
+          <h2 className="promos-title">Enterprise-Grade <span className="promos-title-italic">Security</span></h2>
+          <p className="cc-security-subtitle">Your data is protected by industry-leading standards and certifications.</p>
+        </div>
+        <div className="cc-security-grid">
+          <div className="cc-security-card">
+            <div className="cc-security-icon"><ShieldCheck size={32} strokeWidth={1.5} /></div>
+            <h3>SOC 2 Type II</h3>
+            <p>Independently audited security controls for data protection, availability, and confidentiality.</p>
+          </div>
+          <div className="cc-security-card">
+            <div className="cc-security-icon"><Lock size={32} strokeWidth={1.5} /></div>
+            <h3>GDPR Compliant</h3>
+            <p>Full compliance with European data protection regulations and privacy standards.</p>
+          </div>
+          <div className="cc-security-card">
+            <div className="cc-security-icon"><BadgeCheck size={32} strokeWidth={1.5} /></div>
+            <h3>HIPAA Compliant</h3>
+            <p>Meets healthcare industry requirements for protecting sensitive patient information.</p>
+          </div>
+        </div>
+      </section>
+
       <TestimonialsSection />
       <FAQSection />
 
