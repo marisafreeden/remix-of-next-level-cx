@@ -181,8 +181,7 @@ const ContactCenter = () => {
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
           <h2 className="promos-title">
-            Built for{" "}
-            <span className="promos-title-italic">Everyone</span>
+            Built for <span className="promos-title-italic">Everyone</span>
           </h2>
         </div>
         <div className="cc-persona-grid">
