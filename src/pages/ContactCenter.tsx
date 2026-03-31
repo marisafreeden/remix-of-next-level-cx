@@ -63,23 +63,9 @@ const ContactCenter = () => {
               {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
             </button>
           </div>
-          <div className="uc-hero-image">
-            <div className="uc-big-feature-image">
-              <img src="https://placehold.co/600x400/F3F4F6/9CA3AF?text=GoContact+Platform" alt="GoContact Platform" />
-            </div>
-          </div>
         </div>
 
         <div className="cc-platform-inner">
-          <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-            <p className="promos-eyebrow">{t("cc_page.platform_eyebrow")}</p>
-            <h2 className="promos-title">
-              <EditableText value={c("platform_title1", "cc_page.platform_title1")} copyKey="platform_title1" onSave={save} /><br />
-              <span className="promos-title-italic">
-                <EditableText value={c("platform_title2", "cc_page.platform_title2")} copyKey="platform_title2" onSave={save} />
-              </span>
-            </h2>
-          </div>
           <div className="cc-platform-pills">
             {platformPillKeys.map((key) => (
               <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
