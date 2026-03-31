@@ -11,6 +11,7 @@ import "@fontsource/inter/600.css";
 import { Phone, Video, MessageSquare, Users, Shield, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
+import EditableText from "@/components/EditableText";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";

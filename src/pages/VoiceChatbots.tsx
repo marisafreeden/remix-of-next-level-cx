@@ -6,6 +6,7 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/instrument-sans/600.css";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
+import EditableText from "@/components/EditableText";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import TestimonialsSection from "../components/TestimonialsSection";
