@@ -65,14 +65,25 @@
 
 /* ===== Platform Section Override ===== */
 .cc-platform-section {
-  background: #ffffff !important;
+  background: linear-gradient(135deg, #0a0f18 0%, #1a2740 40%, #1D5B94 75%, #43B5BF 100%) !important;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-radius: 0;
 }
 
 .cc-platform-section .uc-benefits-header {
   text-align: center;
+}
+
+.cc-platform-section .promos-eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cc-platform-section .promos-title,
+.cc-platform-section .promos-title-italic {
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
 }
 
 .cc-platform-section::before {
@@ -83,7 +94,7 @@
   transform: translate(-50%, -50%);
   width: 110%;
   height: 800px;
-  background: rgba(61, 167, 184, 0.15);
+  background: rgba(67, 181, 191, 0.12);
   border-radius: 50%;
   filter: blur(111px);
   pointer-events: none;
@@ -100,7 +111,7 @@
   display: inline-flex;
   gap: 0;
   border-radius: 999px;
-  border: 1.5px solid rgba(10, 15, 24, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
   margin: -16px auto 40px;
   justify-content: center;
@@ -114,14 +125,14 @@
   border: none;
   cursor: pointer;
   background: transparent;
-  color: rgba(10, 15, 24, 0.55);
+  color: rgba(255, 255, 255, 0.55);
   transition: all 0.25s;
   white-space: nowrap;
 }
 
 .cc-platform-pill:hover {
-  color: #0a0f18;
-  background: rgba(10, 15, 24, 0.06);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 999px;
 }
 
@@ -153,7 +164,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 1.8;
-  color: rgba(10, 15, 24, 0.65);
+  color: rgba(255, 255, 255, 0.65);
   margin-bottom: 20px;
 }
 
