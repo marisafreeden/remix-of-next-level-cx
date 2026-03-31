@@ -56,14 +56,18 @@
   overflow: hidden;
 }
 
+.cc-platform-section .uc-benefits-header {
+  text-align: center;
+}
+
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 750px;
-  height: 1160px;
+  width: 110%;
+  height: 800px;
   background: rgba(61, 167, 184, 0.15);
   border-radius: 50%;
   filter: blur(111px);
@@ -102,7 +106,8 @@
 
 .cc-platform-pill:hover {
   color: #0a0f18;
-  background: rgba(10, 15, 24, 0.04);
+  background: rgba(10, 15, 24, 0.06);
+  border-radius: 999px;
 }
 
 /* ===== Platform Image ===== */
