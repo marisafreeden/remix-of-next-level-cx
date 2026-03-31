@@ -34,7 +34,7 @@ const VoiceChatbots = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
-              {c("hero_title1", "voice_page.hero_title1")} <span className="going-next">{c("hero_title2", "voice_page.hero_title2")}</span>
+              <EditableText value={c("hero_title1", "voice_page.hero_title1")} copyKey="hero_title1" onSave={save} /> <span className="going-next"><EditableText value={c("hero_title2", "voice_page.hero_title2")} copyKey="hero_title2" onSave={save} /></span>
             </h1>
             <p className="uc-hero-subtitle">{t("voice_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
