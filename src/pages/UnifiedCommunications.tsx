@@ -73,8 +73,8 @@ const UnifiedCommunications = () => {
         <div className="uc-features-header">
           <p className="promos-eyebrow">{t("uc_page.features_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("uc_page.features_title1")}<br />
-            <span className="promos-title-italic">{t("uc_page.features_title2")}</span>
+            {c("features_title1", "uc_page.features_title1")}<br />
+            <span className="promos-title-italic">{c("features_title2", "uc_page.features_title2")}</span>
           </h2>
         </div>
         <div className="promos-stack">

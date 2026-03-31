@@ -50,8 +50,8 @@ const Index = () => {
 
         <div className="hero-content">
           <h1 className="hero-h1">
-            {t("hero.title_line1")}<br />
-            <span className="going-next">{t("hero.title_line2")}</span>
+            {c("hero_title1", "hero.title_line1")}<br />
+            <span className="going-next">{c("hero_title2", "hero.title_line2")}</span>
           </h1>
 
           <p className="hero-sub">{t("hero.subtitle")}</p>

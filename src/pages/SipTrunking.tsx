@@ -102,8 +102,8 @@ const SipTrunking = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sip_page.grid_eyebrow")}</p>
           <h2 className="promos-title">
-            {t("sip_page.grid_title1")}<br />
-            <span className="promos-title-italic">{t("sip_page.grid_title2")}</span>
+            {c("grid_title1", "sip_page.grid_title1")}<br />
+            <span className="promos-title-italic">{c("grid_title2", "sip_page.grid_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
