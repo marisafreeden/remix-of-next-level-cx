@@ -79,8 +79,8 @@ const VideoMessaging = () => {
           <div className="uc-benefits-header" style={{ textAlign: 'center', marginBottom: '48px' }}>
             <p className="promos-eyebrow" style={{ textAlign: 'center' }}>{t("video_page.platform_eyebrow")}</p>
             <h2 className="promos-title" style={{ textAlign: 'center' }}>
-              {t("video_page.platform_title1")}<br />
-              <span className="promos-title-italic">{t("video_page.platform_title2")}</span>
+              {c("platform_title1", "video_page.platform_title1")}<br />
+              <span className="promos-title-italic">{c("platform_title2", "video_page.platform_title2")}</span>
             </h2>
           </div>
           <div className="uc-big-feature-image">
