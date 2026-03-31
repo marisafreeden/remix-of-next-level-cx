@@ -88,7 +88,7 @@ const VoiceChatbots = () => {
       <section className="vc-payback-section">
         <div className="vc-payback-inner">
           <div className="vc-payback-visual">
-            <img src={ucHeroImg} alt="GoEngage Voice ROI" loading="lazy" />
+            <DeploymentChart />
           </div>
           <div className="vc-payback-content">
             <div className="vc-payback-badge">
