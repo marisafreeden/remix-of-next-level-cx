@@ -205,7 +205,7 @@
 /* ===== Mobile: <= 768px ===== */
 @media (max-width: 768px) {
   .uc-hero-section {
-    padding: 120px 20px 48px;
+    padding: 148px 20px 48px;
   }
 
   .uc-hero-inner {
