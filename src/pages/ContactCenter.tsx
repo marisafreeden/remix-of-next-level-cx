@@ -36,6 +36,7 @@ const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10"
 const featureIcons = [Headphones, Zap, Shield, Bot, Settings, BarChart3, Globe, Users, Phone, FileText, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
 const personaIcons = [Users, MonitorSmartphone, Settings];
+const personaImages = [personaAgentsImg, personaManagersImg, personaItImg];
 const faqKeys = ["fq1", "fq2", "fq3", "fq4", "fq5"];
 
 const ContactCenter = () => {
