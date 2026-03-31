@@ -67,7 +67,7 @@ const ContactCenter = () => {
       </section>
 
       {/* Platform Section */}
-      <section className="uc-benefits-section">
+      <section className="uc-benefits-section cc-platform-section">
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("cc_page.platform_eyebrow")}</p>
           <h2 className="promos-title">

@@ -48,6 +48,12 @@
   font-style: italic;
 }
 
+/* ===== Platform Section Override ===== */
+.cc-platform-section {
+  background: #ffffff !important;
+  text-align: center;
+}
+
 /* ===== Platform Pills ===== */
 .cc-platform-pills {
   display: inline-flex;
