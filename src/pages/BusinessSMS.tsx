@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
+import EditableText from "@/components/EditableText";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -31,7 +32,7 @@ const gridKeys = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8"];
 
 const BusinessSMS = () => {
   const { t } = useTranslation();
-  const { c } = useSiteCopy("sms");
+  const { c, save } = useSiteCopy("sms");
 
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
@@ -41,8 +42,8 @@ const BusinessSMS = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {c("hero_title1", "sms_page.hero_title1")}<br />
-              <span className="going-next">{c("hero_title2", "sms_page.hero_title2")}</span>
+              <EditableText value={c("hero_title1", "sms_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
+              <span className="going-next"><EditableText value={c("hero_title2", "sms_page.hero_title2")} copyKey="hero_title2" onSave={save} /></span>
             </h1>
             <p className="uc-hero-subtitle">{t("sms_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
@@ -59,8 +60,8 @@ const BusinessSMS = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sms_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {c("benefits_title1", "sms_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{c("benefits_title2", "sms_page.benefits_title2")}</span>
+            <EditableText value={c("benefits_title1", "sms_page.benefits_title1")} copyKey="benefits_title1" onSave={save} /><br />
+            <span className="promos-title-italic"><EditableText value={c("benefits_title2", "sms_page.benefits_title2")} copyKey="benefits_title2" onSave={save} /></span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>

@@ -12,6 +12,7 @@ import "@fontsource/inter/600.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
+import EditableText from "@/components/EditableText";
 import { Check } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
@@ -83,7 +84,7 @@ const aiPlanDefs: PlanDef[] = [
 
 const Pricing = () => {
   const { t } = useTranslation();
-  const { c } = useSiteCopy("pricing");
+  const { c, save } = useSiteCopy("pricing");
   const [activeTab, setActiveTab] = useState<"uc" | "cc" | "ai">("uc");
   const planDefs = activeTab === "uc" ? ucPlanDefs : activeTab === "cc" ? ccPlanDefs : aiPlanDefs;
   const currency = t("pricing_page.currency");
@@ -94,7 +95,7 @@ const Pricing = () => {
 
       <section className="pricing-hero">
         <h1 className="pricing-title">
-          {c("title_pre", "pricing_page.title_pre")} <em className="pricing-title-italic">{c("title_em", "pricing_page.title_em")}</em>
+          <EditableText value={c("title_pre", "pricing_page.title_pre")} copyKey="title_pre" onSave={save} /> <em className="pricing-title-italic"><EditableText value={c("title_em", "pricing_page.title_em")} copyKey="title_em" onSave={save} /></em>
         </h1>
 
         <div className="pricing-tabs">
