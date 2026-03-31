@@ -107,7 +107,7 @@ const ContactCenter = () => {
               </div>
               <div className="cc-alt-image-side">
                 <div className="cc-alt-blur" />
-                <img src={gocontactDashboard} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                <img src={ccFeatureCharts} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
               </div>
             </div>
           ))}
