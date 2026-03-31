@@ -12,6 +12,7 @@ import {
   Phone, Video, MessageSquare, Monitor, Users, Link2,
   Shield, Mic, History, Voicemail, Eye, FileText, ChevronRight, Smartphone
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -19,121 +20,88 @@ import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
 import ucHeroImg from "@/assets/uc-hero.png";
 
-const benefits = [
-  { icon: Phone, title: "One App, Every Channel", desc: "Call, text, chat, and video conference with customers and teammates — all from a single interface and one business number." },
-  { icon: Video, title: "Rebuilt for Modern Teams", desc: "A completely redesigned experience with faster performance, cleaner UI, and enterprise-grade encrypted video." },
-  { icon: Users, title: "Included with b-hive", desc: "Every standard b-hive seat includes Communicator. Pro seats unlock full video conferencing and screen sharing." },
-];
-
-const features = [
-  {
-    title: "Every conversation, your way.",
-    desc: "Follow up a call with a text. Escalate a chat into a video meeting. Share your screen mid-conversation. Communicator lets your team move fluidly between channels without ever switching apps — so customers get faster answers and teammates stay in sync.",
-  },
-  {
-    title: "Collaboration without boundaries.",
-    desc: "Give your team the tools to work together from anywhere. Host video conferences with up to 50 participants, create persistent chat groups, share files in real time, and use personal meeting links that make scheduling effortless. Your full company directory is always a click away.",
-  },
-  {
-    title: "Your office in your pocket.",
-    desc: "Carry your entire business phone system wherever you go. The all-new mobile app for iOS and Android lets you place calls, send texts, join video meetings, and collaborate with your team — all from your business number, not your personal one.",
-  },
-];
-
-const featureGrid = [
-  { icon: Phone, title: "Voice Calling", desc: "Make, take, and manage calls with mute, hold, and transfer — right from your desktop." },
-  { icon: MessageSquare, title: "Real-Time Chat", desc: "Message teammates one-on-one or in groups with persistent, searchable threads." },
-  { icon: Video, title: "Video Conferencing", desc: "Crystal-clear video meetings for up to 50 participants with one click." },
-  { icon: Smartphone, title: "Text Messaging", desc: "Send and receive SMS from your business number to any mobile device." },
-  { icon: Monitor, title: "Screen Sharing", desc: "Present slides, walk through apps, or share your full desktop in seconds." },
-  { icon: Link2, title: "Personal Meeting Links", desc: "Every user gets a unique video room URL — plus schedulable links for future meetings." },
-  { icon: Shield, title: "Meeting Lobbies", desc: "Keep video calls private. Only the host can admit guests from the lobby." },
-  { icon: Mic, title: "Call Recording", desc: "Record voice and video calls on demand and store them for review." },
-  { icon: History, title: "Chat History", desc: "Full meeting details with recordings and chat transcripts, always accessible." },
-  { icon: Voicemail, title: "Voicemail & Fax", desc: "Speech-to-text voicemail and virtual fax — no extra hardware needed." },
-  { icon: Eye, title: "Team Presence", desc: "See who's available, busy, or away in real time across your entire org." },
-  { icon: FileText, title: "HIPAA Compliant", desc: "Secure, encrypted communications that meet healthcare compliance standards." },
-];
+const benefitIcons = [Phone, Video, Users];
+const benefitKeys = ["b1", "b2", "b3"];
+const featureKeys = ["f1", "f2", "f3"];
+const gridIcons = [Phone, MessageSquare, Video, Smartphone, Monitor, Link2, Shield, Mic, History, Voicemail, Eye, FileText];
+const gridKeys = ["g1", "g2", "g3", "g4", "g5", "g6", "g7", "g8", "g9", "g10", "g11", "g12"];
 
 const VideoMessaging = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={{ background: "#ffffff", minHeight: "100vh" }}>
       <Navbar />
 
-      {/* Hero Section */}
       <section className="uc-hero-section">
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              One app for<br />
-              <span className="going-next">every conversation.</span>
+              {t("video_page.hero_title1")}<br />
+              <span className="going-next">{t("video_page.hero_title2")}</span>
             </h1>
-            <p className="uc-hero-subtitle">
-              Calling, video, texting, and collaboration — unified in a single interface. Your team communicates faster. Your customers get better answers.
-            </p>
+            <p className="uc-hero-subtitle">{t("video_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
-              Request a Demo <span style={{ fontSize: '18px' }}>→</span>
+              {t("common.request_demo")} <span style={{ fontSize: '18px' }}>→</span>
             </button>
           </div>
           <div className="uc-hero-image">
-            <img src={ucHeroImg} alt="Video and Messaging - b-hive Communicator" />
+            <img src={ucHeroImg} alt="Video and Messaging" />
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">WHY COMMUNICATOR</p>
+          <p className="promos-eyebrow">{t("video_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            Connected teams build<br />
-            <span className="promos-title-italic">stronger businesses.</span>
+            {t("video_page.benefits_title1")}<br />
+            <span className="promos-title-italic">{t("video_page.benefits_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
-          {benefits.map((b) => (
-            <div key={b.title} className="uc-benefit-card">
-              <div className="uc-benefit-icon">
-                <b.icon size={24} strokeWidth={1.5} />
+          {benefitKeys.map((key, i) => {
+            const Icon = benefitIcons[i];
+            return (
+              <div key={key} className="uc-benefit-card">
+                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <h3 className="uc-benefit-title">{t(`video_page.${key}_title`)}</h3>
+                <p className="uc-benefit-desc">{t(`video_page.${key}_desc`)}</p>
               </div>
-              <h3 className="uc-benefit-title">{b.title}</h3>
-              <p className="uc-benefit-desc">{b.desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
-      {/* Big Feature Image */}
       <section className="uc-features-section" style={{ paddingBottom: 0 }}>
         <div style={{ maxWidth: '1440px', margin: '0 auto' }}>
           <div className="uc-benefits-header" style={{ textAlign: 'center', marginBottom: '48px' }}>
-            <p className="promos-eyebrow" style={{ textAlign: 'center' }}>THE PLATFORM</p>
+            <p className="promos-eyebrow" style={{ textAlign: 'center' }}>{t("video_page.platform_eyebrow")}</p>
             <h2 className="promos-title" style={{ textAlign: 'center' }}>
-              Made to help your team<br />
-              <span className="promos-title-italic">succeed.</span>
+              {t("video_page.platform_title1")}<br />
+              <span className="promos-title-italic">{t("video_page.platform_title2")}</span>
             </h2>
           </div>
           <div className="uc-big-feature-image">
-            <img src={ucHeroImg} alt="b-hive Communicator platform overview" />
+            <img src={ucHeroImg} alt="b-hive Communicator platform" />
           </div>
         </div>
       </section>
 
-      {/* Features - Alternating Rows */}
       <section className="uc-features-section">
         <div className="promos-stack">
-          {features.map((f, i) => (
-            <div key={f.title} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
+          {featureKeys.map((key, i) => (
+            <div key={key} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
               <div className="promo-row-text">
-                <h3 className="promo-row-title">{f.title}</h3>
-                <p className="promo-row-desc" style={{ maxWidth: '520px' }}>{f.desc}</p>
+                <h3 className="promo-row-title">{t(`video_page.${key}_title`)}</h3>
+                <p className="promo-row-desc" style={{ maxWidth: '520px' }}>{t(`video_page.${key}_desc`)}</p>
                 <button className="promo-row-cta">
-                  Learn more <ChevronRight size={16} />
+                  {t("common.learn_more")} <ChevronRight size={16} />
                 </button>
               </div>
               <div className="promo-row-image-wrap">
                 <div className="uc-feature-placeholder">
-                  <img src={ucHeroImg} alt={f.title} className="promo-row-image" />
+                  <img src={ucHeroImg} alt={t(`video_page.${key}_title`)} className="promo-row-image" />
                 </div>
               </div>
             </div>
@@ -141,25 +109,25 @@ const VideoMessaging = () => {
         </div>
       </section>
 
-      {/* Feature Grid */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">EVERY TOOL YOU NEED</p>
+          <p className="promos-eyebrow">{t("video_page.grid_eyebrow")}</p>
           <h2 className="promos-title">
-            Communicate and collaborate.<br />
-            <span className="promos-title-italic">All in one place.</span>
+            {t("video_page.grid_title1")}<br />
+            <span className="promos-title-italic">{t("video_page.grid_title2")}</span>
           </h2>
         </div>
         <div className="uc-benefits-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
-          {featureGrid.map((f) => (
-            <div key={f.title} className="uc-benefit-card">
-              <div className="uc-benefit-icon">
-                <f.icon size={24} strokeWidth={1.5} />
+          {gridKeys.map((key, i) => {
+            const Icon = gridIcons[i];
+            return (
+              <div key={key} className="uc-benefit-card">
+                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <h3 className="uc-benefit-title">{t(`video_page.${key}_title`)}</h3>
+                <p className="uc-benefit-desc">{t(`video_page.${key}_desc`)}</p>
               </div>
-              <h3 className="uc-benefit-title">{f.title}</h3>
-              <p className="uc-benefit-desc">{f.desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
