@@ -219,6 +219,71 @@
   border-radius: 16px 16px 0 0;
 }
 
+/* ===== Smarter Promos ===== */
+.cc-smarter-promos {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.cc-smarter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.cc-smarter-row-reverse {
+  direction: rtl;
+}
+
+.cc-smarter-row-reverse > * {
+  direction: ltr;
+}
+
+.cc-smarter-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cc-smarter-heading {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #0a0f18;
+  letter-spacing: -0.5px;
+}
+
+.cc-smarter-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(10, 15, 24, 0.6);
+}
+
+.cc-smarter-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+}
+
+@media (max-width: 768px) {
+  .cc-smarter-promos {
+    padding: 0 20px;
+    gap: 40px;
+  }
+  .cc-smarter-row,
+  .cc-smarter-row-reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+}
+
 /* ===== Security Section ===== */
 .cc-security-section {
   padding: 96px 48px;
