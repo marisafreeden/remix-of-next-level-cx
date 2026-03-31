@@ -26,6 +26,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 const statKeys = ["s1", "s2", "s3"];
 const howItWorksKeys = ["hw1", "hw2", "hw3", "hw4"];
 const howItWorksIcons = [Headphones, Bot, Phone, Settings];
+const platformPillKeys = ["hw1", "hw2", "hw3", "hw4"];
 const smarterKeys = ["sm1", "sm2", "sm3"];
 const smarterIcons = [BarChart3, Globe, FileText];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6"];
