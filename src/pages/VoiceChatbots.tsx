@@ -11,7 +11,7 @@ import TestimonialsSection from "../components/TestimonialsSection";
 import FAQSection from "../components/FAQSection";
 import CTABlock from "../components/CTABlock";
 import callFlowImg from "@/assets/call-flow-visualization.png";
-import DeploymentChart from "@/components/DeploymentChart";
+import deploymentGanttImg from "@/assets/deployment-gantt.png";
 import {
   Bot, Brain, Zap, Clock, ShieldCheck, BarChart3,
   ArrowRight, TrendingUp, Headphones, MessageSquare, Settings2
