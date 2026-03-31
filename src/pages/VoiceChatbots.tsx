@@ -33,7 +33,7 @@ const VoiceChatbots = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
-              {t("voice_page.hero_title1")} <span className="going-next">{t("voice_page.hero_title2")}</span>
+              {c("hero_title1", "voice_page.hero_title1")} <span className="going-next">{c("hero_title2", "voice_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("voice_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
