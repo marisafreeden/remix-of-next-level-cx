@@ -30,7 +30,7 @@ const App = () => (
           <Route path="/business-sms" element={<BusinessSMS />} />
           <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/admin/copy" element={<AdminCopy />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
