@@ -48,7 +48,8 @@ const ContactCenter = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="uc-hero-section">
+      <section className="uc-hero-section" style={{ position: "relative", overflow: "hidden" }}>
+        <img src="/images/ellipse-blur.png" alt="" className="cc-hero-blur" />
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
@@ -184,7 +185,6 @@ const ContactCenter = () => {
 
       <CTABlock />
       <Footer />
-      <img src="/images/ellipse-blur.png" alt="" className="cc-bottom-blur" />
     </div>
   );
 };
