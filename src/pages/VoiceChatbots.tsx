@@ -24,6 +24,7 @@ const resultKeys = ["r1", "r2", "r3", "r4"];
 
 const VoiceChatbots = () => {
   const { t } = useTranslation();
+  const { c } = useSiteCopy("voice");
 
   return (
     <div>
