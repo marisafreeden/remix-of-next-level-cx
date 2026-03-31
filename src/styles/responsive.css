@@ -15,7 +15,7 @@
 /* ===== Tablet: <= 1024px ===== */
 @media (max-width: 1024px) {
   /* Hero */
-  .hero-section { padding: 140px 24px 0; }
+  .hero-section { padding: 170px 24px 0; }
   .hero-h1 { font-size: 52px; letter-spacing: -2px; }
   .hero-sub { font-size: 18px; }
   .dash-preview { margin-top: 100px; }
