@@ -75,15 +75,6 @@ const ContactCenter = () => {
             <p>{t("cc_page.platform_desc1")}</p>
             <p>{t("cc_page.platform_desc2")}</p>
           </div>
-          <div className="cc-stats-grid-horizontal">
-            {statKeys.map((key) => (
-              <div key={key} className="cc-stat-card">
-                <span className="cc-stat-number">{t(`cc_page.${key}_number`)}</span>
-                <span className="cc-stat-label">{t(`cc_page.${key}_label`)}</span>
-                <span className="cc-stat-source">{t(`cc_page.${key}_source`)}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
