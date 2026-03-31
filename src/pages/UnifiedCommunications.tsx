@@ -35,8 +35,8 @@ const UnifiedCommunications = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {c("hero_title1", "uc_page.hero_title1")}<br />
-              <span className="going-next">{c("hero_title2", "uc_page.hero_title2")}</span>
+              <EditableText value={c("hero_title1", "uc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
+              <span className="going-next"><EditableText value={c("hero_title2", "uc_page.hero_title2")} copyKey="hero_title2" onSave={save} /></span>
             </h1>
             <p className="uc-hero-subtitle">{t("uc_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
