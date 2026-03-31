@@ -15,7 +15,8 @@ import personaItImg from "@/assets/persona-it.jpg";
 
 import {
   Headphones, MessageSquare, Phone, Bot, BarChart3, Globe,
-  FileText, Settings, Users, Shield, Zap, MonitorSmartphone
+  FileText, Settings, Users, Shield, Zap, MonitorSmartphone,
+  ShieldCheck, Lock, BadgeCheck
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
