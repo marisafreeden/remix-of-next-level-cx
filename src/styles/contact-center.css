@@ -56,6 +56,10 @@
   overflow: hidden;
 }
 
+.cc-platform-section .uc-benefits-header {
+  text-align: center;
+}
+
 .cc-platform-section::before {
   content: '';
   position: absolute;
