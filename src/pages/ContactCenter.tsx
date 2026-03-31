@@ -89,12 +89,6 @@ const ContactCenter = () => {
 
       {/* What Makes It Smarter — UC promo style */}
       <section className="uc-features-section">
-        <div className="uc-features-header">
-          <p className="promos-eyebrow">{t("cc_page.smarter_eyebrow")}</p>
-          <h2 className="promos-title">
-            <EditableText value={c("smarter_title", "cc_page.smarter_title")} copyKey="smarter_title" onSave={save} />
-          </h2>
-        </div>
         <div className="cc-alt-features">
           {smarterKeys.map((key, i) => (
             <div key={key} className={`cc-alt-row ${i % 2 === 1 ? "cc-alt-row-reverse" : ""}`}>
