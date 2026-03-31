@@ -1,3 +1,17 @@
+/* ===== CC Hero Height ===== */
+.cc-page-wrap .uc-hero-section {
+  min-height: 85vh;
+}
+
+/* ===== Bottom Blur Image ===== */
+.cc-bottom-blur {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: -80px;
+  pointer-events: none;
+}
+
 /* ===== Contact Center Stats Section ===== */
 .cc-stats-section {
   background: #F9FAFB;

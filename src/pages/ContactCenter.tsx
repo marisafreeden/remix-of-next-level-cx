@@ -40,7 +40,7 @@ const ContactCenter = () => {
   const { c, save } = useSiteCopy("cc_page");
 
   return (
-    <div style={{ background: "#ffffff", minHeight: "100vh" }}>
+    <div className="cc-page-wrap" style={{ background: "#ffffff", minHeight: "100vh" }}>
       <Navbar />
 
       {/* Hero */}
@@ -211,6 +211,7 @@ const ContactCenter = () => {
 
       <CTABlock />
       <Footer />
+      <img src="/images/ellipse-blur.png" alt="" className="cc-bottom-blur" />
     </div>
   );
 };
