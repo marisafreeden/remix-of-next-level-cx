@@ -58,8 +58,8 @@ const SipTrunking = () => {
         <div className="uc-benefits-header">
           <p className="promos-eyebrow">{t("sip_page.benefits_eyebrow")}</p>
           <h2 className="promos-title">
-            {c("benefits_title1", "sip_page.benefits_title1")}<br />
-            <span className="promos-title-italic">{c("benefits_title2", "sip_page.benefits_title2")}</span>
+            <EditableText value={c("benefits_title1", "sip_page.benefits_title1")} copyKey="benefits_title1" onSave={save} /><br />
+            <span className="promos-title-italic"><EditableText value={c("benefits_title2", "sip_page.benefits_title2")} copyKey="benefits_title2" onSave={save} /></span>
           </h2>
           <p className="uc-hero-subtitle" style={{ marginTop: '16px', marginBottom: 0 }}>
             {t("sip_page.benefits_subtitle")}
