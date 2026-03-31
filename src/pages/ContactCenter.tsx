@@ -50,9 +50,9 @@ const ContactCenter = () => {
 
       {/* Hero + Platform Combined */}
       <section className="cc-platform-section cc-hero-platform-combined">
-        <div className="uc-hero-inner">
-          <div className="uc-hero-text">
-            <h1 className="hero-h1" style={{ textAlign: "left", lineHeight: "1.05" }}>
+        <div className="uc-hero-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+          <div className="uc-hero-text" style={{ alignItems: "center", textAlign: "center" }}>
+            <h1 className="hero-h1" style={{ textAlign: "center", lineHeight: "1.05" }}>
               <EditableText value={c("hero_title1", "cc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
               <span className="going-next">
                 <EditableText value={c("hero_title2", "cc_page.hero_title2")} copyKey="hero_title2" onSave={save} />
