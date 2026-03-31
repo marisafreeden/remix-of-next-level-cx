@@ -95,7 +95,7 @@ const Pricing = () => {
 
       <section className="pricing-hero">
         <h1 className="pricing-title">
-          {c("title_pre", "pricing_page.title_pre")} <em className="pricing-title-italic">{c("title_em", "pricing_page.title_em")}</em>
+          <EditableText value={c("title_pre", "pricing_page.title_pre")} copyKey="title_pre" onSave={save} /> <em className="pricing-title-italic"><EditableText value={c("title_em", "pricing_page.title_em")} copyKey="title_em" onSave={save} /></em>
         </h1>
 
         <div className="pricing-tabs">

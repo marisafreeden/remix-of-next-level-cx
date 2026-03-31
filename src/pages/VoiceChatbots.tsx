@@ -69,8 +69,8 @@ const VoiceChatbots = () => {
           <div className="vc-split-header">
             <p className="goai-eyebrow">{t("voice_page.challenge_eyebrow")}</p>
             <h2 className="goai-title" style={{ fontSize: 40 }}>
-              {c("challenge_title1", "voice_page.challenge_title1")}
-              <span className="goai-title-italic"> {c("challenge_title2", "voice_page.challenge_title2")}</span>
+              <EditableText value={c("challenge_title1", "voice_page.challenge_title1")} copyKey="challenge_title1" onSave={save} />
+              <span className="goai-title-italic"> <EditableText value={c("challenge_title2", "voice_page.challenge_title2")} copyKey="challenge_title2" onSave={save} /></span>
             </h2>
           </div>
           <div className="vc-split-grid">
