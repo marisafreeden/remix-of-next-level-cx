@@ -136,6 +136,22 @@
 
   .cc-platform-copy {
     padding: 0 20px;
-    margin-top: -16px;
+    margin-top: 0;
+  }
+
+  .cc-platform-pills {
+    padding: 0 20px;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .cc-platform-pill {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .cc-platform-image-wrap {
+    padding: 0 20px;
+    margin-bottom: 32px;
   }
 }
