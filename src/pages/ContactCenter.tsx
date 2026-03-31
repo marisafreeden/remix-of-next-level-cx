@@ -180,9 +180,10 @@ const ContactCenter = () => {
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header">
-          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
+          <p className="promos-eyebrow">Designed for Everyone on Your Team</p>
           <h2 className="promos-title">
-            <EditableText value={c("persona_title", "cc_page.persona_title")} copyKey="persona_title" onSave={save} />
+            GoContact Works for Everyone in the{" "}
+            <span className="promos-title-italic">Room</span>
           </h2>
         </div>
         <div className="cc-persona-grid">
