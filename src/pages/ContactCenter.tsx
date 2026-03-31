@@ -94,27 +94,22 @@ const ContactCenter = () => {
             <EditableText value={c("smarter_title", "cc_page.smarter_title")} copyKey="smarter_title" onSave={save} />
           </h2>
         </div>
-        <div className="promos-stack">
-          {smarterKeys.map((key, i) => {
-            const Icon = smarterIcons[i];
-            return (
-              <div key={key} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
-                <div className="promo-row-text">
-                  <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
-                  <h3 className="promo-row-title">{t(`cc_page.${key}_title`)}</h3>
-                  <p className="promo-row-desc">{t(`cc_page.${key}_desc`)}</p>
-                  <button className="promo-row-cta">
-                    {t("common.learn_more")} <span style={{ fontSize: "14px" }}>→</span>
-                  </button>
-                </div>
-                <div className="promo-row-image-wrap">
-                  <div className="uc-feature-placeholder">
-                    <img src={gocontactDashboard} alt={t(`cc_page.${key}_title`)} className="promo-row-image" />
-                  </div>
-                </div>
+        <div className="cc-alt-features">
+          {smarterKeys.map((key, i) => (
+            <div key={key} className={`cc-alt-row ${i % 2 === 1 ? "cc-alt-row-reverse" : ""}`}>
+              <div className="cc-alt-text">
+                <h3 className="cc-alt-heading">{t(`cc_page.${key}_title`)}</h3>
+                <p className="cc-alt-desc">{t(`cc_page.${key}_desc`)}</p>
+                <button className="cc-alt-cta">
+                  {t("common.learn_more")} <span>›</span>
+                </button>
               </div>
-            );
-          })}
+              <div className="cc-alt-image-side">
+                <div className="cc-alt-blur" />
+                <img src={gocontactDashboard} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
