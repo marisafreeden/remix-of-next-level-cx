@@ -38,8 +38,8 @@ const VideoMessaging = () => {
         <div className="uc-hero-inner">
           <div className="uc-hero-text">
             <h1 className="hero-h1" style={{ textAlign: 'left', lineHeight: '1.05' }}>
-              {t("video_page.hero_title1")}<br />
-              <span className="going-next">{t("video_page.hero_title2")}</span>
+              {c("hero_title1", "video_page.hero_title1")}<br />
+              <span className="going-next">{c("hero_title2", "video_page.hero_title2")}</span>
             </h1>
             <p className="uc-hero-subtitle">{t("video_page.hero_subtitle")}</p>
             <button className="btn-hero-a">
