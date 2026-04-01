@@ -209,6 +209,18 @@ const ContactCenter = () => {
         </div>
       </section>
 
+      {/* Stats */}
+      <section className="cc-stats-section-v2">
+        <div className="cc-stats-grid-v2">
+          {statKeys.map((key) => (
+            <div key={key} className="cc-stat-v2">
+              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* What Makes It Smarter — UC promo style */}
       <section className="uc-features-section">
         <div className="cc-alt-features">
