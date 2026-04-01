@@ -241,6 +241,7 @@
   z-index: 0;
 }
 
+.cc-platform-section > * {
   position: relative;
   z-index: 1;
 }
