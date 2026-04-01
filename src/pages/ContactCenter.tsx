@@ -47,33 +47,27 @@ const ContactCenter = () => {
 
       {/* Hero + Platform Combined */}
       <section className="cc-platform-section cc-hero-platform-combined">
-        <div className="uc-hero-inner" style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-          <div className="uc-hero-text" style={{ alignItems: "center", textAlign: "center", display: "flex", flexDirection: "column" }}>
-            <h1 className="hero-h1" style={{ textAlign: "center", lineHeight: "1.05" }}>
-              <EditableText value={c("hero_title1", "cc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
-              <span className="going-next">
-                <EditableText value={c("hero_title2", "cc_page.hero_title2")} copyKey="hero_title2" onSave={save} />
-              </span>
-            </h1>
-            <p className="uc-hero-subtitle">{t("cc_page.hero_subtitle_combined")}</p>
-            <button className="btn-hero-a btn-hero-a-light">
-              {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
-            </button>
-          </div>
+        <div className="cc-hero-content">
+          <h1 className="hero-h1 cc-hero-title">
+            <EditableText value={c("hero_title1", "cc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
+            <span className="going-next">
+              <EditableText value={c("hero_title2", "cc_page.hero_title2")} copyKey="hero_title2" onSave={save} />
+            </span>
+          </h1>
+          <p className="cc-hero-desc">{t("cc_page.hero_subtitle_combined")}</p>
+          <button className="btn-hero-a btn-hero-a-light">
+            {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
+          </button>
         </div>
 
         <div className="cc-platform-inner">
           <div className="cc-platform-pills">
-            {platformPillKeys.map((key) => (
-              <span key={key} className="cc-platform-pill">{t(`cc_page.${key}_title`)}</span>
+            {platformPillKeys.map((key, i) => (
+              <span key={key} className={`cc-platform-pill${i === 0 ? " cc-pill-active" : ""}`}>{t(`cc_page.${key}_title`)}</span>
             ))}
           </div>
           <div className="cc-platform-image-wrap">
             <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
-          </div>
-          <div className="cc-platform-copy">
-            <p>{t("cc_page.platform_desc1")}</p>
-            <p>{t("cc_page.platform_desc2")}</p>
           </div>
         </div>
       </section>
