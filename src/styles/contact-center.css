@@ -533,9 +533,9 @@
 }
 
 .cc-glass-dialer-mode-active {
-  background: rgba(67, 181, 191, 0.2);
-  color: #43B5BF;
-  border-color: rgba(67, 181, 191, 0.3);
+  background: rgba(67, 181, 191, 0.15);
+  color: #1D5B94;
+  border-color: rgba(67, 181, 191, 0.25);
 }
 
 
