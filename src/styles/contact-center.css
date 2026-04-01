@@ -864,6 +864,7 @@
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
     padding-top: 16px !important;
+    padding-bottom: 40px !important;
   }
 
   .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
