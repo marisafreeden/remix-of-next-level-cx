@@ -1,7 +1,12 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding-top: 84px !important;
+  padding-top: 24px !important;
   padding-bottom: 0 !important;
+}
+
+.cc-platform-section.cc-hero-platform-combined .cc-hero-content {
+  margin-top: 0 !important;
+  padding-top: 24px;
 }
 
 .cc-hero-content {
@@ -843,7 +848,11 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
-    padding-top: 72px !important;
+    padding-top: 16px !important;
+  }
+
+  .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
+    padding-top: 16px;
   }
 
   .cc-hero-platform-combined .uc-hero-inner {
