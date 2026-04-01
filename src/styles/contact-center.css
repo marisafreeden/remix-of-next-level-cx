@@ -236,19 +236,7 @@
 }
 
 /* ===== Platform Copy ===== */
-.cc-platform-copy {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 48px;
-}
-
-.cc-platform-copy p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 20px;
-}
+/* Platform copy removed — kept for backwards compat */
 
 /* ===== Section Dividers ===== */
 .cc-section-divider {
