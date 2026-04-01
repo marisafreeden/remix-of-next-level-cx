@@ -55,17 +55,12 @@ const ContactCenter = () => {
             </span>
           </h1>
           <p className="cc-hero-desc">{t("cc_page.hero_subtitle_combined")}</p>
-          <button className="btn-hero-a btn-hero-a-light">
+          <button className="btn-demo">
             {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
           </button>
         </div>
 
         <div className="cc-platform-inner">
-          <div className="cc-platform-pills">
-            {platformPillKeys.map((key, i) => (
-              <span key={key} className={`cc-platform-pill${i === 0 ? " cc-pill-active" : ""}`}>{t(`cc_page.${key}_title`)}</span>
-            ))}
-          </div>
           <div className="cc-glass-widgets">
             {/* Widget 1: Dashboard / Total Calls */}
             <div className="cc-glass-card cc-glass-tall" style={{ gridRow: "1 / 3" }}>

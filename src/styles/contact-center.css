@@ -14,7 +14,7 @@
   padding: 0 48px 48px;
   position: relative;
   z-index: 1;
-  gap: 20px;
+  gap: 12px;
 }
 
 .cc-hero-title {
@@ -144,7 +144,7 @@
 
 /* ===== Platform Section Override ===== */
 .cc-platform-section {
-  background: linear-gradient(180deg, #061e24 0%, #0a3038 30%, #2a8a96 70%, #0C4550 100%) !important;
+  background: linear-gradient(180deg, #061e24 0%, #0a3038 30%, #2a8a96 60%, #0a2a30 90%, #060d10 100%) !important;
   text-align: center;
   position: relative;
   overflow: hidden;
