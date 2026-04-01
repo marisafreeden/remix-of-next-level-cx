@@ -431,10 +431,10 @@
   border-radius: 50%;
 }
 
-.cc-dot-green { background: #4ade80; }
-.cc-dot-yellow { background: #facc15; }
-.cc-dot-red { background: #f87171; }
-.cc-dot-gray { background: rgba(255, 255, 255, 0.3); }
+.cc-dot-green { background: #16a34a; }
+.cc-dot-yellow { background: #ca8a04; }
+.cc-dot-red { background: #dc2626; }
+.cc-dot-gray { background: rgba(10, 15, 24, 0.2); }
 
 /* Queue Table */
 .cc-glass-queue-table {
