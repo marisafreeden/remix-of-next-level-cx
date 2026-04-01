@@ -30,7 +30,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 
 const statKeys = ["s1", "s2", "s3"];
 const platformPillKeys = ["hw1", "hw2", "hw3", "hw4"];
-const smarterKeys = ["sm1", "sm2", "sm3"];
+const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
 const smarterIcons = [BarChart3, Globe, FileText];
 const featureKeys = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"];
 const featureIcons = [Headphones, Zap, Shield, Bot, Settings, BarChart3, Globe, Users, Phone, FileText, MessageSquare, MonitorSmartphone];
