@@ -699,7 +699,8 @@
 
 /* ===== Stats V2 (Figma style) ===== */
 .cc-stats-section-v2 {
-  padding: 96px 48px;
+  padding: 64px 48px 96px;
+  margin-top: 30px;
   background: #F9FAFB;
 }
 
