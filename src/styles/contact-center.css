@@ -153,7 +153,7 @@
 
 /* ===== Platform Section Override ===== */
 .cc-platform-section {
-  background: linear-gradient(180deg, #0a3038 0%, #1a6570 25%, #2a8a96 45%, #e8f4f6 75%, #ffffff 100%) !important;
+  background: linear-gradient(180deg, #ffffff 0%, #e8f4f6 25%, #2a8a96 55%, #1a6570 75%, #0a3038 100%) !important;
   text-align: center;
   position: relative;
   overflow: hidden;
