@@ -553,6 +553,7 @@
   background: none;
   padding: 0;
   color: #43B5BF;
+  justify-content: flex-start;
 }
 
 .cc-features-gray .uc-benefit-icon svg {
