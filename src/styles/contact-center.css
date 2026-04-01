@@ -14,7 +14,11 @@
   padding: 0 48px 48px;
   position: relative;
   z-index: 1;
-  gap: 12px;
+  gap: 0;
+}
+
+.cc-hero-content .hero-h1 {
+  margin-bottom: 16px;
 }
 
 .cc-hero-title {
