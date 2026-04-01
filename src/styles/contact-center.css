@@ -413,16 +413,16 @@
 
 /* ===== Stats V2 (Figma style) ===== */
 .cc-stats-section-v2 {
-  padding: 80px 48px;
-  background: #ffffff;
+  padding: 96px 48px;
+  background: #F9FAFB;
 }
 
 .cc-stats-grid-v2 {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
+  gap: 32px;
   text-align: center;
 }
 
@@ -430,15 +430,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 20px;
+  padding: 48px 28px;
 }
 
 .cc-stat-v2-number {
   font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
-  font-size: 81px;
+  font-size: 72px;
   line-height: 1;
-  letter-spacing: -4px;
+  letter-spacing: -3.5px;
   background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -446,12 +450,13 @@
 }
 
 .cc-stat-v2-label {
-  font-family: 'Instrument Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.36;
-  color: #151D48;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555555;
   text-align: center;
+  max-width: 200px;
 }
 
 @media (max-width: 768px) {
