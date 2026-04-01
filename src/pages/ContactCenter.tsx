@@ -269,7 +269,7 @@ const ContactCenter = () => {
         <div className="cc-security-grid">
           <div className="cc-security-card">
             <div className="cc-security-icon"><ShieldCheck size={32} strokeWidth={1.5} /></div>
-            <h3>SOC 2 Type II</h3>
+            <h3>SOC 2 Type I</h3>
             <p>Independently audited security controls for data protection, availability, and confidentiality.</p>
           </div>
           <div className="cc-security-card">
