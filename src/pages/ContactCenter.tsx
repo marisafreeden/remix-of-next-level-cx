@@ -183,6 +183,28 @@ const ContactCenter = () => {
                 </div>
               </div>
             </div>
+
+            {/* Widget 5: Dialer */}
+            <div className="cc-glass-card">
+              <div className="cc-glass-card-header">
+                <Phone size={14} strokeWidth={1.5} />
+                <span>Active Call</span>
+                <span className="cc-glass-badge" style={{ background: "rgba(74, 222, 128, 0.2)", color: "#4ade80" }}>Talking</span>
+              </div>
+              <div className="cc-glass-dialer">
+                <div className="cc-glass-dialer-timer">01:32</div>
+                <div className="cc-glass-dialer-info">
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Name</span><span>Susan Smith</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Phone</span><span>975 234 567</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Type</span><span>Predictive</span></div>
+                </div>
+                <div className="cc-glass-dialer-modes">
+                  <span className="cc-glass-dialer-mode">Manual</span>
+                  <span className="cc-glass-dialer-mode">Power</span>
+                  <span className="cc-glass-dialer-mode cc-glass-dialer-mode-active">Predictive</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
