@@ -1,28 +1,35 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding-top: 160px !important;
-  padding-bottom: 96px !important;
+  padding-top: 140px !important;
+  padding-bottom: 80px !important;
 }
 
-.cc-hero-platform-combined .uc-hero-inner {
-  max-width: 1440px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+.cc-hero-content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 48px 96px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 48px 48px;
   position: relative;
   z-index: 1;
+  gap: 20px;
 }
 
-.cc-hero-platform-combined .hero-h1,
-.cc-hero-platform-combined .uc-hero-subtitle {
+.cc-hero-title {
+  text-align: center;
+  line-height: 1.05;
   color: #ffffff !important;
 }
 
-.cc-hero-platform-combined .uc-hero-subtitle {
-  color: rgba(255, 255, 255, 0.7) !important;
+.cc-hero-desc {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 560px;
 }
 
 .btn-hero-a-light {
@@ -180,17 +187,19 @@
   display: inline-flex;
   gap: 0;
   border-radius: 999px;
-  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
   overflow: hidden;
-  margin: -16px auto 40px;
+  margin: 0 auto 32px;
   justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
 }
 
 .cc-platform-pill {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  padding: 12px 28px;
+  padding: 14px 32px;
   border: none;
   cursor: pointer;
   background: transparent;
@@ -202,7 +211,11 @@
 .cc-platform-pill:hover {
   color: #ffffff;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
+}
+
+.cc-pill-active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* ===== Platform Image ===== */
@@ -223,19 +236,7 @@
 }
 
 /* ===== Platform Copy ===== */
-.cc-platform-copy {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 48px;
-}
-
-.cc-platform-copy p {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.65);
-  margin-bottom: 20px;
-}
+/* Platform copy removed — kept for backwards compat */
 
 /* ===== Section Dividers ===== */
 .cc-section-divider {
