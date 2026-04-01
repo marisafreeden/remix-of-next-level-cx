@@ -1,6 +1,6 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding-top: 160px !important;
+  padding-top: 112px !important;
   padding-bottom: 0 !important;
 }
 
@@ -842,7 +842,7 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
-    padding-top: 120px !important;
+    padding-top: 96px !important;
   }
 
   .cc-hero-platform-combined .uc-hero-inner {
