@@ -61,13 +61,18 @@ const ContactCenter = () => {
         </div>
 
         <div className="cc-platform-inner">
-          <div className="cc-platform-pills">
-            {platformPillKeys.map((key, i) => (
-              <span key={key} className={`cc-platform-pill${i === 0 ? " cc-pill-active" : ""}`}>{t(`cc_page.${key}_title`)}</span>
-            ))}
-          </div>
-          <div className="cc-platform-image-wrap">
-            <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
+          <div className="cc-platform-layout">
+            <div className="cc-platform-features">
+              {platformPillKeys.map((key, i) => (
+                <div key={key} className={`cc-feature-item${i === 0 ? " cc-feature-item-active" : ""}`}>
+                  <h3 className="cc-feature-item-title">{t(`cc_page.${key}_title`)}</h3>
+                  <p className="cc-feature-item-desc">{t(`cc_page.${key}_desc`)}</p>
+                </div>
+              ))}
+            </div>
+            <div className="cc-platform-image-wrap">
+              <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
+            </div>
           </div>
         </div>
       </section>
