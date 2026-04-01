@@ -162,7 +162,7 @@ const ContactCenter = () => {
             </div>
 
             {/* Widget 4: Queue Status */}
-            <div className="cc-glass-card cc-glass-wide" style={{ gridColumn: "3 / 5" }}>
+            <div className="cc-glass-card cc-glass-wide" style={{ gridColumn: "2 / 4" }}>
               <div className="cc-glass-card-header">
                 <Headphones size={14} strokeWidth={1.5} />
                 <span>Queue Status</span>
