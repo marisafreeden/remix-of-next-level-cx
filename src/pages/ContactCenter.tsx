@@ -61,11 +61,6 @@ const ContactCenter = () => {
         </div>
 
         <div className="cc-platform-inner">
-          <div className="cc-platform-pills">
-            {platformPillKeys.map((key, i) => (
-              <span key={key} className={`cc-platform-pill${i === 0 ? " cc-pill-active" : ""}`}>{t(`cc_page.${key}_title`)}</span>
-            ))}
-          </div>
           <div className="cc-glass-widgets">
             {/* Widget 1: Dashboard / Total Calls */}
             <div className="cc-glass-card cc-glass-tall" style={{ gridRow: "1 / 3" }}>
