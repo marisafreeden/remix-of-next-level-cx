@@ -1,7 +1,7 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
   padding-top: 24px !important;
-  padding-bottom: 0 !important;
+  padding-bottom: 72px !important;
 }
 
 .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
@@ -268,7 +268,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 48px;
-  transform: translateY(30px);
+  transform: translateY(12px);
 }
 
 .cc-glass-card {
@@ -864,6 +864,7 @@
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
     padding-top: 16px !important;
+    padding-bottom: 40px !important;
   }
 
   .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
