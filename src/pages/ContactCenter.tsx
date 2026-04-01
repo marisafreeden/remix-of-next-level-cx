@@ -47,6 +47,9 @@ const ContactCenter = () => {
 
       {/* Hero + Platform Combined */}
       <section className="cc-platform-section cc-hero-platform-combined">
+        <div className="cc-hero-blur-extra1" />
+        <div className="cc-hero-blur-extra2" />
+        <div className="cc-hero-blur-extra3" />
         <div className="cc-hero-content">
           <h1 className="hero-h1 cc-hero-title">
             <EditableText value={c("hero_title1", "cc_page.hero_title1")} copyKey="hero_title1" onSave={save} /><br />
