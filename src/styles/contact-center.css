@@ -459,7 +459,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-size: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(10, 15, 24, 0.08);
 }
 
 .cc-glass-queue-row {
