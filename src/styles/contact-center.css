@@ -177,13 +177,13 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  top: 40%;
-  left: -10%;
-  width: 500px;
-  height: 500px;
-  background: rgba(67, 181, 191, 0.15);
+  top: 30%;
+  left: -5%;
+  width: 700px;
+  height: 700px;
+  background: rgba(67, 181, 191, 0.25);
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   pointer-events: none;
   z-index: 0;
 }
@@ -191,13 +191,13 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   right: -5%;
-  width: 400px;
-  height: 400px;
-  background: rgba(112, 66, 210, 0.12);
+  width: 600px;
+  height: 600px;
+  background: rgba(112, 66, 210, 0.22);
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   pointer-events: none;
   z-index: 0;
 }
