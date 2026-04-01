@@ -153,7 +153,7 @@
 
 /* ===== Platform Section Override ===== */
 .cc-platform-section {
-  background: linear-gradient(180deg, #ffffff 0%, #e8f4f6 25%, #2a8a96 55%, #1a6570 75%, #0a3038 100%) !important;
+  background: #080e14 !important;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -177,14 +177,27 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 110%;
-  height: 800px;
-  background: rgba(67, 181, 191, 0.12);
+  top: 40%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: rgba(67, 181, 191, 0.15);
   border-radius: 50%;
-  filter: blur(111px);
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cc-platform-section::after {
+  content: '';
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: rgba(112, 66, 210, 0.12);
+  border-radius: 50%;
+  filter: blur(120px);
   pointer-events: none;
   z-index: 0;
 }
