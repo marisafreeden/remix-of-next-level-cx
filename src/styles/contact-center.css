@@ -63,31 +63,7 @@
   margin-top: 48px;
 }
 
-/* ===== Nav on dark hero ===== */
-.cc-page-wrap .hero-nav .hero-nav-link,
-.cc-page-wrap .hero-nav .mega-trigger-btn,
-.cc-page-wrap .hero-nav .hero-nav-link:hover,
-.cc-page-wrap .hero-nav .mega-trigger-btn:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.cc-page-wrap .hero-nav .hero-nav-link:hover,
-.cc-page-wrap .hero-nav .mega-trigger-btn:hover {
-  color: #ffffff;
-}
-
-.cc-page-wrap .hero-nav .hero-nav-logo-img {
-  filter: brightness(0) invert(1);
-}
-
-.cc-page-wrap .hero-nav .btn-demo {
-  background: #ffffff;
-  color: #0a0f18;
-}
-
-.cc-page-wrap .hero-nav .btn-demo:hover {
-  background: rgba(255, 255, 255, 0.9);
-}
+/* ===== Nav on light hero — use defaults ===== */
 
 /* ===== Hero Blur Image ===== */
 .cc-hero-blur {
