@@ -117,7 +117,21 @@ const ContactCenter = () => {
               </div>
             </div>
 
-            {/* Widget 3: Agent Presence */}
+            {/* Widget 2b: Calls Per Month */}
+            <div className="cc-glass-card">
+              <div className="cc-glass-card-header">
+                <Phone size={14} strokeWidth={1.5} />
+                <span>Calls (Monthly)</span>
+              </div>
+              <div className="cc-glass-queue-table">
+                <div className="cc-glass-queue-header">
+                  <span>Month</span><span>Received</span><span>Answered</span>
+                </div>
+                <div className="cc-glass-queue-row"><span>May</span><span>2,029</span><span className="cc-glass-green">893</span></div>
+                <div className="cc-glass-queue-row"><span>Apr</span><span>1,903</span><span>877</span></div>
+                <div className="cc-glass-queue-row"><span>Dec</span><span>1,803</span><span>631</span></div>
+              </div>
+            </div>
             <div className="cc-glass-card">
               <div className="cc-glass-card-header">
                 <Users size={14} strokeWidth={1.5} />
