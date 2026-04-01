@@ -55,7 +55,7 @@ const ContactCenter = () => {
             </span>
           </h1>
           <p className="cc-hero-desc">{t("cc_page.hero_subtitle_combined")}</p>
-          <button className="btn-demo">
+          <button className="btn-hero-a" style={{ marginTop: "12px" }}>
             {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
           </button>
         </div>
