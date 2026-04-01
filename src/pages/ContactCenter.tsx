@@ -66,8 +66,109 @@ const ContactCenter = () => {
               <span key={key} className={`cc-platform-pill${i === 0 ? " cc-pill-active" : ""}`}>{t(`cc_page.${key}_title`)}</span>
             ))}
           </div>
-          <div className="cc-platform-image-wrap">
-            <img src={gocontactDashboard} alt="GoContact Dashboard" className="cc-platform-image" />
+          <div className="cc-glass-widgets">
+            {/* Widget 1: Dashboard / Total Calls */}
+            <div className="cc-glass-card cc-glass-tall" style={{ gridRow: "1 / 3" }}>
+              <div className="cc-glass-card-header">
+                <Phone size={14} strokeWidth={1.5} />
+                <span>Total Calls</span>
+                <span className="cc-glass-badge">Live</span>
+              </div>
+              <div className="cc-glass-big-number">1,847</div>
+              <div className="cc-glass-sub-label">Today's volume</div>
+              <div className="cc-glass-mini-stats">
+                <div className="cc-glass-mini-stat">
+                  <span className="cc-glass-mini-val cc-glass-green">1,643</span>
+                  <span className="cc-glass-mini-label">Answered</span>
+                </div>
+                <div className="cc-glass-mini-stat">
+                  <span className="cc-glass-mini-val cc-glass-red">128</span>
+                  <span className="cc-glass-mini-label">Abandoned</span>
+                </div>
+                <div className="cc-glass-mini-stat">
+                  <span className="cc-glass-mini-val">76</span>
+                  <span className="cc-glass-mini-label">In Queue</span>
+                </div>
+              </div>
+              <div className="cc-glass-bar-chart">
+                <div className="cc-glass-bar" style={{ height: "60%" }} />
+                <div className="cc-glass-bar" style={{ height: "80%" }} />
+                <div className="cc-glass-bar" style={{ height: "45%" }} />
+                <div className="cc-glass-bar" style={{ height: "90%" }} />
+                <div className="cc-glass-bar" style={{ height: "70%" }} />
+                <div className="cc-glass-bar" style={{ height: "55%" }} />
+                <div className="cc-glass-bar" style={{ height: "85%" }} />
+              </div>
+            </div>
+
+            {/* Widget 2: CSAT Score */}
+            <div className="cc-glass-card">
+              <div className="cc-glass-card-header">
+                <BarChart3 size={14} strokeWidth={1.5} />
+                <span>CSAT Score</span>
+              </div>
+              <div className="cc-glass-csat-ring">
+                <svg viewBox="0 0 80 80" className="cc-glass-ring-svg">
+                  <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="6" />
+                  <circle cx="40" cy="40" r="34" fill="none" stroke="url(#csatGrad)" strokeWidth="6" strokeDasharray="171 214" strokeLinecap="round" transform="rotate(-90 40 40)" />
+                  <defs><linearGradient id="csatGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stopColor="#43B5BF" /><stop offset="100%" stopColor="#7042D2" /></linearGradient></defs>
+                </svg>
+                <div className="cc-glass-ring-text">4.3<span>/5</span></div>
+              </div>
+            </div>
+
+            {/* Widget 3: Agent Presence */}
+            <div className="cc-glass-card">
+              <div className="cc-glass-card-header">
+                <Users size={14} strokeWidth={1.5} />
+                <span>Agent Status</span>
+              </div>
+              <div className="cc-glass-presence-list">
+                <div className="cc-glass-presence-row">
+                  <span className="cc-glass-dot cc-dot-green" />
+                  <span>Available</span>
+                  <span className="cc-glass-presence-count">24</span>
+                </div>
+                <div className="cc-glass-presence-row">
+                  <span className="cc-glass-dot cc-dot-yellow" />
+                  <span>On Call</span>
+                  <span className="cc-glass-presence-count">18</span>
+                </div>
+                <div className="cc-glass-presence-row">
+                  <span className="cc-glass-dot cc-dot-red" />
+                  <span>Away</span>
+                  <span className="cc-glass-presence-count">6</span>
+                </div>
+                <div className="cc-glass-presence-row">
+                  <span className="cc-glass-dot cc-dot-gray" />
+                  <span>Offline</span>
+                  <span className="cc-glass-presence-count">3</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Widget 4: Queue Status */}
+            <div className="cc-glass-card cc-glass-wide" style={{ gridColumn: "3 / 5" }}>
+              <div className="cc-glass-card-header">
+                <Headphones size={14} strokeWidth={1.5} />
+                <span>Queue Status</span>
+                <span className="cc-glass-badge">All Queues</span>
+              </div>
+              <div className="cc-glass-queue-table">
+                <div className="cc-glass-queue-header">
+                  <span>Queue</span><span>Agents</span><span>Waiting</span><span>Avg Wait</span>
+                </div>
+                <div className="cc-glass-queue-row">
+                  <span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span>2:34</span>
+                </div>
+                <div className="cc-glass-queue-row">
+                  <span>Support</span><span>8</span><span>3</span><span>1:12</span>
+                </div>
+                <div className="cc-glass-queue-row">
+                  <span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
