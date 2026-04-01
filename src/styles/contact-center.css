@@ -153,13 +153,14 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  top: 30%;
-  left: -5%;
+  bottom: 0;
+  left: -15%;
   width: 700px;
   height: 700px;
-  background: rgba(67, 181, 191, 0.25);
+  background: #43b5bf;
   border-radius: 50%;
-  filter: blur(140px);
+  filter: blur(200px);
+  opacity: 0.3;
   pointer-events: none;
   z-index: 0;
 }
@@ -167,13 +168,14 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: 5%;
-  right: -5%;
+  bottom: 0;
+  right: -15%;
   width: 600px;
   height: 600px;
-  background: rgba(112, 66, 210, 0.22);
+  background: #7a6fd4;
   border-radius: 50%;
-  filter: blur(140px);
+  filter: blur(200px);
+  opacity: 0.2;
   pointer-events: none;
   z-index: 0;
 }
