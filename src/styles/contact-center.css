@@ -218,7 +218,7 @@
   display: none;
 }
 
-.cc-platform-section > * {
+.cc-platform-section > :not(.cc-hero-blur-extra1):not(.cc-hero-blur-extra2):not(.cc-hero-blur-extra3) {
   position: relative;
   z-index: 1;
 }
