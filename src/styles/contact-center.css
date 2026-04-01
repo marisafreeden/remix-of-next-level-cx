@@ -844,7 +844,7 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
-    padding-top: 120px !important;
+    padding-top: 88px !important;
   }
 
   .cc-hero-platform-combined .uc-hero-inner {
