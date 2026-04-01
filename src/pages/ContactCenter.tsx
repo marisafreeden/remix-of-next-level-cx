@@ -54,10 +54,12 @@ const ContactCenter = () => {
               <EditableText value={c("hero_title2", "cc_page.hero_title2")} copyKey="hero_title2" onSave={save} />
             </span>
           </h1>
-          <p className="cc-hero-desc">{t("cc_page.hero_subtitle_combined")}</p>
-          <button className="btn-hero-a" style={{ marginTop: "12px" }}>
-            {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
-          </button>
+          <p className="hero-sub cc-hero-desc">{t("cc_page.hero_subtitle_combined")}</p>
+          <div className="hero-ctas">
+            <button className="btn-hero-a">
+              {t("common.request_demo")} <span style={{ fontSize: "18px" }}>→</span>
+            </button>
+          </div>
         </div>
 
         <div className="cc-platform-inner">
