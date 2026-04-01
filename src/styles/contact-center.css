@@ -797,4 +797,21 @@
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
+
+  .cc-glass-widgets {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 20px 32px;
+  }
+
+  .cc-glass-tall {
+    grid-row: auto;
+  }
+
+  .cc-glass-wide {
+    grid-column: 1 / -1;
+  }
+
+  .cc-glass-big-number {
+    font-size: 36px;
+  }
 }
