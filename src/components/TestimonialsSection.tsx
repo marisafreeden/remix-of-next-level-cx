@@ -23,9 +23,7 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="testimonials-carousel-track">
-          <div
-            className="testimonials-carousel-slider"
-            style={{ transform: `translateX(-${offset * (100 / 3 + 2)}%)` }}
+          <div className="testimonials-carousel-slider">
           >
             {testimonials.map((item) => (
               <div key={item.key} className="testimonial-card">
