@@ -1456,7 +1456,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background: linear-gradient(135deg, hsl(261 61% 50%), hsl(285 50% 45%));
+  background: linear-gradient(135deg, #43B5BF, #C686F8);
   color: #fff;
   padding: 2px 8px;
   border-radius: 4px;
