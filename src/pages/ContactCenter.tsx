@@ -34,10 +34,11 @@ import CTABlock from "@/components/CTABlock";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
 import GoAIDiagram from "@/components/GoAIDiagram";
+import DialerPreview from "@/components/contact-center/DialerPreview";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
-const smarterImages = [ccFeatureCharts, ccSmartScripting, ccFeatureCharts, ccFeatureCharts];
+const smarterImages = [ccFeatureCharts, null, ccFeatureCharts, ccFeatureCharts];
 const featureKeys = ["f2", "f4", "f6", "f8", "f11", "f12"];
 const featureIcons = [Zap, Bot, BarChart3, Users, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
@@ -112,7 +113,11 @@ const ContactCenter = () => {
               </div>
               <div className="cc-alt-image-side">
                 {i !== 1 && <div className="cc-alt-blur" />}
-                <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img${i === 1 ? " cc-alt-img-lg" : ""}`} />
+                {i === 1 ? (
+                  <DialerPreview />
+                ) : (
+                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                )}
               </div>
             </div>
           ))}
