@@ -6,7 +6,7 @@
 
 .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
   margin-top: 0 !important;
-  padding-top: 8px;
+  padding-top: 0;
 }
 
 .cc-hero-content {
@@ -34,11 +34,19 @@
 
 .cc-hero-title {
   text-align: center;
-  line-height: 1.05;
+  line-height: 0.94;
+  margin-top: -18px;
+  padding: 0 !important;
   background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+}
+
+.cc-hero-title .going-next {
+  line-height: 0.94;
+  padding: 0 0.03em 0.08em 0.08em;
+  margin: 0 -0.03em -0.08em -0.08em;
 }
 
 .cc-hero-desc {
@@ -868,7 +876,11 @@
   }
 
   .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
-    padding-top: 8px;
+    padding-top: 0;
+  }
+
+  .cc-hero-title {
+    margin-top: -10px;
   }
 
   .cc-hero-platform-combined .uc-hero-inner {
