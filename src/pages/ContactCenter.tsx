@@ -44,6 +44,14 @@ const ContactCenter = () => {
 
   return (
     <div className="cc-page-wrap" style={{ background: "#ffffff", minHeight: "100vh" }}>
+      <svg width="0" height="0" style={{ position: "absolute" }}>
+        <defs>
+          <linearGradient id="cc-icon-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="hsl(185 49% 51%)" />
+            <stop offset="100%" stopColor="hsl(261 61% 54%)" />
+          </linearGradient>
+        </defs>
+      </svg>
       <Navbar />
 
       <ContactCenterHero
