@@ -112,7 +112,11 @@ const ContactCenter = () => {
               </div>
               <div className="cc-alt-image-side">
                 {i !== 1 && <div className="cc-alt-blur" />}
-                <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img${i === 1 ? " cc-alt-img-lg" : ""}`} />
+                {i === 1 ? (
+                  <DialerPreview />
+                ) : (
+                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                )}
               </div>
             </div>
           ))}
