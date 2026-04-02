@@ -34,6 +34,7 @@ import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
+const smarterImages = [ccFeatureCharts, ccSmartScripting, ccFeatureCharts, ccFeatureCharts];
 const featureKeys = ["f2", "f4", "f6", "f8", "f11", "f12"];
 const featureIcons = [Zap, Bot, BarChart3, Users, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
