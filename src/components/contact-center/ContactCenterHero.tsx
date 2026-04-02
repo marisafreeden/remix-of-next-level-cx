@@ -10,12 +10,12 @@ interface ContactCenterHeroProps {
   onSave: (copyKey: string, content: string) => void | Promise<void>;
 }
 
-const useAnimatedTimer = (startSeconds: number) => {
+const useAnimatedTimer = (startSeconds: number, maxSeconds: number = 180) => {
   const [seconds, setSeconds] = useState(startSeconds);
   useEffect(() => {
-    const id = setInterval(() => setSeconds((s) => s + 1), 1000);
+    const id = setInterval(() => setSeconds((s) => (s + 1) >= maxSeconds ? startSeconds : s + 1), 1000);
     return () => clearInterval(id);
-  }, []);
+  }, [startSeconds, maxSeconds]);
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
   return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
