@@ -1834,11 +1834,11 @@
   transform: translateX(-50%);
   z-index: 2;
   background: #fff;
-  border-radius: 14px;
+  border-radius: 10px;
   border: 1.5px solid rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  padding: 14px 20px;
-  width: 360px;
+  padding: 10px 16px;
+  width: 280px;
 }
 
 .ivr-player-track {
