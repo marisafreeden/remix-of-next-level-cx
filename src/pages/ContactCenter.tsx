@@ -144,7 +144,7 @@ const ContactCenter = () => {
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
-          <h2 className="promos-title">Enterprise-Grade <span className="promos-title-italic">Security</span></h2>
+          <h2 className="promos-title">Enterprise-Grade <span className="promos-title-italic" style={{ display: "inline" }}>Security</span></h2>
           <p className="cc-security-subtitle">Your data is protected by industry-leading standards and certifications.</p>
         </div>
         <div className="cc-security-grid">
