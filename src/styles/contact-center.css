@@ -1015,13 +1015,14 @@
 .cc-goai-card-icon {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
-  background: rgba(67, 181, 191, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-  color: #43B5BF;
+}
+
+.cc-goai-card-icon svg {
+  stroke: url(#cc-goai-icon-gradient);
 }
 
 
