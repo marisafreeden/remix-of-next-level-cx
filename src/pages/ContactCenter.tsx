@@ -95,6 +95,21 @@ const ContactCenter = () => {
         </div>
       </section>
 
+      {/* Stats */}
+      <section className="cc-stats-section-v2 cc-stats-dark">
+        <div className="cc-stats-dark-header">
+          <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
+        </div>
+        <div className="cc-stats-grid-v2">
+          {statKeys.map((key) => (
+            <div key={key} className="cc-stat-v2">
+              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <div className="cc-section-divider" />
 
       {/* Feature Grid */}
@@ -119,21 +134,6 @@ const ContactCenter = () => {
               </div>
             );
           })}
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-dark">
-        <div className="cc-stats-dark-header">
-          <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-        </div>
-        <div className="cc-stats-grid-v2">
-          {statKeys.map((key) => (
-            <div key={key} className="cc-stat-v2">
-              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
-            </div>
-          ))}
         </div>
       </section>
 
