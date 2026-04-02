@@ -7,6 +7,7 @@ import "@/styles/responsive.css";
 import "@/styles/contact-center.css";
 import "@/styles/goai.css";
 import "@fontsource/instrument-sans/500.css";
+import "@fontsource/inter/300.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
