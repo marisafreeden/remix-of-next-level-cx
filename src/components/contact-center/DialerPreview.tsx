@@ -103,7 +103,7 @@ const DialerPreview = () => {
           </div>
           <div className="dialer-bottom-item">
             <span className="dialer-bottom-key">Last Call Date:</span>
-            <span>22nd May 2019</span>
+            <span>12.13.25</span>
           </div>
         </div>
       </div>
