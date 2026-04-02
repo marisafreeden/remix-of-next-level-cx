@@ -736,6 +736,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+  padding-top: 45px;
 }
 
 .cc-alt-row-reverse {
