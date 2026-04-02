@@ -1038,6 +1038,21 @@
   padding: 0 16px;
 }
 
+.cc-goai-glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.cc-goai-glass-card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(67, 181, 191, 0.35);
+}
+
 .cc-goai-feature .uc-benefit-title {
   color: #ffffff;
   margin-bottom: 8px;
