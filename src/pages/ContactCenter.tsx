@@ -161,7 +161,6 @@ const ContactCenter = () => {
             <h2 className="promos-title">
               Real AI. No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
             </h2>
-            </h2>
           </div>
           <div className="cc-goai-features">
             <div className="cc-goai-feature cc-goai-glass-card">
