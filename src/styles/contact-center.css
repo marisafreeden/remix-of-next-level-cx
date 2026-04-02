@@ -65,7 +65,7 @@
   display: flex;
   justify-content: center;
   margin-top: -65px;
-  margin-bottom: 115px;
+  margin-bottom: 16px;
 }
 
 .cc-hero-stage {
@@ -416,13 +416,13 @@
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   color: rgba(10, 15, 24, 0.45);
-  margin-top: -6px;
+  margin-top: -2px;
 }
 
 .cc-glass-mini-stats {
   display: flex;
   gap: 16px;
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .cc-glass-mini-stat {
@@ -564,6 +564,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   padding: 8px 0;
+  gap: 8px;
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   color: rgba(10, 15, 24, 0.7);
