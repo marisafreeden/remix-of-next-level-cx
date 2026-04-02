@@ -35,7 +35,7 @@
 
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding: 200px 48px 0 !important;
+  padding: 160px 48px 0 !important;
   min-height: calc(100vh + 300px);
   overflow: hidden;
 }
