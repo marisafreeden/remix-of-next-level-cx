@@ -32,6 +32,7 @@ import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
+import GoAIDiagram from "@/components/GoAIDiagram";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
