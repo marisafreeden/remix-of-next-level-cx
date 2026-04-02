@@ -1,6 +1,6 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding: 116px 48px 80px !important;
+  padding: 200px 48px 80px !important;
 }
 
 .cc-hero-shell {
@@ -29,9 +29,9 @@
   text-align: center;
   font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
-  font-size: clamp(3.5rem, 7vw, 4.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.05em;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: -3.6px;
 }
 
 .cc-hero-heading-line,
@@ -47,8 +47,8 @@
   font-family: 'Besley', serif;
   font-style: italic;
   font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  line-height: 1.08;
+  letter-spacing: 0.2px;
   margin-top: 4px;
 }
 
@@ -938,7 +938,7 @@
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .cc-hero-platform-combined {
-    padding: 96px 20px 48px !important;
+    padding: 140px 20px 48px !important;
   }
 
   .cc-hero-shell {
@@ -950,8 +950,8 @@
   }
 
   .cc-hero-heading {
-    font-size: 44px;
-    letter-spacing: -0.06em;
+    font-size: 48px;
+    letter-spacing: -2px;
   }
 
   .cc-hero-desc {
