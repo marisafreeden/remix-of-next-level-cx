@@ -37,6 +37,7 @@ import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
 import GoAIDiagram from "@/components/GoAIDiagram";
 import DialerPreview from "@/components/contact-center/DialerPreview";
 import OmnichannelPreview from "@/components/contact-center/OmnichannelPreview";
+import IVRPreview from "@/components/contact-center/IVRPreview";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
