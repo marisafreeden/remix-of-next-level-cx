@@ -391,6 +391,31 @@
   background: rgba(255, 255, 255, 0.15);
 }
 
+.cc-glass-top-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto 20px;
+  padding: 0 50px;
+}
+
+.cc-glass-metric {
+  text-align: center;
+  align-items: center;
+}
+
+.cc-glass-metric .cc-glass-big-number {
+  font-size: 48px;
+}
+
+.cc-glass-metric-trend {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
 /* ===== Glass Widgets Grid ===== */
 .cc-glass-widgets {
   display: grid;
