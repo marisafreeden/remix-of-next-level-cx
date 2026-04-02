@@ -67,7 +67,19 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      {/* Stats — right after hero */}
+      <section className="logo-strip">
+        <p className="logo-strip-label">{t("logos.label")}</p>
+        <div className="logo-strip-logos">
+          <span className="logo-strip-item">Pfizer</span>
+          <span className="logo-strip-item">UPS</span>
+          <span className="logo-strip-item">L'Oréal</span>
+          <span className="logo-strip-item">Hertz</span>
+          <span className="logo-strip-item">Toyota</span>
+          <span className="logo-strip-item">Deloitte</span>
+        </div>
+      </section>
+
+      {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-dark">
         <div className="cc-stats-dark-header">
           <h2 className="cc-stats-dark-title">The Numbers That Matter to <span className="promos-title-italic" style={{ display: "inline" }}>Contact Center Leaders</span></h2>
@@ -81,18 +93,6 @@ const ContactCenter = () => {
           ))}
         </div>
         <p className="cc-stats-caption">These aren't averages. They're what Broadvoice customers see within the first 90 days.</p>
-      </section>
-
-      <section className="logo-strip">
-        <p className="logo-strip-label">{t("logos.label")}</p>
-        <div className="logo-strip-logos">
-          <span className="logo-strip-item">Pfizer</span>
-          <span className="logo-strip-item">UPS</span>
-          <span className="logo-strip-item">L'Oréal</span>
-          <span className="logo-strip-item">Hertz</span>
-          <span className="logo-strip-item">Toyota</span>
-          <span className="logo-strip-item">Deloitte</span>
-        </div>
       </section>
 
       {/* What Makes It Smarter — UC promo style */}
