@@ -189,7 +189,7 @@ const ContactCenter = () => {
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
           <h2 className="promos-title">
-            One platform.<br />Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
+            Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
           </h2>
         </div>
         <div className="cc-persona-grid">
