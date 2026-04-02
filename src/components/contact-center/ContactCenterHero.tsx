@@ -214,6 +214,8 @@ const ContactCenterHero = ({
                 <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span className="cc-animated-wait">{billingWait}</span></div>
                 <div className="cc-glass-queue-row"><span>Support</span><span>8</span><span>3</span><span>1:12</span></div>
                 <div className="cc-glass-queue-row"><span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span></div>
+                <div className="cc-glass-queue-row"><span>Retention</span><span>5</span><span>2</span><span>1:38</span></div>
+                <div className="cc-glass-queue-row"><span>Technical</span><span>4</span><span className="cc-glass-red">4</span><span>2:15</span></div>
               </div>
             </div>
           </div>
