@@ -312,7 +312,7 @@
 .btn-hero-a {
   font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600;
   padding: 16px 32px; border-radius: 100px; border: none; cursor: pointer;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
   color: white; display: flex; align-items: center; gap: 10px;
   transition: all 0.3s; box-shadow: none;
   position: relative; overflow: hidden;
