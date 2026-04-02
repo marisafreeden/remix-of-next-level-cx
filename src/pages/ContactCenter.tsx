@@ -159,7 +159,8 @@ const ContactCenter = () => {
           <div className="cc-goai-header">
             <p className="promos-eyebrow">POWERED BY GoAI</p>
             <h2 className="promos-title">
-              AI That Works for <span className="promos-title-italic" style={{ display: "inline" }}>Your Team</span>
+              Real AI. No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
+            </h2>
             </h2>
           </div>
           <div className="cc-goai-features">
