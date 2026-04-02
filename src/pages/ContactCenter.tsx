@@ -119,8 +119,6 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      <div className="cc-section-divider" />
-
       {/* Feature Grid */}
       <section className="uc-features-section cc-features-gray">
         <div className="uc-features-header" style={{ textAlign: "center" }}>
@@ -142,8 +140,6 @@ const ContactCenter = () => {
           })}
         </div>
       </section>
-
-      <div className="cc-section-divider" />
 
       {/* GoAI Section */}
       <section className="cc-goai-section">
@@ -182,8 +178,6 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      <div className="cc-section-divider" />
-
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
@@ -206,8 +200,6 @@ const ContactCenter = () => {
           ))}
         </div>
       </section>
-
-      <div className="cc-section-divider" />
 
       {/* Security & Compliance */}
       <section className="cc-security-section">
