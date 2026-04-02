@@ -858,6 +858,9 @@
   background: linear-gradient(135deg, #0a0f18 0%, #1a1f2e 50%, #0d1117 100%);
   position: relative;
   overflow: hidden;
+  margin: 0 48px;
+  border-radius: 28px;
+  padding: 96px 80px;
 }
 
 .cc-stats-dark::before {
