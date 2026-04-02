@@ -29,8 +29,8 @@
 }
 .cc-logo-strip-2col .cc-logo-right {
   flex: 1;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 0;
 }
 
 /* ===== Combined Hero + Platform ===== */
