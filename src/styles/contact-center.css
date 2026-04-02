@@ -1072,8 +1072,7 @@
   background: linear-gradient(90deg, transparent, rgba(0,0,0,0.12) 30%, rgba(0,0,0,0.12) 70%, transparent);
 }
 
-.cc-stats-dark::before,
-.cc-stats-dark::after {
+.cc-stats-dark::before {
   display: none;
 }
 
