@@ -396,8 +396,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
-  gap: 16px;
-  max-width: 1300px;
+  gap: 20px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 50px;
   transform: none;
