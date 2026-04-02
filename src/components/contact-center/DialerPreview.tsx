@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Phone, Mic, Shuffle, Grid3X3, Volume2 } from "lucide-react";
-import personaAgentsImg from "@/assets/persona-agents.jpg";
+import ccAgentDialer from "@/assets/cc-agent-dialer.jpg";
 
 const useAnimatedTimer = (startSeconds: number, maxSeconds: number = 180) => {
   const [seconds, setSeconds] = useState(startSeconds);
@@ -20,7 +20,7 @@ const DialerPreview = () => {
     <div className="dialer-wrapper">
       {/* Background agent image */}
       <div className="dialer-agent-bg">
-        <img src={personaAgentsImg} alt="" className="dialer-agent-img" />
+        <img src={ccAgentDialer} alt="" className="dialer-agent-img" />
         <div className="dialer-agent-overlay" />
       </div>
 
