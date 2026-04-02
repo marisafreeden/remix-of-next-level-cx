@@ -991,6 +991,95 @@
   }
 }
 
+/* ===== CC GoAI Section ===== */
+.cc-goai-section {
+  padding: 96px 48px;
+  background: linear-gradient(135deg, #0A0F1A 0%, #1a1f3a 50%, #0A0F1A 100%);
+}
+
+.cc-goai-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cc-goai-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.cc-goai-header .promos-eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cc-goai-header .promos-title {
+  color: #ffffff;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #ffffff 50%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cc-goai-header .promos-title-italic {
+  background: linear-gradient(105.96deg, #43B5BF 0%, #ffffff 50%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cc-goai-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.cc-goai-feature {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.cc-goai-feature .uc-benefit-title {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.cc-goai-feature .uc-benefit-desc {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cc-goai-diagram-wrap {
+  padding: 0;
+}
+
+.cc-goai-diagram-wrap .goai-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.cc-goai-diagram-wrap .goai-card:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(67, 181, 191, 0.35);
+}
+
+.cc-goai-diagram-wrap .goai-card-title {
+  color: #ffffff;
+}
+
+.cc-goai-diagram-wrap .goai-card-desc {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cc-goai-diagram-wrap .goai-card-icon {
+  background: rgba(67, 181, 191, 0.15);
+}
+
+@media (max-width: 768px) {
+  .cc-goai-features {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 /* ===== Security Section ===== */
 .cc-security-section {
   padding: 96px 48px;
