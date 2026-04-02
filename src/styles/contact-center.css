@@ -342,10 +342,10 @@
   transform: translateX(-50%);
   width: 700px;
   height: 500px;
-  background: linear-gradient(135deg, #43b5bf, #B89AEC);
+  background: linear-gradient(135deg, #7dd8e2, #c4b5f0);
   border-radius: 50%;
   filter: blur(200px);
-  opacity: 0.2;
+  opacity: 0.15;
   pointer-events: none;
   z-index: 0;
 }
