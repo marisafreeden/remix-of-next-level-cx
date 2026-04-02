@@ -368,14 +368,14 @@
 /* ===== CTA Block ===== */
 .cta-block-section {
   background: linear-gradient(135deg, #1A6B6A 0%, #0C4550 100%);
-  padding: 96px 48px;
+  padding: 56px 48px;
 }
 
 .cta-block-inner {
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
-  padding: 80px 48px;
+  padding: 48px 48px;
   border-radius: 0;
   background: none;
   border: none;
