@@ -91,7 +91,7 @@ const ContactCenter = () => {
               </div>
               <div className="cc-alt-image-side">
                 <div className="cc-alt-blur" />
-                <img src={ccFeatureCharts} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
               </div>
             </div>
           ))}
