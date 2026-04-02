@@ -117,7 +117,7 @@ const ContactCenter = () => {
                 {i === 1 ? (
                   <DialerPreview />
                 ) : (
-                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img ${i === 0 ? 'cc-alt-img-cropped' : ''}`} />
                 )}
               </div>
             </div>
