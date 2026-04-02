@@ -1211,6 +1211,7 @@
   border-radius: 16px;
   padding: 40px 28px;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(10, 15, 24, 0.04);
 }
 
 .cc-security-lucide {
