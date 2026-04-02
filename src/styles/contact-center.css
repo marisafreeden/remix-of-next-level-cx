@@ -1044,7 +1044,7 @@
 }
 
 .cc-stats-dark {
-  background: linear-gradient(130.54deg, #FCF6FF 5.82%, #E8FCFF 113.26%);
+  background: #ffffff;
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -1052,8 +1052,27 @@
   padding: 96px 80px;
 }
 
-.cc-stats-dark::before,
 .cc-stats-dark::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.12) 30%, rgba(0,0,0,0.12) 70%, transparent);
+}
+
+.cc-stats-section-v2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,0,0,0.12) 30%, rgba(0,0,0,0.12) 70%, transparent);
+}
+
+.cc-stats-dark::before {
   display: none;
 }
 
