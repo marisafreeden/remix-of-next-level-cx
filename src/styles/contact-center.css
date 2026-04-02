@@ -1772,9 +1772,9 @@
 .ivr-wf-bar {
   width: 3px;
   min-height: 4px;
-  background: linear-gradient(180deg, #43B5BF, #7042D2);
+  background: #43B5BF;
   border-radius: 2px;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .ivr-card-route {
