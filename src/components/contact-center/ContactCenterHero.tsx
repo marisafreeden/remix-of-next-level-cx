@@ -101,6 +101,7 @@ const ContactCenterHero = ({
                 </div>
               </div>
               <div className="cc-glass-bar-chart">
+                <div className="cc-glass-bar" style={{ height: "50%" }} />
                 <div className="cc-glass-bar" style={{ height: "60%" }} />
                 <div className="cc-glass-bar" style={{ height: "80%" }} />
                 <div className="cc-glass-bar" style={{ height: "45%" }} />
@@ -108,6 +109,8 @@ const ContactCenterHero = ({
                 <div className="cc-glass-bar" style={{ height: "70%" }} />
                 <div className="cc-glass-bar" style={{ height: "55%" }} />
                 <div className="cc-glass-bar" style={{ height: "85%" }} />
+                <div className="cc-glass-bar" style={{ height: "65%" }} />
+                <div className="cc-glass-bar" style={{ height: "75%" }} />
               </div>
             </div>
 
@@ -163,7 +166,9 @@ const ContactCenterHero = ({
                 </div>
                 <div className="cc-glass-queue-row"><span>May</span><span>2,029</span><span className="cc-glass-green">893</span><span>44%</span></div>
                 <div className="cc-glass-queue-row"><span>Apr</span><span>1,903</span><span>877</span><span>46%</span></div>
-                <div className="cc-glass-queue-row"><span>Dec</span><span>1,803</span><span>631</span><span>35%</span></div>
+                <div className="cc-glass-queue-row"><span>Mar</span><span>1,856</span><span className="cc-glass-green">812</span><span>44%</span></div>
+                <div className="cc-glass-queue-row"><span>Feb</span><span>1,721</span><span>745</span><span>43%</span></div>
+                <div className="cc-glass-queue-row"><span>Jan</span><span>1,803</span><span>631</span><span>35%</span></div>
               </div>
             </div>
 
@@ -209,6 +214,8 @@ const ContactCenterHero = ({
                 <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span className="cc-animated-wait">{billingWait}</span></div>
                 <div className="cc-glass-queue-row"><span>Support</span><span>8</span><span>3</span><span>1:12</span></div>
                 <div className="cc-glass-queue-row"><span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span></div>
+                <div className="cc-glass-queue-row"><span>Retention</span><span>5</span><span>2</span><span>1:38</span></div>
+                <div className="cc-glass-queue-row"><span>Technical</span><span>4</span><span className="cc-glass-red">4</span><span>2:15</span></div>
               </div>
             </div>
           </div>

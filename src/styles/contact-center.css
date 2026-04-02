@@ -396,8 +396,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
-  gap: 16px;
-  max-width: 1300px;
+  gap: 20px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 50px;
   transform: none;
@@ -409,10 +409,10 @@
   -webkit-backdrop-filter: blur(20px);
   border: 1.5px solid rgba(255, 255, 255, 0.9);
   border-radius: 16px;
-  padding: 20px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   transition: border-color 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
 }
@@ -436,7 +436,7 @@
   gap: 8px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.03em;
   color: rgba(10, 15, 24, 0.5);
   text-transform: uppercase;
@@ -460,7 +460,7 @@
 
 .cc-glass-big-number {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 48px;
+  font-size: 56px;
   font-weight: 500;
   letter-spacing: -2px;
   color: #0a0f18;
@@ -489,7 +489,7 @@
 
 .cc-glass-mini-val {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: rgba(10, 15, 24, 0.8);
 }
@@ -507,7 +507,7 @@
   display: flex;
   align-items: flex-end;
   gap: 6px;
-  height: 140px;
+  height: 160px;
   margin-top: auto;
 }
 
