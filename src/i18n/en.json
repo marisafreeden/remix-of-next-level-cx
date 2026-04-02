@@ -62,8 +62,8 @@
     "t3_role": "Contact Center Manager, Nordic Logistics"
   },
   "faq": {
-    "title_line1": "Frequently asked",
-    "title_line2": "questions",
+    "title_line1": "Frequently Asked",
+    "title_line2": "Questions",
     "q1": "How long does deployment take?",
     "a1": "Most teams are fully live within 5-7 business days. Our guided onboarding process handles migration, integration setup, and agent training so there's minimal disruption to your operations.",
     "q2": "Can I keep my existing phone numbers?",
