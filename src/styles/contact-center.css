@@ -55,7 +55,7 @@
   line-height: 1.08;
   letter-spacing: 0.2px;
   margin-top: 4px;
-  padding-bottom: 0.16em;
+  padding: 0 0.16em 0.16em 0.08em;
   margin-bottom: -0.16em;
   overflow: visible;
 }
