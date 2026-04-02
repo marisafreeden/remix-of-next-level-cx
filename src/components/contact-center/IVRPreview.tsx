@@ -15,7 +15,7 @@ const IVRPreview = () => (
         <span className="ivr-care-title">Customer Care</span>
         <div className="ivr-care-vm"><Voicemail size={16} strokeWidth={1.5} /></div>
       </div>
-      <div className="ivr-care-number">1-800-642-1456</div>
+      
       <div className="ivr-care-waveform">
         <span className="ivr-wf-time">00:00</span>
         <div className="ivr-wf-bars">
