@@ -117,8 +117,10 @@ const ContactCenter = () => {
                 {i !== 1 && <div className="cc-alt-blur" />}
                 {i === 1 ? (
                   <DialerPreview />
+                ) : i === 0 ? (
+                  <OmnichannelPreview />
                 ) : (
-                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img ${i === 0 ? 'cc-alt-img-cropped' : ''}`} />
+                  <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
                 )}
               </div>
             </div>
