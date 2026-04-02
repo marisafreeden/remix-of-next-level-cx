@@ -157,7 +157,7 @@ const ContactCenter = () => {
         </svg>
         <div className="cc-goai-inner">
           <div className="cc-goai-header">
-            <p className="promos-eyebrow">POWERED BY GoAI</p>
+            
             <h2 className="promos-title">
               Real AI. No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
             </h2>
@@ -187,7 +187,7 @@ const ContactCenter = () => {
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
+          
           <h2 className="promos-title">
             Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
           </h2>
@@ -212,7 +212,7 @@ const ContactCenter = () => {
       {/* Security & Compliance */}
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
+          
           <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
           <p className="cc-security-subtitle">GoContact is built to meet the requirements of regulated industries — healthcare, financial services, logistics — without adding compliance complexity to your team's day.</p>
         </div>
