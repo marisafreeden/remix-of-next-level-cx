@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
       <div className="testimonials-inner">
         <div className="testimonials-header">
           <div>
-            <p className="testimonials-eyebrow">CUSTOMERS</p>
+            <p className="testimonials-eyebrow">TESTIMONIALS</p>
             <h2 className="testimonials-title" style={{ whiteSpace: "nowrap" }}>
               {t("testimonials.title_line1")}{" "}
               <span className="testimonials-title-italic" style={{ display: "inline" }}>{t("testimonials.title_line2")}</span>
