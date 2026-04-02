@@ -1,4 +1,4 @@
-import { Brain, Database, Workflow, Shield, BarChart3, Layers } from "lucide-react";
+import { Brain, Database, Workflow, Shield, BarChart3, Layers, type LucideIcon } from "lucide-react";
 
 const leftCards = [
   { icon: Brain, title: "Conversation Intelligence", desc: "Natural language understanding & reasoning that follows context, not scripts" },
@@ -11,6 +11,8 @@ const rightCards = [
   { icon: Shield, title: "Governance & Control", desc: "Guardrails, configuration, & compliance controls so your ops team stays in charge" },
   { icon: Layers, title: "Platform Abstraction", desc: "LLM-agnostic and scalable architecture for flexibility" },
 ];
+
+const layerIcons: LucideIcon[] = [Brain, Database, Workflow, Shield, BarChart3, Layers];
 
 const GoAIDiagram = () => {
   return (
