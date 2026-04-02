@@ -905,28 +905,9 @@
   padding: 96px 80px;
 }
 
-.cc-stats-dark::before {
-  content: '';
-  position: absolute;
-  top: -40%;
-  left: -15%;
-  width: 55%;
-  height: 180%;
-  background: radial-gradient(ellipse, rgba(67, 181, 191, 0.2) 0%, transparent 65%);
-  pointer-events: none;
-  filter: blur(60px);
-}
-
+.cc-stats-dark::before,
 .cc-stats-dark::after {
-  content: '';
-  position: absolute;
-  bottom: -40%;
-  right: -15%;
-  width: 55%;
-  height: 180%;
-  background: radial-gradient(ellipse, rgba(112, 66, 210, 0.18) 0%, transparent 65%);
-  pointer-events: none;
-  filter: blur(60px);
+  display: none;
 }
 
 .cc-stats-dark-header {
