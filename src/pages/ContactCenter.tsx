@@ -152,18 +152,18 @@ const ContactCenter = () => {
         <div className="cc-security-grid">
           <div className="cc-security-card">
             <div className="uc-benefit-icon cc-security-lucide"><ShieldCheck size={48} strokeWidth={1.5} /></div>
-            <h3>SOC 2 Type I</h3>
-            <p>Independently audited security controls for data protection, availability, and confidentiality.</p>
+            <h3 className="uc-benefit-title">SOC 2 Type I</h3>
+            <p className="uc-benefit-desc">Independently audited security controls for data protection, availability, and confidentiality.</p>
           </div>
           <div className="cc-security-card">
             <div className="uc-benefit-icon cc-security-lucide"><Lock size={48} strokeWidth={1.5} /></div>
-            <h3>GDPR Compliant</h3>
-            <p>Full compliance with European data protection regulations and privacy standards.</p>
+            <h3 className="uc-benefit-title">GDPR Compliant</h3>
+            <p className="uc-benefit-desc">Full compliance with European data protection regulations and privacy standards.</p>
           </div>
           <div className="cc-security-card">
             <div className="uc-benefit-icon cc-security-lucide"><BadgeCheck size={48} strokeWidth={1.5} /></div>
-            <h3>HIPAA Compliant</h3>
-            <p>Meets healthcare industry requirements for protecting sensitive patient information.</p>
+            <h3 className="uc-benefit-title">HIPAA Compliant</h3>
+            <p className="uc-benefit-desc">Meets healthcare industry requirements for protecting sensitive patient information.</p>
           </div>
         </div>
       </section>
