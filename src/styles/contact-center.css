@@ -1664,10 +1664,11 @@
   height: 500px;
   background: radial-gradient(
     circle,
-    rgba(67, 181, 191, 0.4) 0%,
-    rgba(67, 181, 191, 0.2) 30%,
-    rgba(112, 66, 210, 0.1) 60%,
-    transparent 85%
+    rgba(140, 70, 230, 0.45) 0%,
+    rgba(120, 50, 210, 0.3) 25%,
+    rgba(67, 181, 191, 0.2) 50%,
+    rgba(112, 66, 210, 0.1) 70%,
+    transparent 90%
   );
   filter: blur(50px);
   z-index: 0;
