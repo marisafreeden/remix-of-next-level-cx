@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import EditableText from "@/components/EditableText";
-import { BarChart3, Headphones, Phone, Users } from "lucide-react";
+import { BarChart3, Headphones, MessageSquare, Phone, Users } from "lucide-react";
 
 interface ContactCenterHeroProps {
   title1: string;
@@ -151,8 +151,8 @@ const ContactCenterHero = ({
 
             <div className="cc-glass-card">
               <div className="cc-glass-card-header">
-                <Phone size={14} strokeWidth={1.5} />
-                <span>Calls (Monthly)</span>
+                <MessageSquare size={14} strokeWidth={1.5} />
+                <span>Chats (Monthly)</span>
               </div>
               <div className="cc-glass-queue-table">
                 <div className="cc-glass-queue-header">
