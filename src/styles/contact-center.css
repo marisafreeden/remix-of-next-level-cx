@@ -1829,8 +1829,8 @@
 
 .ivr-player-bar {
   position: absolute;
-  bottom: 30px;
-  left: 50%;
+  bottom: -20px;
+  left: calc(50% - 20px);
   transform: translateX(-50%);
   z-index: 2;
   background: #fff;
