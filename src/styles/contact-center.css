@@ -280,7 +280,7 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  bottom: -10%;
+  top: -15%;
   left: -10%;
   width: 900px;
   height: 900px;
@@ -295,7 +295,7 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: -5%;
+  top: -10%;
   right: -10%;
   width: 1000px;
   height: 1000px;
@@ -309,7 +309,7 @@
 
 .cc-hero-blur-extra1 {
   position: absolute;
-  top: 10%;
+  top: 0%;
   right: 10%;
   width: 600px;
   height: 600px;
@@ -323,7 +323,7 @@
 
 .cc-hero-blur-extra2 {
   position: absolute;
-  bottom: 10%;
+  top: 5%;
   left: 15%;
   width: 700px;
   height: 700px;
@@ -337,7 +337,7 @@
 
 .cc-hero-blur-extra3 {
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 700px;
