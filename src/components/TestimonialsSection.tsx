@@ -24,7 +24,6 @@ const TestimonialsSection = () => {
 
         <div className="testimonials-carousel-track">
           <div className="testimonials-carousel-slider">
-          >
             {testimonials.map((item) => (
               <div key={item.key} className="testimonial-card">
                 <Quote size={24} strokeWidth={1.5} className="testimonial-card-quote" />
