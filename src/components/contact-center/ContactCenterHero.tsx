@@ -64,7 +64,7 @@ const ContactCenterHero = ({
             </span>
           </h1>
 
-          <p className="cc-hero-desc">{subtitle}</p>
+          <p className="cc-hero-desc text-primary">{subtitle}</p>
 
           <div className="cc-hero-actions">
             <button type="button" className="btn-hero-a">
