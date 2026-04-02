@@ -5,6 +5,7 @@ import "@/styles/uc.css";
 import "@/styles/sections.css";
 import "@/styles/responsive.css";
 import "@/styles/contact-center.css";
+import "@/styles/goai.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
@@ -31,6 +32,7 @@ import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
+import GoAIDiagram from "@/components/GoAIDiagram";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
@@ -137,6 +139,37 @@ const ContactCenter = () => {
               </div>
             );
           })}
+        </div>
+      </section>
+
+      <div className="cc-section-divider" />
+
+      {/* GoAI Section */}
+      <section className="cc-goai-section">
+        <div className="cc-goai-inner">
+          <div className="cc-goai-header">
+            <p className="promos-eyebrow">POWERED BY GoAI</p>
+            <h2 className="promos-title">
+              AI That Works for <span className="promos-title-italic" style={{ display: "inline" }}>Your Team</span>
+            </h2>
+          </div>
+          <div className="cc-goai-features">
+            <div className="cc-goai-feature">
+              <h3 className="uc-benefit-title">Engage Customers Without the Wait</h3>
+              <p className="uc-benefit-desc">Intelligent virtual agents handle inquiries instantly — no hold times, no frustration, just seamless self-service around the clock.</p>
+            </div>
+            <div className="cc-goai-feature">
+              <h3 className="uc-benefit-title">Assist Agents to Exceed Expectations</h3>
+              <p className="uc-benefit-desc">Real-time AI coaching, smart suggestions, and automated after-call work give your agents superpowers on every interaction.</p>
+            </div>
+            <div className="cc-goai-feature">
+              <h3 className="uc-benefit-title">Measure What's Working in Real Time</h3>
+              <p className="uc-benefit-desc">AI-powered analytics surface trends, sentiment, and performance insights so you can optimize operations as they happen.</p>
+            </div>
+          </div>
+          <div className="cc-goai-diagram-wrap">
+            <GoAIDiagram />
+          </div>
         </div>
       </section>
 
