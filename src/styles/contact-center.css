@@ -962,8 +962,8 @@
   background: linear-gradient(105.96deg, #0a3838 0%, #0e2e48 65%, #2a1854 100%);
   position: relative;
   overflow: hidden;
-  margin: 0 100px;
-  border-radius: 28px;
+  margin: 0;
+  border-radius: 0;
   padding: 96px 80px;
 }
 
