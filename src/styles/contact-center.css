@@ -1355,17 +1355,15 @@
   min-height: 480px;
   border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(135deg, #1a1040 0%, #0d2a3a 50%, #1e0e3e 100%);
-  box-shadow:
-    0 12px 48px rgba(90, 50, 180, 0.25),
-    0 4px 16px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  background: transparent;
 }
 
 .dialer-agent-bg {
   position: absolute;
   inset: 0;
   z-index: 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .dialer-agent-img {
@@ -1379,19 +1377,19 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    180deg,
-    rgba(20, 10, 50, 0.3) 0%,
-    rgba(20, 10, 50, 0.5) 30%,
-    rgba(20, 10, 50, 0.85) 60%,
-    rgba(20, 10, 50, 0.95) 100%
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(20, 10, 50, 0.6) 80%,
+    rgba(20, 10, 50, 0.85) 100%
   );
 }
 
 .dialer-preview {
   position: relative;
   z-index: 1;
-  width: 280px;
-  margin: 160px auto 24px;
+  width: 260px;
+  margin: 40px 16px 40px auto;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
