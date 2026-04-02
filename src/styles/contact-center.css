@@ -676,13 +676,13 @@
   border-radius: 0;
   background: none;
   padding: 0;
-  color: #43B5BF;
   justify-content: flex-start;
 }
 
 .cc-features-gray .uc-benefit-icon svg {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
+  stroke: url(#cc-icon-gradient);
 }
 
 /* ===== Persona Cards ===== */
