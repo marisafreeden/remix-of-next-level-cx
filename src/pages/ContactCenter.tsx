@@ -51,6 +51,18 @@ const ContactCenter = () => {
         onSave={save}
       />
 
+      <section className="logo-strip">
+        <p className="logo-strip-label">{t("logos.label")}</p>
+        <div className="logo-strip-logos">
+          <span className="logo-strip-item">Pfizer</span>
+          <span className="logo-strip-item">UPS</span>
+          <span className="logo-strip-item">L'Oréal</span>
+          <span className="logo-strip-item">Hertz</span>
+          <span className="logo-strip-item">Toyota</span>
+          <span className="logo-strip-item">Deloitte</span>
+        </div>
+      </section>
+
       {/* What Makes It Smarter — UC promo style */}
       <section className="uc-features-section">
         <div className="cc-alt-features">
