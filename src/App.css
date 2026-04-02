@@ -144,17 +144,17 @@
   font-weight: 600;
   padding: 10px 22px;
   border-radius: 100px;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
   color: white;
   text-decoration: none;
   transition: all 0.2s;
-  box-shadow: 0 2px 16px rgba(139, 92, 246, 0.3);
+  box-shadow: none;
 }
 
 .hero-nav-cta:hover {
   opacity: 0.9;
   transform: translateY(-1px);
-  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.45);
+  box-shadow: none;
 }
 
 /* Hero Section */
