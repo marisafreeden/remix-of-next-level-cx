@@ -13,6 +13,9 @@ import ccFeatureCharts from "@/assets/cc-feature-charts.png";
 import personaAgentsImg from "@/assets/persona-agents.jpg";
 import personaManagersImg from "@/assets/persona-managers.jpg";
 import personaItImg from "@/assets/persona-it.jpg";
+import soc2Badge from "@/assets/soc2-badge.png";
+import hipaaBadge from "@/assets/hipaa-badge.jpg";
+import gdprBadge from "@/assets/gdpr-badge.jpg";
 
 import {
   MessageSquare, Bot, BarChart3, Users, ShieldCheck, Lock, BadgeCheck,
