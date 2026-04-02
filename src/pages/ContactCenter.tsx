@@ -69,7 +69,7 @@ const ContactCenter = () => {
 
       <section className="logo-strip cc-logo-strip-2col">
         <div className="cc-logo-left">
-          <p className="cc-logo-sub">Teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte chose GoContact over the platforms that promised more.</p>
+          <p className="cc-logo-sub">Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
         </div>
         <div className="logo-strip-logos cc-logo-right">
           <span className="logo-strip-item">Pfizer</span>
