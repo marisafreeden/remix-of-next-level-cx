@@ -1,4 +1,4 @@
-import { Brain, Database, Workflow, Shield, BarChart3, Layers } from "lucide-react";
+import { Brain, Database, Workflow, Shield, BarChart3, Layers, type LucideIcon } from "lucide-react";
 
 const leftCards = [
   { icon: Brain, title: "Conversation Intelligence", desc: "Natural language understanding & reasoning that follows context, not scripts" },
@@ -11,6 +11,8 @@ const rightCards = [
   { icon: Shield, title: "Governance & Control", desc: "Guardrails, configuration, & compliance controls so your ops team stays in charge" },
   { icon: Layers, title: "Platform Abstraction", desc: "LLM-agnostic and scalable architecture for flexibility" },
 ];
+
+const layerIcons: LucideIcon[] = [Brain, Database, Workflow, Shield, BarChart3, Layers];
 
 const GoAIDiagram = () => {
   return (
@@ -30,7 +32,7 @@ const GoAIDiagram = () => {
       </div>
 
       <div className="goai-layers-col">
-        {[0, 1, 2, 3, 4, 5].map((i) => (
+        {layerIcons.map((LayerIcon, i) => (
           <div
             key={i}
             className="goai-diamond"
@@ -40,7 +42,11 @@ const GoAIDiagram = () => {
                 : "linear-gradient(135deg, rgba(112, 66, 210, 0.45), rgba(112, 66, 210, 0.12))",
               animationDelay: `${i * 0.15}s`,
             }}
-          />
+          >
+            <span className="goai-diamond-icon">
+              <LayerIcon size={18} strokeWidth={1.5} />
+            </span>
+          </div>
         ))}
       </div>
 
