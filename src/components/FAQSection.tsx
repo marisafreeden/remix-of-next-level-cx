@@ -10,7 +10,7 @@ const FAQSection = () => {
 
   return (
     <section className="faq-section">
-      <p className="faq-eyebrow">SUPPORT</p>
+      
       <h2 className="faq-title">
         {t("faq.title_line1")}<br />
         <span className="faq-title-italic">{t("faq.title_line2")}</span>
