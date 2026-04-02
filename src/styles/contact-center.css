@@ -902,9 +902,10 @@
 }
 
 .cc-stats-dark-title .promos-title-italic {
-  -webkit-text-fill-color: unset;
-  background: none;
-  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(105.96deg, #7dd3e0 0%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .cc-stats-grid-v2 {
