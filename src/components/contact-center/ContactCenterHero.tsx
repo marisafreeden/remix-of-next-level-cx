@@ -82,19 +82,27 @@ const ContactCenterHero = ({
               <div className="cc-glass-card-header">
                 <Clock size={14} strokeWidth={1.5} />
                 <span>Avg Wait Time</span>
+                <span className="cc-glass-badge">Live</span>
               </div>
               <div className="cc-glass-big-number">1:24</div>
               <div className="cc-glass-sub-label">across all queues</div>
               <div className="cc-glass-metric-trend cc-glass-green">↓ 18% vs last week</div>
+              <div className="cc-glass-metric-bar">
+                <div className="cc-glass-metric-bar-fill cc-glass-metric-bar-teal" style={{ width: '72%' }} />
+              </div>
             </div>
             <div className="cc-glass-card cc-glass-metric">
               <div className="cc-glass-card-header">
                 <Timer size={14} strokeWidth={1.5} />
                 <span>Avg Hold Time</span>
+                <span className="cc-glass-badge cc-glass-badge-warning">Monitoring</span>
               </div>
               <div className="cc-glass-big-number">0:42</div>
               <div className="cc-glass-sub-label">per interaction</div>
               <div className="cc-glass-metric-trend cc-glass-green">↓ 12% vs last week</div>
+              <div className="cc-glass-metric-bar">
+                <div className="cc-glass-metric-bar-fill cc-glass-metric-bar-purple" style={{ width: '35%' }} />
+              </div>
             </div>
             <div className="cc-glass-card cc-glass-metric">
               <div className="cc-glass-card-header">
@@ -104,6 +112,11 @@ const ContactCenterHero = ({
               </div>
               <div className="cc-glass-big-number">94.2<span style={{ fontSize: '28px', opacity: 0.6 }}>%</span></div>
               <div className="cc-glass-sub-label">calls answered within 20s</div>
+              <div className="cc-glass-metric-tags">
+                <span className="cc-glass-tag cc-glass-tag-teal">Voice 96%</span>
+                <span className="cc-glass-tag cc-glass-tag-purple">Chat 91%</span>
+                <span className="cc-glass-tag cc-glass-tag-blue">Email 88%</span>
+              </div>
               <div className="cc-glass-metric-trend cc-glass-green">↑ 3.1% vs last month</div>
             </div>
           </div>
