@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import EditableText from "@/components/EditableText";
+import { BarChart3, Clock, Headphones, MessageSquare, Phone, Shield, Timer, Users } from "lucide-react";
 import { BarChart3, Headphones, MessageSquare, Phone, Users } from "lucide-react";
 
 interface ContactCenterHeroProps {
