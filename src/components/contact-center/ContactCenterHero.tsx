@@ -106,6 +106,27 @@ const ContactCenterHero = ({
             <div className="cc-glass-card">
               <div className="cc-glass-card-header">
                 <Phone size={14} strokeWidth={1.5} />
+                <span>Active Call</span>
+                <span className="cc-glass-badge cc-glass-badge-success">Talking</span>
+              </div>
+              <div className="cc-glass-dialer">
+                <div className="cc-glass-dialer-timer">01:32</div>
+                <div className="cc-glass-dialer-info">
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Name</span><span>Susan Smith</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Phone</span><span>975 234 567</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Type</span><span>Predictive</span></div>
+                </div>
+                <div className="cc-glass-dialer-modes">
+                  <span className="cc-glass-dialer-mode">Manual</span>
+                  <span className="cc-glass-dialer-mode">Power</span>
+                  <span className="cc-glass-dialer-mode cc-glass-dialer-mode-active">Predictive</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="cc-glass-card">
+              <div className="cc-glass-card-header">
+                <Phone size={14} strokeWidth={1.5} />
                 <span>Calls (Monthly)</span>
               </div>
               <div className="cc-glass-queue-table">
@@ -160,27 +181,6 @@ const ContactCenterHero = ({
                 <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span>2:34</span></div>
                 <div className="cc-glass-queue-row"><span>Support</span><span>8</span><span>3</span><span>1:12</span></div>
                 <div className="cc-glass-queue-row"><span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span></div>
-              </div>
-            </div>
-
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <Phone size={14} strokeWidth={1.5} />
-                <span>Active Call</span>
-                <span className="cc-glass-badge cc-glass-badge-success">Talking</span>
-              </div>
-              <div className="cc-glass-dialer">
-                <div className="cc-glass-dialer-timer">01:32</div>
-                <div className="cc-glass-dialer-info">
-                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Name</span><span>Susan Smith</span></div>
-                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Phone</span><span>975 234 567</span></div>
-                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Type</span><span>Predictive</span></div>
-                </div>
-                <div className="cc-glass-dialer-modes">
-                  <span className="cc-glass-dialer-mode">Manual</span>
-                  <span className="cc-glass-dialer-mode">Power</span>
-                  <span className="cc-glass-dialer-mode cc-glass-dialer-mode-active">Predictive</span>
-                </div>
               </div>
             </div>
           </div>
