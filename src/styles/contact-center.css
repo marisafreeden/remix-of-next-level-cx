@@ -680,7 +680,7 @@
 
 /* ===== Persona Cards ===== */
 .cc-persona-grid {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
