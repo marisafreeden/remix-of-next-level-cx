@@ -1646,3 +1646,243 @@
 .dialer-bottom-item span:last-child {
   color: rgba(26, 26, 46, 0.5);
 }
+
+/* ===== IVR Preview ===== */
+.ivr-wrapper {
+  position: relative;
+  width: 560px;
+  min-height: 500px;
+}
+
+.ivr-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    rgba(67, 181, 191, 0.4) 0%,
+    rgba(67, 181, 191, 0.2) 30%,
+    rgba(112, 66, 210, 0.1) 60%,
+    transparent 85%
+  );
+  filter: blur(50px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ivr-person-frame {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 340px;
+  height: 420px;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.ivr-person-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.ivr-card {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  border-radius: 12px;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Inter', sans-serif;
+}
+
+.ivr-card-care {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 240px;
+  padding: 16px 18px;
+}
+
+.ivr-care-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.ivr-care-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #43B5BF, #7042D2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.ivr-care-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ivr-care-vm {
+  margin-left: auto;
+  color: #43B5BF;
+}
+
+.ivr-care-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.ivr-care-waveform {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ivr-wf-time {
+  font-size: 10px;
+  color: #43B5BF;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.ivr-wf-bars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex: 1;
+}
+
+.ivr-wf-bar {
+  width: 3px;
+  min-height: 4px;
+  background: linear-gradient(180deg, #43B5BF, #7042D2);
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+.ivr-card-route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  width: fit-content;
+}
+
+.ivr-route-support {
+  position: absolute;
+  left: 0;
+  bottom: 130px;
+}
+
+.ivr-route-sales {
+  position: absolute;
+  right: 10px;
+  bottom: 160px;
+}
+
+.ivr-avatar-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ivr-avatar-teal {
+  background: linear-gradient(135deg, rgba(67, 181, 191, 0.15), rgba(67, 181, 191, 0.08));
+  border: 2px solid rgba(67, 181, 191, 0.3);
+  color: #43B5BF;
+}
+
+.ivr-avatar-purple {
+  background: linear-gradient(135deg, rgba(198, 134, 248, 0.15), rgba(198, 134, 248, 0.08));
+  border: 2px solid rgba(198, 134, 248, 0.3);
+  color: #C686F8;
+}
+
+.ivr-route-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ivr-player-bar {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: #fff;
+  border-radius: 14px;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 14px 20px;
+  width: 360px;
+}
+
+.ivr-player-track {
+  position: relative;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+
+.ivr-player-progress {
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(90deg, #43B5BF, #7042D2);
+  border-radius: 2px;
+}
+
+.ivr-player-dot {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #43B5BF;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.ivr-player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #43B5BF;
+}
+
+.ivr-play-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #43B5BF, #7042D2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}

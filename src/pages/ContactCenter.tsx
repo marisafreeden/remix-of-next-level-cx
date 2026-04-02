@@ -37,6 +37,7 @@ import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
 import GoAIDiagram from "@/components/GoAIDiagram";
 import DialerPreview from "@/components/contact-center/DialerPreview";
 import OmnichannelPreview from "@/components/contact-center/OmnichannelPreview";
+import IVRPreview from "@/components/contact-center/IVRPreview";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
@@ -114,11 +115,13 @@ const ContactCenter = () => {
                 </button>
               </div>
               <div className="cc-alt-image-side">
-                {i !== 1 && <div className="cc-alt-blur" />}
+                {i !== 1 && i !== 3 && <div className="cc-alt-blur" />}
                 {i === 1 ? (
                   <DialerPreview />
                 ) : i === 0 ? (
                   <OmnichannelPreview />
+                ) : i === 3 ? (
+                  <IVRPreview />
                 ) : (
                   <img src={smarterImages[i]!} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
                 )}
