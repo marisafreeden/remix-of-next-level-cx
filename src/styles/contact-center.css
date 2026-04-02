@@ -766,6 +766,7 @@
   line-height: 1.36;
   color: #151D48;
   letter-spacing: -0.3px;
+  white-space: pre-line;
 }
 
 .cc-alt-desc {
