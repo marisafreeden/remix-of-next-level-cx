@@ -119,8 +119,6 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      <div className="cc-section-divider" />
-
       {/* Feature Grid */}
       <section className="uc-features-section cc-features-gray">
         <div className="uc-features-header" style={{ textAlign: "center" }}>
