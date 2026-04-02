@@ -78,6 +78,36 @@ const ContactCenterHero = ({
         </div>
 
         <div className="cc-hero-stage">
+          <div className="cc-glass-top-row">
+            <div className="cc-glass-card cc-glass-metric">
+              <div className="cc-glass-card-header">
+                <Clock size={14} strokeWidth={1.5} />
+                <span>Avg Wait Time</span>
+              </div>
+              <div className="cc-glass-big-number">1:24</div>
+              <div className="cc-glass-sub-label">across all queues</div>
+              <div className="cc-glass-metric-trend cc-glass-green">↓ 18% vs last week</div>
+            </div>
+            <div className="cc-glass-card cc-glass-metric">
+              <div className="cc-glass-card-header">
+                <Timer size={14} strokeWidth={1.5} />
+                <span>Avg Hold Time</span>
+              </div>
+              <div className="cc-glass-big-number">0:42</div>
+              <div className="cc-glass-sub-label">per interaction</div>
+              <div className="cc-glass-metric-trend cc-glass-green">↓ 12% vs last week</div>
+            </div>
+            <div className="cc-glass-card cc-glass-metric">
+              <div className="cc-glass-card-header">
+                <Shield size={14} strokeWidth={1.5} />
+                <span>SLA %</span>
+                <span className="cc-glass-badge cc-glass-badge-success">On Target</span>
+              </div>
+              <div className="cc-glass-big-number">94.2<span style={{ fontSize: '28px', opacity: 0.6 }}>%</span></div>
+              <div className="cc-glass-sub-label">calls answered within 20s</div>
+              <div className="cc-glass-metric-trend cc-glass-green">↑ 3.1% vs last month</div>
+            </div>
+          </div>
           <div className="cc-glass-widgets">
             <div className="cc-glass-card cc-glass-tall">
               <div className="cc-glass-card-header">
