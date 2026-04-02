@@ -35,13 +35,6 @@ const IVRPreview = () => (
       <span className="ivr-route-label">Press 2 for Support</span>
     </div>
 
-    {/* Press 3 for Sales - right */}
-    <div className="ivr-card ivr-card-route ivr-route-sales">
-      <div className="ivr-route-avatar">
-        <div className="ivr-avatar-circle ivr-avatar-purple">3</div>
-      </div>
-      <span className="ivr-route-label">Press 3 for Sales</span>
-    </div>
 
     {/* Audio player bar */}
     <div className="ivr-player-bar">
