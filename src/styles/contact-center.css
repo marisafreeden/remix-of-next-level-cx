@@ -1351,19 +1351,34 @@
 /* ===== Dialer Preview (glass card style) ===== */
 .dialer-wrapper {
   position: relative;
-  width: 420px;
-  min-height: 480px;
-  border-radius: 20px;
-  overflow: hidden;
-  background: transparent;
+  width: 520px;
+  min-height: 460px;
+}
+
+.dialer-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(120, 60, 200, 0.3) 0%, rgba(90, 40, 180, 0.15) 40%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .dialer-agent-bg {
   position: absolute;
-  inset: 0;
-  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 340px;
+  height: 420px;
+  z-index: 1;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .dialer-agent-img {
@@ -1374,33 +1389,24 @@
 }
 
 .dialer-agent-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.15) 50%,
-    rgba(20, 10, 50, 0.6) 80%,
-    rgba(20, 10, 50, 0.85) 100%
-  );
+  display: none;
 }
 
 .dialer-preview {
   position: relative;
-  z-index: 1;
-  width: 260px;
-  margin: 40px 16px 40px auto;
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  z-index: 2;
+  width: 280px;
+  margin-left: auto;
+  margin-top: 60px;
+  background: #fff;
   border-radius: 14px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.04);
   overflow: hidden;
   font-family: 'Inter', sans-serif;
-  color: rgba(255, 255, 255, 0.9);
+  color: #1a1a2e;
 }
 
 .dialer-topbar {
