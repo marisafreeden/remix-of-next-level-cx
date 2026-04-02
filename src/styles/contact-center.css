@@ -284,10 +284,10 @@
   left: -10%;
   width: 900px;
   height: 900px;
-  background: #43b5bf;
+  background: #7dd8e2;
   border-radius: 50%;
   filter: blur(180px);
-  opacity: 0.4;
+  opacity: 0.25;
   pointer-events: none;
   z-index: 0;
 }
