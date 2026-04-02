@@ -126,10 +126,7 @@ const ContactCenter = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">{t("cc_page.features_eyebrow")}</p>
           <h2 className="promos-title">
-            <EditableText value={c("features_title1", "cc_page.features_title1")} copyKey="features_title1" onSave={save} /><br />
-            <span className="promos-title-italic">
-              <EditableText value={c("features_title2", "cc_page.features_title2")} copyKey="features_title2" onSave={save} />
-            </span>
+            The features that move the <span className="promos-title-italic" style={{ display: "inline" }}>needle.</span>
           </h2>
         </div>
         <div className="uc-benefits-grid">
