@@ -1,3 +1,38 @@
+/* ===== Two-column logo strip ===== */
+.cc-logo-strip-2col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  gap: 48px;
+}
+.cc-logo-strip-2col .cc-logo-left {
+  flex: 0 0 320px;
+}
+.cc-logo-heading {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(10, 15, 24, 0.4);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.cc-logo-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(10, 15, 24, 0.5);
+  line-height: 1.5;
+}
+.cc-logo-strip-2col .cc-logo-right {
+  flex: 1;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
   padding: 200px 48px 0 !important;
