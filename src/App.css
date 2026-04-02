@@ -433,6 +433,7 @@
   overflow-y: auto;
   height: 460px;
   scrollbar-width: none;
+  background: #ffffff;
 }
 
 .dash-chat-body::-webkit-scrollbar {
