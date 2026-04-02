@@ -826,7 +826,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 520px;
+  max-width: 600px;
   height: auto;
   border: none;
   border-radius: 0;
@@ -834,7 +834,7 @@
 }
 
 .cc-alt-img-lg {
-  max-width: 624px;
+  max-width: 720px;
 }
 
 @media (max-width: 768px) {
