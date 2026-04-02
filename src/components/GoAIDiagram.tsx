@@ -32,22 +32,30 @@ const GoAIDiagram = () => {
       </div>
 
       <div className="goai-layers-col">
-        {layerIcons.map((LayerIcon, i) => (
-          <div
-            key={i}
-            className="goai-diamond"
-            style={{
-              background: i % 2 === 0
-                ? "linear-gradient(135deg, rgba(67, 181, 191, 0.5), rgba(67, 181, 191, 0.15))"
-                : "linear-gradient(135deg, rgba(112, 66, 210, 0.45), rgba(112, 66, 210, 0.12))",
-              animationDelay: `${i * 0.15}s`,
-            }}
-          >
-            <span className="goai-diamond-icon">
-              <LayerIcon size={18} strokeWidth={1.5} />
-            </span>
-          </div>
-        ))}
+        {layerIcons.map((LayerIcon, i) => {
+          const isTeal = i % 2 === 0;
+          return (
+            <div
+              key={i}
+              className="goai-diamond"
+              style={{
+                background: isTeal
+                  ? "linear-gradient(135deg, rgba(67, 181, 191, 0.5), rgba(67, 181, 191, 0.15))"
+                  : "linear-gradient(135deg, rgba(112, 66, 210, 0.45), rgba(112, 66, 210, 0.12))",
+                animationDelay: `${i * 0.15}s`,
+              }}
+            >
+              <span
+                className="goai-diamond-icon"
+                style={{
+                  color: isTeal ? "rgba(67, 181, 191, 0.7)" : "rgba(112, 66, 210, 0.65)",
+                }}
+              >
+                <LayerIcon size={22} strokeWidth={1.5} />
+              </span>
+            </div>
+          );
+        })}
       </div>
 
       <div className="goai-diagram-col">
