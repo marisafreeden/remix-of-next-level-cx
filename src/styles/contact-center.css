@@ -851,6 +851,10 @@
   max-width: 600px;
 }
 
+.cc-alt-text .promos-eyebrow {
+  margin-bottom: 0;
+}
+
 .cc-alt-heading {
   font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
