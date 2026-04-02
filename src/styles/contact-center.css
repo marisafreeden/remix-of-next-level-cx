@@ -875,7 +875,7 @@
   gap: 10px;
   padding: 14px 28px;
   background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
-  border-radius: 10px;
+  border-radius: 999px;
   border: none;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
