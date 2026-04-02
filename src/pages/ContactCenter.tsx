@@ -94,7 +94,7 @@ const ContactCenter = () => {
             </div>
           ))}
         </div>
-        <p className="cc-stats-caption">These aren't averages. They're what Broadvoice customers see within the first 90 days.</p>
+        <p className="cc-stats-caption">We deploy in days. Our team stays with you after go-live. And the numbers above are what customers see in the first 90 days — not year two of a roadmap.</p>
       </section>
 
       {/* What Makes It Smarter — UC promo style */}
