@@ -773,8 +773,8 @@
 /* Omnichannel Preview */
 .omni-preview-wrap {
   position: relative;
-  width: 340px;
-  height: 420px;
+  width: 400px;
+  height: 480px;
   z-index: 1;
 }
 
@@ -783,20 +783,20 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
-  border-radius: 24px;
+  border-radius: 20px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .omni-icon-node {
   position: absolute;
-  width: 44px;
-  height: 44px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
   z-index: 2;
 }
 
