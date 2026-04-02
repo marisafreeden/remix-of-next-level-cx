@@ -149,19 +149,22 @@ const ContactCenter = () => {
         </div>
         <div className="cc-security-grid">
           <div className="cc-security-card">
-            <div className="cc-security-icon"><img src={soc2Badge} alt="SOC 2 Type I" className="cc-security-badge-img" /></div>
+            <div className="uc-benefit-icon cc-security-lucide"><ShieldCheck size={48} strokeWidth={1.5} /></div>
             <h3>SOC 2 Type I</h3>
             <p>Independently audited security controls for data protection, availability, and confidentiality.</p>
+            <div className="cc-security-icon"><img src={soc2Badge} alt="SOC 2 Type I" className="cc-security-badge-img" /></div>
           </div>
           <div className="cc-security-card">
-            <div className="cc-security-icon"><img src={gdprBadge} alt="GDPR Compliant" className="cc-security-badge-img" /></div>
+            <div className="uc-benefit-icon cc-security-lucide"><Lock size={48} strokeWidth={1.5} /></div>
             <h3>GDPR Compliant</h3>
             <p>Full compliance with European data protection regulations and privacy standards.</p>
+            <div className="cc-security-icon"><img src={gdprBadge} alt="GDPR Compliant" className="cc-security-badge-img" /></div>
           </div>
           <div className="cc-security-card">
-            <div className="cc-security-icon"><img src={hipaaBadge} alt="HIPAA Compliant" className="cc-security-badge-img" /></div>
+            <div className="uc-benefit-icon cc-security-lucide"><BadgeCheck size={48} strokeWidth={1.5} /></div>
             <h3>HIPAA Compliant</h3>
             <p>Meets healthcare industry requirements for protecting sensitive patient information.</p>
+            <div className="cc-security-icon"><img src={hipaaBadge} alt="HIPAA Compliant" className="cc-security-badge-img" /></div>
           </div>
         </div>
       </section>
