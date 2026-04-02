@@ -166,17 +166,17 @@ const ContactCenter = () => {
             <div className="cc-goai-feature cc-goai-glass-card">
               <div className="cc-goai-card-icon"><Headphones size={32} strokeWidth={1.5} /></div>
               <h3 className="uc-benefit-title">Engage Customers Without the Wait</h3>
-              <p className="uc-benefit-desc">Intelligent virtual agents handle inquiries instantly — no hold times, no frustration, just seamless self-service around the clock.</p>
+              <p className="uc-benefit-desc">Virtual agents handle routine inquiries instantly — so your human agents spend their time on conversations that need a human.</p>
             </div>
             <div className="cc-goai-feature cc-goai-glass-card">
               <div className="cc-goai-card-icon"><BrainCircuit size={32} strokeWidth={1.5} /></div>
               <h3 className="uc-benefit-title">Assist Agents to Exceed Expectations</h3>
-              <p className="uc-benefit-desc">Real-time AI coaching, smart suggestions, and automated after-call work give your agents superpowers on every interaction.</p>
+              <p className="uc-benefit-desc">Real-time coaching, smart suggestions, and automated after-call work. Every agent performs like your best one.</p>
             </div>
             <div className="cc-goai-feature cc-goai-glass-card">
               <div className="cc-goai-card-icon"><TrendingUp size={32} strokeWidth={1.5} /></div>
               <h3 className="uc-benefit-title">Measure What's Working in Real Time</h3>
-              <p className="uc-benefit-desc">AI-powered analytics surface trends, sentiment, and performance insights so you can optimize operations as they happen.</p>
+              <p className="uc-benefit-desc">Sentiment, trends, and performance insights surface automatically — so you're optimizing operations, not just reporting on them.</p>
             </div>
           </div>
         </div>
