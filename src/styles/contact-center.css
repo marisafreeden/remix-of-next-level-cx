@@ -972,7 +972,18 @@
   line-height: 1.5;
   color: #555555;
   text-align: center;
-  max-width: 220px;
+  max-width: 280px;
+}
+
+.cc-stats-caption {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 48px;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
