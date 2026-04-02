@@ -154,7 +154,7 @@
 .hero-nav-cta:hover {
   opacity: 0.9;
   transform: translateY(-1px);
-  box-shadow: 0 4px 24px rgba(139, 92, 246, 0.45);
+  box-shadow: none;
 }
 
 /* Hero Section */
