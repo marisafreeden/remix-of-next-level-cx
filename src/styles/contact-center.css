@@ -1358,20 +1358,20 @@
 .dialer-wrapper::before {
   content: '';
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
+  width: 620px;
+  height: 620px;
   background: radial-gradient(
     circle,
-    rgba(140, 80, 220, 0.18) 0%,
-    rgba(100, 60, 200, 0.12) 25%,
-    rgba(80, 180, 200, 0.08) 50%,
-    rgba(80, 180, 200, 0.03) 70%,
-    transparent 85%
+    rgba(140, 70, 230, 0.5) 0%,
+    rgba(120, 50, 210, 0.35) 25%,
+    rgba(100, 40, 200, 0.18) 50%,
+    rgba(80, 160, 210, 0.08) 70%,
+    transparent 90%
   );
-  filter: blur(50px);
+  filter: blur(60px);
   z-index: 0;
   pointer-events: none;
 }
@@ -1379,18 +1379,18 @@
 .dialer-wrapper::after {
   content: '';
   position: absolute;
-  top: 30%;
-  left: 55%;
+  top: 35%;
+  left: 60%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background: radial-gradient(
     circle,
-    rgba(160, 90, 240, 0.15) 0%,
-    rgba(120, 60, 200, 0.08) 40%,
+    rgba(160, 80, 255, 0.4) 0%,
+    rgba(130, 60, 220, 0.25) 40%,
     transparent 70%
   );
-  filter: blur(40px);
+  filter: blur(45px);
   z-index: 0;
   pointer-events: none;
 }
