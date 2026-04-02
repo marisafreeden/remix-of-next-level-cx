@@ -10,7 +10,6 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
 import ccFeatureCharts from "@/assets/cc-feature-charts.png";
-import ccSmartScripting from "@/assets/cc-smart-scripting.png";
 import personaAgentsImg from "@/assets/persona-agents.jpg";
 import personaManagersImg from "@/assets/persona-managers.jpg";
 import personaItImg from "@/assets/persona-it.jpg";
@@ -34,7 +33,6 @@ import ContactCenterHero from "@/components/contact-center/ContactCenterHero";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
-const smarterImages: Record<string, string> = { sm1: ccFeatureCharts, sm2: ccFeatureCharts, sm3: ccSmartScripting, sm4: ccFeatureCharts };
 const featureKeys = ["f2", "f4", "f6", "f8", "f11", "f12"];
 const featureIcons = [Zap, Bot, BarChart3, Users, MessageSquare, MonitorSmartphone];
 const personaKeys = ["agents", "managers", "it"];
@@ -91,7 +89,7 @@ const ContactCenter = () => {
               </div>
               <div className="cc-alt-image-side">
                 <div className="cc-alt-blur" />
-                <img src={smarterImages[key]} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                <img src={ccFeatureCharts} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
               </div>
             </div>
           ))}
