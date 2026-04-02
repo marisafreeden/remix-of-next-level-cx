@@ -67,6 +67,22 @@ const ContactCenter = () => {
         onSave={save}
       />
 
+      {/* Stats — right after hero */}
+      <section className="cc-stats-section-v2 cc-stats-dark">
+        <div className="cc-stats-dark-header">
+          <h2 className="cc-stats-dark-title">The Numbers That Matter to <span className="promos-title-italic" style={{ display: "inline" }}>Contact Center Leaders</span></h2>
+        </div>
+        <div className="cc-stats-grid-v2">
+          {statKeys.map((key) => (
+            <div key={key} className="cc-stat-v2">
+              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
+            </div>
+          ))}
+        </div>
+        <p className="cc-stats-caption">These aren't averages. They're what Broadvoice customers see within the first 90 days.</p>
+      </section>
+
       <section className="logo-strip">
         <p className="logo-strip-label">{t("logos.label")}</p>
         <div className="logo-strip-logos">
@@ -96,21 +112,6 @@ const ContactCenter = () => {
                 {i !== 1 && <div className="cc-alt-blur" />}
                 <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img${i === 1 ? " cc-alt-img-lg" : ""}`} />
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-dark">
-        <div className="cc-stats-dark-header">
-          <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-        </div>
-        <div className="cc-stats-grid-v2">
-          {statKeys.map((key) => (
-            <div key={key} className="cc-stat-v2">
-              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
             </div>
           ))}
         </div>
