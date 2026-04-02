@@ -1048,9 +1048,21 @@
 /* ===== CC GoAI Section ===== */
 .cc-goai-section {
   padding: 72px 48px;
-  background: linear-gradient(100.64deg, #134a51 26.16%, #061e23 97.53%);
+  background: #0c0a14;
   position: relative;
   overflow: hidden;
+}
+
+.cc-goai-section::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -15%;
+  width: 55%;
+  height: 180%;
+  background: radial-gradient(ellipse, rgba(67, 181, 191, 0.2) 0%, transparent 65%);
+  pointer-events: none;
+  filter: blur(60px);
 }
 
 .cc-goai-section::before {
