@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import EditableText from "@/components/EditableText";
-import { BarChart3, Clock, Headphones, MessageSquare, Phone, Shield, Timer, Users } from "lucide-react";
+import { BarChart3, Headphones, MessageSquare, Phone, Users } from "lucide-react";
 
 interface ContactCenterHeroProps {
   title1: string;
@@ -43,9 +43,6 @@ const ContactCenterHero = ({
 
   return (
     <section className="cc-platform-section cc-hero-platform-combined">
-      <div className="cc-hero-blur-extra1" />
-      <div className="cc-hero-blur-extra2" />
-      <div className="cc-hero-blur-extra3" />
       <div className="cc-hero-shell">
         <div className="cc-hero-copy">
           <h1 className="cc-hero-heading">
@@ -77,49 +74,6 @@ const ContactCenterHero = ({
         </div>
 
         <div className="cc-hero-stage">
-          <div className="cc-glass-top-row">
-            <div className="cc-glass-card cc-glass-metric">
-              <div className="cc-glass-card-header">
-                <Clock size={14} strokeWidth={1.5} />
-                <span>Avg Wait Time</span>
-                <span className="cc-glass-badge">Live</span>
-              </div>
-              <div className="cc-glass-big-number">1:24</div>
-              <div className="cc-glass-sub-label">across all queues</div>
-              <div className="cc-glass-metric-trend cc-glass-green">↓ 18% vs last week</div>
-              <div className="cc-glass-metric-bar">
-                <div className="cc-glass-metric-bar-fill cc-glass-metric-bar-teal" style={{ width: '72%' }} />
-              </div>
-            </div>
-            <div className="cc-glass-card cc-glass-metric">
-              <div className="cc-glass-card-header">
-                <Timer size={14} strokeWidth={1.5} />
-                <span>Avg Hold Time</span>
-                <span className="cc-glass-badge cc-glass-badge-warning">Monitoring</span>
-              </div>
-              <div className="cc-glass-big-number">0:42</div>
-              <div className="cc-glass-sub-label">per interaction</div>
-              <div className="cc-glass-metric-trend cc-glass-green">↓ 12% vs last week</div>
-              <div className="cc-glass-metric-bar">
-                <div className="cc-glass-metric-bar-fill cc-glass-metric-bar-purple" style={{ width: '35%' }} />
-              </div>
-            </div>
-            <div className="cc-glass-card cc-glass-metric">
-              <div className="cc-glass-card-header">
-                <Shield size={14} strokeWidth={1.5} />
-                <span>SLA %</span>
-                <span className="cc-glass-badge cc-glass-badge-success">On Target</span>
-              </div>
-              <div className="cc-glass-big-number">94.2<span style={{ fontSize: '28px', opacity: 0.6 }}>%</span></div>
-              <div className="cc-glass-sub-label">calls answered within 20s</div>
-              <div className="cc-glass-metric-tags">
-                <span className="cc-glass-tag cc-glass-tag-teal">Voice 96%</span>
-                <span className="cc-glass-tag cc-glass-tag-purple">Chat 91%</span>
-                <span className="cc-glass-tag cc-glass-tag-blue">Email 88%</span>
-              </div>
-              <div className="cc-glass-metric-trend cc-glass-green">↑ 3.1% vs last month</div>
-            </div>
-          </div>
           <div className="cc-glass-widgets">
             <div className="cc-glass-card cc-glass-tall">
               <div className="cc-glass-card-header">
@@ -144,7 +98,6 @@ const ContactCenterHero = ({
                 </div>
               </div>
               <div className="cc-glass-bar-chart">
-                <div className="cc-glass-bar" style={{ height: "50%" }} />
                 <div className="cc-glass-bar" style={{ height: "60%" }} />
                 <div className="cc-glass-bar" style={{ height: "80%" }} />
                 <div className="cc-glass-bar" style={{ height: "45%" }} />
@@ -152,8 +105,6 @@ const ContactCenterHero = ({
                 <div className="cc-glass-bar" style={{ height: "70%" }} />
                 <div className="cc-glass-bar" style={{ height: "55%" }} />
                 <div className="cc-glass-bar" style={{ height: "85%" }} />
-                <div className="cc-glass-bar" style={{ height: "65%" }} />
-                <div className="cc-glass-bar" style={{ height: "75%" }} />
               </div>
             </div>
 
@@ -209,9 +160,7 @@ const ContactCenterHero = ({
                 </div>
                 <div className="cc-glass-queue-row"><span>May</span><span>2,029</span><span className="cc-glass-green">893</span><span>44%</span></div>
                 <div className="cc-glass-queue-row"><span>Apr</span><span>1,903</span><span>877</span><span>46%</span></div>
-                <div className="cc-glass-queue-row"><span>Mar</span><span>1,856</span><span className="cc-glass-green">812</span><span>44%</span></div>
-                <div className="cc-glass-queue-row"><span>Feb</span><span>1,721</span><span>745</span><span>43%</span></div>
-                <div className="cc-glass-queue-row"><span>Jan</span><span>1,803</span><span>631</span><span>35%</span></div>
+                <div className="cc-glass-queue-row"><span>Dec</span><span>1,803</span><span>631</span><span>35%</span></div>
               </div>
             </div>
 
@@ -257,8 +206,6 @@ const ContactCenterHero = ({
                 <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span className="cc-animated-wait">{billingWait}</span></div>
                 <div className="cc-glass-queue-row"><span>Support</span><span>8</span><span>3</span><span>1:12</span></div>
                 <div className="cc-glass-queue-row"><span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span></div>
-                <div className="cc-glass-queue-row"><span>Retention</span><span>5</span><span>2</span><span>1:38</span></div>
-                <div className="cc-glass-queue-row"><span>Technical</span><span>4</span><span className="cc-glass-red">4</span><span>2:15</span></div>
               </div>
             </div>
           </div>
