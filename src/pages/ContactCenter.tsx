@@ -67,11 +67,9 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <section className="logo-strip cc-logo-strip-2col">
-        <div className="cc-logo-left">
-          <p className="cc-logo-sub">Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
-        </div>
-        <div className="logo-strip-logos cc-logo-right">
+      <section className="logo-strip" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <p className="cc-logo-sub" style={{ marginBottom: '24px' }}>Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
+        <div className="logo-strip-logos" style={{ justifyContent: 'center' }}>
           <span className="logo-strip-item">Pfizer</span>
           <span className="logo-strip-item">UPS</span>
           <span className="logo-strip-item">L'Oréal</span>
