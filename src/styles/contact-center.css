@@ -870,6 +870,7 @@
 }
 
 .cc-alt-cta {
+  margin-top: 24px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
