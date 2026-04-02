@@ -847,7 +847,7 @@
 .cc-alt-text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   max-width: 600px;
 }
 
