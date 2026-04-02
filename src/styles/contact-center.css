@@ -1094,6 +1094,13 @@
 }
 
 
+.cc-goai-inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
 .cc-goai-header {
   text-align: center;
   margin-bottom: 56px;
