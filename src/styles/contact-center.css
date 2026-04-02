@@ -710,7 +710,8 @@
 }
 
 .cc-persona-text {
-  padding: 20px 24px 28px;
+  padding: 24px 28px 32px;
+  border-top: 1px solid rgba(10, 15, 24, 0.04);
 }
 
 .cc-persona-img-wrap {
