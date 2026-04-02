@@ -1,8 +1,6 @@
 /* ===== Combined Hero + Platform ===== */
 .cc-hero-platform-combined {
-  padding: 200px 48px 0 !important;
-  overflow: hidden;
-  max-height: 85vh;
+  padding: 200px 48px 80px !important;
 }
 
 .cc-hero-shell {
