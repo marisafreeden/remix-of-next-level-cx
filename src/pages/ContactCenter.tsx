@@ -22,7 +22,7 @@ import goaiBgLines from "@/assets/goai-bg-lines.svg";
 
 import {
   MessageSquare, Bot, BarChart3, Users, ShieldCheck, Lock, BadgeCheck,
-  Zap, MonitorSmartphone
+  Zap, MonitorSmartphone, Headphones, BrainCircuit, TrendingUp
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
