@@ -21,9 +21,9 @@ const TestimonialsSection = () => {
         <div className="testimonials-header">
           <div>
             <p className="testimonials-eyebrow">CUSTOMERS</p>
-            <h2 className="testimonials-title">
-              {t("testimonials.title_line1")}<br />
-              <span className="testimonials-title-italic">{t("testimonials.title_line2")}</span>
+            <h2 className="testimonials-title" style={{ whiteSpace: "nowrap" }}>
+              {t("testimonials.title_line1")}{" "}
+              <span className="testimonials-title-italic" style={{ display: "inline" }}>{t("testimonials.title_line2")}</span>
             </h2>
           </div>
           <div className="testimonials-nav">
