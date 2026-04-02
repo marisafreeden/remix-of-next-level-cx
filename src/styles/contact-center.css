@@ -1026,12 +1026,12 @@
 }
 
 .cc-goai-card-icon {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 16px;
+  margin: 0 0 16px;
 }
 
 .cc-goai-card-icon svg {
