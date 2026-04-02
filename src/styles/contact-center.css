@@ -35,7 +35,6 @@
 .cc-hero-title {
   text-align: center;
   line-height: 0.94;
-  margin-top: -18px;
   padding: 0 !important;
   background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%) !important;
   -webkit-background-clip: text !important;
@@ -879,9 +878,6 @@
     padding-top: 0;
   }
 
-  .cc-hero-title {
-    margin-top: -10px;
-  }
 
   .cc-hero-platform-combined .uc-hero-inner {
     grid-template-columns: 1fr;
