@@ -67,7 +67,7 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <section className="logo-strip" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+      <section className="logo-strip" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center', paddingTop: '25px', paddingBottom: '25px' }}>
         <p className="cc-logo-sub" style={{ marginBottom: '24px' }}>Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
         <div className="logo-strip-logos" style={{ justifyContent: 'center' }}>
           <span className="logo-strip-item">Pfizer</span>
