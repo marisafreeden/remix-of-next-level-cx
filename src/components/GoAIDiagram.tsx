@@ -32,7 +32,7 @@ const GoAIDiagram = () => {
       </div>
 
       <div className="goai-layers-col">
-        {[0, 1, 2, 3, 4, 5].map((i) => (
+        {layerIcons.map((LayerIcon, i) => (
           <div
             key={i}
             className="goai-diamond"
@@ -42,7 +42,11 @@ const GoAIDiagram = () => {
                 : "linear-gradient(135deg, rgba(112, 66, 210, 0.45), rgba(112, 66, 210, 0.12))",
               animationDelay: `${i * 0.15}s`,
             }}
-          />
+          >
+            <span className="goai-diamond-icon">
+              <LayerIcon size={18} strokeWidth={1.5} />
+            </span>
+          </div>
         ))}
       </div>
 
