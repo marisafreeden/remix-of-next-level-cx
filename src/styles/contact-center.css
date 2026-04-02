@@ -919,7 +919,7 @@
 }
 
 .cc-security-grid {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 48px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
