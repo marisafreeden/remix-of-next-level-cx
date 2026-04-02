@@ -944,15 +944,18 @@
 }
 
 .cc-security-icon {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(67, 181, 191, 0.1), rgba(29, 91, 148, 0.1));
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  color: #1D5B94;
+}
+
+.cc-security-badge-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .cc-security-card h3 {

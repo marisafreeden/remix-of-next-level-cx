@@ -13,9 +13,12 @@ import ccFeatureCharts from "@/assets/cc-feature-charts.png";
 import personaAgentsImg from "@/assets/persona-agents.jpg";
 import personaManagersImg from "@/assets/persona-managers.jpg";
 import personaItImg from "@/assets/persona-it.jpg";
+import soc2Badge from "@/assets/soc2-badge.png";
+import hipaaBadge from "@/assets/hipaa-badge.jpg";
+import gdprBadge from "@/assets/gdpr-badge.jpg";
 
 import {
-  MessageSquare, Bot, BarChart3, Users, ShieldCheck, Lock, BadgeCheck,
+  MessageSquare, Bot, BarChart3, Users,
   Zap, MonitorSmartphone
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -122,17 +125,17 @@ const ContactCenter = () => {
         </div>
         <div className="cc-security-grid">
           <div className="cc-security-card">
-            <div className="cc-security-icon"><ShieldCheck size={32} strokeWidth={1.5} /></div>
+            <div className="cc-security-icon"><img src={soc2Badge} alt="SOC 2 Type I" className="cc-security-badge-img" /></div>
             <h3>SOC 2 Type I</h3>
             <p>Independently audited security controls for data protection, availability, and confidentiality.</p>
           </div>
           <div className="cc-security-card">
-            <div className="cc-security-icon"><Lock size={32} strokeWidth={1.5} /></div>
+            <div className="cc-security-icon"><img src={gdprBadge} alt="GDPR Compliant" className="cc-security-badge-img" /></div>
             <h3>GDPR Compliant</h3>
             <p>Full compliance with European data protection regulations and privacy standards.</p>
           </div>
           <div className="cc-security-card">
-            <div className="cc-security-icon"><BadgeCheck size={32} strokeWidth={1.5} /></div>
+            <div className="cc-security-icon"><img src={hipaaBadge} alt="HIPAA Compliant" className="cc-security-badge-img" /></div>
             <h3>HIPAA Compliant</h3>
             <p>Meets healthcare industry requirements for protecting sensitive patient information.</p>
           </div>
