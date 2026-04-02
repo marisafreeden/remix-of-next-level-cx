@@ -1543,17 +1543,17 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  background: rgba(120, 60, 200, 0.06);
-  border: 1px solid rgba(120, 60, 200, 0.12);
+  background: rgba(198, 134, 248, 0.08);
+  border: 1px solid rgba(198, 134, 248, 0.15);
   border-radius: 6px;
   padding: 3px 8px;
-  color: hsl(261 61% 54%);
+  color: #C686F8;
 }
 
 .dialer-recording-track {
   width: 36px;
   height: 3px;
-  background: rgba(120, 60, 200, 0.15);
+  background: rgba(198, 134, 248, 0.18);
   border-radius: 2px;
   overflow: hidden;
 }
@@ -1561,7 +1561,7 @@
 .dialer-recording-progress {
   width: 30%;
   height: 100%;
-  background: hsl(261 61% 54%);
+  background: #C686F8;
   border-radius: 2px;
 }
 
