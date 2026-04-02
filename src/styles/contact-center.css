@@ -295,13 +295,13 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  top: -5%;
+  bottom: -5%;
   right: -10%;
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   background: #7a6fd4;
   border-radius: 50%;
-  filter: blur(180px);
+  filter: blur(220px);
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
