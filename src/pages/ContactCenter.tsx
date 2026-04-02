@@ -115,7 +115,7 @@ const ContactCenter = () => {
                 </button>
               </div>
               <div className="cc-alt-image-side">
-                {i !== 1 && i !== 3 && <div className="cc-alt-blur" />}
+                {i !== 1 && <div className={`cc-alt-blur ${i === 3 ? "cc-alt-blur-purple" : ""}`} />}
                 {i === 1 ? (
                   <DialerPreview />
                 ) : i === 0 ? (
