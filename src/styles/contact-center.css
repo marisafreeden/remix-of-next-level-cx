@@ -833,6 +833,10 @@
   box-shadow: none;
 }
 
+.cc-alt-img-lg {
+  max-width: 624px;
+}
+
 @media (max-width: 768px) {
   .cc-alt-features {
     padding: 0 20px;
