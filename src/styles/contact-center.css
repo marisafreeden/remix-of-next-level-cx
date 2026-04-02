@@ -1150,6 +1150,7 @@
 .cc-security-lucide {
   width: auto;
   height: auto;
+  border-radius: 0;
   background: none;
   padding: 0;
   justify-content: center;
