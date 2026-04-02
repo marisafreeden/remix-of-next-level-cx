@@ -101,6 +101,7 @@ const ContactCenterHero = ({
                 </div>
               </div>
               <div className="cc-glass-bar-chart">
+                <div className="cc-glass-bar" style={{ height: "50%" }} />
                 <div className="cc-glass-bar" style={{ height: "60%" }} />
                 <div className="cc-glass-bar" style={{ height: "80%" }} />
                 <div className="cc-glass-bar" style={{ height: "45%" }} />
@@ -108,6 +109,8 @@ const ContactCenterHero = ({
                 <div className="cc-glass-bar" style={{ height: "70%" }} />
                 <div className="cc-glass-bar" style={{ height: "55%" }} />
                 <div className="cc-glass-bar" style={{ height: "85%" }} />
+                <div className="cc-glass-bar" style={{ height: "65%" }} />
+                <div className="cc-glass-bar" style={{ height: "75%" }} />
               </div>
             </div>
 
