@@ -147,6 +147,14 @@ const ContactCenter = () => {
 
       {/* GoAI Section */}
       <section className="cc-goai-section">
+        <svg width="0" height="0" style={{ position: "absolute" }}>
+          <defs>
+            <linearGradient id="cc-goai-icon-gradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stopColor="#43B5BF" />
+              <stop offset="100%" stopColor="#7042D2" />
+            </linearGradient>
+          </defs>
+        </svg>
         <div className="cc-goai-inner">
           <div className="cc-goai-header">
             <p className="promos-eyebrow">POWERED BY GoAI</p>

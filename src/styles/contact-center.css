@@ -1015,13 +1015,14 @@
 .cc-goai-card-icon {
   width: 48px;
   height: 48px;
-  border-radius: 12px;
-  background: rgba(67, 181, 191, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-  color: #43B5BF;
+}
+
+.cc-goai-card-icon svg {
+  stroke: url(#cc-goai-icon-gradient);
 }
 
 
@@ -1034,16 +1035,9 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.cc-goai-header .promos-title {
-  color: #ffffff;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #ffffff 50%, #7042D2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
+.cc-goai-header .promos-title,
 .cc-goai-header .promos-title-italic {
-  background: linear-gradient(105.96deg, #43B5BF 0%, #ffffff 50%, #7042D2 100%);
+  background: linear-gradient(90deg, #43B5BF 0%, #7042D2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
