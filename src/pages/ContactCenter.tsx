@@ -187,7 +187,7 @@ const ContactCenter = () => {
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow">{t("cc_page.persona_eyebrow")}</p>
+          
           <h2 className="promos-title">
             Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
           </h2>
