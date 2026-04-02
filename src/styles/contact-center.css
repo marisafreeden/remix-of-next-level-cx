@@ -842,7 +842,7 @@
 }
 
 .cc-stats-grid-v2 {
-  max-width: 1100px;
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
