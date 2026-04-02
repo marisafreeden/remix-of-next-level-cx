@@ -1012,18 +1012,6 @@
   pointer-events: none;
 }
 
-.cc-goai-bg-wrap {
-  display: flex;
-  justify-content: center;
-  margin-top: 48px;
-}
-
-.cc-goai-bg-img {
-  width: 60%;
-  max-width: 800px;
-  opacity: 0.4;
-  pointer-events: none;
-}
 
 .cc-goai-card-icon {
   width: 56px;
