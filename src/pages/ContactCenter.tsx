@@ -107,7 +107,7 @@ const ContactCenter = () => {
                 <h3 className="cc-alt-heading">{t(`cc_page.${key}_title`)}</h3>
                 <p className="cc-alt-desc">{t(`cc_page.${key}_desc`)}</p>
                 <button className="cc-alt-cta">
-                  {t("common.learn_more")} <span>›</span>
+                  {t(`cc_page.${key}_cta`)}
                 </button>
               </div>
               <div className="cc-alt-image-side">
