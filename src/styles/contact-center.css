@@ -327,10 +327,10 @@
   left: 15%;
   width: 700px;
   height: 700px;
-  background: #9B7FE6;
+  background: #c4b5f0;
   border-radius: 50%;
   filter: blur(180px);
-  opacity: 0.3;
+  opacity: 0.2;
   pointer-events: none;
   z-index: 0;
 }
