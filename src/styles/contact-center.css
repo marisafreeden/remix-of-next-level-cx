@@ -898,7 +898,7 @@
 }
 
 .cc-stats-dark {
-  background: #F3F4F6;
+  background: linear-gradient(100.64deg, #1a5c64 26.16%, #082a30 97.53%);
   position: relative;
   overflow: hidden;
   margin: 0;
@@ -907,11 +907,25 @@
 }
 
 .cc-stats-dark::before {
-  display: none;
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(67, 181, 191, 0.15) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .cc-stats-dark::after {
-  display: none;
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -20%;
+  width: 60%;
+  height: 200%;
+  background: radial-gradient(ellipse, rgba(112, 66, 210, 0.12) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .cc-stats-dark-header {
@@ -927,14 +941,15 @@
   font-size: 48px;
   line-height: 1.2;
   letter-spacing: -1.5px;
-  color: #0a0f18;
-  -webkit-text-fill-color: #0a0f18;
-  background: none;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #7dd3e0 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .cc-stats-dark-title .promos-title-italic {
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(105.96deg, #43B5BF 0%, #7042D2 100%);
+  background: linear-gradient(105.96deg, #7dd3e0 0%, #a78bfa 100%);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -955,22 +970,23 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  background: #ffffff;
-  border: 1px solid rgba(10, 15, 24, 0.08);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 48px 28px;
-  box-shadow: 0 2px 8px rgba(10, 15, 24, 0.04);
 }
 
 .cc-stats-dark .cc-stat-v2-number {
-  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  background: linear-gradient(105.96deg, #43B5BF 0%, #7dd3e0 50%, #a78bfa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .cc-stats-dark .cc-stat-v2-label {
-  color: #555555;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .cc-stat-v2-number {
