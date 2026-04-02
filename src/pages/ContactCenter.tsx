@@ -90,8 +90,8 @@ const ContactCenter = () => {
                 </button>
               </div>
               <div className="cc-alt-image-side">
-                <div className="cc-alt-blur" />
-                <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className="cc-alt-img" />
+                {i !== 1 && <div className="cc-alt-blur" />}
+                <img src={smarterImages[i]} alt={t(`cc_page.${key}_title`)} className={`cc-alt-img${i === 1 ? " cc-alt-img-lg" : ""}`} />
               </div>
             </div>
           ))}
