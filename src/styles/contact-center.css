@@ -1844,7 +1844,7 @@
 .ivr-player-track {
   position: relative;
   height: 4px;
-  background: linear-gradient(180deg, rgba(200, 129, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%);
+  background: rgba(67, 181, 191, 0.12);
   border-radius: 2px;
   margin-bottom: 12px;
 }
