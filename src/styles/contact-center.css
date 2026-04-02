@@ -1810,15 +1810,15 @@
 }
 
 .ivr-avatar-teal {
-  background: linear-gradient(135deg, rgba(67, 181, 191, 0.15), rgba(67, 181, 191, 0.08));
-  border: 2px solid rgba(67, 181, 191, 0.3);
+  background: rgba(67, 181, 191, 0.1);
+  border: 1.5px solid rgba(67, 181, 191, 0.25);
   color: #43B5BF;
 }
 
 .ivr-avatar-purple {
-  background: linear-gradient(135deg, rgba(198, 134, 248, 0.15), rgba(198, 134, 248, 0.08));
-  border: 2px solid rgba(198, 134, 248, 0.3);
-  color: #C686F8;
+  background: rgba(184, 154, 236, 0.1);
+  border: 1.5px solid rgba(184, 154, 236, 0.3);
+  color: #B89AEC;
 }
 
 .ivr-route-label {
