@@ -80,6 +80,7 @@ const ContactCenter = () => {
           {smarterKeys.map((key, i) => (
             <div key={key} className={`cc-alt-row ${i % 2 === 1 ? "cc-alt-row-reverse" : ""}`}>
               <div className="cc-alt-text">
+                <p className="promos-eyebrow">{t(`cc_page.${key}_eyebrow`)}</p>
                 <h3 className="cc-alt-heading">{t(`cc_page.${key}_title`)}</h3>
                 <p className="cc-alt-desc">{t(`cc_page.${key}_desc`)}</p>
                 <button className="cc-alt-cta">
