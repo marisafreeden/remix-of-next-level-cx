@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import EditableText from "@/components/EditableText";
 import { BarChart3, Headphones, MessageSquare, Phone, Users } from "lucide-react";
 
