@@ -6,7 +6,7 @@
 }
 
 .cc-hero-shell {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@
 }
 
 .cc-stats-grid-horizontal {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -344,7 +344,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
   gap: 16px;
-  max-width: 1120px;
+  max-width: 1600px;
   margin: 0 auto;
   padding: 0;
   transform: none;
@@ -592,7 +592,7 @@
 
 /* ===== Section Dividers ===== */
 .cc-section-divider {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   height: 1px;
   background: linear-gradient(90deg, transparent 0%, rgba(10, 15, 24, 0.08) 20%, rgba(67, 181, 191, 0.15) 50%, rgba(10, 15, 24, 0.08) 80%, transparent 100%);
@@ -680,7 +680,7 @@
 
 /* ===== Persona Cards ===== */
 .cc-persona-grid {
-  max-width: 1440px;
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -717,7 +717,7 @@
 
 /* ===== Alternating Features (Figma style) ===== */
 .cc-alt-features {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -842,7 +842,7 @@
 }
 
 .cc-stats-grid-v2 {
-  max-width: 1100px;
+  max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -919,7 +919,7 @@
 }
 
 .cc-security-grid {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 48px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
