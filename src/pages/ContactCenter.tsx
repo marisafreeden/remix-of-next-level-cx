@@ -67,9 +67,12 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <section className="logo-strip">
-        <p className="logo-strip-label">{t("logos.label")}</p>
-        <div className="logo-strip-logos">
+      <section className="logo-strip cc-logo-strip-2col">
+        <div className="cc-logo-left">
+          <p className="cc-logo-heading">{t("logos.label")}</p>
+          <p className="cc-logo-sub">Industry leaders trust GoContact to power their customer experience.</p>
+        </div>
+        <div className="logo-strip-logos cc-logo-right">
           <span className="logo-strip-item">Pfizer</span>
           <span className="logo-strip-item">UPS</span>
           <span className="logo-strip-item">L'Oréal</span>
