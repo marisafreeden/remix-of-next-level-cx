@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from "react";
 import EditableText from "@/components/EditableText";
 import { BarChart3, Headphones, Phone, Users } from "lucide-react";
 
@@ -9,6 +10,27 @@ interface ContactCenterHeroProps {
   onSave: (copyKey: string, content: string) => void | Promise<void>;
 }
 
+const useAnimatedTimer = (startSeconds: number) => {
+  const [seconds, setSeconds] = useState(startSeconds);
+  useEffect(() => {
+    const id = setInterval(() => setSeconds((s) => s + 1), 1000);
+    return () => clearInterval(id);
+  }, []);
+  const m = Math.floor(seconds / 60);
+  const s = seconds % 60;
+  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+};
+
+const waitTimes = ["2:34", "2:18", "2:45", "3:01", "2:12", "2:52"];
+const useAnimatedWait = () => {
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setIdx((i) => (i + 1) % waitTimes.length), 3000);
+    return () => clearInterval(id);
+  }, []);
+  return waitTimes[idx];
+};
+
 const ContactCenterHero = ({
   title1,
   title2,
@@ -16,6 +38,9 @@ const ContactCenterHero = ({
   requestDemoLabel,
   onSave,
 }: ContactCenterHeroProps) => {
+  const timer = useAnimatedTimer(92);
+  const billingWait = useAnimatedWait();
+
   return (
     <section className="cc-platform-section cc-hero-platform-combined">
       <div className="cc-hero-shell">
@@ -89,9 +114,9 @@ const ContactCenterHero = ({
                 <span>CSAT Score</span>
               </div>
               <div className="cc-glass-csat-ring">
-                <svg viewBox="0 0 80 80" className="cc-glass-ring-svg">
-                  <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="6" />
-                  <circle cx="40" cy="40" r="34" fill="none" stroke="url(#ccHeroCsatGrad)" strokeWidth="6" strokeDasharray="171 214" strokeLinecap="round" transform="rotate(-90 40 40)" />
+                <svg viewBox="0 0 100 100" className="cc-glass-ring-svg">
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.1)" strokeWidth="7" />
+                  <circle cx="50" cy="50" r="42" fill="none" stroke="url(#ccHeroCsatGrad)" strokeWidth="7" strokeDasharray="211 264" strokeLinecap="round" transform="rotate(-90 50 50)" className="cc-csat-arc" />
                   <defs>
                     <linearGradient id="ccHeroCsatGrad" x1="0" y1="0" x2="1" y2="1">
                       <stop offset="0%" stopColor="hsl(185 49% 51%)" />
@@ -107,10 +132,10 @@ const ContactCenterHero = ({
               <div className="cc-glass-card-header">
                 <Phone size={14} strokeWidth={1.5} />
                 <span>Active Call</span>
-                <span className="cc-glass-badge cc-glass-badge-success">Talking</span>
+                <span className="cc-glass-badge cc-glass-badge-success cc-pulse-badge">Talking</span>
               </div>
               <div className="cc-glass-dialer">
-                <div className="cc-glass-dialer-timer">01:32</div>
+                <div className="cc-glass-dialer-timer">{timer}</div>
                 <div className="cc-glass-dialer-info">
                   <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Name</span><span>Susan Smith</span></div>
                   <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Phone</span><span>975 234 567</span></div>
@@ -178,7 +203,7 @@ const ContactCenterHero = ({
                 <div className="cc-glass-queue-header">
                   <span>Queue</span><span>Agents</span><span>Waiting</span><span>Avg Wait</span>
                 </div>
-                <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span>2:34</span></div>
+                <div className="cc-glass-queue-row"><span>Billing</span><span>12</span><span className="cc-glass-red">8</span><span className="cc-animated-wait">{billingWait}</span></div>
                 <div className="cc-glass-queue-row"><span>Support</span><span>8</span><span>3</span><span>1:12</span></div>
                 <div className="cc-glass-queue-row"><span>Sales</span><span>6</span><span className="cc-glass-green">1</span><span>0:45</span></div>
               </div>

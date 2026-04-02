@@ -451,7 +451,7 @@
   display: flex;
   align-items: flex-end;
   gap: 6px;
-  height: 60px;
+  height: 100px;
   margin-top: auto;
 }
 
@@ -467,25 +467,56 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 4px auto;
+  margin: 8px auto;
 }
 
 .cc-glass-ring-svg {
-  width: 80px;
-  height: 80px;
+  width: 110px;
+  height: 110px;
 }
 
 .cc-glass-ring-text {
   position: absolute;
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
   color: #0a0f18;
 }
 
 .cc-glass-ring-text span {
-  font-size: 12px;
+  font-size: 14px;
   color: rgba(10, 15, 24, 0.4);
+}
+
+/* CSAT arc draw animation */
+@keyframes csat-draw {
+  from { stroke-dasharray: 0 264; }
+  to { stroke-dasharray: 211 264; }
+}
+
+.cc-csat-arc {
+  animation: csat-draw 1.6s ease-out forwards;
+}
+
+/* Pulsing badge for Active Call */
+@keyframes pulse-badge {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.cc-pulse-badge {
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+/* Animated wait time fade */
+@keyframes wait-fade {
+  0% { opacity: 0.4; }
+  30% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.cc-animated-wait {
+  animation: wait-fade 0.6s ease-out;
 }
 
 /* Presence List */
