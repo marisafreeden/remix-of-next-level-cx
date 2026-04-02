@@ -599,9 +599,9 @@
 
 .logo-strip-item {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   color: rgba(10, 15, 24, 0.2);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
