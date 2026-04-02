@@ -5,6 +5,7 @@ import "@/styles/uc.css";
 import "@/styles/sections.css";
 import "@/styles/responsive.css";
 import "@/styles/contact-center.css";
+import "@/styles/goai.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
