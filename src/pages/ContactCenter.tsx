@@ -147,7 +147,6 @@ const ContactCenter = () => {
 
       {/* GoAI Section */}
       <section className="cc-goai-section">
-        <img src={goaiBgLines} alt="" className="cc-goai-bg-img" aria-hidden="true" />
         <div className="cc-goai-inner">
           <div className="cc-goai-header">
             <p className="promos-eyebrow">POWERED BY GoAI</p>
@@ -171,6 +170,9 @@ const ContactCenter = () => {
               <h3 className="uc-benefit-title">Measure What's Working in Real Time</h3>
               <p className="uc-benefit-desc">AI-powered analytics surface trends, sentiment, and performance insights so you can optimize operations as they happen.</p>
             </div>
+          </div>
+          <div className="cc-goai-bg-wrap">
+            <img src={goaiBgLines} alt="" className="cc-goai-bg-img" aria-hidden="true" />
           </div>
         </div>
       </section>
