@@ -16,7 +16,7 @@ const DialerPreview = () => {
       <div className="dialer-preview">
         {/* Top bar */}
         <div className="dialer-topbar">
-          <div className="dialer-timer">{timer}</div>
+          <div className="dialer-timer">01:32</div>
           <span className="dialer-status-badge">talking</span>
           <div className="dialer-topbar-icons">
             <Grid3X3 size={15} strokeWidth={1.5} />
