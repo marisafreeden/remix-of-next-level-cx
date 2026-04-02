@@ -1,5 +1,4 @@
 import { Phone, Mic, Shuffle, Grid3X3, Volume2 } from "lucide-react";
-import { Phone, Mic, Shuffle, Grid3X3, Volume2 } from "lucide-react";
 import ccAgentDialer from "@/assets/cc-agent-dialer.jpg";
 
 const DialerPreview = () => {
