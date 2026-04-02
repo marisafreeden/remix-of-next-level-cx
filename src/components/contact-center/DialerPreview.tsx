@@ -20,7 +20,7 @@ const DialerPreview = () => {
     <div className="dialer-wrapper">
       {/* Background agent image */}
       <div className="dialer-agent-bg">
-        <img src={personaAgentsImg} alt="" className="dialer-agent-img" />
+        <img src={ccAgentDialer} alt="" className="dialer-agent-img" />
         <div className="dialer-agent-overlay" />
       </div>
 
