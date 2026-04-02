@@ -299,10 +299,10 @@
   right: -10%;
   width: 1000px;
   height: 1000px;
-  background: #7a6fd4;
+  background: #b4a3e8;
   border-radius: 50%;
   filter: blur(220px);
-  opacity: 0.35;
+  opacity: 0.22;
   pointer-events: none;
   z-index: 0;
 }
