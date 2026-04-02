@@ -212,7 +212,7 @@ const ContactCenter = () => {
       {/* Security & Compliance */}
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
+          
           <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
           <p className="cc-security-subtitle">GoContact is built to meet the requirements of regulated industries — healthcare, financial services, logistics — without adding compliance complexity to your team's day.</p>
         </div>
