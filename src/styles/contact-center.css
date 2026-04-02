@@ -123,13 +123,12 @@
 }
 
 .cc-hero-desc {
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 1.65;
-  color: hsl(var(--foreground));
+  color: #4a5568;
   max-width: 620px;
-  margin: 0;
+  margin-bottom: 44px;
+  text-align: center;
 }
 
 .btn-hero-a-light {
