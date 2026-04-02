@@ -166,7 +166,9 @@ const ContactCenterHero = ({
                 </div>
                 <div className="cc-glass-queue-row"><span>May</span><span>2,029</span><span className="cc-glass-green">893</span><span>44%</span></div>
                 <div className="cc-glass-queue-row"><span>Apr</span><span>1,903</span><span>877</span><span>46%</span></div>
-                <div className="cc-glass-queue-row"><span>Dec</span><span>1,803</span><span>631</span><span>35%</span></div>
+                <div className="cc-glass-queue-row"><span>Mar</span><span>1,856</span><span className="cc-glass-green">812</span><span>44%</span></div>
+                <div className="cc-glass-queue-row"><span>Feb</span><span>1,721</span><span>745</span><span>43%</span></div>
+                <div className="cc-glass-queue-row"><span>Jan</span><span>1,803</span><span>631</span><span>35%</span></div>
               </div>
             </div>
 
