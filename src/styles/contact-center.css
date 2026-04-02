@@ -861,7 +861,7 @@
 }
 
 .cc-stats-dark {
-  background: linear-gradient(135deg, #0a0f18 0%, #1a1f2e 50%, #0d1117 100%);
+  background: linear-gradient(100.64deg, #1a5c64 26.16%, #082a30 97.53%);
   position: relative;
   overflow: hidden;
   margin: 0 48px;
@@ -994,8 +994,7 @@
 /* ===== CC GoAI Section ===== */
 .cc-goai-section {
   padding: 96px 48px;
-  background:
-    linear-gradient(135deg, #0A0F1A 0%, #1a1f3a 50%, #0A0F1A 100%);
+  background: linear-gradient(100.64deg, #1a5c64 26.16%, #082a30 97.53%);
   position: relative;
   overflow: hidden;
 }
