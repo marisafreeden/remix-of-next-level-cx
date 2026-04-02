@@ -141,8 +141,6 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      <div className="cc-section-divider" />
-
       {/* GoAI Section */}
       <section className="cc-goai-section">
         <svg width="0" height="0" style={{ position: "absolute" }}>
