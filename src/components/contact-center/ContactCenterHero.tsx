@@ -43,6 +43,9 @@ const ContactCenterHero = ({
 
   return (
     <section className="cc-platform-section cc-hero-platform-combined">
+      <div className="cc-hero-blur-extra1" />
+      <div className="cc-hero-blur-extra2" />
+      <div className="cc-hero-blur-extra3" />
       <div className="cc-hero-shell">
         <div className="cc-hero-copy">
           <h1 className="cc-hero-heading">
