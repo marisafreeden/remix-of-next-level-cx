@@ -51,7 +51,7 @@ const GoAIDiagram = () => {
                   color: isTeal ? "rgba(67, 181, 191, 0.7)" : "rgba(112, 66, 210, 0.65)",
                 }}
               >
-                <LayerIcon size={22} strokeWidth={1.5} />
+                <LayerIcon size={28} strokeWidth={1.5} />
               </span>
             </div>
           );
