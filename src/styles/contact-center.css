@@ -1708,8 +1708,8 @@
   position: absolute;
   top: -20px;
   right: 0;
-  width: 240px;
-  padding: 16px 18px;
+  width: 200px;
+  padding: 12px 14px;
 }
 
 .ivr-care-header {
@@ -1720,9 +1720,9 @@
 }
 
 .ivr-care-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
   background: linear-gradient(135deg, #43B5BF, #7042D2);
   display: flex;
   align-items: center;
@@ -1731,7 +1731,7 @@
 }
 
 .ivr-care-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #1a1a2e;
 }
@@ -1742,10 +1742,10 @@
 }
 
 .ivr-care-number {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   color: #1a1a2e;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   letter-spacing: 0.5px;
 }
 
