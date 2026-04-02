@@ -2,19 +2,7 @@ import { useState, useEffect } from "react";
 import { Phone, Mic, Shuffle, Grid3X3, Volume2 } from "lucide-react";
 import ccAgentDialer from "@/assets/cc-agent-dialer.jpg";
 
-const useAnimatedTimer = (startSeconds: number, maxSeconds: number = 180) => {
-  const [seconds, setSeconds] = useState(startSeconds);
-  useEffect(() => {
-    const id = setInterval(() => setSeconds((s) => (s + 1) >= maxSeconds ? startSeconds : s + 1), 1000);
-    return () => clearInterval(id);
-  }, [startSeconds, maxSeconds]);
-  const m = Math.floor(seconds / 60);
-  const s = seconds % 60;
-  return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
-};
-
 const DialerPreview = () => {
-  const timer = useAnimatedTimer(92);
 
   return (
     <div className="dialer-wrapper">
