@@ -1019,13 +1019,28 @@
   text-align: center;
 }
 
+.cc-security-lucide {
+  width: auto;
+  height: auto;
+  background: none;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cc-security-lucide svg {
+  width: 48px;
+  height: 48px;
+  stroke: url(#cc-icon-gradient);
+}
+
 .cc-security-icon {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 20px auto 0;
 }
 
 .cc-security-badge-img {
