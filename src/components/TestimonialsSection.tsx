@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 const testimonials = [
   { key: "t1", company: "TechFlow" },
