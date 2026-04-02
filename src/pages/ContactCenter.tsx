@@ -67,9 +67,10 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <section className="logo-strip" style={{ flexDirection: 'column', alignItems: 'center', textAlign: 'center', paddingTop: '64px', paddingBottom: '64px' }}>
-        <p className="cc-logo-sub" style={{ marginBottom: '24px' }}>Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
-        <div className="logo-strip-logos" style={{ justifyContent: 'center' }}>
+      <section className="logo-strip" style={{ flexDirection: 'row', alignItems: 'center', paddingTop: '64px', paddingBottom: '64px', gap: '0' }}>
+        <p className="cc-logo-sub" style={{ marginBottom: '0', maxWidth: '320px', textAlign: 'left', flexShrink: 0 }}>Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
+        <div style={{ width: '1px', alignSelf: 'stretch', background: 'rgba(0,0,0,0.12)', margin: '0 40px', flexShrink: 0 }} />
+        <div className="logo-strip-logos" style={{ justifyContent: 'center', flex: 1 }}>
           <span className="logo-strip-item">Pfizer</span>
           <span className="logo-strip-item">UPS</span>
           <span className="logo-strip-item">L'Oréal</span>
