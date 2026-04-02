@@ -84,11 +84,11 @@ const DialerPreview = () => {
             <span className="dialer-bottom-key">Last Call Type:</span>
             <span>Manual</span>
           </div>
-          <div className="dialer-bottom-item">
+          <div className="dialer-bottom-item" style={{ visibility: 'hidden' }}>
             <span className="dialer-bottom-key">Origin:</span>
             <span>Manual</span>
           </div>
-          <div className="dialer-bottom-item">
+          <div className="dialer-bottom-item" style={{ visibility: 'hidden' }}>
             <span className="dialer-bottom-key">Last Call Date:</span>
             <span>12.13.25</span>
           </div>
