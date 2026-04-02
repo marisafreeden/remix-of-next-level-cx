@@ -128,18 +128,44 @@ const ContactCenterHero = ({
               </div>
             </div>
 
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <Phone size={14} strokeWidth={1.5} />
-                <span>Active Call</span>
-                <span className="cc-glass-badge cc-glass-badge-success cc-pulse-badge">Talking</span>
+            <div className="cc-glass-card cc-glass-dialer-card">
+              <div className="cc-dialer-toolbar">
+                <div className="cc-dialer-toolbar-left">
+                  <span className="cc-dialer-timer-badge">{timer}</span>
+                  <span className="cc-glass-badge cc-glass-badge-success cc-pulse-badge">Talking</span>
+                </div>
+                <div className="cc-dialer-toolbar-icons">
+                  <span className="cc-dialer-icon-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+                  </span>
+                  <span className="cc-dialer-icon-btn">
+                    <Phone size={13} strokeWidth={2} />
+                  </span>
+                  <span className="cc-dialer-icon-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/><line x1="4" y1="4" x2="9" y2="9"/></svg>
+                  </span>
+                  <span className="cc-dialer-icon-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+                  </span>
+                  <span className="cc-dialer-icon-btn">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+                  </span>
+                </div>
               </div>
               <div className="cc-glass-dialer">
-                <div className="cc-glass-dialer-timer">{timer}</div>
                 <div className="cc-glass-dialer-info">
-                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Name</span><span>Susan Smith</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Customer</span><span>Susan Smith</span></div>
                   <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Phone</span><span>975 234 567</span></div>
-                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Type</span><span>Predictive</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Email</span><span>susan.smith@email.com</span></div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Outcome</span><span className="cc-glass-green">Purchase</span></div>
+                  <div className="cc-glass-dialer-row">
+                    <span className="cc-glass-dialer-label">Recording</span>
+                    <span className="cc-dialer-recording">
+                      <span className="cc-dialer-rec-dot" />
+                      <span>0:02</span>
+                    </span>
+                  </div>
+                  <div className="cc-glass-dialer-row"><span className="cc-glass-dialer-label">Comments</span><span className="cc-dialer-comment">Customer wants to try for 3 months</span></div>
                 </div>
                 <div className="cc-glass-dialer-modes">
                   <span className="cc-glass-dialer-mode">Manual</span>
