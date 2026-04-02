@@ -178,8 +178,6 @@ const ContactCenter = () => {
         </div>
       </section>
 
-      <div className="cc-section-divider" />
-
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
