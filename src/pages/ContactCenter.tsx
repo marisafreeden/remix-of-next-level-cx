@@ -76,7 +76,7 @@ const ContactCenter = () => {
 
 
       {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: '#0C4550', borderBottom: 'none' }}>
+      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: '#F1F4F9', borderBottom: 'none' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
           <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
             <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px', color: 'rgba(255,255,255,0.6)' }}>CUSTOMER VALUE</p>
