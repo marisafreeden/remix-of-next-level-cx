@@ -154,8 +154,11 @@ const ContactCenter = () => {
       <GoAIAccordionSection />
 
       {/* Personas */}
-      <section className="uc-benefits-section" style={{ background: '#ffffff' }}>
-        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+      <section className="uc-benefits-section" style={{ background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', width: '400px', height: '400px', background: 'rgba(63, 171, 186, 0.12)', filter: 'blur(120px)', borderRadius: '50%', top: '10%', left: '-5%', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '350px', height: '350px', background: 'rgba(67, 181, 191, 0.10)', filter: 'blur(100px)', borderRadius: '50%', bottom: '5%', right: '-3%', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '300px', height: '300px', background: 'rgba(63, 171, 186, 0.08)', filter: 'blur(110px)', borderRadius: '50%', top: '50%', left: '40%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+        <div className="uc-benefits-header" style={{ textAlign: "center", position: 'relative', zIndex: 1 }}>
           <p className="promos-eyebrow">BUILT FOR YOUR TEAM</p>
           <h2 className="promos-title">
             Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
@@ -164,7 +167,7 @@ const ContactCenter = () => {
             Tailored tools and workflows designed for agents, managers, and IT — so everyone works at their best.
           </p>
         </div>
-        <div className="cc-persona-grid">
+        <div className="cc-persona-grid" style={{ position: 'relative', zIndex: 1 }}>
           {personaKeys.map((key, i) => (
             <div key={key} className="cc-persona-card">
               <div className="cc-persona-img-wrap">
