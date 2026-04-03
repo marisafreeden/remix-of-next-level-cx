@@ -273,9 +273,9 @@ const IntegrationMSDynamics = () => {
       {/* ─── FINAL CTA ─── */}
       <section className="uc-benefits-section" style={{ background: "linear-gradient(135deg, #43B5BF 0%, #27698F 40%, #7042D2 100%)", padding: "96px 48px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 className="promos-title" style={{ textAlign: "center", color: "#fff" }}>
+          <h2 className="promos-title" style={{ textAlign: "center", color: "#fff", WebkitTextFillColor: "#fff", background: "none", WebkitBackgroundClip: "unset", backgroundClip: "unset" }}>
             Your team lives in Dynamics.<br />
-            <span className="promos-title-italic" style={{ display: "inline", color: "#fff" }}>Your calls should too.</span>
+            <span className="promos-title-italic" style={{ display: "inline", color: "#fff", WebkitTextFillColor: "#fff" }}>Your calls should too.</span>
           </h2>
           <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", color: "rgba(255,255,255,0.85)", maxWidth: "600px", margin: "16px auto 32px", lineHeight: 1.6 }}>
             See GoContact in action — a 20-minute demo, configured for your environment.
