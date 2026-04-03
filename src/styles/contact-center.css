@@ -1021,9 +1021,9 @@
 }
 
 .cc-stats-grid-v2 {
-  flex: 1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
   gap: 0;
   text-align: left;
   position: relative;
