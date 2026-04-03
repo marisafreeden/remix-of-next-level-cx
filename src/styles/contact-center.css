@@ -1024,7 +1024,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  text-align: left;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
