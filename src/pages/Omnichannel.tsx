@@ -239,8 +239,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">WHERE CONVERSATIONS CONNECT</p>
             <h2 className="promos-title">
-              Customers bounce between channels.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Your agents shouldn't miss a beat.</span>
+              Channels change.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Context shouldn't.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               They'll start in chat, follow up with a text, and call in if it gets complicated. The omnichannel platform keeps conversations connected so agents always have context.
