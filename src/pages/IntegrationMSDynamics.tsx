@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
@@ -10,7 +11,7 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
-import { Check, Zap, Database, BarChart3 } from "lucide-react";
+import { Check, Zap, Database, BarChart3, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
