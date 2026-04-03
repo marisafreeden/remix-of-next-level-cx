@@ -42,6 +42,7 @@ const GoAIAccordionSection = () => {
         <div className="cc-goai-split">
           <div className="cc-goai-left">
             <div className="cc-goai-header" style={{ textAlign: 'left', marginBottom: '32px' }}>
+              <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>Introducing GoAI</p>
               <h2 className="promos-title">
                 Real AI.<br />No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
               </h2>
