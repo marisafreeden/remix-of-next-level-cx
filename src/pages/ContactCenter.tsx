@@ -154,7 +154,7 @@ const ContactCenter = () => {
       <GoAIAccordionSection />
 
       {/* Personas */}
-      <section className="uc-benefits-section">
+      <section className="uc-benefits-section" style={{ background: '#ffffff' }}>
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">BUILT FOR YOUR TEAM</p>
           <h2 className="promos-title">
