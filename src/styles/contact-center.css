@@ -1131,6 +1131,13 @@
   .cc-stats-section-v2 {
     padding: 48px 20px;
   }
+  .cc-stats-row {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .cc-stats-dark-header {
+    flex: none;
+  }
   .cc-stats-grid-v2 {
     grid-template-columns: 1fr;
     gap: 40px;
