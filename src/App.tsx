@@ -19,6 +19,7 @@ import Omnichannel from "./pages/Omnichannel.tsx";
 import Dialer from "./pages/Dialer.tsx";
 import SmartScripting from "./pages/SmartScripting.tsx";
 import SelfService from "./pages/SelfService.tsx";
+import AcceptableUse from "./pages/AcceptableUse.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/contact-center/smart-scripting" element={<SmartScripting />} />
           <Route path="/contact-center/self-service" element={<SelfService />} />
           <Route path="/contact-center" element={<ContactCenter />} />
+          <Route path="/legal/acceptable-use" element={<AcceptableUse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
