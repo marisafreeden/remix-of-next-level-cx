@@ -1064,9 +1064,10 @@
   font-size: 56px;
   line-height: 1.1;
   letter-spacing: -2px;
-  color: #1a1a2e;
-  -webkit-text-fill-color: unset;
-  background: none;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   display: block;
   padding: 0;
   margin: 0;
