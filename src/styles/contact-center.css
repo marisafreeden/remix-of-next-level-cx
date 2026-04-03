@@ -1519,9 +1519,9 @@
 }
 
 .goai-flow-connector-line {
-  width: 2px;
+  width: 0;
   flex: 1;
-  background: rgba(67, 181, 191, 0.35);
+  border-left: 1px dashed rgba(67, 181, 191, 0.35);
 }
 
 .goai-flow-connector-arrow {
@@ -1545,17 +1545,17 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 0;
   height: 24px;
-  background: rgba(67, 181, 191, 0.35);
+  border-left: 1px dashed rgba(67, 181, 191, 0.35);
 }
 
 .goai-flow-branches::after {
   content: '';
   position: absolute;
   top: 24px;
-  height: 2px;
-  background: rgba(67, 181, 191, 0.25);
+  height: 0;
+  border-top: 1px dashed rgba(67, 181, 191, 0.25);
 }
 
 .goai-flow-branches-two::after {
@@ -1573,13 +1573,13 @@
 }
 
 .goai-flow-branch-line {
-  width: 2px;
+  width: 0;
   height: 24px;
-  background: rgba(67, 181, 191, 0.3);
+  border-left: 1px dashed rgba(67, 181, 191, 0.3);
 }
 
 .goai-flow-branch-line-green {
-  background: rgba(74, 222, 128, 0.35);
+  border-color: rgba(74, 222, 128, 0.35);
 }
 
 /* Bottom branches merge connector */
@@ -1589,7 +1589,8 @@
 
 .goai-flow-branches-bottom::before {
   height: 20px;
-  background: rgba(67, 181, 191, 0.3);
+  border-left: 1px dashed rgba(67, 181, 191, 0.3);
+  background: none;
 }
 
 .goai-flow-branches-bottom::after {
