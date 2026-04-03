@@ -1213,6 +1213,9 @@
   border-radius: 0;
   padding: 28px 32px;
 }
+.cc-stats-light .cc-stat-v2:first-child {
+  border-left: none;
+}
 
 .cc-stats-light .cc-stat-v2-label {
   color: #555555;
