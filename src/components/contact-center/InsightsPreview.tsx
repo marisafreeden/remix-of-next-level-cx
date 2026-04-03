@@ -1,76 +1,57 @@
-import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, Users } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import supervisorAvatar from "@/assets/supervisor-avatar.jpg";
+import bIcon from "@/assets/b-icon.png";
 
 const InsightsPreview = () => {
   return (
     <div className="goai-flow">
       <div className="goai-flow-header">
-        <BarChart3 size={14} strokeWidth={1.5} style={{ color: '#43B5BF' }} />
-        <span className="goai-flow-header-title">Live Analytics</span>
+        <img src={bIcon} alt="" style={{ width: 18, height: 18, borderRadius: 5 }} />
+        <span className="goai-flow-header-title">AI Analyst</span>
       </div>
 
-      <div className="goai-insights-body">
-        {/* KPI row */}
-        <div className="goai-insights-kpis">
-          <div className="goai-insights-kpi">
-            <span className="goai-insights-kpi-label">Answer Rate</span>
-            <span className="goai-insights-kpi-value">89%</span>
-            <span className="goai-insights-kpi-trend goai-insights-trend-up">
-              <ArrowUpRight size={10} /> 4%
-            </span>
+      <div className="goai-insights-chat">
+        {/* User message */}
+        <div className="goai-chat-row goai-chat-row-user">
+          <div className="goai-chat-bubble goai-chat-bubble-user">
+            How has today been going so far?
           </div>
-          <div className="goai-insights-kpi">
-            <span className="goai-insights-kpi-label">Avg Handle</span>
-            <span className="goai-insights-kpi-value">5:26</span>
-            <span className="goai-insights-kpi-trend goai-insights-trend-down">
-              <ArrowDownRight size={10} /> 12s
-            </span>
+          <img src={supervisorAvatar} alt="" className="goai-chat-avatar" />
+        </div>
+
+        {/* AI response */}
+        <div className="goai-chat-row goai-chat-row-ai">
+          <div className="goai-chat-ai-icon">
+            <Sparkles size={12} strokeWidth={1.5} />
           </div>
-          <div className="goai-insights-kpi">
-            <span className="goai-insights-kpi-label">CSAT</span>
-            <span className="goai-insights-kpi-value">4.3</span>
-            <span className="goai-insights-kpi-trend goai-insights-trend-up">
-              <ArrowUpRight size={10} /> 0.2
-            </span>
+          <div className="goai-chat-bubble goai-chat-bubble-ai">
+            <p>Here's a summary of today's call activity:</p>
+            <p>• <strong>Total Calls:</strong> 1,847</p>
+            <p>• <strong>Answered:</strong> 1,643</p>
+            <p>• <strong>Abandoned:</strong> 128</p>
+            <p>• <strong>Answer Rate:</strong> 89%</p>
+            <p>• <strong>Avg Handle Time:</strong> 5m 26s</p>
+            <p>• <strong>CSAT (live):</strong> 4.3/5</p>
+            <p style={{ marginTop: 8 }}>The Billing queue saw a brief spike around 11am — handle times jumped to 7 min before settling.</p>
           </div>
         </div>
 
-        {/* Mini chart */}
-        <div className="goai-insights-chart-card">
-          <div className="goai-insights-chart-header">
-            <TrendingUp size={12} strokeWidth={1.5} />
-            <span>Call Volume — Today</span>
+        {/* User follow-up */}
+        <div className="goai-chat-row goai-chat-row-user">
+          <div className="goai-chat-bubble goai-chat-bubble-user">
+            Where is most volume coming from?
           </div>
-          <div className="goai-insights-chart">
-            {[35, 42, 58, 72, 65, 88, 95, 82, 70, 60, 48, 55].map((h, i) => (
-              <div key={i} className="goai-insights-bar-wrap">
-                <div className="goai-insights-bar" style={{ height: `${h}%` }} />
-              </div>
-            ))}
-          </div>
-          <div className="goai-insights-chart-labels">
-            <span>8am</span><span>10am</span><span>12pm</span><span>2pm</span><span>4pm</span><span>6pm</span>
-          </div>
+          <img src={supervisorAvatar} alt="" className="goai-chat-avatar" />
         </div>
 
-        {/* Top queues */}
-        <div className="goai-insights-queues">
-          <div className="goai-insights-chart-header">
-            <Users size={12} strokeWidth={1.5} />
-            <span>Top Queues</span>
+        {/* Typing indicator */}
+        <div className="goai-chat-row goai-chat-row-ai">
+          <div className="goai-chat-ai-icon">
+            <Sparkles size={12} strokeWidth={1.5} />
           </div>
-          {[
-            { name: "Billing", pct: 33, count: "612" },
-            { name: "Tech Support", pct: 26, count: "489" },
-            { name: "New Accounts", pct: 16, count: "298" },
-          ].map((q) => (
-            <div key={q.name} className="goai-insights-queue-row">
-              <span className="goai-insights-queue-name">{q.name}</span>
-              <div className="goai-insights-queue-bar-wrap">
-                <div className="goai-insights-queue-bar" style={{ width: `${q.pct * 3}%` }} />
-              </div>
-              <span className="goai-insights-queue-count">{q.count}</span>
-            </div>
-          ))}
+          <div className="goai-chat-typing">
+            <span /><span /><span />
+          </div>
         </div>
       </div>
     </div>
