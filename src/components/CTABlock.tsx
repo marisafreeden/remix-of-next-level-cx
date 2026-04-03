@@ -5,15 +5,15 @@ const CTABlock = () => {
   const { t } = useTranslation();
 
   return (
-    <section
-      className="cta-block-section"
-      style={{
-        backgroundImage: `url(${ctaBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="cta-block-inner">
+    <section className="cta-block-section">
+      <div
+        className="cta-block-inner"
+        style={{
+          backgroundImage: `url(${ctaBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <h2 className="cta-block-title">
           {t("cta_block.title_line1")}<br />
           <span className="cta-block-title-italic">{t("cta_block.title_line2")}</span>

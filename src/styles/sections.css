@@ -367,18 +367,21 @@
 
 /* ===== CTA Block ===== */
 .cta-block-section {
-  background: linear-gradient(105.96deg, #1A6B6A 0%, #0C3D5E 65.07%, #3D1F8C 100%);
-  padding: 56px 48px 0;
+  background: transparent;
+  padding: 56px 48px;
 }
 
 .cta-block-inner {
-  max-width: 1600px;
+  max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding: 48px 48px;
-  border-radius: 0;
+  padding: 80px 48px;
+  border-radius: 24px;
   background: none;
   border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .cta-block-title {
