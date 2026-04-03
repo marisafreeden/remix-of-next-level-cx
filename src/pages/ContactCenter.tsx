@@ -41,6 +41,7 @@ import GoAIDiagram from "@/components/GoAIDiagram";
 import DialerPreview from "@/components/contact-center/DialerPreview";
 import OmnichannelPreview from "@/components/contact-center/OmnichannelPreview";
 import IVRPreview from "@/components/contact-center/IVRPreview";
+import GoAIAccordionSection from "@/components/contact-center/GoAIAccordionSection";
 
 const statKeys = ["s1", "s2", "s3"];
 const smarterKeys = ["sm1", "sm2", "sm3", "sm4"];
