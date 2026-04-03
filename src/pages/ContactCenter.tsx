@@ -132,6 +132,9 @@ const ContactCenter = () => {
           <h2 className="promos-title" style={{ background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
             The features that move the <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>needle.</span>
           </h2>
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Everything your team needs to deliver faster, smarter, and more personal customer experiences.
+          </p>
         </div>
         <div className="uc-benefits-grid">
           {featureKeys.map((key, i) => {
