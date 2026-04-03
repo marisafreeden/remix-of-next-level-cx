@@ -72,28 +72,26 @@ const ContactCenter = () => {
         subtitle={t("cc_page.hero_subtitle_combined")}
         requestDemoLabel={t("common.request_demo")}
         onSave={save}
-      />
-
-
-      {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: 'transparent', borderBottom: '1px solid rgba(0,0,0,0.08)' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
-          <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
-            <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
-            <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
-              Proven results from teams that switched to a smarter, AI-powered contact center.
-            </p>
-          </div>
-          <div style={{ flex: 1, display: 'flex' }}>
-            {statKeys.map((key, i) => (
-              <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.12)', padding: '32px 28px' }}>
-                <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-                <span className="cc-stat-v2-label text-primary font-normal text-base text-center">{t(`cc_page.${key}_label`)}</span>
-              </div>
-            ))}
+      >
+        <div className="cc-stats-section-v2 cc-stats-light" style={{ background: 'transparent', borderBottom: '1px solid rgba(0,0,0,0.08)', position: 'relative', zIndex: 1 }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
+            <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
+              <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
+              <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
+                Proven results from teams that switched to a smarter, AI-powered contact center.
+              </p>
+            </div>
+            <div style={{ flex: 1, display: 'flex' }}>
+              {statKeys.map((key, i) => (
+                <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.12)', padding: '32px 28px' }}>
+                  <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+                  <span className="cc-stat-v2-label text-primary font-normal text-base text-center">{t(`cc_page.${key}_label`)}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      </section>
+      </ContactCenterHero>
 
       {/* What Makes It Smarter — UC promo style */}
       <section className="uc-features-section">
