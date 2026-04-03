@@ -68,24 +68,23 @@
   padding: 14px 20px;
   border: none;
   background: transparent;
-  border-radius: 12px;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #6B7280;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: color 0.2s;
   text-align: left;
   width: 100%;
 }
 
-.platform-nav-item:hover {
-  background: #F3F4F6;
-  color: #0A0F1A;
+.platform-nav-item:last-child {
+  border-bottom: none;
 }
 
 .platform-nav-active {
-  background: #F0FDFA;
   color: #0A0F1A;
   font-weight: 600;
   border-left: 3px solid #43B5BF;
