@@ -361,7 +361,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>COMMISSIONS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            Industry-leading compensation, <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>structured to scale.</span>
+            Compensation that <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>scales.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '600px', margin: '12px auto 0' }}>
             Multiple ways to earn and rewards that compound as your book of business grows.
