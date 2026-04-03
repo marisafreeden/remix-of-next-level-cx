@@ -288,13 +288,13 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  bottom: 15%;
-  left: -10%;
+  bottom: -5%;
+  left: 10%;
   width: 900px;
   height: 900px;
   background: #43b5bf;
   border-radius: 50%;
-  filter: blur(220px);
+  filter: blur(200px);
   opacity: 0.3;
   pointer-events: none;
   z-index: 0;
@@ -303,13 +303,13 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: -120px;
-  right: -10%;
+  bottom: -10%;
+  right: 5%;
   width: 800px;
   height: 800px;
   background: #7a6fd4;
   border-radius: 50%;
-  filter: blur(220px);
+  filter: blur(200px);
   opacity: 0.22;
   pointer-events: none;
   z-index: 0;
@@ -317,10 +317,10 @@
 
 .cc-hero-blur-extra1 {
   position: absolute;
-  top: 15%;
-  right: 15%;
-  width: 400px;
-  height: 400px;
+  bottom: 10%;
+  right: 20%;
+  width: 500px;
+  height: 500px;
   background: #3da8b2;
   border-radius: 50%;
   filter: blur(180px);
@@ -331,10 +331,10 @@
 
 .cc-hero-blur-extra2 {
   position: absolute;
-  bottom: 20%;
-  left: 25%;
-  width: 350px;
-  height: 350px;
+  bottom: 5%;
+  left: 30%;
+  width: 450px;
+  height: 450px;
   background: #7a6fd4;
   border-radius: 50%;
   filter: blur(170px);
