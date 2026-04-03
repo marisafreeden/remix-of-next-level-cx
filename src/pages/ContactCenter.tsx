@@ -93,7 +93,7 @@ const ContactCenter = () => {
         <div className="cc-stats-row">
           <div className="cc-stats-dark-header">
             <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-            <p className="cc-stats-caption">We deploy in days. Our team stays with you after go-live. And the numbers above are what customers see in the first 90 days — not year two of a roadmap.</p>
+            
           </div>
           <div className="cc-stats-grid-v2">
             {statKeys.map((key) => (
