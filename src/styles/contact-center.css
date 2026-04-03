@@ -1,6 +1,7 @@
 /* ===== Two-column logo strip ===== */
 .cc-logo-strip-2col {
   background: #F9FAFB;
+  border-top: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
