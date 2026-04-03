@@ -12,6 +12,8 @@ import "@fontsource/inter/300.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
+import ctaBg from "@/assets/cta-bg.png";
+import ctaOverlay from "@/assets/cta-overlay.png";
 import {
   MessageSquare, Headphones, Mail, Smartphone, Monitor,
   History, LayoutGrid, BarChart3, ArrowRightLeft, Users,
@@ -306,17 +308,19 @@ const Omnichannel = () => {
       </section>
 
       {/* ─── FINAL CTA ─── */}
-      <section className="uc-benefits-section" style={{ background: "linear-gradient(135deg, #43B5BF 0%, #27698F 40%, #7042D2 100%)", padding: "96px 48px" }}>
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 className="promos-title" style={{ textAlign: "center", color: "#fff", WebkitTextFillColor: "#fff", background: "none", WebkitBackgroundClip: "unset", backgroundClip: "unset" }}>
-            See how omnichannel<br />
-            <span className="promos-title-italic" style={{ display: "inline", color: "#fff", WebkitTextFillColor: "#fff" }}>transforms your contact center.</span>
-          </h2>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", color: "rgba(255,255,255,0.85)", maxWidth: "600px", margin: "16px auto 32px", lineHeight: 1.6 }}>
-            Connect every channel, give agents full context, and deliver better customer experiences from day one.
-          </p>
-          <div className="intg-hero-ctas">
-            <button style={{ background: "#fff", color: "#1a202c", fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "15px", padding: "14px 32px", borderRadius: "10px", border: "none", cursor: "pointer" }}>Get a Demo <span style={{ fontSize: "18px" }}>→</span></button>
+      <section className="cta-block-section">
+        <div className="cta-block-inner" style={{ position: 'relative', overflow: 'hidden', borderRadius: '30px' }}>
+          <img src={ctaBg} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', zIndex: 0 }} />
+          <img src={ctaOverlay} alt="" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 1, pointerEvents: 'none' }} />
+          <div style={{ position: 'relative', zIndex: 2 }}>
+            <h2 className="cta-block-title">
+              See how omnichannel<br />
+              <span className="cta-block-title-italic">transforms your contact center.</span>
+            </h2>
+            <p className="cta-block-subtitle">Connect every channel, give agents full context, and deliver better customer experiences from day one.</p>
+            <div className="cta-block-buttons">
+              <a href="#" className="cta-block-primary">Get a Demo <span style={{ fontSize: "18px" }}>→</span></a>
+            </div>
           </div>
         </div>
       </section>
