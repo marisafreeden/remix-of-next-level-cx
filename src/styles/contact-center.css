@@ -751,6 +751,13 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+}
+
+.cc-persona-card:hover {
+  box-shadow: 0 4px 24px rgba(67, 181, 191, 0.10), 0 1px 4px rgba(0, 0, 0, 0.04);
+  border-color: rgba(67, 181, 191, 0.18);
+  transform: translateY(-2px);
 }
 
 .cc-persona-text {
