@@ -71,7 +71,10 @@ const GoAIAccordionSection = () => {
                 </button>
               );
             })}
-          </div>
+           </div>
+            <a href="#" className="cc-goai-roi-cta" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginTop: '20px', fontSize: '14px', fontWeight: 500, color: 'hsl(185 49% 51%)', textDecoration: 'none', letterSpacing: '-0.01em' }}>
+              Calculate the ROI of bringing AI into your Contact Center →
+            </a>
           </div>
           <div className="cc-goai-image-side">
             <div className="cc-goai-img-wrap">
