@@ -1,16 +1,22 @@
 import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
+import "@/styles/uc.css";
 import "@/styles/sections.css";
 import "@/styles/responsive.css";
+import "@/styles/contact-center.css";
 import "@/styles/integrations.css";
 import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
-import { Users, ClipboardCheck, PhoneCall, TrendingUp, Database, Eye } from "lucide-react";
+import {
+  Users, ClipboardCheck, PhoneCall, TrendingUp, Database,
+  Eye, MonitorSmartphone, MousePointerClick, History, Zap, BarChart3
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CTABlock from "@/components/CTABlock";
 
 const PlaceholderImage = () => (
   <div className="intg-placeholder">
@@ -31,12 +37,12 @@ const benefits = [
 ];
 
 const features = [
-  { title: "Screen pop customer records", desc: "Match incoming interactions to CRM records and present relevant customer details to the agent when the conversation starts." },
-  { title: "Click-to-dial from Dynamics", desc: "Enable users to place calls more efficiently from within the CRM workflow, reducing friction and saving time." },
-  { title: "Automatic activity capture", desc: "Log call activity and interaction details to help teams maintain visibility across sales and service activity." },
-  { title: "Unified customer history", desc: "Give agents a more complete view of previous conversations, notes, and account context to support smarter engagements." },
-  { title: "Faster agent workflows", desc: "Reduce toggling between systems and simplify everyday tasks with a more connected contact-center-to-CRM experience." },
-  { title: "Better operational visibility", desc: "Combine customer and interaction data to support stronger reporting, performance tracking, and service optimization." },
+  { icon: MonitorSmartphone, title: "Screen pop customer records", desc: "Match incoming interactions to CRM records and present relevant customer details to the agent when the conversation starts." },
+  { icon: MousePointerClick, title: "Click-to-dial from Dynamics", desc: "Enable users to place calls more efficiently from within the CRM workflow, reducing friction and saving time." },
+  { icon: ClipboardCheck, title: "Automatic activity capture", desc: "Log call activity and interaction details to help teams maintain visibility across sales and service activity." },
+  { icon: History, title: "Unified customer history", desc: "Give agents a more complete view of previous conversations, notes, and account context to support smarter engagements." },
+  { icon: Zap, title: "Faster agent workflows", desc: "Reduce toggling between systems and simplify everyday tasks with a more connected contact-center-to-CRM experience." },
+  { icon: BarChart3, title: "Better operational visibility", desc: "Combine customer and interaction data to support stronger reporting, performance tracking, and service optimization." },
 ];
 
 const audiences = [
@@ -49,15 +55,27 @@ const audiences = [
 const IntegrationMSDynamics = () => {
   return (
     <div className="intg-page">
+      {/* SVG gradient for icons — same as CC page */}
+      <svg width="0" height="0" style={{ position: "absolute" }}>
+        <defs>
+          <linearGradient id="cc-icon-gradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="hsl(185 49% 51%)" />
+            <stop offset="100%" stopColor="hsl(261 61% 54%)" />
+          </linearGradient>
+        </defs>
+      </svg>
       <Navbar />
 
       {/* Hero */}
       <section className="intg-hero">
         <div className="intg-hero-bg" />
         <div className="intg-hero-inner">
-          <p className="intg-hero-eyebrow">Integration</p>
-          <h1 className="intg-hero-h1">Connect Microsoft Dynamics with GoContact</h1>
-          <p className="intg-hero-sub">
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>INTEGRATION</p>
+          <h1 className="cc-hero-heading" style={{ fontSize: '56px', marginTop: '16px', marginBottom: '20px' }}>
+            <span className="cc-hero-heading-line">Connect Microsoft Dynamics</span>
+            <span className="cc-hero-heading-accent">with GoContact</span>
+          </h1>
+          <p className="cc-hero-desc" style={{ maxWidth: '640px', margin: '0 auto 40px' }}>
             Bring your CRM and contact center together so agents can work faster, personalize every conversation, and keep customer records up to date without switching tabs.
           </p>
           <div className="intg-hero-ctas">
@@ -68,67 +86,84 @@ const IntegrationMSDynamics = () => {
       </section>
 
       {/* Value Proposition */}
-      <section className="intg-value">
-        <div className="intg-value-inner">
-          <p className="intg-section-eyebrow">Value Proposition</p>
-          <h2 className="intg-section-title">One workspace for every customer conversation</h2>
-          <p className="intg-section-desc">
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header" style={{ textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>VALUE PROPOSITION</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            One workspace for every<br />
+            <span className="promos-title-italic" style={{ display: 'inline' }}>customer conversation.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: '700px', margin: '12px auto 0' }}>
             When agents have to bounce between systems, productivity drops and customers feel the delay. By integrating Microsoft Dynamics with GoContact, your team can access CRM data and interaction tools in a more connected workflow.
           </p>
-          <p className="intg-section-desc" style={{ marginTop: 16 }}>
+          <p className="goai-desc" style={{ maxWidth: '700px', margin: '16px auto 0' }}>
             That means faster identification, more informed conversations, and cleaner records after every call.
           </p>
         </div>
       </section>
 
       {/* Key Benefits */}
-      <section className="intg-benefits">
-        <div style={{ textAlign: 'center', maxWidth: 900, margin: '0 auto' }}>
-          <p className="intg-section-eyebrow">Key Benefits</p>
-          <h2 className="intg-section-title">Turn every interaction into context-rich service and sales</h2>
-          <p className="intg-section-desc">
-            With Microsoft Dynamics and GoContact working together, your teams get the customer data they need at the moment they need it—so they can resolve issues faster, improve productivity, and deliver better experiences across every channel.
+      <section className="uc-features-section">
+        <div className="uc-features-header" style={{ textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>KEY BENEFITS</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            Turn every interaction into<br />
+            <span className="promos-title-italic" style={{ display: 'inline' }}>context-rich service and sales.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: '620px', margin: '12px auto 0' }}>
+            With Microsoft Dynamics and GoContact working together, your teams get the customer data they need at the moment they need it.
           </p>
         </div>
-        <div className="intg-benefits-grid">
-          {benefits.map((b, i) => (
-            <div key={i} className="intg-benefit-card">
-              <div className="intg-benefit-icon">
-                <b.icon size={22} />
+        <div className="uc-benefits-grid" style={{ maxWidth: '1200px' }}>
+          {benefits.map((b, i) => {
+            const Icon = b.icon;
+            return (
+              <div key={i} className="uc-benefit-card">
+                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <h3 className="uc-benefit-title">{b.title}</h3>
+                <p className="uc-benefit-desc">{b.desc}</p>
               </div>
-              <h3 className="intg-benefit-title">{b.title}</h3>
-              <p className="intg-benefit-desc">{b.desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
       {/* Feature Section */}
-      <section className="intg-features">
-        <div style={{ textAlign: 'center', maxWidth: 900, margin: '0 auto' }}>
-          <p className="intg-section-eyebrow">Features</p>
-          <h2 className="intg-section-title">What the integration can help you do</h2>
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header" style={{ textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>FEATURES</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            What the integration can<br />
+            <span className="promos-title-italic" style={{ display: 'inline' }}>help you do.</span>
+          </h2>
         </div>
-        <div className="intg-features-grid">
-          {features.map((f, i) => (
-            <div key={i} className="intg-feature-card">
-              <h3 className="intg-feature-title">{f.title}</h3>
-              <p className="intg-feature-desc">{f.desc}</p>
-            </div>
-          ))}
+        <div className="uc-benefits-grid" style={{ maxWidth: '1200px' }}>
+          {features.map((f, i) => {
+            const Icon = f.icon;
+            return (
+              <div key={i} className="uc-benefit-card">
+                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <h3 className="uc-benefit-title">{f.title}</h3>
+                <p className="uc-benefit-desc">{f.desc}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
 
       {/* Outcome */}
-      <section className="intg-outcome">
-        <div className="intg-outcome-inner">
+      <section className="uc-features-section">
+        <div className="intg-outcome-inner" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <div className="intg-outcome-text">
-            <p className="intg-section-eyebrow">Why Teams Choose This</p>
-            <h2 className="intg-section-title">Why teams integrate GoContact with Microsoft Dynamics</h2>
-            <p className="intg-outcome-desc">
+            <p className="promos-eyebrow">WHY TEAMS CHOOSE THIS</p>
+            <h2 className="promos-title">
+              Why teams integrate GoContact<br />
+              <span className="promos-title-italic" style={{ display: 'inline' }}>with Microsoft Dynamics.</span>
+            </h2>
+            <p className="uc-benefit-desc" style={{ maxWidth: '520px' }}>
               Organizations looking to modernize customer engagement often struggle with disconnected tools, fragmented customer data, and time-consuming agent workflows. Integrating Microsoft Dynamics with GoContact helps bridge that gap by bringing communications and CRM context closer together.
             </p>
-            <p className="intg-outcome-desc">
+            <p className="uc-benefit-desc" style={{ maxWidth: '520px', marginTop: '12px' }}>
               The result is a more efficient agent experience, more consistent customer conversations, and a stronger foundation for both service and revenue teams.
             </p>
           </div>
@@ -137,54 +172,52 @@ const IntegrationMSDynamics = () => {
       </section>
 
       {/* Audience */}
-      <section className="intg-audience">
-        <div style={{ textAlign: 'center', maxWidth: 900, margin: '0 auto' }}>
-          <p className="intg-section-eyebrow">Built For Your Team</p>
-          <h2 className="intg-section-title">Who benefits from the integration</h2>
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header" style={{ textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>BUILT FOR YOUR TEAM</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            Different <span className="promos-title-italic" style={{ display: 'inline' }}>superpowers</span> for every role.
+          </h2>
         </div>
-        <div className="intg-audience-grid">
+        <div className="intg-audience-grid" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           {audiences.map((a, i) => (
-            <div key={i} className="intg-audience-card">
-              <h3 className="intg-audience-title">{a.title}</h3>
-              <p className="intg-audience-desc">{a.desc}</p>
+            <div key={i} className="uc-benefit-card">
+              <h3 className="uc-benefit-title">{a.title}</h3>
+              <p className="uc-benefit-desc">{a.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="intg-how">
-        <div className="intg-how-inner">
-          <p className="intg-section-eyebrow">How It Works</p>
-          <h2 className="intg-section-title">Seamless connection between your tools</h2>
-          <p className="intg-section-desc" style={{ marginTop: 24 }}>
+      <section className="uc-features-section">
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>HOW IT WORKS</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            Seamless connection<br />
+            <span className="promos-title-italic" style={{ display: 'inline' }}>between your tools.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: '700px', margin: '20px auto 0' }}>
             GoContact connects your contact center workflows with Microsoft Dynamics so agents can interact with customers while staying aligned with CRM data and processes. Incoming and outgoing interactions can be associated with the right customer records, helping your teams work more efficiently and maintain a more complete view of every relationship.
           </p>
         </div>
       </section>
 
       {/* Trust */}
-      <section className="intg-trust">
-        <div className="intg-trust-inner">
-          <p className="intg-section-eyebrow">Built for Impact</p>
-          <h2 className="intg-section-title">Built for smarter customer engagement</h2>
-          <p className="intg-section-desc" style={{ marginTop: 24 }}>
+      <section className="uc-benefits-section">
+        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+          <p className="promos-eyebrow" style={{ textAlign: 'center' }}>BUILT FOR IMPACT</p>
+          <h2 className="promos-title" style={{ textAlign: 'center' }}>
+            Built for smarter<br />
+            <span className="promos-title-italic" style={{ display: 'inline' }}>customer engagement.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: '700px', margin: '20px auto 0' }}>
             A CRM integration should do more than pass data back and forth. It should help your teams move faster, personalize service, and make every interaction more valuable. With Microsoft Dynamics and GoContact, organizations can create a more connected experience for agents, supervisors, and customers alike.
           </p>
         </div>
       </section>
 
-      {/* Bottom CTA */}
-      <section className="intg-cta">
-        <div className="intg-cta-inner">
-          <h2 className="intg-cta-title">Make Microsoft Dynamics more actionable for every customer interaction</h2>
-          <p className="intg-cta-desc">
-            See how GoContact helps your teams connect communications and CRM data to improve service, sales, and operational efficiency.
-          </p>
-          <button className="btn-hero-a">Book a demo <span style={{ fontSize: '18px' }}>→</span></button>
-        </div>
-      </section>
-
+      <CTABlock />
       <Footer />
     </div>
   );
