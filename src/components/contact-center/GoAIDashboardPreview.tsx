@@ -1,4 +1,11 @@
-import { PhoneIncoming, Bot, Database, BookOpen, CheckCircle, Headphones, ArrowRight, Globe, Zap } from "lucide-react";
+import { PhoneIncoming, Bot, BookOpen, CheckCircle, Headphones, Globe, Zap, ChevronDown } from "lucide-react";
+
+const Connector = () => (
+  <div className="goai-flow-connector">
+    <div className="goai-flow-connector-line" />
+    <ChevronDown size={14} className="goai-flow-connector-arrow" />
+  </div>
+);
 
 const GoAIDashboardPreview = () => {
   return (
@@ -19,10 +26,7 @@ const GoAIDashboardPreview = () => {
           </div>
         </div>
 
-        <div className="goai-flow-connector">
-          <div className="goai-flow-connector-line" />
-          <ArrowRight size={12} className="goai-flow-connector-arrow" />
-        </div>
+        <Connector />
 
         {/* AI Agent picks up */}
         <div className="goai-flow-node goai-flow-node-ai">
@@ -33,17 +37,15 @@ const GoAIDashboardPreview = () => {
           </div>
         </div>
 
-        <div className="goai-flow-connector">
-          <div className="goai-flow-connector-line" />
-          <ArrowRight size={12} className="goai-flow-connector-arrow" />
-        </div>
+        <Connector />
 
-        {/* Parallel lookups */}
+        {/* Parallel lookups label */}
         <div className="goai-flow-parallel-label">
           <Zap size={10} strokeWidth={2} />
           <span>Parallel lookup</span>
         </div>
 
+        {/* Branch: External API + Knowledge Base */}
         <div className="goai-flow-branches goai-flow-branches-two">
           <div className="goai-flow-branch-path">
             <div className="goai-flow-branch-line" />
@@ -67,10 +69,7 @@ const GoAIDashboardPreview = () => {
           </div>
         </div>
 
-        <div className="goai-flow-connector">
-          <div className="goai-flow-connector-line" />
-          <ArrowRight size={12} className="goai-flow-connector-arrow" />
-        </div>
+        <Connector />
 
         {/* AI processes & responds */}
         <div className="goai-flow-node goai-flow-node-ai">
@@ -81,13 +80,8 @@ const GoAIDashboardPreview = () => {
           </div>
         </div>
 
-        <div className="goai-flow-connector">
-          <div className="goai-flow-connector-line" />
-          <ArrowRight size={12} className="goai-flow-connector-arrow" />
-        </div>
-
         {/* Outcome branches */}
-        <div className="goai-flow-branches goai-flow-branches-two">
+        <div className="goai-flow-branches goai-flow-branches-two goai-flow-branches-bottom">
           <div className="goai-flow-branch-path">
             <div className="goai-flow-branch-line goai-flow-branch-line-green" />
             <div className="goai-flow-node goai-flow-node-small goai-flow-node-end">

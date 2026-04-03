@@ -1514,27 +1514,54 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 28px;
+  height: 36px;
   position: relative;
 }
 
 .goai-flow-connector-line {
-  width: 1px;
+  width: 2px;
   flex: 1;
-  background: linear-gradient(180deg, rgba(67, 181, 191, 0.3), rgba(67, 181, 191, 0.1));
+  background: rgba(67, 181, 191, 0.35);
 }
 
 .goai-flow-connector-arrow {
-  color: rgba(67, 181, 191, 0.4);
-  transform: rotate(90deg);
+  color: rgba(67, 181, 191, 0.6);
+  margin-top: -4px;
 }
 
 .goai-flow-branches {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   width: 100%;
   justify-content: center;
-  margin-top: 4px;
+  position: relative;
+  padding-top: 24px;
+}
+
+/* Horizontal bar connecting branches */
+.goai-flow-branches::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 24px;
+  background: rgba(67, 181, 191, 0.35);
+}
+
+.goai-flow-branches::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  height: 2px;
+  background: rgba(67, 181, 191, 0.25);
+}
+
+.goai-flow-branches-two::after {
+  left: 25%;
+  right: 25%;
+  width: auto;
 }
 
 .goai-flow-branch-path {
@@ -1542,12 +1569,31 @@
   flex-direction: column;
   align-items: center;
   gap: 0;
+  flex: 1;
 }
 
 .goai-flow-branch-line {
-  width: 1px;
+  width: 2px;
+  height: 24px;
+  background: rgba(67, 181, 191, 0.3);
+}
+
+.goai-flow-branch-line-green {
+  background: rgba(74, 222, 128, 0.35);
+}
+
+/* Bottom branches merge connector */
+.goai-flow-branches-bottom {
+  padding-top: 20px;
+}
+
+.goai-flow-branches-bottom::before {
   height: 20px;
-  background: linear-gradient(180deg, rgba(198, 134, 248, 0.3), rgba(198, 134, 248, 0.08));
+  background: rgba(67, 181, 191, 0.3);
+}
+
+.goai-flow-branches-bottom::after {
+  top: 20px;
 }
 
 .goai-flow-connector-end {
@@ -1592,19 +1638,12 @@
   color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 4px;
+  margin-bottom: 0;
+  margin-top: 4px;
 }
 
 .goai-flow-parallel-label svg {
   color: #43B5BF;
-}
-
-.goai-flow-branches-two {
-  gap: 10px;
-}
-
-.goai-flow-branch-line-green {
-  background: linear-gradient(180deg, rgba(74, 222, 128, 0.3), rgba(74, 222, 128, 0.08));
 }
 
 @media (max-width: 768px) {
