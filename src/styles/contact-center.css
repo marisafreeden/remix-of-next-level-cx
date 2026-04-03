@@ -1303,13 +1303,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background: rgba(67, 181, 191, 0.15);
+  background: none;
   flex-shrink: 0;
   margin-right: 4px;
 }
 
 .cc-goai-acc-icon svg {
-  color: #43B5BF;
+  stroke: url(#cc-goai-icon-gradient);
 }
 
 .cc-goai-acc-title {
