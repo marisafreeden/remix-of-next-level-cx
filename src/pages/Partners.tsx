@@ -245,8 +245,8 @@ const Partners = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">WHY BROADVOICE</p>
             <h2 className="promos-title">
-              The CX opportunity is huge.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>We make it simple to capture.</span>
+              A massive CX opportunity.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Simple to capture.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               The contact center market is projected to reach $16.43B by 2030. Mid-market businesses are modernizing fast — and they're looking to trusted partners to guide them.
@@ -277,7 +277,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>YOUR TEAM</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            You never walk into a deal <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>alone.</span>
+            Never sell <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>alone.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '600px', margin: '12px auto 0' }}>
             Every partner gets a dedicated pod of specialists aligned to your region and your clients' needs.
@@ -305,8 +305,8 @@ const Partners = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ENABLEMENT</p>
             <h2 className="promos-title">
-              Everything you need to sell<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>with confidence.</span>
+              Sell with<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>confidence.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               From the first pitch to the renewal conversation, we arm you with the tools, training, and resources to compete and win.
@@ -336,7 +336,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>GROWTH PROGRAMS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            We invest in partners who <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>invest with us.</span>
+            Grow together. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Win together.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
             We don't just pay commissions — we build partnerships that help you grow your entire practice.
@@ -361,7 +361,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>COMMISSIONS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            Industry-leading compensation, <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>structured to scale.</span>
+            Compensation that <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>scales.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '600px', margin: '12px auto 0' }}>
             Multiple ways to earn and rewards that compound as your book of business grows.
@@ -385,7 +385,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>HOW IT WORKS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            Simple to start. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Built for the long term.</span>
+            Start fast. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Scale faster.</span>
           </h2>
         </div>
         <div style={{ maxWidth: "800px", margin: "48px auto 0", display: "flex", flexDirection: "column", gap: "0" }}>
