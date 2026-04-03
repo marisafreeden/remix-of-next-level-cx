@@ -22,7 +22,7 @@ const PromosSection = () => {
         </h2>
       </div>
       <div className="promos-stack">
-        {promoData.map(({ key }, i) => (
+        {promoData.map(({ key, image }, i) => (
           <div key={key} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
             <div className="promo-row-text">
               <h3 className="promo-row-title">{t(`promos.${key}_title`)}</h3>
