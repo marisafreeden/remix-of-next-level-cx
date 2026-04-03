@@ -1,7 +1,7 @@
 /* Footer */
 .site-footer {
-  background: #ffffff;
-  border-top: 1px solid rgba(10, 15, 24, 0.08);
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  border-top: none;
   padding: 64px 48px 48px;
 }
 
