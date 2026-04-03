@@ -196,15 +196,15 @@ const IntegrationMSDynamics = () => {
       <section className="uc-benefits-section">
         <div className="uc-benefits-grid" style={{ maxWidth: "1200px" }}>
           {[
-            { icon: Zap, eyebrow: "LESS SWITCHING", desc: "Agents stay in Dynamics. No extra tools, no lost context, no reorienting mid-conversation." },
-            { icon: Database, eyebrow: "CLEANER RECORDS", desc: "Outcomes captured in-flow, not chased down after. Your CRM data reflects reality." },
-            { icon: BarChart3, eyebrow: "CONSISTENT AT SCALE", desc: "One workspace means one process. Easier to manage, easier to coach, easier to report on." },
+            { icon: Zap, title: "Less switching", desc: "Agents stay in Dynamics. No extra tools, no lost context, no reorienting mid-conversation." },
+            { icon: Database, title: "Cleaner records", desc: "Outcomes captured in-flow, not chased down after. Your CRM data reflects reality." },
+            { icon: BarChart3, title: "Consistent at scale", desc: "One workspace means one process. Easier to manage, easier to coach, easier to report on." },
           ].map((b, i) => {
             const Icon = b.icon;
             return (
               <div key={i} className="uc-benefit-card">
                 <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
-                <p className="promos-eyebrow" style={{ marginBottom: "6px" }}>{b.eyebrow}</p>
+                <h3 className="uc-benefit-title">{b.title}</h3>
                 <p className="uc-benefit-desc">{b.desc}</p>
               </div>
             );
