@@ -13,14 +13,6 @@ const TestimonialsSection = () => {
   return (
     <section className="testimonials-wrapper">
       <div className="testimonials-inner">
-        <div className="testimonials-header">
-          <div>
-            <h2 className="testimonials-title" style={{ whiteSpace: "nowrap" }}>
-              {t("testimonials.title_line1")}{" "}
-              <span className="testimonials-title-italic" style={{ display: "inline" }}>{t("testimonials.title_line2")}</span>
-            </h2>
-          </div>
-        </div>
 
         <div className="testimonials-carousel-track">
           <div className="testimonials-carousel-slider">
