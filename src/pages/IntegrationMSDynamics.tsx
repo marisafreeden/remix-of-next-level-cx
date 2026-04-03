@@ -165,15 +165,18 @@ const IntegrationMSDynamics = () => {
 
       {/* ─── VALUE ─── */}
       <section className="uc-features-section">
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>WHY IT MATTERS</p>
-          <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Friction is quiet.<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>Until you measure it.</span>
-          </h2>
-          <p className="goai-desc" style={{ maxWidth: "620px", margin: "12px auto 0" }}>
-            Every extra step — the lookup, the copy-paste, the post-call log — adds seconds per call and hours per week. Embedded calling means cleaner records, shorter handle times, and reporting you can trust.
-          </p>
+        <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <PlaceholderImage />
+          <div className="intg-outcome-text">
+            <p className="promos-eyebrow">WHY IT MATTERS</p>
+            <h2 className="promos-title">
+              Friction is quiet.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Until you measure it.</span>
+            </h2>
+            <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
+              Every extra step — the lookup, the copy-paste, the post-call log — adds seconds per call and hours per week. Embedded calling means cleaner records, shorter handle times, and reporting you can trust.
+            </p>
+          </div>
         </div>
       </section>
 
