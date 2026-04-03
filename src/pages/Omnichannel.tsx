@@ -140,8 +140,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ONE WORKSPACE</p>
             <h2 className="promos-title">
-              Six screens per interaction?<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Not anymore.</span>
+              Six screens per call.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Zero with GoContact.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               The average agent jumps between six screens on every interaction. With GoContact, they have one place to get customer history and context — so they can respond faster.
