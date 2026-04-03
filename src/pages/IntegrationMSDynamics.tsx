@@ -227,7 +227,14 @@ const IntegrationMSDynamics = () => {
       </section>
 
       {/* ─── BENEFITS CARDS ─── */}
-      <section className="uc-benefits-section">
+      <section className="uc-benefits-section cc-features-gray">
+        <div className="uc-features-header" style={{ textAlign: "center" }}>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>WHY IT MATTERS</p>
+          <h2 className="promos-title" style={{ textAlign: "center" }}>
+            Less friction.<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>Better outcomes.</span>
+          </h2>
+        </div>
         <div className="uc-benefits-grid" style={{ maxWidth: "1200px" }}>
           {[
             { icon: Zap, title: "Less switching", desc: "Agents stay in Dynamics. No extra tools, no lost context, no reorienting mid-conversation." },
