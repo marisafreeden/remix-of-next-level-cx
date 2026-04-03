@@ -1360,11 +1360,26 @@
   justify-content: center;
 }
 
+.cc-goai-img-wrap {
+  position: relative;
+  display: inline-block;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(40px) saturate(1.6);
+  -webkit-backdrop-filter: blur(40px) saturate(1.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
 .cc-goai-img {
-  width: 85%;
+  width: 100%;
+  max-width: 420px;
   height: auto;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: block;
 }
 
 @media (max-width: 768px) {
