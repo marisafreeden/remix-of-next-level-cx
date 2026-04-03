@@ -1545,9 +1545,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 2px;
+  width: 0;
   height: 24px;
-  background: rgba(67, 181, 191, 0.35);
+  border-left: 1px dashed rgba(67, 181, 191, 0.35);
 }
 
 .goai-flow-branches::after {
