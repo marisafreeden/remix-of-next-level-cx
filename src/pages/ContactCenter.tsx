@@ -184,7 +184,7 @@ const ContactCenter = () => {
       </section>
 
       {/* Security & Compliance */}
-      <section className="cc-security-section" style={{ background: '#F1F4F9' }}>
+      <section className="cc-security-section" style={{ background: '#F9FAFB' }}>
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
           <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
