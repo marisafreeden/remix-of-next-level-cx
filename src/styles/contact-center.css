@@ -1573,9 +1573,9 @@
 }
 
 .goai-flow-branch-line {
-  width: 2px;
+  width: 0;
   height: 24px;
-  background: rgba(67, 181, 191, 0.3);
+  border-left: 1px dashed rgba(67, 181, 191, 0.3);
 }
 
 .goai-flow-branch-line-green {
