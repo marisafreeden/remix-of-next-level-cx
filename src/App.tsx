@@ -13,6 +13,8 @@ import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
 import ContactCenter from "./pages/ContactCenter.tsx";
 import IntegrationMSDynamics from "./pages/IntegrationMSDynamics.tsx";
+import IntegrationSalesforce from "./pages/IntegrationSalesforce.tsx";
+import IntegrationZoho from "./pages/IntegrationZoho.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
