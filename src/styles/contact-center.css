@@ -1161,7 +1161,7 @@
 /* ===== CC GoAI Section ===== */
 .cc-goai-section {
   padding: 96px 48px;
-  background: linear-gradient(135deg, #08040f 0%, #0e0618 40%, #0a0512 100%);
+  background: #07091B;
   position: relative;
   overflow: hidden;
 }
@@ -1169,25 +1169,25 @@
 .cc-goai-section::after {
   content: '';
   position: absolute;
-  top: -40%;
-  left: -15%;
-  width: 55%;
-  height: 180%;
-  background: radial-gradient(ellipse, rgba(80, 40, 160, 0.15) 0%, transparent 65%);
+  top: -20%;
+  right: -10%;
+  width: 60%;
+  height: 120%;
+  background: radial-gradient(ellipse, rgba(86, 83, 255, 0.18) 0%, transparent 65%);
   pointer-events: none;
-  filter: blur(60px);
+  filter: blur(120px);
 }
 
 .cc-goai-section::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(30deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(150deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(270deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-  background-size: 60px 104px, 60px 104px, 60px 60px;
+  bottom: -40%;
+  left: -10%;
+  width: 70%;
+  height: 140%;
+  background: radial-gradient(ellipse, rgba(67, 181, 191, 0.12) 0%, transparent 60%);
   pointer-events: none;
+  filter: blur(140px);
 }
 
 /* Light stats variant */
