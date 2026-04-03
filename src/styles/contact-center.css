@@ -1364,16 +1364,12 @@
 .cc-goai-img-wrap {
   position: relative;
   padding: 24px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-  backdrop-filter: blur(60px) saturate(1.8);
-  -webkit-backdrop-filter: blur(60px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 24px;
-  box-shadow:
-    0 12px 48px rgba(0, 0, 0, 0.5),
-    0 0 80px rgba(86, 83, 255, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: none;
 }
 
 /* GoAI Dashboard Preview */
@@ -1391,8 +1387,8 @@
 }
 
 .goai-dash-stat-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 14px;
   padding: 14px;
   display: flex;
@@ -1418,7 +1414,7 @@
   font-family: 'Instrument Sans', sans-serif;
   font-size: 28px;
   font-weight: 500;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.75);
   letter-spacing: -0.5px;
 }
 
@@ -1432,12 +1428,12 @@
 }
 
 .goai-dash-trend-up {
-  color: #4ade80;
+  color: rgba(74, 222, 128, 0.6);
 }
 
 .goai-dash-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
   border-radius: 14px;
   padding: 16px;
 }
