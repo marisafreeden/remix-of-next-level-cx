@@ -372,11 +372,11 @@
 }
 
 .cta-block-inner {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  padding: 180px 48px;
-  border-radius: 24px;
+  padding: 140px 48px;
+  border-radius: 30px;
   background: none;
   border: none;
   position: relative;
