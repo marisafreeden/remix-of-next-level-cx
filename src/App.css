@@ -504,8 +504,8 @@
 }
 
 .dash-msg-bubble-user {
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(67, 181, 191, 0.08);
+  border: 1px solid rgba(67, 181, 191, 0.15);
   color: #0a0f18;
   font-size: 13px;
   line-height: 1.5;
