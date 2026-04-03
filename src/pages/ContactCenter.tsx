@@ -156,10 +156,13 @@ const ContactCenter = () => {
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          
+          <p className="promos-eyebrow">BUILT FOR YOUR TEAM</p>
           <h2 className="promos-title">
             Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
           </h2>
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Tailored tools and workflows designed for agents, managers, and IT — so everyone works at their best.
+          </p>
         </div>
         <div className="cc-persona-grid">
           {personaKeys.map((key, i) => (
