@@ -78,18 +78,18 @@ const ContactCenter = () => {
         <div className="cc-stats-row">
           <div className="cc-stats-dark-header">
             <h2 className="cc-stats-dark-title">Start Seeing Value<br />on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-            <p style={{ fontFamily: "'Instrument Sans', sans-serif", fontSize: '17px', color: '#555', lineHeight: 1.6, marginTop: '16px', maxWidth: '400px' }}>
-              We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
-            </p>
           </div>
-          <div className="cc-stats-grid-v2">
-            {statKeys.map((key) => (
-              <div key={key} className="cc-stat-v2">
-                <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-                <span className="cc-stat-v2-label text-primary font-normal text-base">{t(`cc_page.${key}_label`)}</span>
-              </div>
-            ))}
-          </div>
+          <p style={{ fontFamily: "'Instrument Sans', sans-serif", fontSize: '17px', color: '#555', lineHeight: 1.6, flex: '1', maxWidth: '520px' }}>
+            We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
+          </p>
+        </div>
+        <div className="cc-stats-grid-v2" style={{ maxWidth: '1600px', margin: '48px auto 0' }}>
+          {statKeys.map((key) => (
+            <div key={key} className="cc-stat-v2">
+              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+              <span className="cc-stat-v2-label text-primary font-normal text-base">{t(`cc_page.${key}_label`)}</span>
+            </div>
+          ))}
         </div>
       </section>
 
