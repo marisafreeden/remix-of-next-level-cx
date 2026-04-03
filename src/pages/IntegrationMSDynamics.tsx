@@ -248,15 +248,18 @@ const IntegrationMSDynamics = () => {
 
       {/* ─── DEPLOYMENT ─── */}
       <section className="uc-features-section">
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>READY IN DAYS</p>
-          <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Installed from the App Store.<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>Running by end of week.</span>
-          </h2>
-          <p className="goai-desc" style={{ maxWidth: "620px", margin: "16px auto 0" }}>
-            No custom integration work. No professional services. GoContact plugs into the Dynamics environment your team already uses — and your IT team already manages.
-          </p>
+        <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <PlaceholderImage />
+          <div className="intg-outcome-text">
+            <p className="promos-eyebrow">READY IN DAYS</p>
+            <h2 className="promos-title">
+              Installed from the App Store.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Running by end of week.</span>
+            </h2>
+            <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
+              No custom integration work. No professional services. GoContact plugs into the Dynamics environment your team already uses — and your IT team already manages.
+            </p>
+          </div>
         </div>
       </section>
 
