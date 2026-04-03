@@ -346,7 +346,7 @@
     "s2_label": "Precision in routing to\nthe right agent",
     "s2_source": "",
     "s3_number": "~42%",
-    "s3_label": "Reduction in time spent navigating IVR",
+    "s3_label": "Reduction in time spent\nnavigating IVR",
     "s3_source": "",
     "s4_number": "3x",
     "s4_label": "Faster agent onboarding with guided workflows",
