@@ -256,6 +256,26 @@ const Partners = () => {
         </div>
       </section>
 
+      {/* ─── WHY BROADVOICE VALUE PROPS ─── */}
+      <section className="uc-features-section cc-features-gray">
+        <div className="uc-benefits-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
+          {[
+            { icon: Shield, title: "No Channel Conflict", desc: "We're 100% partner-only. We never sell direct — your deals are your deals." },
+            { icon: Rocket, title: "Easy Quote & Deal Reg", desc: "Register deals and request quotes in minutes through the partner portal — no friction." },
+            { icon: GraduationCap, title: "Comprehensive Onboarding", desc: "Self-paced certification, live training, and a dedicated team to get you selling fast." },
+          ].map((card, i) => {
+            const Icon = card.icon;
+            return (
+              <div key={i} className="uc-benefit-card">
+                <div className="uc-benefit-icon"><Icon size={24} strokeWidth={1.5} /></div>
+                <h3 className="uc-benefit-title">{card.title}</h3>
+                <p className="uc-benefit-desc">{card.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
       {/* ─── MARKET STATS ─── */}
       <section className="uc-benefits-section" style={{ background: "linear-gradient(135deg, #43B5BF 0%, #27698F 40%, #7042D2 100%)", padding: "96px 48px" }}>
         <div style={{ maxWidth: "1000px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "48px", textAlign: "center" }}>
