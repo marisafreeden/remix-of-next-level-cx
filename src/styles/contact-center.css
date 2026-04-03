@@ -1160,7 +1160,7 @@
 
 /* ===== CC GoAI Section ===== */
 .cc-goai-section {
-  padding: 72px 48px;
+  padding: 96px 48px;
   background: linear-gradient(135deg, #08040f 0%, #0e0618 40%, #0a0512 100%);
   position: relative;
   overflow: hidden;
@@ -1376,7 +1376,7 @@
 
 .cc-goai-img {
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
   height: auto;
   border-radius: 12px;
   display: block;
