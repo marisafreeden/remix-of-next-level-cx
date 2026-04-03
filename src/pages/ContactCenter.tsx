@@ -182,9 +182,11 @@ const ContactCenter = () => {
       {/* Security & Compliance */}
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          
+          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
           <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
-          
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Enterprise-grade certifications and compliance standards your organization can trust.
+          </p>
         </div>
         <div className="cc-security-grid">
           <div className="cc-security-card">
