@@ -47,6 +47,7 @@ const App = () => (
           <Route path="/contact-center/smart-scripting" element={<SmartScripting />} />
           <Route path="/contact-center/self-service" element={<SelfService />} />
           <Route path="/contact-center" element={<ContactCenter />} />
+          <Route path="/legal/acceptable-use" element={<AcceptableUse />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

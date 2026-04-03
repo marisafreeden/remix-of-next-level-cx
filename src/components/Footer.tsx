@@ -64,6 +64,15 @@ const Footer = () => {
       title: t("footer.use_cases"),
       links: [{ label: t("footer.use_cases_posts"), href: "#" }],
     },
+    {
+      title: "Legal",
+      links: [
+        { label: "Acceptable Use", href: "/legal/acceptable-use" },
+        { label: "Privacy Policy", href: "#" },
+        { label: "Terms of Service", href: "#" },
+        { label: "Security", href: "#" },
+      ],
+    },
   ];
 
   return (
