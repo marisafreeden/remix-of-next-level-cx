@@ -24,6 +24,7 @@ const CTABlock = () => {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            objectPosition: 'center 30%',
             zIndex: 0,
           }}
         />
@@ -37,7 +38,7 @@ const CTABlock = () => {
           transform: 'matrix(0.92, 0.39, 0.69, -0.73, 0, 0)',
           top: '-30%',
           left: '-20%',
-          opacity: 0.55,
+          opacity: 0.7,
           zIndex: 1,
           pointerEvents: 'none',
         }} />
@@ -50,7 +51,7 @@ const CTABlock = () => {
           transform: 'matrix(0.92, 0.39, 0.69, -0.73, 0, 0)',
           bottom: '-40%',
           right: '-30%',
-          opacity: 0.45,
+          opacity: 0.6,
           zIndex: 1,
           pointerEvents: 'none',
         }} />
