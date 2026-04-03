@@ -271,17 +271,17 @@ const IntegrationMSDynamics = () => {
       </section>
 
       {/* ─── FINAL CTA ─── */}
-      <section className="uc-benefits-section">
+      <section className="uc-benefits-section" style={{ background: "linear-gradient(135deg, #43B5BF 0%, #27698F 40%, #7042D2 100%)", padding: "96px 48px" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <h2 className="promos-title" style={{ textAlign: "center" }}>
+          <h2 className="promos-title" style={{ textAlign: "center", color: "#fff" }}>
             Your team lives in Dynamics.<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>Your calls should too.</span>
+            <span className="promos-title-italic" style={{ display: "inline", color: "#fff" }}>Your calls should too.</span>
           </h2>
-          <p className="goai-desc" style={{ maxWidth: "600px", margin: "16px auto 32px" }}>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "17px", color: "rgba(255,255,255,0.85)", maxWidth: "600px", margin: "16px auto 32px", lineHeight: 1.6 }}>
             See GoContact in action — a 20-minute demo, configured for your environment.
           </p>
           <div className="intg-hero-ctas">
-            <button className="btn-hero-a">Schedule a Demo <span style={{ fontSize: "18px" }}>→</span></button>
+            <button style={{ background: "#fff", color: "#1a202c", fontFamily: "'Inter', sans-serif", fontWeight: 600, fontSize: "15px", padding: "14px 32px", borderRadius: "10px", border: "none", cursor: "pointer" }}>Schedule a Demo <span style={{ fontSize: "18px" }}>→</span></button>
           </div>
         </div>
       </section>
