@@ -85,10 +85,8 @@
 }
 
 .platform-nav-active {
-  color: #0A0F1A;
+  color: #43B5BF;
   font-weight: 600;
-  border-left: 3px solid #43B5BF;
-  padding-left: 17px;
 }
 
 .platform-display {
