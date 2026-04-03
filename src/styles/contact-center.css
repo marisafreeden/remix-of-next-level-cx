@@ -2642,43 +2642,4 @@
   color: #fff;
 }
 
-/* ===== Subtle Section Fade Transitions ===== */
-.cc-page-wrap > section + section {
-  position: relative;
-}
-
-.cc-page-wrap > section + section::before {
-  content: '';
-  position: absolute;
-  top: -40px;
-  left: 0;
-  right: 0;
-  height: 80px;
-  background: linear-gradient(to bottom, transparent 0%, var(--section-bg, transparent) 100%);
-  pointer-events: none;
-  z-index: 2;
-}
-
-.cc-stats-light {
-  --section-bg: #F1F4F9;
-}
-
-.uc-features-section:not(.cc-features-gray) {
-  --section-bg: #ffffff;
-}
-
-.cc-features-gray {
-  --section-bg: #F1F4F9;
-}
-
-.uc-benefits-section {
-  --section-bg: #ffffff;
-}
-
-.cc-security-section {
-  --section-bg: #F1F4F9;
-}
-
-.testimonials-wrapper {
-  --section-bg: #ffffff;
 }
