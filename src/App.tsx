@@ -49,6 +49,7 @@ const App = () => (
           <Route path="/contact-center/self-service" element={<SelfService />} />
           <Route path="/contact-center" element={<ContactCenter />} />
           <Route path="/legal/acceptable-use" element={<AcceptableUse />} />
+          <Route path="/partners" element={<Partners />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
