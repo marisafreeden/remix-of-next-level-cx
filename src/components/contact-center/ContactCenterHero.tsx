@@ -8,7 +8,6 @@ interface ContactCenterHeroProps {
   subtitle: string;
   requestDemoLabel: string;
   onSave: (copyKey: string, content: string) => void | Promise<void>;
-  children?: React.ReactNode;
 }
 
 const useAnimatedTimer = (startSeconds: number, maxSeconds: number = 180) => {
@@ -38,7 +37,6 @@ const ContactCenterHero = ({
   subtitle,
   requestDemoLabel,
   onSave,
-  children,
 }: ContactCenterHeroProps) => {
   const timer = useAnimatedTimer(92);
   const billingWait = useAnimatedWait();
@@ -213,7 +211,6 @@ const ContactCenterHero = ({
 
           </div>
         </div>
-        {children}
       </div>
     </section>
   );
