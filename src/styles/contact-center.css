@@ -2642,3 +2642,16 @@
   color: #fff;
 }
 
+.cc-footer-band {
+  background: linear-gradient(105.96deg, #1A6B6A 0%, #0C3D5E 65.07%, #3D1F8C 100%);
+}
+
+.cc-footer-band .cta-block-section,
+.cc-footer-band .site-footer {
+  background: transparent;
+}
+
+.cc-footer-band .site-footer {
+  border-top: none;
+}
+

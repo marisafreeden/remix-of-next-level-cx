@@ -200,8 +200,10 @@ const ContactCenter = () => {
 
       <FAQSection />
 
-      <CTABlock />
-      <Footer />
+      <div className="cc-footer-band">
+        <CTABlock />
+        <Footer />
+      </div>
     </div>
   );
 };
