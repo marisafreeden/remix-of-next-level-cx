@@ -1032,7 +1032,8 @@
 .cc-stat-v2 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 12px;
   background: none;
   backdrop-filter: none;
