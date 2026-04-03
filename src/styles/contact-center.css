@@ -1363,34 +1363,212 @@
 
 .cc-goai-img-wrap {
   position: relative;
-  display: inline-block;
-  padding: 20px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
   backdrop-filter: blur(60px) saturate(1.8);
   -webkit-backdrop-filter: blur(60px) saturate(1.8);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 24px;
   box-shadow:
     0 12px 48px rgba(0, 0, 0, 0.5),
-    0 0 80px rgba(86, 83, 255, 0.08),
-    0 0 120px rgba(67, 181, 191, 0.06),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+    0 0 80px rgba(86, 83, 255, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04);
 }
 
-.cc-goai-img {
-  width: 100%;
-  max-width: 520px;
-  height: auto;
-  border-radius: 16px;
-  display: block;
-  opacity: 0.92;
+/* GoAI Dashboard Preview */
+.goai-dash {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 380px;
+}
+
+.goai-dash-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.goai-dash-stat-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.goai-dash-stat-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+.goai-dash-stat-header svg {
+  color: #43B5BF;
+}
+
+.goai-dash-stat-value {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+}
+
+.goai-dash-stat-trend {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.goai-dash-trend-up {
+  color: #4ade80;
+}
+
+.goai-dash-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.goai-dash-card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.goai-dash-card-title svg {
+  color: #43B5BF;
+}
+
+.goai-dash-sentiment-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.goai-dash-sent-pos { background: linear-gradient(90deg, #43B5BF, #4ade80); border-radius: 4px; }
+.goai-dash-sent-neu { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
+.goai-dash-sent-neg { background: linear-gradient(90deg, #f472b6, #7042D2); border-radius: 4px; }
+
+.goai-dash-sentiment-labels {
+  display: flex;
+  gap: 16px;
+}
+
+.goai-dash-sent-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.goai-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.goai-dot-pos { background: #43B5BF; }
+.goai-dot-neu { background: rgba(255, 255, 255, 0.3); }
+.goai-dot-neg { background: #f472b6; }
+
+.goai-dash-agents {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.goai-dash-agent-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goai-dash-agent-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #43B5BF, #7042D2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.goai-dash-agent-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  width: 64px;
+  flex-shrink: 0;
+}
+
+.goai-dash-agent-status {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.35);
+  width: 56px;
+  flex-shrink: 0;
+}
+
+.goai-dash-agent-bar-wrap {
+  flex: 1;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.goai-dash-agent-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #43B5BF, #7042D2);
+  border-radius: 3px;
+}
+
+.goai-dash-agent-score {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  width: 24px;
+  text-align: right;
 }
 
 @media (max-width: 768px) {
   .cc-goai-split {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+  .goai-dash {
+    min-width: unset;
   }
 }
 
