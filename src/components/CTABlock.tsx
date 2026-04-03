@@ -1,10 +1,18 @@
 import { useTranslation } from "react-i18next";
+import ctaBg from "@/assets/cta-bg.png";
 
 const CTABlock = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="cta-block-section">
+    <section
+      className="cta-block-section"
+      style={{
+        backgroundImage: `url(${ctaBg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="cta-block-inner">
         <h2 className="cta-block-title">
           {t("cta_block.title_line1")}<br />
