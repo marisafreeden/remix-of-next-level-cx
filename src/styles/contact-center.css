@@ -267,8 +267,7 @@
   background: #ffffff !important;
   text-align: center;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
+  overflow: hidden;
   border-radius: 0;
 }
 
