@@ -369,7 +369,7 @@
   justify-content: space-between;
   padding: 12px 20px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.4);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .dash-topbar-left {
