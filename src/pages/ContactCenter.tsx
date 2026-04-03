@@ -167,7 +167,7 @@ const ContactCenter = () => {
             Tailored tools and workflows designed for agents, managers, and IT — so everyone works at their best.
           </p>
         </div>
-        <div className="cc-persona-grid">
+        <div className="cc-persona-grid" style={{ position: 'relative', zIndex: 1 }}>
           {personaKeys.map((key, i) => (
             <div key={key} className="cc-persona-card">
               <div className="cc-persona-img-wrap">
