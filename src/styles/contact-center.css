@@ -1375,7 +1375,8 @@
 .goai-flow {
   display: flex;
   flex-direction: column;
-  min-width: 360px;
+  min-width: 320px;
+  max-width: 340px;
 }
 
 .goai-flow-header {
