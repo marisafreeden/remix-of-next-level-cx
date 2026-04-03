@@ -84,11 +84,11 @@ const Omnichannel = () => {
         <div className="intg-hero-inner">
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>OMNICHANNEL CONTACT CENTER</p>
           <h1 className="cc-hero-heading" style={{ fontSize: "56px", marginTop: "16px", marginBottom: "20px" }}>
-            <span className="cc-hero-heading-line" style={{ paddingBottom: "2px" }}>Your customers don't think in channels.</span>
-            <span className="cc-hero-heading-accent">Neither should your contact center.</span>
+            <span className="cc-hero-heading-line" style={{ paddingBottom: "2px" }}>Customers don't think in channels.</span>
+            <span className="cc-hero-heading-accent">Your contact center shouldn't either.</span>
           </h1>
-          <p className="cc-hero-desc" style={{ maxWidth: "660px", margin: "0 auto 40px" }}>
-            GoContact keeps customer conversations connected across channels, so agents can focus on the interaction — not the tool.
+          <p className="cc-hero-desc" style={{ maxWidth: "640px", margin: "0 auto 40px" }}>
+            GoContact keeps conversations connected across voice, chat, email, and SMS — so agents focus on the customer, not the tool.
           </p>
           <div className="intg-hero-ctas">
             <button className="btn-hero-a">Request a Demo <span style={{ fontSize: "18px" }}>→</span></button>
@@ -103,8 +103,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ONE CONVERSATION. EVERY CHANNEL.</p>
             <h2 className="promos-title">
-              Your customers just want help.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Not another tool to navigate.</span>
+              Customers want help.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Not another tool.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               Most contact centers manage voice, chat, email, and texting in separate systems. Agents lose context, customers repeat themselves, and issues take longer to resolve.
@@ -140,8 +140,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ONE WORKSPACE</p>
             <h2 className="promos-title">
-              Six screens per interaction?<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Not anymore.</span>
+              Six screens per call.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Zero with GoContact.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               The average agent jumps between six screens on every interaction. With GoContact, they have one place to get customer history and context — so they can respond faster.
@@ -239,8 +239,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">WHERE CONVERSATIONS CONNECT</p>
             <h2 className="promos-title">
-              Customers bounce between channels.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Your agents shouldn't miss a beat.</span>
+              Channels change.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Context shouldn't.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               They'll start in chat, follow up with a text, and call in if it gets complicated. The omnichannel platform keeps conversations connected so agents always have context.
