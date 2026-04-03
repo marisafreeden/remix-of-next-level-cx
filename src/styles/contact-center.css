@@ -995,6 +995,7 @@
 }
 
 .cc-stats-dark-header {
+  flex: 0 0 380px;
   text-align: left;
   position: relative;
   z-index: 1;
