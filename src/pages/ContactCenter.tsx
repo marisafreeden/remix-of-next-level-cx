@@ -79,7 +79,7 @@ const ContactCenter = () => {
           <div className="cc-stats-dark-header">
             <h2 className="cc-stats-dark-title">Start Seeing Value<br />on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
           </div>
-          <p style={{ fontFamily: "'Instrument Sans', sans-serif", fontSize: '17px', color: '#555', lineHeight: 1.6, flex: '1', maxWidth: '520px' }}>
+          <p className="goai-desc" style={{ flex: '1', marginBottom: 0 }}>
             We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
           </p>
         </div>
