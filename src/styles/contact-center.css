@@ -126,8 +126,8 @@
 .cc-hero-stage-fade {
   position: absolute;
   bottom: 0;
-  left: -200px;
-  right: -200px;
+  left: 0;
+  right: 0;
   height: 200px;
   background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%);
   pointer-events: none;

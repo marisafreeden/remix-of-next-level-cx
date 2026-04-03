@@ -246,9 +246,9 @@ const ContactCenterHero = ({
               <div className="cc-glass-sub-label">This quarter</div>
             </div>
           </div>
-          <div className="cc-hero-stage-fade" />
         </div>
       </div>
+      <div className="cc-hero-stage-fade" />
     </section>
   );
 };
