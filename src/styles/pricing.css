@@ -114,22 +114,28 @@
 }
 
 .pricing-card-popular {
-  border-color: #43B5BF;
-  border-width: 2px;
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(135deg, rgba(67, 181, 191, 0.5), rgba(112, 66, 210, 0.3), rgba(67, 181, 191, 0.4)) border-box;
+  box-shadow: 0 0 0 1px rgba(67, 181, 191, 0.08),
+              0 8px 32px rgba(67, 181, 191, 0.12);
 }
 
 .pricing-popular-badge {
   position: absolute;
-  top: -12px;
-  right: 24px;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  background: #43B5BF;
+  background: linear-gradient(90deg, #3FABBA 0%, #7042D2 100%);
   color: #ffffff;
-  padding: 4px 14px;
+  padding: 5px 18px;
   border-radius: 999px;
   letter-spacing: 0.3px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(67, 181, 191, 0.3);
 }
 
 .pricing-card-name {
