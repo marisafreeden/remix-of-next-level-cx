@@ -12,6 +12,7 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
 import ccFeatureCharts from "@/assets/cc-feature-charts.png";
+import ccGoaiDashboard from "@/assets/cc-goai-dashboard.jpg";
 import ccSmartScripting from "@/assets/cc-smart-scripting.png";
 import ccOmnichannelDiagram from "@/assets/cc-omnichannel-diagram.png";
 import personaAgentsImg from "@/assets/persona-agents.jpg";
