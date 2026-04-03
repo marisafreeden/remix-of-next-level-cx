@@ -250,18 +250,17 @@ const Omnichannel = () => {
       </section>
 
       {/* ─── BUSINESS OUTCOMES ─── */}
-      <section className="uc-features-section">
-        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+      <section className="uc-features-section cc-features-gray">
+        <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>THE RESULT</p>
-          <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Faster answers.<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>Better experiences.</span>
+          <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            Faster answers. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Better experiences.</span>
           </h2>
-          <p className="goai-desc" style={{ maxWidth: "620px", margin: "12px auto 0" }}>
-            With full visibility across channels, agents skip the guesswork and solve issues faster — improving efficiency, speeding up answers, and delivering consistent customer experiences.
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            With full visibility across channels, agents skip the guesswork and solve issues faster.
           </p>
         </div>
-        <div className="uc-benefits-grid" style={{ maxWidth: "900px", margin: "48px auto 0" }}>
+        <div className="uc-benefits-grid">
           {[
             { icon: Zap, title: "Faster response times", desc: "Across every channel, every interaction." },
             { icon: Eye, title: "No more guessing", desc: "Agents see full conversation history — improving FCR and reducing handle time." },
