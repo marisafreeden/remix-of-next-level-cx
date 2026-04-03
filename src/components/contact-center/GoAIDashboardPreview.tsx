@@ -12,8 +12,7 @@ const GoAIDashboardPreview = () => {
     <div className="goai-flow">
       <div className="goai-flow-header">
         <div className="goai-flow-dot goai-flow-dot-green" />
-        <span className="goai-flow-header-title">AI Agent Flow</span>
-        <span className="goai-flow-header-badge">Live</span>
+        <span className="goai-flow-header-title">GoEngage Voice</span>
       </div>
 
       <div className="goai-flow-canvas">
