@@ -38,6 +38,7 @@ const App = () => (
           <Route path="/integrations/ms-dynamics" element={<IntegrationMSDynamics />} />
           <Route path="/integrations/salesforce" element={<IntegrationSalesforce />} />
           <Route path="/integrations/zoho" element={<IntegrationZoho />} />
+          <Route path="/contact-center/omnichannel" element={<Omnichannel />} />
           <Route path="/contact-center" element={<ContactCenter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
