@@ -40,37 +40,38 @@
   border-radius: 999px;
   border: 1.5px solid rgba(10, 15, 24, 0.1);
   overflow: hidden;
-  padding: 4px;
-  background: rgba(10, 15, 24, 0.03);
+  padding: 6px;
+  background: rgba(10, 15, 24, 0.02);
 }
 
 .pricing-tab {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  padding: 10px 28px;
-  border: none;
+  padding: 12px 32px;
+  border: 1.5px solid transparent;
   cursor: pointer;
   background: transparent;
-  color: rgba(10, 15, 24, 0.55);
+  color: rgba(10, 15, 24, 0.4);
   transition: all 0.25s;
   white-space: nowrap;
   border-radius: 999px;
 }
 
 .pricing-tab:hover {
-  color: #0a0f18;
+  color: rgba(10, 15, 24, 0.7);
 }
 
 .pricing-tab-active {
-  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 50%, #7042D2 100%);
-  color: #ffffff;
+  background: #ffffff;
+  color: #0a0f18;
+  border: 1.5px solid rgba(10, 15, 24, 0.12);
   border-radius: 999px;
-  box-shadow: 0 2px 8px rgba(67, 181, 191, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .pricing-tab-active:hover {
-  color: #ffffff;
+  color: #0a0f18;
 }
 
 /* Cards Section */
