@@ -304,7 +304,7 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: 10%;
+  bottom: -120px;
   right: -10%;
   width: 800px;
   height: 800px;
