@@ -209,42 +209,6 @@ const ContactCenterHero = ({
               </div>
             </div>
 
-            {/* Extra stats row */}
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <Phone size={14} strokeWidth={1.5} />
-                <span>First Call Resolution</span>
-              </div>
-              <div className="cc-glass-big-number">78%</div>
-              <div className="cc-glass-sub-label">30-day average</div>
-            </div>
-
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <BarChart3 size={14} strokeWidth={1.5} />
-                <span>Avg Handle Time</span>
-              </div>
-              <div className="cc-glass-big-number">4:32</div>
-              <div className="cc-glass-sub-label">Minutes per call</div>
-            </div>
-
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <Users size={14} strokeWidth={1.5} />
-                <span>SLA Compliance</span>
-              </div>
-              <div className="cc-glass-big-number">94%</div>
-              <div className="cc-glass-sub-label">Calls answered &lt;20s</div>
-            </div>
-
-            <div className="cc-glass-card">
-              <div className="cc-glass-card-header">
-                <MessageSquare size={14} strokeWidth={1.5} />
-                <span>NPS Score</span>
-              </div>
-              <div className="cc-glass-big-number">+62</div>
-              <div className="cc-glass-sub-label">This quarter</div>
-            </div>
           </div>
         </div>
       </div>
