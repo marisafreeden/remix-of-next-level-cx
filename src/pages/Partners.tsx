@@ -336,7 +336,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>GROWTH PROGRAMS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            We invest in partners who <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>invest with us.</span>
+            Grow together. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Win together.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
             We don't just pay commissions — we build partnerships that help you grow your entire practice.
