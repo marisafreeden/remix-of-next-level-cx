@@ -15,6 +15,7 @@ import ContactCenter from "./pages/ContactCenter.tsx";
 import IntegrationMSDynamics from "./pages/IntegrationMSDynamics.tsx";
 import IntegrationSalesforce from "./pages/IntegrationSalesforce.tsx";
 import IntegrationZoho from "./pages/IntegrationZoho.tsx";
+import Omnichannel from "./pages/Omnichannel.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/integrations/ms-dynamics" element={<IntegrationMSDynamics />} />
           <Route path="/integrations/salesforce" element={<IntegrationSalesforce />} />
           <Route path="/integrations/zoho" element={<IntegrationZoho />} />
+          <Route path="/contact-center/omnichannel" element={<Omnichannel />} />
           <Route path="/contact-center" element={<ContactCenter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

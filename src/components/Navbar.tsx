@@ -23,7 +23,7 @@ const megaMenuColumns: MegaMenuColumn[] = [
     heading: "Contact Center",
     href: "/contact-center",
     items: [
-      { title: "Omnichannel", href: "/contact-center", desc: "Engage across voice, chat, email & social" },
+      { title: "Omnichannel", href: "/contact-center/omnichannel", desc: "Engage across voice, chat, email & social" },
       { title: "Dialer", href: "#", desc: "Predictive & progressive outbound calling" },
       { title: "Smart Scripting", href: "#", desc: "Dynamic guided agent workflows" },
       { title: "Self Service", href: "#", desc: "IVR & automated customer journeys" },
