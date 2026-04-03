@@ -1021,7 +1021,7 @@
 
 .cc-stats-grid-v2 {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   gap: 0;
   text-align: left;
