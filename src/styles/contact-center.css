@@ -1787,158 +1787,110 @@
   color: #fbbf24;
 }
 
-/* ===== Insights Preview ===== */
-.goai-insights-body {
-  padding: 16px;
+/* ===== Insights Chat Preview ===== */
+.goai-insights-chat {
+  padding: 14px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  max-height: 380px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
-.goai-insights-kpis {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.goai-chat-row {
+  display: flex;
+  align-items: flex-start;
   gap: 8px;
 }
 
-.goai-insights-kpi {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
+.goai-chat-row-user {
+  justify-content: flex-end;
 }
 
-.goai-insights-kpi-label {
-  font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.35);
+.goai-chat-row-ai {
+  justify-content: flex-start;
 }
 
-.goai-insights-kpi-value {
-  font-family: 'Instrument Sans', sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: -0.5px;
-}
-
-.goai-insights-kpi-trend {
-  font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.goai-insights-trend-up {
-  color: rgba(74, 222, 128, 0.6);
-}
-
-.goai-insights-trend-down {
-  color: rgba(74, 222, 128, 0.6);
-}
-
-.goai-insights-chart-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 12px;
-}
-
-.goai-insights-chart-header {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.45);
-  margin-bottom: 10px;
-}
-
-.goai-insights-chart-header svg {
-  color: #43B5BF;
-}
-
-.goai-insights-chart {
-  display: flex;
-  align-items: flex-end;
-  gap: 4px;
-  height: 60px;
-}
-
-.goai-insights-bar-wrap {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-}
-
-.goai-insights-bar {
-  width: 100%;
-  background: linear-gradient(180deg, rgba(67, 181, 191, 0.4), rgba(67, 181, 191, 0.1));
-  border-radius: 3px 3px 0 0;
-  transition: height 0.3s ease;
-}
-
-.goai-insights-chart-labels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 6px;
-  font-family: 'Inter', sans-serif;
-  font-size: 9px;
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.goai-insights-queues {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-  padding: 12px;
-}
-
-.goai-insights-queue-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.goai-insights-queue-name {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 500;
-  width: 80px;
+.goai-chat-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
-.goai-insights-queue-bar-wrap {
-  flex: 1;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 3px;
-  overflow: hidden;
+.goai-chat-ai-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(67, 181, 191, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #43B5BF;
 }
 
-.goai-insights-queue-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #43B5BF, rgba(67, 181, 191, 0.3));
-  border-radius: 3px;
-}
-
-.goai-insights-queue-count {
+.goai-chat-bubble {
   font-family: 'Inter', sans-serif;
   font-size: 11px;
-  font-weight: 600;
+  line-height: 1.55;
+  border-radius: 12px;
+  padding: 10px 14px;
+  max-width: 85%;
+}
+
+.goai-chat-bubble p {
+  margin: 0;
+}
+
+.goai-chat-bubble strong {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.goai-chat-bubble-user {
+  background: rgba(67, 181, 191, 0.1);
+  border: 1px solid rgba(67, 181, 191, 0.12);
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.goai-chat-bubble-ai {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.5);
-  width: 30px;
-  text-align: right;
+}
+
+.goai-chat-typing {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.goai-chat-typing span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(67, 181, 191, 0.4);
+  animation: goai-typing-pulse 1.4s infinite ease-in-out;
+}
+
+.goai-chat-typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.goai-chat-typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes goai-typing-pulse {
+  0%, 80%, 100% { opacity: 0.3; transform: scale(0.8); }
+  40% { opacity: 1; transform: scale(1); }
 }
 
 /* Bottom branches merge connector */
