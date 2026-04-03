@@ -41,7 +41,7 @@
 .cc-hero-platform-combined {
   padding: 130px 48px 0 !important;
   min-height: auto;
-  max-height: calc(100vh + 380px);
+  max-height: calc(100vh + 340px);
   overflow: hidden;
 }
 
