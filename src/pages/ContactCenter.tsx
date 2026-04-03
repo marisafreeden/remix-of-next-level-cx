@@ -79,7 +79,7 @@ const ContactCenter = () => {
           <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
             <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
             <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
-              We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
+              Proven results from teams that switched to a smarter, AI-powered contact center.
             </p>
           </div>
           <div style={{ flex: 1, display: 'flex' }}>
