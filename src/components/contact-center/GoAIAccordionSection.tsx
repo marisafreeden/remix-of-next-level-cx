@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Headphones, BrainCircuit, TrendingUp, ChevronDown } from "lucide-react";
 import GoAIDashboardPreview from "./GoAIDashboardPreview";
 import AssistPreview from "./AssistPreview";
-import insightsImg from "@/assets/goai-insights-preview.png";
+import InsightsPreview from "./InsightsPreview";
 
 const items = [
   {
@@ -76,16 +76,7 @@ const GoAIAccordionSection = () => {
             <div className="cc-goai-img-wrap">
               {openIndex === 0 && <GoAIDashboardPreview />}
               {openIndex === 1 && <AssistPreview />}
-              {openIndex === 2 && (
-                <img
-                  src={insightsImg}
-                  alt="AI Analyst Dashboard"
-                  loading="lazy"
-                  width={640}
-                  height={800}
-                  style={{ width: '100%', height: 'auto', borderRadius: '12px' }}
-                />
-              )}
+              {openIndex === 2 && <InsightsPreview />}
             </div>
           </div>
         </div>

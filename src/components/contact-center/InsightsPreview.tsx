@@ -1,4 +1,4 @@
-import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, Users, Clock } from "lucide-react";
+import { TrendingUp, ArrowUpRight, ArrowDownRight, BarChart3, Users } from "lucide-react";
 
 const InsightsPreview = () => {
   return (
@@ -34,7 +34,7 @@ const InsightsPreview = () => {
           </div>
         </div>
 
-        {/* Mini chart area */}
+        {/* Mini chart */}
         <div className="goai-insights-chart-card">
           <div className="goai-insights-chart-header">
             <TrendingUp size={12} strokeWidth={1.5} />
@@ -43,10 +43,7 @@ const InsightsPreview = () => {
           <div className="goai-insights-chart">
             {[35, 42, 58, 72, 65, 88, 95, 82, 70, 60, 48, 55].map((h, i) => (
               <div key={i} className="goai-insights-bar-wrap">
-                <div
-                  className="goai-insights-bar"
-                  style={{ height: `${h}%` }}
-                />
+                <div className="goai-insights-bar" style={{ height: `${h}%` }} />
               </div>
             ))}
           </div>
