@@ -1377,12 +1377,17 @@
 }
 
 .cc-goai-img-wrap-dash .dash-preview {
-  margin: 0;
+  width: 100% !important;
+  margin: 0 !important;
   padding: 0;
-  max-width: none;
+  max-height: 420px;
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
 .cc-goai-img-wrap-dash .dash-window {
+  width: 100% !important;
+  max-width: none !important;
   background: rgba(255, 255, 255, 0.03) !important;
   border: none !important;
   box-shadow: none !important;
@@ -1415,17 +1420,25 @@
 .cc-goai-img-wrap-dash .dash-msg-bubble-ai {
   background: rgba(255, 255, 255, 0.04) !important;
   border-color: rgba(255, 255, 255, 0.06) !important;
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.55) !important;
 }
 
 .cc-goai-img-wrap-dash .dash-msg-bubble-ai strong {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .cc-goai-img-wrap-dash .dash-msg-bubble-user {
-  background: rgba(67, 181, 191, 0.12) !important;
-  border-color: rgba(67, 181, 191, 0.15) !important;
-  color: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(67, 181, 191, 0.1) !important;
+  border-color: rgba(67, 181, 191, 0.12) !important;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-msg-ai-avatar {
+  background: rgba(67, 181, 191, 0.15) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-typing span {
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* GoAI Call Flow Builder */
