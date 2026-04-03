@@ -1507,6 +1507,10 @@
   flex-direction: column;
   align-items: center;
   gap: 0;
+  max-height: 380px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
 
 .goai-flow-node {
