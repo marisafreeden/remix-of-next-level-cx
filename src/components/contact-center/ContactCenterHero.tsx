@@ -38,6 +38,7 @@ const ContactCenterHero = ({
   subtitle,
   requestDemoLabel,
   onSave,
+  children,
 }: ContactCenterHeroProps) => {
   const timer = useAnimatedTimer(92);
   const billingWait = useAnimatedWait();
