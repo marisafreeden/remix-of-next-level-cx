@@ -387,13 +387,14 @@
 .cta-block-title {
   font-family: 'Instrument Sans', sans-serif;
   font-weight: 500;
-  font-size: 48px;
-  line-height: 1.2;
-  letter-spacing: -1.5px;
-  background: linear-gradient(105deg, #43B5BF 0%, #7dd3e0 40%, #a78bfa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 64px;
+  line-height: 1.15;
+  letter-spacing: -2px;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
   margin-bottom: 16px;
   display: inline-block;
   padding: 0.15em 0.05em;
@@ -406,7 +407,8 @@
   font-style: italic;
   letter-spacing: 0.2px;
   line-height: 1.08;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
   display: block;
   overflow: visible;
   padding: 0 0.04em 0.16em 0.16em;
@@ -434,8 +436,8 @@
   font-weight: 600;
   padding: 14px 28px;
   border-radius: 100px;
-  background: linear-gradient(105deg, #43B5BF 0%, #7dd3e0 40%, #a78bfa 100%);
-  color: #ffffff;
+  background: #ffffff;
+  color: #0a0f18;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -457,8 +459,8 @@
   padding: 14px 28px;
   border-radius: 100px;
   background: transparent;
-  border: 1.5px solid rgba(125, 211, 224, 0.5);
-  color: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
   text-decoration: none;
   transition: all 0.25s;
 }
