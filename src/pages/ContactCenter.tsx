@@ -23,10 +23,9 @@ import hipaaBadge from "@/assets/hipaa-badge.jpg";
 import gdprBadge from "@/assets/gdpr-badge.jpg";
 import goaiBgLines from "@/assets/goai-bg-lines.svg";
 
-import { useState } from "react";
 import {
   MessageSquare, Bot, BarChart3, Users, ShieldCheck, Lock, BadgeCheck,
-  Zap, MonitorSmartphone, Headphones, BrainCircuit, TrendingUp, ChevronDown
+  Zap, MonitorSmartphone
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useSiteCopy } from "@/hooks/useSiteCopy";
