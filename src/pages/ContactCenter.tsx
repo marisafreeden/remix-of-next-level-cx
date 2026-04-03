@@ -75,16 +75,15 @@ const ContactCenter = () => {
 
       {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-light" style={{ borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
-        <div style={{ maxWidth: '1600px', margin: '0 auto 48px', textAlign: 'center' }}>
-          <h2 className="cc-stats-dark-title" style={{ textAlign: 'center', fontSize: '65px' }}>Start Seeing Value on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-          <p className="goai-desc" style={{ marginBottom: 0, marginTop: '16px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
-            We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
-          </p>
-        </div>
-        <div style={{ width: '100%' }}>
-          <div className="cc-stats-grid-v2" style={{ maxWidth: '1600px', margin: '0 auto' }}>
-            {statKeys.map((key) => (
-              <div key={key} className="cc-stat-v2">
+        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
+          <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
+            <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
+              We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
+            </p>
+          </div>
+          <div style={{ flex: 1, display: 'flex' }}>
+            {statKeys.map((key, i) => (
+              <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.12)', padding: '32px 28px' }}>
                 <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
                 <span className="cc-stat-v2-label text-primary font-normal text-base">{t(`cc_page.${key}_label`)}</span>
               </div>
