@@ -73,7 +73,7 @@ const GoAIAccordionSection = () => {
           </div>
           </div>
           <div className="cc-goai-image-side">
-            <div className="cc-goai-img-wrap" style={openIndex === 2 ? { padding: 0, background: 'none', border: 'none', backdropFilter: 'none' } : undefined}>
+            <div className={`cc-goai-img-wrap ${openIndex === 2 ? 'cc-goai-img-wrap-dash' : ''}`}>
               {openIndex === 0 && <GoAIDashboardPreview />}
               {openIndex === 1 && <AssistPreview />}
               {openIndex === 2 && <DashboardPreview />}
