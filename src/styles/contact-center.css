@@ -1262,76 +1262,112 @@
   background-clip: text;
 }
 
-.cc-goai-features {
+.cc-goai-split {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 56px;
+  align-items: center;
 }
 
-.cc-goai-feature {
+.cc-goai-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.cc-goai-acc-item {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  cursor: pointer;
   text-align: left;
-  padding: 0;
+  width: 100%;
+  transition: all 0.2s;
 }
 
-.cc-goai-glass-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
-  backdrop-filter: blur(40px) saturate(1.6);
-  -webkit-backdrop-filter: blur(40px) saturate(1.6);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 16px;
-  padding: 32px 28px;
-  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+.cc-goai-acc-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.cc-goai-glass-card:hover {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
-  border-color: rgba(80, 40, 160, 0.35);
+.cc-goai-acc-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.cc-goai-feature .uc-benefit-title {
-  color: #ffffff;
-  margin-bottom: 8px;
-  font-size: 24px;
-}
-
-.cc-goai-feature .uc-benefit-desc {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.cc-goai-diagram-wrap {
-  padding: 0;
-}
-
-.cc-goai-diagram-wrap .goai-card {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-.cc-goai-diagram-wrap .goai-card:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(67, 181, 191, 0.35);
-}
-
-.cc-goai-diagram-wrap .goai-card-title {
-  color: #ffffff;
-}
-
-.cc-goai-diagram-wrap .goai-card-desc {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.cc-goai-diagram-wrap .goai-card-icon {
+.cc-goai-acc-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
   background: rgba(67, 181, 191, 0.15);
+  flex-shrink: 0;
+}
+
+.cc-goai-acc-icon svg {
+  color: #43B5BF;
+}
+
+.cc-goai-acc-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  flex: 1;
+  transition: color 0.2s;
+}
+
+.cc-goai-acc-open .cc-goai-acc-title {
+  color: #ffffff;
+}
+
+.cc-goai-acc-chevron {
+  color: rgba(255, 255, 255, 0.3);
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+
+.cc-goai-acc-chevron-open {
+  transform: rotate(180deg);
+}
+
+.cc-goai-acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.cc-goai-acc-body-open {
+  max-height: 160px;
+  padding-top: 12px;
+}
+
+.cc-goai-acc-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+  padding-left: 52px;
+}
+
+.cc-goai-image-side {
+  position: relative;
+}
+
+.cc-goai-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
-  .cc-goai-features {
+  .cc-goai-split {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
   }
 }
 
