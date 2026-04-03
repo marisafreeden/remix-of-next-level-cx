@@ -318,7 +318,32 @@ const Partners = () => {
         </div>
       </section>
 
-      {/* ─── ENABLEMENT ─── */}
+      {/* ─── PARTNER TESTIMONIAL ─── */}
+      <section style={{ padding: "96px 48px", background: "#ffffff" }}>
+        <div style={{ maxWidth: "1000px", margin: "0 auto", display: "grid", gridTemplateColumns: "280px 1fr", gap: "64px", alignItems: "center" }}>
+          <div style={{ width: "280px", height: "280px", borderRadius: "20px", background: "#F1F5F9", border: "1px solid rgba(10,15,24,0.06)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+            <div className="intg-placeholder" style={{ aspectRatio: "1", width: "100%", height: "100%", borderRadius: "20px" }}>
+              <div className="intg-placeholder-inner">
+                {Array.from({ length: 9 }).map((_, i) => (
+                  <div key={i} className="intg-placeholder-sq" />
+                ))}
+              </div>
+            </div>
+          </div>
+          <div>
+            <div style={{ fontSize: "48px", lineHeight: 1, color: "#43B5BF", fontFamily: "'Instrument Sans', sans-serif", marginBottom: "16px" }}>"</div>
+            <blockquote style={{ fontFamily: "'Instrument Sans', sans-serif", fontSize: "28px", fontWeight: 500, lineHeight: 1.4, letterSpacing: "-0.8px", color: "#0a0f18", margin: "0 0 24px" }}>
+              Broadvoice doesn't compete with us — they compete for us. The support, the tools, and the commission structure are the best I've seen in the channel.
+            </blockquote>
+            <div>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "16px", fontWeight: 600, color: "#0a0f18", margin: 0 }}>Partner Name</p>
+              <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "14px", color: "#4a5568", margin: "4px 0 0" }}>Title, Company Name</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section className="uc-features-section">
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <PlaceholderImage />
