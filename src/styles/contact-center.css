@@ -1020,8 +1020,7 @@
 }
 
 .cc-stats-grid-v2 {
-  max-width: 1600px;
-  margin: 0 auto;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
