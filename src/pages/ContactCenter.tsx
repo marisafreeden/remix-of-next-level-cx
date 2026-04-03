@@ -127,7 +127,7 @@ const ContactCenter = () => {
       <section className="uc-features-section cc-features-gray">
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow">{t("cc_page.features_eyebrow")}</p>
-          <h2 className="promos-title" style={{ background: 'linear-gradient(90.4deg, #43B5BF 82%, #27698F 41.13%, #C686F8 2.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+          <h2 className="promos-title" style={{ background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
             The features that move the <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>needle.</span>
           </h2>
         </div>
