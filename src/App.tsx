@@ -35,6 +35,8 @@ const App = () => (
           <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/integrations/ms-dynamics" element={<IntegrationMSDynamics />} />
+          <Route path="/integrations/salesforce" element={<IntegrationSalesforce />} />
+          <Route path="/integrations/zoho" element={<IntegrationZoho />} />
           <Route path="/contact-center" element={<ContactCenter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
