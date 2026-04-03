@@ -1579,7 +1579,7 @@
 }
 
 .goai-flow-branch-line-green {
-  background: rgba(74, 222, 128, 0.35);
+  border-color: rgba(74, 222, 128, 0.35);
 }
 
 /* Bottom branches merge connector */
