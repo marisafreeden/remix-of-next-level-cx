@@ -1519,9 +1519,9 @@
 }
 
 .goai-flow-connector-line {
-  width: 2px;
+  width: 0;
   flex: 1;
-  background: rgba(67, 181, 191, 0.35);
+  border-left: 1px dashed rgba(67, 181, 191, 0.35);
 }
 
 .goai-flow-connector-arrow {
