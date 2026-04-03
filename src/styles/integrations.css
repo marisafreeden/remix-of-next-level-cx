@@ -1,0 +1,429 @@
+/* ===== Integration Pages ===== */
+
+.intg-page {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero */
+.intg-hero {
+  position: relative;
+  padding: 200px 48px 96px;
+  text-align: center;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.intg-hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 80% 100% at 50% 100%, black 0%, black 35%, transparent 85%);
+  mask-image: radial-gradient(ellipse 80% 100% at 50% 100%, black 0%, black 35%, transparent 85%);
+}
+
+.intg-hero-bg::before,
+.intg-hero-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
+.intg-hero-bg::before {
+  width: 60%;
+  height: 80%;
+  left: -5%;
+  bottom: -20%;
+  background: #43b5bf;
+  opacity: 0.18;
+}
+
+.intg-hero-bg::after {
+  width: 60%;
+  height: 80%;
+  right: -5%;
+  bottom: -20%;
+  background: #7a6fd4;
+  opacity: 0.12;
+}
+
+.intg-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.intg-hero-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #338FAD;
+  margin-bottom: 20px;
+}
+
+.intg-hero-h1 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.15;
+  letter-spacing: -2.5px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+}
+
+.intg-hero-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4a5568;
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.intg-hero-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Value Prop */
+.intg-value {
+  padding: 96px 48px;
+  background: #F9FAFB;
+}
+
+.intg-value-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intg-section-eyebrow {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #338FAD;
+  margin-bottom: 16px;
+}
+
+.intg-section-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+}
+
+.intg-section-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Benefits Grid */
+.intg-benefits {
+  padding: 96px 48px;
+  background: #ffffff;
+}
+
+.intg-benefits-grid {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.intg-benefit-card {
+  background: #F9FAFB;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 16px;
+  padding: 32px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.intg-benefit-card:hover {
+  border-color: rgba(67, 181, 191, 0.25);
+  box-shadow: 0 4px 20px rgba(67, 181, 191, 0.08);
+}
+
+.intg-benefit-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(67, 181, 191, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: #43B5BF;
+}
+
+.intg-benefit-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  color: #0a0f18;
+  margin-bottom: 10px;
+}
+
+.intg-benefit-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4a5568;
+}
+
+/* Placeholder Image */
+.intg-placeholder {
+  width: 100%;
+  aspect-ratio: 16/10;
+  background: #F1F5F9;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intg-placeholder-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.intg-placeholder-sq {
+  aspect-ratio: 1;
+  background: rgba(67, 181, 191, 0.08);
+  border: 1px solid rgba(67, 181, 191, 0.15);
+  border-radius: 10px;
+}
+
+/* Features Grid */
+.intg-features {
+  padding: 96px 48px;
+  background: #F9FAFB;
+}
+
+.intg-features-grid {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.intg-feature-card {
+  background: #ffffff;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 16px;
+  padding: 32px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.intg-feature-card:hover {
+  border-color: rgba(67, 181, 191, 0.25);
+  box-shadow: 0 4px 20px rgba(67, 181, 191, 0.08);
+}
+
+.intg-feature-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  color: #0a0f18;
+  margin-bottom: 10px;
+}
+
+.intg-feature-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #4a5568;
+}
+
+/* Outcome / Two-column section */
+.intg-outcome {
+  padding: 96px 48px;
+  background: #ffffff;
+}
+
+.intg-outcome-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.intg-outcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intg-outcome-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+/* Audience cards */
+.intg-audience {
+  padding: 96px 48px;
+  background: #F9FAFB;
+}
+
+.intg-audience-grid {
+  max-width: 1200px;
+  margin: 48px auto 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.intg-audience-card {
+  background: #ffffff;
+  border: 1px solid rgba(10, 15, 24, 0.06);
+  border-radius: 16px;
+  padding: 28px;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.intg-audience-card:hover {
+  border-color: rgba(67, 181, 191, 0.25);
+  box-shadow: 0 4px 20px rgba(67, 181, 191, 0.08);
+}
+
+.intg-audience-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: #0a0f18;
+  margin-bottom: 10px;
+}
+
+.intg-audience-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4a5568;
+}
+
+/* How it works */
+.intg-how {
+  padding: 96px 48px;
+  background: #ffffff;
+}
+
+.intg-how-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Trust / Proof */
+.intg-trust {
+  padding: 96px 48px;
+  background: #F9FAFB;
+}
+
+.intg-trust-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Bottom CTA */
+.intg-cta {
+  padding: 96px 48px;
+  background: #ffffff;
+}
+
+.intg-cta-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intg-cta-title {
+  font-family: 'Instrument Sans', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.intg-cta-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 32px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .intg-benefits-grid,
+  .intg-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .intg-audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .intg-outcome-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .intg-hero { padding: 160px 24px 64px; }
+  .intg-hero-h1 { font-size: 36px; letter-spacing: -1.5px; }
+  .intg-section-title { font-size: 30px; }
+  .intg-benefits-grid,
+  .intg-features-grid,
+  .intg-audience-grid {
+    grid-template-columns: 1fr;
+  }
+  .intg-hero,
+  .intg-value,
+  .intg-benefits,
+  .intg-features,
+  .intg-outcome,
+  .intg-audience,
+  .intg-how,
+  .intg-trust,
+  .intg-cta {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
