@@ -83,6 +83,7 @@ const GoAIDashboardPreview = () => {
         {/* Outcome branches */}
         <div className="goai-flow-branches goai-flow-branches-two goai-flow-branches-bottom">
           <div className="goai-flow-branch-path">
+            <div className="goai-flow-branch-label goai-flow-branch-label-green">Yes</div>
             <div className="goai-flow-branch-line goai-flow-branch-line-green" />
             <div className="goai-flow-node goai-flow-node-small goai-flow-node-end">
               <div className="goai-flow-node-icon goai-flow-icon-end"><CheckCircle size={14} strokeWidth={1.5} /></div>
@@ -93,6 +94,7 @@ const GoAIDashboardPreview = () => {
             </div>
           </div>
           <div className="goai-flow-branch-path">
+            <div className="goai-flow-branch-label">No</div>
             <div className="goai-flow-branch-line" />
             <div className="goai-flow-node goai-flow-node-small goai-flow-node-escalate">
               <div className="goai-flow-node-icon goai-flow-icon-escalate"><Headphones size={14} strokeWidth={1.5} /></div>
