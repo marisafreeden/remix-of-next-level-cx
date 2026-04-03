@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { ChevronRight } from "lucide-react";
 import promoChartsImg from "@/assets/promo-charts.png";
 import promoTimelineImg from "@/assets/promo-timeline.png";
 
 const promoData = [
-  { key: "promo1", image: promoChartsImg },
-  { key: "promo2", image: promoTimelineImg },
-  { key: "promo3", image: promoChartsImg },
+  { key: "promo1", image: promoChartsImg, eyebrow: "FAST DEPLOYMENT" },
+  { key: "promo2", image: promoTimelineImg, eyebrow: "ONGOING SUPPORT" },
+  { key: "promo3", image: promoChartsImg, eyebrow: "BUILT TO SCALE" },
 ];
 
 const PromosSection = () => {
@@ -21,24 +20,25 @@ const PromosSection = () => {
           <span className="promos-title-italic">{t("promos.title_line2")}</span>
         </h2>
       </div>
-      <div className="promos-stack">
-        {promoData.map(({ key, image }, i) => (
-          <div key={key} className={`promo-row ${i % 2 === 1 ? "promo-row-reverse" : ""}`}>
-            <div className="promo-row-text">
-              <h3 className="promo-row-title">{t(`promos.${key}_title`)}</h3>
-              <p className="promo-row-desc">{t(`promos.${key}_desc`)}</p>
-              <button className="promo-row-cta">
-                Learn more <ChevronRight size={16} />
+      <div className="cc-alt-features">
+        {promoData.map(({ key, image, eyebrow }, i) => (
+          <div key={key} className={`cc-alt-row ${i % 2 === 1 ? "cc-alt-row-reverse" : ""}`}>
+            <div className="cc-alt-text">
+              <p className="promos-eyebrow">{eyebrow}</p>
+              <h3 className="cc-alt-heading">{t(`promos.${key}_title`)}</h3>
+              <p className="cc-alt-desc">{t(`promos.${key}_desc`)}</p>
+              <button className="cc-alt-cta">
+                Learn more <span>→</span>
               </button>
             </div>
-            <div className="promo-row-image-wrap">
+            <div className="cc-alt-image-side">
               <img
                 src={image}
                 alt={t(`promos.${key}_title`)}
                 loading="lazy"
                 width={1280}
                 height={960}
-                className="promo-row-image"
+                className="cc-alt-img"
               />
             </div>
           </div>
