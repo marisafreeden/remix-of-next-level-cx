@@ -10,7 +10,9 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
-import { Clock, Zap, Heart, Database, Users, TrendingUp, BarChart3 } from "lucide-react";
+import {
+  Check, Zap, Database, BarChart3, Phone, LogIn, ListChecks, FileText, Mic, Shield, UserCheck, ClipboardList
+} from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -24,48 +26,51 @@ const PlaceholderImage = () => (
   </div>
 );
 
+const painPoints = [
+  "Agents search for records while the customer is already on the line.",
+  "They copy and paste details between systems.",
+  "They log outcomes after the call wraps up.",
+  "They spend more time on admin and less time on the conversation.",
+];
+
+const howItWorksSteps = [
+  "Agents log in directly from the CRM.",
+  "They select their queue or campaign.",
+  "Inbound and outbound calls are handled from the panel.",
+  "At the end of the conversation, the call outcome is captured.",
+  "Interaction details and notes are recorded in the contact record.",
+  "Recordings remain in the contact center platform.",
+];
+
+const included = [
+  "Embedded call panel inside Microsoft Dynamics",
+  "Inbound and outbound call handling",
+  "Queue and campaign selection",
+  "Call outcome capture",
+  "Interaction details saved to the contact record",
+  "SAML authentication",
+  "Role-based access controls",
+  "Compliance-ready audit trails",
+];
+
 const benefits = [
   {
-    icon: Clock,
-    eyebrow: "FASTER RESOLUTION",
-    title: "Help agents solve issues without slowing customers down.",
-    desc: "When the right customer information is easier to access during an interaction, agents can move faster, reduce repetition, and focus on the conversation instead of the systems behind it.",
-  },
-  {
     icon: Zap,
-    eyebrow: "LOWER AGENT EFFORT",
-    title: "Cut the admin work that drags productivity down.",
-    desc: "Manual updates and constant switching between tools add unnecessary effort to every interaction. A more connected workflow helps teams spend less time on busywork and more time helping customers.",
-  },
-  {
-    icon: Heart,
-    eyebrow: "BETTER CUSTOMER EXPERIENCES",
-    title: "Make every conversation feel more informed.",
-    desc: "Customers expect businesses to know who they are and why they are reaching out. Bringing CRM context closer to the interaction helps teams deliver more personalized, consistent experiences.",
+    eyebrow: "BETTER AGENT WORKFLOWS",
+    title: "Less switching, less admin, more focus.",
+    desc: "Agents should not have to split their attention between the CRM and the contact center. By bringing calling into Dynamics, GoContact helps teams spend less time managing systems and more time handling conversations efficiently.",
   },
   {
     icon: Database,
-    eyebrow: "STRONGER CRM DATA",
-    title: "Keep records useful without adding more work.",
-    desc: "Customer data is only valuable when teams can keep it current. A tighter connection between Microsoft Dynamics and GoContact helps reduce gaps, improve consistency, and support a more complete customer view.",
-  },
-];
-
-const useCases = [
-  {
-    eyebrow: "FOR SERVICE TEAMS",
-    title: "Resolve issues faster and with less back-and-forth.",
-    desc: "Give agents the context they need to understand the customer faster and move toward resolution with fewer delays.",
+    eyebrow: "CLEANER CUSTOMER HISTORY",
+    title: "Keep interaction records aligned without extra effort.",
+    desc: "When outcomes and notes are captured as part of the workflow, teams can maintain a more complete and trackable customer record without relying on manual follow-up.",
   },
   {
-    eyebrow: "FOR SALES TEAMS",
-    title: "Turn every interaction into a more productive conversation.",
-    desc: "Help teams engage with better timing, better context, and less friction between outreach and CRM workflows.",
-  },
-  {
-    eyebrow: "FOR OPERATIONS LEADERS",
-    title: "Improve efficiency without sacrificing experience.",
-    desc: "Reduce workflow friction, support cleaner processes, and help teams deliver better outcomes at scale.",
+    icon: BarChart3,
+    eyebrow: "MORE CONSISTENT OPERATIONS",
+    title: "Make the process easier to manage at scale.",
+    desc: "A single workspace helps create more consistent agent workflows, better recordkeeping, and clearer operational visibility across teams using Dynamics every day.",
   },
 ];
 
@@ -88,32 +93,130 @@ const IntegrationMSDynamics = () => {
         <div className="intg-hero-inner">
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>MICROSOFT DYNAMICS INTEGRATION</p>
           <h1 className="cc-hero-heading" style={{ fontSize: "56px", marginTop: "16px", marginBottom: "20px" }}>
-            <span className="cc-hero-heading-line">Your CRM knows the customer.</span>
-            <span className="cc-hero-heading-accent">Your contact center should too.</span>
+            <span className="cc-hero-heading-line">Run customer conversations</span>
+            <span className="cc-hero-heading-accent">inside Dynamics.</span>
           </h1>
-          <p className="cc-hero-desc" style={{ maxWidth: "680px", margin: "0 auto 40px" }}>
-            When agents have to jump between systems, conversations slow down and customer frustration rises. Connecting Microsoft Dynamics with GoContact helps your team work from the same customer context so they can respond faster, personalize every interaction, and reduce manual effort.
+          <p className="cc-hero-desc" style={{ maxWidth: "700px", margin: "0 auto 40px" }}>
+            Most teams use Microsoft Dynamics as their source of truth, but calls still happen somewhere else. That gap creates extra work for agents and inconsistency for customers. GoContact brings calling into Dynamics so teams can stay in one workspace, reduce manual effort, and keep every interaction connected to the customer record.
           </p>
           <div className="intg-hero-ctas">
-            <button className="btn-hero-a">Book a demo <span style={{ fontSize: "18px" }}>→</span></button>
+            <button className="btn-hero-a">Request a Demo <span style={{ fontSize: "18px" }}>→</span></button>
+            <button className="btn-hero-b">See It Working</button>
           </div>
         </div>
       </section>
 
-      {/* Problem / Solution */}
+      {/* Problem Section */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>DISCONNECTED TOOLS</p>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>DISCONNECTED WORKFLOWS</p>
           <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Too many tabs.<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>Not enough context.</span>
+            Stop making agents work<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>in two systems.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: "700px", margin: "12px auto 0" }}>
-            Service and sales teams lose time when customer data lives in one place and conversations happen in another. That disconnect leads to longer handle times, repetitive questions, and inconsistent follow-up.
+            When calls happen outside the CRM, agents lose time switching tabs, searching for records, copying information, and cleaning up data after the conversation ends. That friction adds up fast.
+          </p>
+          <div style={{ maxWidth: "560px", margin: "28px auto 0", textAlign: "left", display: "flex", flexDirection: "column", gap: "12px" }}>
+            {painPoints.map((point, i) => (
+              <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                <span style={{ color: "#E53E3E", fontSize: "14px", marginTop: "3px", flexShrink: 0 }}>✕</span>
+                <span className="goai-desc" style={{ margin: 0 }}>{point}</span>
+              </div>
+            ))}
+          </div>
+          <p className="goai-desc" style={{ maxWidth: "700px", margin: "28px auto 0" }}>
+            GoContact helps remove that disconnect by bringing call handling directly into Microsoft Dynamics.
+          </p>
+        </div>
+      </section>
+
+      {/* Solution Section */}
+      <section className="uc-features-section">
+        <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div className="intg-outcome-text">
+            <p className="promos-eyebrow">ONE WORKSPACE</p>
+            <h2 className="promos-title">
+              Keep calls and customer records<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>in the same place.</span>
+            </h2>
+            <p className="uc-benefit-desc" style={{ maxWidth: "520px" }}>
+              GoContact installs inside Microsoft Dynamics as an embedded panel, so agents can handle conversations without leaving the CRM. They log in from Dynamics, select their queue or campaign, and manage inbound and outbound calls from the same workspace where customer data already lives.
+            </p>
+            <p className="uc-benefit-desc" style={{ maxWidth: "520px", marginTop: "12px" }}>
+              When the call ends, outcomes and notes are saved to the contact record automatically, helping teams maintain a cleaner, more consistent interaction history without the extra cleanup later.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px", marginTop: "16px" }}>
+              {["No extra tabs.", "No duplicate logging.", "No disconnected workflows."].map((line, i) => (
+                <span key={i} style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", fontWeight: 600, color: "#0a0f18" }}>{line}</span>
+              ))}
+            </div>
+          </div>
+          <PlaceholderImage />
+        </div>
+      </section>
+
+      {/* Value Section */}
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>WHY IT MATTERS</p>
+          <h2 className="promos-title" style={{ textAlign: "center" }}>
+            Reduce friction for agents and<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>make reporting easier.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: "700px", margin: "12px auto 0" }}>
+            When calls and CRM activity live in separate systems, every interaction creates more work. Handle times increase, post-call tasks pile up, and reporting becomes harder to trust.
           </p>
           <p className="goai-desc" style={{ maxWidth: "700px", margin: "16px auto 0" }}>
-            With Microsoft Dynamics and GoContact working together, teams can engage customers with better context and less friction.
+            With GoContact embedded in Dynamics, agents stay focused in one place and interaction history stays more consistent. That means less effort during the conversation, less manual work after it, and better visibility across the customer journey.
           </p>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="uc-features-section">
+        <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <PlaceholderImage />
+          <div className="intg-outcome-text">
+            <p className="promos-eyebrow">EMBEDDED EXPERIENCE</p>
+            <h2 className="promos-title">
+              A simpler way to handle calls<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>inside Dynamics.</span>
+            </h2>
+            <p className="uc-benefit-desc" style={{ maxWidth: "520px" }}>
+              GoContact appears as a panel inside Microsoft Dynamics, giving agents access to calling without forcing them into a separate tool.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "16px" }}>
+              {howItWorksSteps.map((step, i) => (
+                <div key={i} style={{ display: "flex", gap: "10px", alignItems: "flex-start" }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "13px", fontWeight: 600, color: "#338FAD", marginTop: "2px", flexShrink: 0 }}>{i + 1}.</span>
+                  <span className="uc-benefit-desc" style={{ margin: 0 }}>{step}</span>
+                </div>
+              ))}
+            </div>
+            <p className="uc-benefit-desc" style={{ maxWidth: "520px", marginTop: "16px" }}>
+              The result is a more connected workflow that helps teams move faster while keeping customer history aligned.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What's Included */}
+      <section className="uc-benefits-section">
+        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>BUILT IN</p>
+          <h2 className="promos-title" style={{ textAlign: "center" }}>
+            Everything teams need to work<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>from one system.</span>
+          </h2>
+        </div>
+        <div style={{ maxWidth: "720px", margin: "40px auto 0", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px 48px" }}>
+          {included.map((item, i) => (
+            <div key={i} style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+              <Check size={18} strokeWidth={2.5} style={{ color: "#43B5BF", marginTop: "2px", flexShrink: 0 }} />
+              <span style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", lineHeight: 1.6, color: "#1a202c" }}>{item}</span>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -134,56 +237,33 @@ const IntegrationMSDynamics = () => {
         </div>
       </section>
 
-      {/* Why It Matters */}
-      <section className="uc-benefits-section">
-        <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <div className="intg-outcome-text">
-            <p className="promos-eyebrow">CUSTOMER EXPECTATIONS</p>
-            <h2 className="promos-title">
-              Better conversations start<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>with better context.</span>
-            </h2>
-            <p className="uc-benefit-desc" style={{ maxWidth: "520px" }}>
-              Customers should not have to repeat themselves every time they call. When agents have quicker access to relevant customer information, they can handle conversations with more confidence and continuity.
-            </p>
-          </div>
-          <PlaceholderImage />
-        </div>
-      </section>
-
-      {/* Use Cases */}
-      <section className="uc-features-section">
-        <div className="uc-features-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>USE CASES</p>
-          <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Built for the teams that<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>talk to your customers.</span>
-          </h2>
-        </div>
-        <div className="intg-audience-grid" style={{ maxWidth: "1200px", margin: "48px auto 0", gridTemplateColumns: "repeat(3, 1fr)" }}>
-          {useCases.map((u, i) => (
-            <div key={i} className="uc-benefit-card">
-              <p className="promos-eyebrow" style={{ marginBottom: "8px" }}>{u.eyebrow}</p>
-              <h3 className="uc-benefit-title">{u.title}</h3>
-              <p className="uc-benefit-desc">{u.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Closing Section */}
+      {/* Deployment / Trust */}
       <section className="uc-benefits-section">
         <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>CONNECTED EXPERIENCE</p>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>READY TO DEPLOY</p>
           <h2 className="promos-title" style={{ textAlign: "center" }}>
-            Bring customer data and customer<br />
-            <span className="promos-title-italic" style={{ display: "inline" }}>conversations together.</span>
+            Built to fit the way your<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>teams already work.</span>
+          </h2>
+          <p className="goai-desc" style={{ maxWidth: "700px", margin: "20px auto 0" }}>
+            GoContact is installed through the Microsoft Dynamics App Store and supported directly by Broadvoice, making it easier to bring calling into the CRM environment your teams already use.
+          </p>
+        </div>
+      </section>
+
+      {/* Demo CTA */}
+      <section className="uc-features-section">
+        <div style={{ maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
+          <p className="promos-eyebrow" style={{ textAlign: "center" }}>SEE IT IN ACTION</p>
+          <h2 className="promos-title" style={{ textAlign: "center" }}>
+            If your team lives in Dynamics,<br />
+            <span className="promos-title-italic" style={{ display: "inline" }}>your conversations should too.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: "700px", margin: "20px auto 32px" }}>
-            Microsoft Dynamics and GoContact help teams close the gap between CRM and contact center workflows so they can work smarter, respond faster, and deliver a better experience from the first interaction onward.
+            See how GoContact helps agents handle inbound and outbound calls inside Microsoft Dynamics while keeping outcomes, notes, and customer records connected.
           </p>
           <div className="intg-hero-ctas">
-            <button className="btn-hero-a">Talk to an expert <span style={{ fontSize: "18px" }}>→</span></button>
+            <button className="btn-hero-a">Schedule a Demo <span style={{ fontSize: "18px" }}>→</span></button>
           </div>
         </div>
       </section>
