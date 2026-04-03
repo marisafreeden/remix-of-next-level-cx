@@ -8,6 +8,7 @@ interface ContactCenterHeroProps {
   subtitle: string;
   requestDemoLabel: string;
   onSave: (copyKey: string, content: string) => void | Promise<void>;
+  children?: React.ReactNode;
 }
 
 const useAnimatedTimer = (startSeconds: number, maxSeconds: number = 180) => {
