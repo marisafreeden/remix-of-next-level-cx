@@ -155,9 +155,10 @@ const ContactCenter = () => {
 
       {/* Personas */}
       <section className="uc-benefits-section" style={{ background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', width: '400px', height: '400px', background: 'rgba(63, 171, 186, 0.12)', filter: 'blur(120px)', borderRadius: '50%', top: '10%', left: '-5%', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', width: '350px', height: '350px', background: 'rgba(67, 181, 191, 0.10)', filter: 'blur(100px)', borderRadius: '50%', bottom: '5%', right: '-3%', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', width: '300px', height: '300px', background: 'rgba(63, 171, 186, 0.08)', filter: 'blur(110px)', borderRadius: '50%', top: '50%', left: '40%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '500px', height: '500px', background: 'rgba(63, 171, 186, 0.18)', filter: 'blur(120px)', borderRadius: '50%', top: '5%', left: '-8%', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '450px', height: '450px', background: 'rgba(67, 181, 191, 0.16)', filter: 'blur(100px)', borderRadius: '50%', bottom: '0%', right: '-5%', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '400px', height: '400px', background: 'rgba(63, 171, 186, 0.14)', filter: 'blur(110px)', borderRadius: '50%', top: '50%', left: '35%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', width: '350px', height: '350px', background: 'rgba(60, 165, 180, 0.12)', filter: 'blur(90px)', borderRadius: '50%', top: '30%', right: '20%', pointerEvents: 'none' }} />
         <div className="uc-benefits-header" style={{ textAlign: "center", position: 'relative', zIndex: 1 }}>
           <p className="promos-eyebrow">BUILT FOR YOUR TEAM</p>
           <h2 className="promos-title">
