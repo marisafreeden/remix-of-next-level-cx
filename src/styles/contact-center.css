@@ -1099,7 +1099,9 @@
 
 /* Light stats variant */
 .cc-stats-light {
-  background: #F3F4F6;
+  background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .cc-stats-light .cc-stats-dark-title {
@@ -1116,11 +1118,8 @@
 .cc-stats-light .cc-stat-v2 {
   background: none;
   backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  border: none;
-  border-right: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 0;
-  padding: 24px 32px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 28px 40px;
 }
 
 .cc-stats-light .cc-stat-v2:last-child {
@@ -1128,7 +1127,9 @@
 }
 
 .cc-stats-light .cc-stat-v2-label {
-  color: #666666;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(10, 15, 24, 0.5);
 }
 
 .cc-stats-light .cc-stats-caption {
