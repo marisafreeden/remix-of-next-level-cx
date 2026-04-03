@@ -1399,9 +1399,9 @@
 
 .goai-flow-header-title {
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  font-weight: 600;
+  color: #43B5BF;
   flex: 1;
 }
 
