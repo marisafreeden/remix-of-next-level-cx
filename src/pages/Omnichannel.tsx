@@ -235,7 +235,7 @@ const Omnichannel = () => {
       </section>
 
       {/* ─── OPERATIONAL SHIFT ─── */}
-      <section className="uc-benefits-section">
+      <section className="uc-benefits-section" style={{ background: "#ffffff" }}>
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <PlaceholderImage />
           <div className="intg-outcome-text">
