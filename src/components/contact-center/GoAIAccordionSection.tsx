@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Headphones, BrainCircuit, TrendingUp, ChevronDown } from "lucide-react";
-import ccGoaiDashboard from "@/assets/cc-goai-dashboard.jpg";
+import GoAIDashboardPreview from "./GoAIDashboardPreview";
 
 const items = [
   {
