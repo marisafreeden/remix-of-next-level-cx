@@ -13,6 +13,8 @@ import VoiceChatbots from "./pages/VoiceChatbots.tsx";
 import Resources from "./pages/Resources.tsx";
 import ContactCenter from "./pages/ContactCenter.tsx";
 import IntegrationMSDynamics from "./pages/IntegrationMSDynamics.tsx";
+import IntegrationSalesforce from "./pages/IntegrationSalesforce.tsx";
+import IntegrationZoho from "./pages/IntegrationZoho.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -33,6 +35,8 @@ const App = () => (
           <Route path="/voice-chatbots" element={<VoiceChatbots />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/integrations/ms-dynamics" element={<IntegrationMSDynamics />} />
+          <Route path="/integrations/salesforce" element={<IntegrationSalesforce />} />
+          <Route path="/integrations/zoho" element={<IntegrationZoho />} />
           <Route path="/contact-center" element={<ContactCenter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

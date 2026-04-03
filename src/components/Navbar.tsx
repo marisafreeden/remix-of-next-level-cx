@@ -5,7 +5,20 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const megaMenuColumns = [
+interface MegaMenuItem {
+  title: string;
+  href: string;
+  desc: string;
+  badge?: string;
+}
+
+interface MegaMenuColumn {
+  heading: string;
+  href: string;
+  items: MegaMenuItem[];
+}
+
+const megaMenuColumns: MegaMenuColumn[] = [
   {
     heading: "Contact Center",
     href: "/contact-center",
@@ -40,8 +53,8 @@ const megaMenuColumns = [
     href: "#",
     items: [
       { title: "MS Dynamics", href: "/integrations/ms-dynamics", desc: "Native CRM integration" },
-      { title: "Salesforce", href: "#", badge: "Coming Soon", desc: "Deep CRM connectivity" },
-      { title: "Zoho", href: "#", badge: "Coming Soon", desc: "Workflow automation" },
+      { title: "Salesforce", href: "/integrations/salesforce", desc: "Deep CRM connectivity" },
+      { title: "Zoho", href: "/integrations/zoho", desc: "Workflow automation" },
     ],
   },
 ];
