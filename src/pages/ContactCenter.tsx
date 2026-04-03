@@ -77,6 +77,7 @@ const ContactCenter = () => {
       <section className="cc-stats-section-v2 cc-stats-light" style={{ borderTop: '1px solid rgba(0,0,0,0.12)', borderBottom: '1px solid rgba(0,0,0,0.12)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
           <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
+            <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
             <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
               We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
             </p>
