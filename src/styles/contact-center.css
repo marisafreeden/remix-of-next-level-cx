@@ -1078,6 +1078,7 @@
   color: #151D48;
   text-align: left;
   max-width: 280px;
+  white-space: pre-line;
 }
 
 .cc-stats-caption {
