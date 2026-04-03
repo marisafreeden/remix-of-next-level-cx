@@ -73,7 +73,7 @@ const ContactCenter = () => {
 
 
       {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: '#F9FAFB', borderBottom: 'none' }}>
+      <section className="cc-stats-section-v2 cc-stats-light">
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
           <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
             <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
@@ -83,7 +83,7 @@ const ContactCenter = () => {
           </div>
           <div style={{ flex: 1, display: 'flex' }}>
             {statKeys.map((key, i) => (
-              <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.1)', padding: '32px 28px' }}>
+              <div key={key} className="cc-stat-v2" style={{ flex: 1 }}>
                 <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
                 <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
               </div>
