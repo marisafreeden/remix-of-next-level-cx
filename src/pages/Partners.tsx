@@ -385,7 +385,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>HOW IT WORKS</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            Simple to start. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Built for the long term.</span>
+            Start fast. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Scale faster.</span>
           </h2>
         </div>
         <div style={{ maxWidth: "800px", margin: "48px auto 0", display: "flex", flexDirection: "column", gap: "0" }}>
