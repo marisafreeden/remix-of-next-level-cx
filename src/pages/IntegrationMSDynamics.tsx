@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "@/App.css";
 import "@/styles/megamenu.css";
 import "@/styles/footer.css";
@@ -10,7 +11,7 @@ import "@fontsource/instrument-sans/500.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
-import { Check, Zap, Database, BarChart3 } from "lucide-react";
+import { Check, Zap, Database, BarChart3, ChevronDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -43,6 +44,39 @@ const included = [
   "Role-based access controls",
   "Compliance-ready audit trails",
 ];
+
+const dynamicsFaqs = [
+  { q: "How does the Microsoft Dynamics integration work?", a: "GoContact installs as an embedded panel inside Microsoft Dynamics. Agents log in, select their queue or campaign, and handle inbound and outbound calls without leaving the CRM. Call outcomes and notes are saved to the contact record automatically." },
+  { q: "Does this require custom development or professional services?", a: "No. GoContact is available through the Microsoft Dynamics App Store and can be installed by your IT team. No custom integration work is needed." },
+  { q: "What data is shared between GoContact and Dynamics?", a: "Call outcomes, interaction notes, and activity details are written to the contact record in Dynamics. Recordings remain in the GoContact platform." },
+  { q: "Who benefits most from this integration?", a: "Service teams, sales teams, and operations leaders all benefit from a single workspace that reduces switching, improves recordkeeping, and creates more consistent workflows." },
+  { q: "Is the integration secure and compliant?", a: "Yes. The integration supports SAML authentication, role-based access controls, and compliance-ready audit trails." },
+];
+
+const DynamicsFAQ = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  return (
+    <section className="faq-section">
+      <h2 className="faq-title">
+        Frequently asked<br />
+        <span className="faq-title-italic">questions</span>
+      </h2>
+      <div className="faq-list">
+        {dynamicsFaqs.map((faq, i) => (
+          <div key={i} className={`faq-item ${openIndex === i ? "faq-item-open" : ""}`}>
+            <button className="faq-question" onClick={() => setOpenIndex(openIndex === i ? null : i)}>
+              <span>{faq.q}</span>
+              <ChevronDown size={18} className={`faq-chevron ${openIndex === i ? "faq-chevron-open" : ""}`} />
+            </button>
+            <div className={`faq-answer-wrap ${openIndex === i ? "faq-answer-open" : ""}`}>
+              <p className="faq-answer">{faq.a}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 const IntegrationMSDynamics = () => {
   return (
@@ -241,6 +275,9 @@ const IntegrationMSDynamics = () => {
           </div>
         </div>
       </section>
+
+      {/* ─── FAQ ─── */}
+      <DynamicsFAQ />
 
       <Footer />
     </div>
