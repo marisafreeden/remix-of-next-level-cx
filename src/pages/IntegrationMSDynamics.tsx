@@ -77,7 +77,7 @@ const IntegrationMSDynamics = () => {
       </section>
 
       {/* ─── PROBLEM ─── */}
-      <section className="uc-features-section" style={{ paddingBottom: 0 }}>
+      <section className="uc-features-section">
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">THE COST OF TWO SYSTEMS</p>
