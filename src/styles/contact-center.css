@@ -1355,10 +1355,13 @@
 
 .cc-goai-image-side {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .cc-goai-img {
-  width: 100%;
+  width: 85%;
   height: auto;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
