@@ -243,6 +243,9 @@ const IntegrationMSDynamics = () => {
         </div>
       </section>
 
+      {/* ─── FAQ ─── */}
+      <DynamicsFAQ />
+
       <Footer />
     </div>
   );
