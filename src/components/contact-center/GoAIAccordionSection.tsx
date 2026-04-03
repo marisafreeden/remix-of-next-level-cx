@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Headphones, BrainCircuit, TrendingUp, ChevronDown } from "lucide-react";
 import GoAIDashboardPreview from "./GoAIDashboardPreview";
 import AssistPreview from "./AssistPreview";
-import InsightsPreview from "./InsightsPreview";
+import DashboardPreview from "@/components/DashboardPreview";
 
 const items = [
   {
@@ -25,11 +25,8 @@ const items = [
   },
 ];
 
-const previews = [GoAIDashboardPreview, AssistPreview, InsightsPreview];
-
 const GoAIAccordionSection = () => {
   const [openIndex, setOpenIndex] = useState(0);
-  const ActivePreview = previews[openIndex];
 
   return (
     <section className="cc-goai-section">
@@ -76,8 +73,10 @@ const GoAIAccordionSection = () => {
           </div>
           </div>
           <div className="cc-goai-image-side">
-            <div className="cc-goai-img-wrap">
-              <ActivePreview />
+            <div className="cc-goai-img-wrap" style={openIndex === 2 ? { padding: 0, background: 'none', border: 'none', backdropFilter: 'none' } : undefined}>
+              {openIndex === 0 && <GoAIDashboardPreview />}
+              {openIndex === 1 && <AssistPreview />}
+              {openIndex === 2 && <DashboardPreview />}
             </div>
           </div>
         </div>
