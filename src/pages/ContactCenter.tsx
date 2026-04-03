@@ -90,17 +90,19 @@ const ContactCenter = () => {
 
       {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-light">
-        <div className="cc-stats-dark-header">
-          <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
-          <p className="cc-stats-caption">We deploy in days. Our team stays with you after go-live. And the numbers above are what customers see in the first 90 days — not year two of a roadmap.</p>
-        </div>
-        <div className="cc-stats-grid-v2">
-          {statKeys.map((key) => (
-            <div key={key} className="cc-stat-v2">
-              <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-              <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
-            </div>
-          ))}
+        <div className="cc-stats-row">
+          <div className="cc-stats-dark-header">
+            <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
+            <p className="cc-stats-caption">We deploy in days. Our team stays with you after go-live. And the numbers above are what customers see in the first 90 days — not year two of a roadmap.</p>
+          </div>
+          <div className="cc-stats-grid-v2">
+            {statKeys.map((key) => (
+              <div key={key} className="cc-stat-v2">
+                <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+                <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
