@@ -1372,190 +1372,191 @@
   box-shadow: none;
 }
 
-/* GoAI Dashboard Preview */
-.goai-dash {
+/* GoAI Call Flow Builder */
+.goai-flow {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  min-width: 380px;
+  min-width: 360px;
 }
 
-.goai-dash-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.goai-dash-stat-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 14px;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.goai-dash-stat-header {
+.goai-flow-header {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: 500;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.goai-dash-stat-header svg {
-  color: #43B5BF;
+.goai-flow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 
-.goai-dash-stat-value {
-  font-family: 'Instrument Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  letter-spacing: -0.5px;
+.goai-flow-dot-green {
+  background: #4ade80;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.4);
 }
 
-.goai-dash-stat-trend {
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.goai-dash-trend-up {
-  color: rgba(74, 222, 128, 0.6);
-}
-
-.goai-dash-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 14px;
-  padding: 16px;
-}
-
-.goai-dash-card-title {
+.goai-flow-header-title {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+  color: rgba(255, 255, 255, 0.6);
+  flex: 1;
 }
 
-.goai-dash-card-title svg {
-  color: #43B5BF;
-}
-
-.goai-dash-sentiment-bar {
-  display: flex;
-  height: 8px;
-  border-radius: 4px;
-  overflow: hidden;
-  gap: 2px;
-  margin-bottom: 10px;
-}
-
-.goai-dash-sent-pos { background: linear-gradient(90deg, #43B5BF, #4ade80); border-radius: 4px; }
-.goai-dash-sent-neu { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
-.goai-dash-sent-neg { background: linear-gradient(90deg, #f472b6, #7042D2); border-radius: 4px; }
-
-.goai-dash-sentiment-labels {
-  display: flex;
-  gap: 16px;
-}
-
-.goai-dash-sent-label {
+.goai-flow-header-badge {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
-  color: rgba(255, 255, 255, 0.45);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  font-weight: 600;
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.1);
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  border-radius: 10px;
+  padding: 2px 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
-.goai-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.goai-dot-pos { background: #43B5BF; }
-.goai-dot-neu { background: rgba(255, 255, 255, 0.3); }
-.goai-dot-neg { background: #f472b6; }
-
-.goai-dash-agents {
+.goai-flow-canvas {
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  align-items: center;
+  gap: 0;
 }
 
-.goai-dash-agent-row {
+.goai-flow-node {
   display: flex;
   align-items: center;
   gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 260px;
+  transition: border-color 0.2s;
 }
 
-.goai-dash-agent-avatar {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #43B5BF, #7042D2);
+.goai-flow-node:hover {
+  border-color: rgba(67, 181, 191, 0.2);
+}
+
+.goai-flow-node-small {
+  padding: 8px 12px;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.goai-flow-node-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 11px;
-  font-weight: 600;
-  color: #fff;
   flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.goai-dash-agent-name {
+.goai-flow-node-small .goai-flow-node-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.goai-flow-icon-ai {
+  color: #43B5BF;
+  border-color: rgba(67, 181, 191, 0.15);
+  background: rgba(67, 181, 191, 0.06);
+}
+
+.goai-flow-icon-branch {
+  color: #C686F8;
+  border-color: rgba(198, 134, 248, 0.15);
+  background: rgba(198, 134, 248, 0.06);
+}
+
+.goai-flow-icon-end {
+  color: #4ade80;
+  border-color: rgba(74, 222, 128, 0.15);
+  background: rgba(74, 222, 128, 0.06);
+}
+
+.goai-flow-node-start .goai-flow-node-icon {
+  color: #43B5BF;
+}
+
+.goai-flow-node-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.goai-flow-node-label {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
-  width: 64px;
-  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.goai-dash-agent-status {
+.goai-flow-node-meta {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.35);
-  width: 56px;
-  flex-shrink: 0;
 }
 
-.goai-dash-agent-bar-wrap {
+.goai-flow-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 28px;
+  position: relative;
+}
+
+.goai-flow-connector-line {
+  width: 1px;
   flex: 1;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 3px;
-  overflow: hidden;
+  background: linear-gradient(180deg, rgba(67, 181, 191, 0.3), rgba(67, 181, 191, 0.1));
 }
 
-.goai-dash-agent-bar {
-  height: 100%;
-  background: linear-gradient(90deg, #43B5BF, #7042D2);
-  border-radius: 3px;
+.goai-flow-connector-arrow {
+  color: rgba(67, 181, 191, 0.4);
+  transform: rotate(90deg);
 }
 
-.goai-dash-agent-score {
-  font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-  width: 24px;
-  text-align: right;
+.goai-flow-branches {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4px;
+}
+
+.goai-flow-branch-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.goai-flow-branch-line {
+  width: 1px;
+  height: 20px;
+  background: linear-gradient(180deg, rgba(198, 134, 248, 0.3), rgba(198, 134, 248, 0.08));
+}
+
+.goai-flow-connector-end {
+  margin-top: 8px;
+}
+
+.goai-flow-node-end {
+  background: rgba(74, 222, 128, 0.03);
+  border-color: rgba(74, 222, 128, 0.08);
 }
 
 @media (max-width: 768px) {
@@ -1563,8 +1564,12 @@
     grid-template-columns: 1fr;
     gap: 32px;
   }
-  .goai-dash {
+  .goai-flow {
     min-width: unset;
+  }
+  .goai-flow-branches {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
