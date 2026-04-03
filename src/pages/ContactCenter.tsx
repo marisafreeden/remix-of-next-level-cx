@@ -81,7 +81,7 @@ const ContactCenter = () => {
             We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
           </p>
         </div>
-        <div style={{ borderTop: '1px solid rgba(0, 0, 0, 0.12)', borderBottom: '1px solid rgba(0, 0, 0, 0.12)', width: '100%' }}>
+        <div style={{ width: '100%' }}>
           <div className="cc-stats-grid-v2" style={{ maxWidth: '1600px', margin: '0 auto' }}>
             {statKeys.map((key) => (
               <div key={key} className="cc-stat-v2">
