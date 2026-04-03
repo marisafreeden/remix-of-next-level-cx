@@ -286,13 +286,13 @@
 .cc-platform-section::before {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: -15%;
-  width: 700px;
-  height: 700px;
+  bottom: 15%;
+  left: -10%;
+  width: 900px;
+  height: 900px;
   background: #43b5bf;
   border-radius: 50%;
-  filter: blur(200px);
+  filter: blur(220px);
   opacity: 0.3;
   pointer-events: none;
   z-index: 0;
@@ -301,14 +301,14 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: -15%;
-  width: 600px;
-  height: 600px;
+  bottom: 10%;
+  right: -10%;
+  width: 800px;
+  height: 800px;
   background: #7a6fd4;
   border-radius: 50%;
-  filter: blur(200px);
-  opacity: 0.2;
+  filter: blur(220px);
+  opacity: 0.22;
   pointer-events: none;
   z-index: 0;
 }
