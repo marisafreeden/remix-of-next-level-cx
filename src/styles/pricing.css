@@ -114,11 +114,11 @@
 }
 
 .pricing-card-popular {
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   background: linear-gradient(#ffffff, #ffffff) padding-box,
-              linear-gradient(135deg, rgba(67, 181, 191, 0.5), rgba(112, 66, 210, 0.3), rgba(67, 181, 191, 0.4)) border-box;
-  box-shadow: 0 0 0 1px rgba(67, 181, 191, 0.08),
-              0 8px 32px rgba(67, 181, 191, 0.12);
+              linear-gradient(135deg, rgba(67, 181, 191, 0.6), rgba(112, 66, 210, 0.35), rgba(67, 181, 191, 0.55)) border-box;
+  box-shadow: 0 0 0 1px rgba(67, 181, 191, 0.1),
+              0 8px 32px rgba(67, 181, 191, 0.15);
 }
 
 .pricing-popular-badge {
