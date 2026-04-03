@@ -248,7 +248,6 @@ const ContactCenterHero = ({
           </div>
         </div>
       </div>
-      <div className="cc-hero-stage-fade" />
     </section>
   );
 };
