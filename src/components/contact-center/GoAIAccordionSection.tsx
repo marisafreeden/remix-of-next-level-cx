@@ -72,7 +72,7 @@ const GoAIAccordionSection = () => {
           </div>
           <div className="cc-goai-image-side">
             <div className="cc-goai-img-wrap">
-              <img src={ccGoaiDashboard} alt="AI-powered contact center dashboard" loading="lazy" width={896} height={672} className="cc-goai-img" />
+              <GoAIDashboardPreview />
             </div>
           </div>
         </div>
