@@ -76,19 +76,19 @@ const ContactCenter = () => {
 
 
       {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: '#0C4550', borderBottom: 'none' }}>
+      <section className="cc-stats-section-v2 cc-stats-light" style={{ background: '#F1F4F9', borderBottom: 'none' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
           <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
-            <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px', color: 'rgba(255,255,255,0.6)' }}>CUSTOMER VALUE</p>
-            <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6', color: 'rgba(255,255,255,0.8)' }}>
+            <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
+            <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
               Proven results from teams that switched to a smarter, AI-powered contact center.
             </p>
           </div>
           <div style={{ flex: 1, display: 'flex' }}>
             {statKeys.map((key, i) => (
-              <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(255,255,255,0.15)', padding: '32px 28px' }}>
-                <span className="cc-stat-v2-number" style={{ color: '#ffffff' }}>{t(`cc_page.${key}_number`)}</span>
-                <span className="cc-stat-v2-label" style={{ color: 'rgba(255,255,255,0.7)' }}>{t(`cc_page.${key}_label`)}</span>
+              <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.1)', padding: '32px 28px' }}>
+                <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
+                <span className="cc-stat-v2-label">{t(`cc_page.${key}_label`)}</span>
               </div>
             ))}
           </div>
