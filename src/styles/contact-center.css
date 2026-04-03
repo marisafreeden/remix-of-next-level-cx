@@ -1589,7 +1589,8 @@
 
 .goai-flow-branches-bottom::before {
   height: 20px;
-  background: rgba(67, 181, 191, 0.3);
+  border-left: 1px dashed rgba(67, 181, 191, 0.3);
+  background: none;
 }
 
 .goai-flow-branches-bottom::after {
