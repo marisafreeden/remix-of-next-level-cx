@@ -54,7 +54,7 @@ const DashboardPreview = () => {
     const parts = text.split(/(\*\*[^*]+\*\*)/g);
     return parts.map((part, i) => {
       if (part.startsWith("**") && part.endsWith("**")) {
-        return <strong key={i} style={{ color: "#0a0f18" }}>{part.slice(2, -2)}</strong>;
+        return <strong key={i} style={{ color: "inherit" }}>{part.slice(2, -2)}</strong>;
       }
       return <span key={i}>{part}</span>;
     });
