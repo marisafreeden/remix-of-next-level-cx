@@ -85,7 +85,7 @@ const ContactCenter = () => {
             {statKeys.map((key, i) => (
               <div key={key} className="cc-stat-v2" style={{ flex: 1, borderLeft: '1px solid rgba(0,0,0,0.12)', padding: '32px 28px' }}>
                 <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
-                <span className="cc-stat-v2-label text-primary font-normal text-base">{t(`cc_page.${key}_label`)}</span>
+                <span className="cc-stat-v2-label text-primary font-normal text-base text-center">{t(`cc_page.${key}_label`)}</span>
               </div>
             ))}
           </div>
