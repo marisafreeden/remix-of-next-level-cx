@@ -33,7 +33,7 @@ const PromosSection = () => {
             </div>
             <div className="promo-row-image-wrap">
               <img
-                src={promoChartsImg}
+                src={image}
                 alt={t(`promos.${key}_title`)}
                 loading="lazy"
                 width={1280}
