@@ -147,6 +147,21 @@ const ContactCenter = () => {
               </div>
             );
           })}
+          <div className="uc-benefit-card">
+            <div className="uc-benefit-icon"><ShieldCheck size={24} strokeWidth={1.5} /></div>
+            <h3 className="uc-benefit-title">SOC 2 Type I</h3>
+            <p className="uc-benefit-desc">Independently audited security controls for data protection, availability, and confidentiality.</p>
+          </div>
+          <div className="uc-benefit-card">
+            <div className="uc-benefit-icon"><Lock size={24} strokeWidth={1.5} /></div>
+            <h3 className="uc-benefit-title">GDPR Compliant</h3>
+            <p className="uc-benefit-desc">Full compliance with European data protection regulations and privacy standards.</p>
+          </div>
+          <div className="uc-benefit-card">
+            <div className="uc-benefit-icon"><BadgeCheck size={24} strokeWidth={1.5} /></div>
+            <h3 className="uc-benefit-title">HIPAA Compliant</h3>
+            <p className="uc-benefit-desc">Meets healthcare industry requirements for protecting sensitive patient information.</p>
+          </div>
         </div>
       </section>
 
@@ -180,34 +195,6 @@ const ContactCenter = () => {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Security & Compliance */}
-      <section className="cc-security-section" style={{ background: '#F9FAFB' }}>
-        <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
-          <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
-          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
-            Enterprise-grade certifications and compliance standards your organization can trust.
-          </p>
-        </div>
-        <div className="cc-security-grid">
-          <div className="cc-security-card">
-            <div className="uc-benefit-icon cc-security-lucide"><ShieldCheck size={48} strokeWidth={1.5} /></div>
-            <h3 className="uc-benefit-title">SOC 2 Type I</h3>
-            <p className="uc-benefit-desc">Independently audited security controls for data protection, availability, and confidentiality.</p>
-          </div>
-          <div className="cc-security-card">
-            <div className="uc-benefit-icon cc-security-lucide"><Lock size={48} strokeWidth={1.5} /></div>
-            <h3 className="uc-benefit-title">GDPR Compliant</h3>
-            <p className="uc-benefit-desc">Full compliance with European data protection regulations and privacy standards.</p>
-          </div>
-          <div className="cc-security-card">
-            <div className="uc-benefit-icon cc-security-lucide"><BadgeCheck size={48} strokeWidth={1.5} /></div>
-            <h3 className="uc-benefit-title">HIPAA Compliant</h3>
-            <p className="uc-benefit-desc">Meets healthcare industry requirements for protecting sensitive patient information.</p>
-          </div>
         </div>
       </section>
 
