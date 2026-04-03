@@ -11,12 +11,12 @@ const TestimonialsSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="testimonials-wrapper" style={{ background: '#ffffff', position: 'relative', overflow: 'hidden' }}>
+    <section className="testimonials-wrapper" style={{ background: 'linear-gradient(130.54deg, #FCF6FF 5.82%, #E8FCFF 113.26%)', position: 'relative', overflow: 'hidden' }}>
       <div className="testimonials-inner" style={{ position: 'relative', zIndex: 1 }}>
         <div className="testimonials-carousel-track">
           <div className="testimonials-carousel-slider">
             {testimonials.map((item) => (
-              <div key={item.key} className="testimonial-card" style={{ background: 'linear-gradient(130.54deg, #FCF6FF 5.82%, #E8FCFF 113.26%)', borderRadius: '20px' }}>
+              <div key={item.key} className="testimonial-card" style={{ background: '#ffffff', borderRadius: '20px' }}>
                 <Quote size={24} strokeWidth={1.5} className="testimonial-card-quote" />
                 <p className="testimonial-card-text">
                   {t(`testimonials.${item.key}_quote`)}
