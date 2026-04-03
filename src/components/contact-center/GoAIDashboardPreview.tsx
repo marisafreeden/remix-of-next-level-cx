@@ -1,82 +1,100 @@
-import { TrendingUp, Users, MessageSquare, Phone, Bot, ArrowUpRight, ArrowDownRight } from "lucide-react";
+import { Phone, PhoneIncoming, Bot, GitBranch, Headphones, CheckCircle, ArrowRight } from "lucide-react";
 
 const GoAIDashboardPreview = () => {
   return (
-    <div className="goai-dash">
-      {/* Top stats row */}
-      <div className="goai-dash-stats">
-        <div className="goai-dash-stat-card">
-          <div className="goai-dash-stat-header">
-            <Phone size={14} strokeWidth={1.5} />
-            <span>Active Calls</span>
-          </div>
-          <div className="goai-dash-stat-value">247</div>
-          <div className="goai-dash-stat-trend goai-dash-trend-up">
-            <ArrowUpRight size={12} /> 12%
-          </div>
-        </div>
-        <div className="goai-dash-stat-card">
-          <div className="goai-dash-stat-header">
-            <Bot size={14} strokeWidth={1.5} />
-            <span>AI Resolved</span>
-          </div>
-          <div className="goai-dash-stat-value">68%</div>
-          <div className="goai-dash-stat-trend goai-dash-trend-up">
-            <ArrowUpRight size={12} /> 8%
-          </div>
-        </div>
-        <div className="goai-dash-stat-card">
-          <div className="goai-dash-stat-header">
-            <Users size={14} strokeWidth={1.5} />
-            <span>CSAT</span>
-          </div>
-          <div className="goai-dash-stat-value">94.2</div>
-          <div className="goai-dash-stat-trend goai-dash-trend-up">
-            <ArrowUpRight size={12} /> 3%
-          </div>
-        </div>
+    <div className="goai-flow">
+      {/* Flow header */}
+      <div className="goai-flow-header">
+        <div className="goai-flow-dot goai-flow-dot-green" />
+        <span className="goai-flow-header-title">Call Flow Builder</span>
+        <span className="goai-flow-header-badge">Live</span>
       </div>
 
-      {/* Sentiment bar */}
-      <div className="goai-dash-card">
-        <div className="goai-dash-card-title">
-          <MessageSquare size={14} strokeWidth={1.5} />
-          Live Sentiment
+      {/* Flow nodes */}
+      <div className="goai-flow-canvas">
+        {/* Incoming call node */}
+        <div className="goai-flow-node goai-flow-node-start">
+          <div className="goai-flow-node-icon"><PhoneIncoming size={16} strokeWidth={1.5} /></div>
+          <div className="goai-flow-node-content">
+            <span className="goai-flow-node-label">Incoming Call</span>
+            <span className="goai-flow-node-meta">+1 (800) 555-0199</span>
+          </div>
         </div>
-        <div className="goai-dash-sentiment-bar">
-          <div className="goai-dash-sent-pos" style={{ width: "62%" }} />
-          <div className="goai-dash-sent-neu" style={{ width: "26%" }} />
-          <div className="goai-dash-sent-neg" style={{ width: "12%" }} />
-        </div>
-        <div className="goai-dash-sentiment-labels">
-          <span className="goai-dash-sent-label"><span className="goai-dot goai-dot-pos" />Positive 62%</span>
-          <span className="goai-dash-sent-label"><span className="goai-dot goai-dot-neu" />Neutral 26%</span>
-          <span className="goai-dash-sent-label"><span className="goai-dot goai-dot-neg" />Negative 12%</span>
-        </div>
-      </div>
 
-      {/* Agent activity */}
-      <div className="goai-dash-card">
-        <div className="goai-dash-card-title">
-          <TrendingUp size={14} strokeWidth={1.5} />
-          Agent Performance
+        <div className="goai-flow-connector">
+          <div className="goai-flow-connector-line" />
+          <ArrowRight size={12} className="goai-flow-connector-arrow" />
         </div>
-        <div className="goai-dash-agents">
-          {[
-            { name: "Sarah M.", score: 96, status: "On Call" },
-            { name: "James R.", score: 91, status: "Wrap-up" },
-            { name: "Lisa K.", score: 88, status: "Available" },
-          ].map((agent) => (
-            <div key={agent.name} className="goai-dash-agent-row">
-              <div className="goai-dash-agent-avatar">{agent.name[0]}</div>
-              <span className="goai-dash-agent-name">{agent.name}</span>
-              <span className="goai-dash-agent-status">{agent.status}</span>
-              <div className="goai-dash-agent-bar-wrap">
-                <div className="goai-dash-agent-bar" style={{ width: `${agent.score}%` }} />
+
+        {/* AI Greeting node */}
+        <div className="goai-flow-node goai-flow-node-ai">
+          <div className="goai-flow-node-icon goai-flow-icon-ai"><Bot size={16} strokeWidth={1.5} /></div>
+          <div className="goai-flow-node-content">
+            <span className="goai-flow-node-label">AI Greeting</span>
+            <span className="goai-flow-node-meta">Sentiment analysis</span>
+          </div>
+        </div>
+
+        <div className="goai-flow-connector">
+          <div className="goai-flow-connector-line" />
+          <ArrowRight size={12} className="goai-flow-connector-arrow" />
+        </div>
+
+        {/* Branch node */}
+        <div className="goai-flow-node goai-flow-node-branch">
+          <div className="goai-flow-node-icon goai-flow-icon-branch"><GitBranch size={16} strokeWidth={1.5} /></div>
+          <div className="goai-flow-node-content">
+            <span className="goai-flow-node-label">Smart Route</span>
+            <span className="goai-flow-node-meta">Intent detection</span>
+          </div>
+        </div>
+
+        {/* Branch paths */}
+        <div className="goai-flow-branches">
+          <div className="goai-flow-branch-path">
+            <div className="goai-flow-branch-line" />
+            <div className="goai-flow-node goai-flow-node-small">
+              <div className="goai-flow-node-icon goai-flow-icon-ai"><Bot size={14} strokeWidth={1.5} /></div>
+              <div className="goai-flow-node-content">
+                <span className="goai-flow-node-label">Self-Service</span>
+                <span className="goai-flow-node-meta">68% resolved</span>
               </div>
-              <span className="goai-dash-agent-score">{agent.score}</span>
             </div>
-          ))}
+          </div>
+          <div className="goai-flow-branch-path">
+            <div className="goai-flow-branch-line" />
+            <div className="goai-flow-node goai-flow-node-small">
+              <div className="goai-flow-node-icon"><Headphones size={14} strokeWidth={1.5} /></div>
+              <div className="goai-flow-node-content">
+                <span className="goai-flow-node-label">Live Agent</span>
+                <span className="goai-flow-node-meta">Avg 2m 14s</span>
+              </div>
+            </div>
+          </div>
+          <div className="goai-flow-branch-path">
+            <div className="goai-flow-branch-line" />
+            <div className="goai-flow-node goai-flow-node-small">
+              <div className="goai-flow-node-icon"><Phone size={14} strokeWidth={1.5} /></div>
+              <div className="goai-flow-node-content">
+                <span className="goai-flow-node-label">Callback</span>
+                <span className="goai-flow-node-meta">Scheduled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Resolution */}
+        <div className="goai-flow-connector goai-flow-connector-end">
+          <div className="goai-flow-connector-line" />
+          <ArrowRight size={12} className="goai-flow-connector-arrow" />
+        </div>
+
+        <div className="goai-flow-node goai-flow-node-end">
+          <div className="goai-flow-node-icon goai-flow-icon-end"><CheckCircle size={16} strokeWidth={1.5} /></div>
+          <div className="goai-flow-node-content">
+            <span className="goai-flow-node-label">Resolved</span>
+            <span className="goai-flow-node-meta">CSAT 94.2</span>
+          </div>
         </div>
       </div>
     </div>
