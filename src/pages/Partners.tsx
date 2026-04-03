@@ -277,7 +277,7 @@ const Partners = () => {
         <div className="uc-features-header" style={{ textAlign: "center" }}>
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>YOUR TEAM</p>
           <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            You never walk into a deal <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>alone.</span>
+            Never sell <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>alone.</span>
           </h2>
           <p className="goai-desc" style={{ maxWidth: '600px', margin: '12px auto 0' }}>
             Every partner gets a dedicated pod of specialists aligned to your region and your clients' needs.
