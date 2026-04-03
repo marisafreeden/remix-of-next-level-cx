@@ -54,7 +54,7 @@ const megaMenuColumns: MegaMenuColumn[] = [
     items: [
       { title: "MS Dynamics", href: "/integrations/ms-dynamics", desc: "Native CRM integration" },
       { title: "Salesforce", href: "/integrations/salesforce", desc: "Deep CRM connectivity" },
-      { title: "Zoho", href: "/integrations/zoho", desc: "Workflow automation" },
+      { title: "Zoho", href: "#", badge: "Coming Soon", desc: "Workflow automation" },
     ],
   },
 ];
