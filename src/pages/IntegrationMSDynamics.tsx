@@ -97,7 +97,7 @@ const IntegrationMSDynamics = () => {
         <div className="intg-hero-inner">
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>MICROSOFT DYNAMICS INTEGRATION</p>
           <h1 className="cc-hero-heading" style={{ fontSize: "56px", marginTop: "16px", marginBottom: "20px" }}>
-            <span className="cc-hero-heading-line">Your agents are in Dynamics.</span>
+            <span className="cc-hero-heading-line" style={{ paddingBottom: "2px" }}>Your agents are in Dynamics.</span>
             <span className="cc-hero-heading-accent">Now your calls are too.</span>
           </h1>
           <p className="cc-hero-desc" style={{ maxWidth: "640px", margin: "0 auto 40px" }}>
