@@ -87,23 +87,23 @@
   justify-content: center;
   gap: 12px;
   padding-top: 32px;
-  border-top: 1px solid rgba(10, 15, 24, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-legal-link {
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   font-weight: 400;
-  color: rgba(10, 15, 24, 0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .footer-legal-link:hover {
-  color: #0a0f18;
+  color: #ffffff;
 }
 
 .footer-legal-sep {
-  color: rgba(10, 15, 24, 0.15);
+  color: rgba(255, 255, 255, 0.25);
   font-size: 13px;
 }
