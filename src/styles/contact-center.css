@@ -1134,6 +1134,39 @@
   pointer-events: none;
 }
 
+/* Light stats variant */
+.cc-stats-light {
+  background: #ffffff;
+}
+
+.cc-stats-light .cc-stats-dark-title {
+  color: #1a1a2e;
+}
+
+.cc-stats-light .cc-stats-dark-title .promos-title-italic {
+  background: linear-gradient(105.96deg, #43B5BF 0%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cc-stats-light .cc-stat-v2 {
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+  padding: 32px 28px;
+}
+
+.cc-stats-light .cc-stat-v2-label {
+  color: #555555;
+}
+
+.cc-stats-light .cc-stats-caption {
+  color: #777777;
+}
+
 
 .cc-goai-card-icon {
   width: 56px;
