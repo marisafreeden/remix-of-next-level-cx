@@ -132,6 +132,9 @@ const ContactCenter = () => {
           <h2 className="promos-title" style={{ background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
             The features that move the <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>needle.</span>
           </h2>
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Everything your team needs to deliver faster, smarter, and more personal customer experiences.
+          </p>
         </div>
         <div className="uc-benefits-grid">
           {featureKeys.map((key, i) => {
@@ -153,10 +156,13 @@ const ContactCenter = () => {
       {/* Personas */}
       <section className="uc-benefits-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          
+          <p className="promos-eyebrow">BUILT FOR YOUR TEAM</p>
           <h2 className="promos-title">
             Different <span className="promos-title-italic" style={{ display: "inline" }}>superpowers</span> for every role.
           </h2>
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Tailored tools and workflows designed for agents, managers, and IT — so everyone works at their best.
+          </p>
         </div>
         <div className="cc-persona-grid">
           {personaKeys.map((key, i) => (
@@ -176,9 +182,11 @@ const ContactCenter = () => {
       {/* Security & Compliance */}
       <section className="cc-security-section">
         <div className="uc-benefits-header" style={{ textAlign: "center" }}>
-          
+          <p className="promos-eyebrow">SECURITY & COMPLIANCE</p>
           <h2 className="promos-title" style={{ maxWidth: 600, margin: '0 auto' }}>Your data is <span className="promos-title-italic" style={{ display: "inline" }}>safe</span> here.</h2>
-          
+          <p className="goai-desc" style={{ maxWidth: '560px', margin: '12px auto 0' }}>
+            Enterprise-grade certifications and compliance standards your organization can trust.
+          </p>
         </div>
         <div className="cc-security-grid">
           <div className="cc-security-card">
