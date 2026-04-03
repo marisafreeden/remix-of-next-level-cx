@@ -1236,6 +1236,17 @@
 .cc-goai-card-icon svg {
   stroke: url(#cc-goai-icon-gradient);
 }
+.goai-flow-branch-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.5px;
+}
+
+.goai-flow-branch-label-green {
+  color: rgba(74, 222, 128, 0.6);
+}
 
 
 .cc-goai-inner {
