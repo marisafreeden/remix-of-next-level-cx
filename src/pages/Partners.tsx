@@ -245,8 +245,8 @@ const Partners = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">WHY BROADVOICE</p>
             <h2 className="promos-title">
-              The CX opportunity is huge.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>We make it simple to capture.</span>
+              A massive CX opportunity.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Simple to capture.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               The contact center market is projected to reach $16.43B by 2030. Mid-market businesses are modernizing fast — and they're looking to trusted partners to guide them.
