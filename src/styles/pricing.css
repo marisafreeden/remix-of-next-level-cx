@@ -159,6 +159,8 @@
   align-items: baseline;
   gap: 4px;
   margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(10, 15, 24, 0.08);
 }
 
 .pricing-card-price {
