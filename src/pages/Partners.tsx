@@ -305,8 +305,8 @@ const Partners = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ENABLEMENT</p>
             <h2 className="promos-title">
-              Everything you need to sell<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>with confidence.</span>
+              Sell with<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>confidence.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               From the first pitch to the renewal conversation, we arm you with the tools, training, and resources to compete and win.
