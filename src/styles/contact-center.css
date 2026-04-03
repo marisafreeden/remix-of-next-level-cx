@@ -1204,13 +1204,9 @@
   background: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  border: none;
-  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 0;
-  padding: 28px 32px;
-}
-.cc-stats-light .cc-stat-v2:first-child {
-  border-left: none;
+  padding: 48px 32px;
 }
 
 .cc-stats-light .cc-stat-v2-label {
