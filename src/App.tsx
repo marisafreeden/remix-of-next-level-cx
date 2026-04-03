@@ -16,6 +16,9 @@ import IntegrationMSDynamics from "./pages/IntegrationMSDynamics.tsx";
 import IntegrationSalesforce from "./pages/IntegrationSalesforce.tsx";
 import IntegrationZoho from "./pages/IntegrationZoho.tsx";
 import Omnichannel from "./pages/Omnichannel.tsx";
+import Dialer from "./pages/Dialer.tsx";
+import SmartScripting from "./pages/SmartScripting.tsx";
+import SelfService from "./pages/SelfService.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
