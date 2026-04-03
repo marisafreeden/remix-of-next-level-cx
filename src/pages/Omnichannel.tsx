@@ -12,6 +12,8 @@ import "@fontsource/inter/300.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
+import ctaBg from "@/assets/cta-bg.png";
+import ctaOverlay from "@/assets/cta-overlay.png";
 import {
   MessageSquare, Headphones, Mail, Smartphone, Monitor,
   History, LayoutGrid, BarChart3, ArrowRightLeft, Users,
