@@ -89,7 +89,7 @@ const ContactCenter = () => {
       </div>
 
       {/* Stats */}
-      <section className="cc-stats-section-v2 cc-stats-dark">
+      <section className="cc-stats-section-v2 cc-stats-light">
         <div className="cc-stats-dark-header">
           <h2 className="cc-stats-dark-title">Value Starts on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
         </div>
