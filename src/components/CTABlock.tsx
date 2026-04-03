@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ctaBg from "@/assets/cta-bg.png";
+import ctaOverlay from "@/assets/cta-overlay.png";
 
 const CTABlock = () => {
   const { t } = useTranslation();
@@ -28,33 +29,20 @@ const CTABlock = () => {
             zIndex: 0,
           }}
         />
-        {/* Blur overlay ellipses */}
-        <div style={{
-          position: 'absolute',
-          width: '1328px',
-          height: '1302px',
-          background: '#767CB2',
-          filter: 'blur(152px)',
-          transform: 'matrix(0.92, 0.39, 0.69, -0.73, 0, 0)',
-          top: '-30%',
-          left: '-20%',
-          opacity: 0.7,
-          zIndex: 1,
-          pointerEvents: 'none',
-        }} />
-        <div style={{
-          position: 'absolute',
-          width: '1328px',
-          height: '1302px',
-          background: '#3DA6B7',
-          filter: 'blur(152px)',
-          transform: 'matrix(0.92, 0.39, 0.69, -0.73, 0, 0)',
-          bottom: '-40%',
-          right: '-30%',
-          opacity: 0.6,
-          zIndex: 1,
-          pointerEvents: 'none',
-        }} />
+        {/* Overlay image */}
+        <img
+          src={ctaOverlay}
+          alt=""
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 1,
+            pointerEvents: 'none',
+          }}
+        />
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 2 }}>
           <h2 className="cta-block-title">
