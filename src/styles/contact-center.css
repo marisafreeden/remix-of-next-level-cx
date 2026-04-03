@@ -267,7 +267,8 @@
   background: #ffffff !important;
   text-align: center;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   border-radius: 0;
 }
 
@@ -303,7 +304,7 @@
 .cc-platform-section::after {
   content: '';
   position: absolute;
-  bottom: 10%;
+  bottom: -120px;
   right: -10%;
   width: 800px;
   height: 800px;
@@ -968,7 +969,8 @@
 /* ===== Stats V2 (Figma style) ===== */
 .cc-stats-section-v2 {
   padding: 16px 48px;
-  background: #F3F4F6;
+  background: transparent;
+  position: relative;
 }
 
 .cc-stats-row {
