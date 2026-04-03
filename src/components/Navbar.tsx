@@ -5,7 +5,20 @@ import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const megaMenuColumns = [
+interface MegaMenuItem {
+  title: string;
+  href: string;
+  desc: string;
+  badge?: string;
+}
+
+interface MegaMenuColumn {
+  heading: string;
+  href: string;
+  items: MegaMenuItem[];
+}
+
+const megaMenuColumns: MegaMenuColumn[] = [
   {
     heading: "Contact Center",
     href: "/contact-center",
