@@ -1305,6 +1305,7 @@
   border-radius: 10px;
   background: rgba(67, 181, 191, 0.15);
   flex-shrink: 0;
+  margin-right: 4px;
 }
 
 .cc-goai-acc-icon svg {
