@@ -19,6 +19,7 @@ import Omnichannel from "./pages/Omnichannel.tsx";
 import Dialer from "./pages/Dialer.tsx";
 import SmartScripting from "./pages/SmartScripting.tsx";
 import SelfService from "./pages/SelfService.tsx";
+import AcceptableUse from "./pages/AcceptableUse.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
