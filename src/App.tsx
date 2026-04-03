@@ -15,6 +15,7 @@ import ContactCenter from "./pages/ContactCenter.tsx";
 import IntegrationMSDynamics from "./pages/IntegrationMSDynamics.tsx";
 import IntegrationSalesforce from "./pages/IntegrationSalesforce.tsx";
 import IntegrationZoho from "./pages/IntegrationZoho.tsx";
+import Omnichannel from "./pages/Omnichannel.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
