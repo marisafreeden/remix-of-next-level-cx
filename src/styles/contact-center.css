@@ -119,6 +119,19 @@
   z-index: 1;
   padding: 0 80px;
   margin-top: 150px;
+  overflow: hidden;
+  max-height: 520px;
+}
+
+.cc-hero-stage-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 160px;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #ffffff 100%);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .cc-platform-section.cc-hero-platform-combined .cc-hero-content {
