@@ -37,12 +37,16 @@ const GoAIAccordionSection = () => {
         </defs>
       </svg>
       <div className="cc-goai-inner">
-        <div className="cc-goai-header">
-          <h2 className="promos-title">
-            Real AI. No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
-          </h2>
-        </div>
         <div className="cc-goai-split">
+          <div className="cc-goai-left">
+            <div className="cc-goai-header" style={{ textAlign: 'left', marginBottom: '24px' }}>
+              <h2 className="promos-title">
+                Real AI. No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
+              </h2>
+              <p className="cc-goai-acc-desc" style={{ paddingLeft: 0, marginTop: '12px' }}>
+                Built-in AI that works out of the box — no data scientists, no complex setup. Just smarter conversations from day one.
+              </p>
+            </div>
           <div className="cc-goai-accordion">
             {items.map((item, i) => {
               const Icon = item.icon;
