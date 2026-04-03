@@ -213,6 +213,7 @@ const ContactCenterHero = ({
 
           </div>
         </div>
+        {children}
       </div>
     </section>
   );
