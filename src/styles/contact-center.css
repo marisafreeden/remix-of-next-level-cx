@@ -1554,8 +1554,8 @@
   content: '';
   position: absolute;
   top: 24px;
-  height: 2px;
-  background: rgba(67, 181, 191, 0.25);
+  height: 0;
+  border-top: 1px dashed rgba(67, 181, 191, 0.25);
 }
 
 .goai-flow-branches-two::after {
