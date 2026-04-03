@@ -973,8 +973,8 @@
 
 .cc-stats-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
   max-width: 1600px;
   margin: 0 auto;
 }
