@@ -72,7 +72,7 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <section className="logo-strip cc-logo-strip-2col">
+      <section className="logo-strip cc-logo-strip-2col" style={{ backgroundColor: '#F9FAFB' }}>
         <div className="cc-logo-left">
           <p className="cc-logo-sub">Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
         </div>
