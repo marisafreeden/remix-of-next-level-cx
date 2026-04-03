@@ -72,21 +72,6 @@ const ContactCenter = () => {
         onSave={save}
       />
 
-      <div style={{ backgroundColor: '#F9FAFB', width: '100%', borderTop: '1px solid rgba(10, 15, 24, 0.06)' }}>
-        <section className="logo-strip cc-logo-strip-2col">
-          <div className="cc-logo-left">
-            <p className="cc-logo-sub">Trusted by teams at Pfizer, UPS, Toyota, Hertz, L'Oréal, and Deloitte — who needed less overhead, not more platform.</p>
-          </div>
-          <div className="logo-strip-logos cc-logo-right">
-            <span className="logo-strip-item">Pfizer</span>
-            <span className="logo-strip-item">UPS</span>
-            <span className="logo-strip-item">L'Oréal</span>
-            <span className="logo-strip-item">Hertz</span>
-            <span className="logo-strip-item">Toyota</span>
-            <span className="logo-strip-item">Deloitte</span>
-          </div>
-        </section>
-      </div>
 
       {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-light">
