@@ -36,23 +36,26 @@
 /* Tabs */
 .pricing-tabs {
   display: inline-flex;
-  gap: 0;
+  gap: 4px;
   border-radius: 999px;
   border: 1.5px solid rgba(10, 15, 24, 0.1);
   overflow: hidden;
+  padding: 4px;
+  background: rgba(10, 15, 24, 0.03);
 }
 
 .pricing-tab {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  padding: 12px 28px;
+  padding: 10px 28px;
   border: none;
   cursor: pointer;
   background: transparent;
   color: rgba(10, 15, 24, 0.55);
   transition: all 0.25s;
   white-space: nowrap;
+  border-radius: 999px;
 }
 
 .pricing-tab:hover {
@@ -60,14 +63,14 @@
 }
 
 .pricing-tab-active {
-  background: rgba(10, 15, 24, 0.06);
-  color: #0a0f18;
+  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 50%, #7042D2 100%);
+  color: #ffffff;
   border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(67, 181, 191, 0.3);
 }
 
 .pricing-tab-active:hover {
-  color: #0a0f18;
-  background: rgba(10, 15, 24, 0.09);
+  color: #ffffff;
 }
 
 /* Cards Section */
@@ -111,22 +114,28 @@
 }
 
 .pricing-card-popular {
-  border-color: #43B5BF;
-  border-width: 2px;
+  border: 2px solid transparent;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(135deg, rgba(67, 181, 191, 0.5), rgba(112, 66, 210, 0.3), rgba(67, 181, 191, 0.4)) border-box;
+  box-shadow: 0 0 0 1px rgba(67, 181, 191, 0.08),
+              0 8px 32px rgba(67, 181, 191, 0.12);
 }
 
 .pricing-popular-badge {
   position: absolute;
-  top: -12px;
-  right: 24px;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: 'Inter', sans-serif;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  background: #43B5BF;
+  background: linear-gradient(90deg, #3FABBA 0%, #7042D2 100%);
   color: #ffffff;
-  padding: 4px 14px;
+  padding: 5px 18px;
   border-radius: 999px;
   letter-spacing: 0.3px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(67, 181, 191, 0.3);
 }
 
 .pricing-card-name {
@@ -150,6 +159,8 @@
   align-items: baseline;
   gap: 4px;
   margin-bottom: 28px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(10, 15, 24, 0.08);
 }
 
 .pricing-card-price {
