@@ -103,8 +103,8 @@ const Omnichannel = () => {
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">ONE CONVERSATION. EVERY CHANNEL.</p>
             <h2 className="promos-title">
-              Your customers just want help.<br />
-              <span className="promos-title-italic" style={{ display: "inline" }}>Not another tool to navigate.</span>
+              Customers want help.<br />
+              <span className="promos-title-italic" style={{ display: "inline" }}>Not another tool.</span>
             </h2>
             <p className="uc-benefit-desc" style={{ maxWidth: "480px" }}>
               Most contact centers manage voice, chat, email, and texting in separate systems. Agents lose context, customers repeat themselves, and issues take longer to resolve.
