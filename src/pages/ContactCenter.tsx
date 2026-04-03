@@ -76,7 +76,7 @@ const ContactCenter = () => {
       {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-light">
         <div style={{ maxWidth: '1600px', margin: '0 auto 48px', textAlign: 'center' }}>
-          <h2 className="cc-stats-dark-title" style={{ textAlign: 'center', fontSize: '72px' }}>Start Seeing Value on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
+          <h2 className="cc-stats-dark-title" style={{ textAlign: 'center', fontSize: '65px' }}>Start Seeing Value on <span className="promos-title-italic" style={{ display: "inline" }}>Day One</span></h2>
           <p className="goai-desc" style={{ marginBottom: 0, marginTop: '16px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto', textAlign: 'center' }}>
             We are passionate about empowering individuals and businesses to take control of their finances and achieve their financial goals.
           </p>
