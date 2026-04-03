@@ -43,7 +43,7 @@ const GoAIAccordionSection = () => {
           <div className="cc-goai-left">
             <div className="cc-goai-header" style={{ textAlign: 'left', marginBottom: '32px' }}>
               <h2 className="promos-title">
-                Real AI. No<br /><span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
+                Real AI.<br />No <span className="promos-title-italic" style={{ display: "inline" }}>specialist</span> required.
               </h2>
               <p className="cc-goai-acc-desc" style={{ paddingLeft: 0, marginTop: '12px' }}>
                 Built-in AI that works out of the box — no data scientists, no complex setup. Just smarter conversations from day one.
