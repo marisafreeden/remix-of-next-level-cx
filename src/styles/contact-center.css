@@ -1371,6 +1371,63 @@
   box-shadow: none;
 }
 
+.cc-goai-img-wrap-dash {
+  padding: 0;
+  overflow: hidden;
+}
+
+.cc-goai-img-wrap-dash .dash-preview {
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.cc-goai-img-wrap-dash .dash-window {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.cc-goai-img-wrap-dash .dash-topbar {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-ai-title {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-ai-sub {
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-search-bar {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: rgba(255, 255, 255, 0.25) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-chat-body {
+  background: transparent !important;
+}
+
+.cc-goai-img-wrap-dash .dash-msg-bubble-ai {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-msg-bubble-ai strong {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.cc-goai-img-wrap-dash .dash-msg-bubble-user {
+  background: rgba(67, 181, 191, 0.12) !important;
+  border-color: rgba(67, 181, 191, 0.15) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
 /* GoAI Call Flow Builder */
 .goai-flow {
   display: flex;
