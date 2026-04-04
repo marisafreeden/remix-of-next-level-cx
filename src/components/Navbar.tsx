@@ -4,6 +4,7 @@ import { Menu, X, ChevronDown, ChevronRight, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 import LanguageSwitcher from "./LanguageSwitcher";
+import "@/styles/mobile-nav.css";
 
 interface MegaMenuItem {
   title: string;
