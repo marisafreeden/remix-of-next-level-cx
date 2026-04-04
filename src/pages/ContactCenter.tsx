@@ -74,14 +74,14 @@ const ContactCenter = () => {
 
       {/* Stats */}
       <section className="cc-stats-section-v2 cc-stats-light">
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '0' }}>
-          <div style={{ flex: '0 0 320px', paddingRight: '40px' }}>
+        <div className="cc-stats-row-layout">
+          <div className="cc-stats-row-intro">
             <p className="promos-eyebrow" style={{ textAlign: 'left', marginBottom: '8px' }}>CUSTOMER VALUE</p>
             <p className="goai-desc" style={{ marginBottom: 0, marginTop: 0, textAlign: 'left', fontSize: '15px', lineHeight: '1.6' }}>
               Proven results from teams that switched to a smarter, AI-powered contact center.
             </p>
           </div>
-          <div style={{ flex: 1, display: 'flex' }}>
+          <div className="cc-stats-row-numbers">
             {statKeys.map((key, i) => (
               <div key={key} className="cc-stat-v2" style={{ flex: 1 }}>
                 <span className="cc-stat-v2-number">{t(`cc_page.${key}_number`)}</span>
