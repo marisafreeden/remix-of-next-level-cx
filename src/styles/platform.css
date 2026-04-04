@@ -135,3 +135,54 @@
 .platform-cta:hover {
   color: #1D5B94;
 }
+
+/* Mobile stacked tiles — hidden on desktop */
+.platform-tiles-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .platform-desktop {
+    display: none;
+  }
+
+  .platform-tiles-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .platform-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .platform-tile-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #43B5BF;
+  }
+
+  .platform-tile-label {
+    font-family: 'Instrument Sans', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #0a0f18;
+    margin: 0;
+  }
+
+  .platform-tile-desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4B5563;
+    margin: 0;
+  }
+
+  .platform-tiles-mobile .platform-img-wrap {
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+}
