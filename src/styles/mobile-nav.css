@@ -4,7 +4,26 @@
 }
 
 .mobile-nav-panel {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 85%;
+  max-width: 360px;
+  background: #ffffff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: -8px 0 30px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.mobile-nav-panel-open {
+  transform: translateX(0);
+  visibility: visible;
 }
 
 @media (max-width: 768px) {
