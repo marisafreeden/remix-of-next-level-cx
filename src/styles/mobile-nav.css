@@ -209,8 +209,8 @@
     font-weight: 500;
     color: rgba(10, 15, 24, 0.7);
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 10px 0;
     transition: color 0.2s;
   }
 
