@@ -1079,6 +1079,40 @@
   }
 }
 
+/* Stats row layout */
+.cc-stats-row-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+.cc-stats-row-intro {
+  flex: 0 0 320px;
+  padding-right: 40px;
+}
+.cc-stats-row-numbers {
+  flex: 1;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .cc-stats-row-layout {
+    flex-direction: column;
+    gap: 32px;
+    align-items: flex-start;
+  }
+  .cc-stats-row-intro {
+    flex: none;
+    padding-right: 0;
+  }
+  .cc-stats-row-numbers {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
 /* ===== Stats V2 (Figma style) ===== */
 .cc-stats-section-v2 {
   padding: 52px 48px;
