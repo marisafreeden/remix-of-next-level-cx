@@ -682,45 +682,51 @@
 }
 @media (max-width: 768px) {
   .hero-bg-wrap {
-    height: 60%;
-    -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, black 0%, black 40%, transparent 90%);
-    mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, black 0%, black 40%, transparent 90%);
+    height: 80%;
+    bottom: auto;
+    top: 20%;
+    -webkit-mask-image: radial-gradient(ellipse 100% 80% at 50% 60%, black 0%, black 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse 100% 80% at 50% 60%, black 0%, black 50%, transparent 90%);
   }
 
   .hero-e52 {
-    width: 80%;
-    height: 70%;
-    left: -15%;
-    bottom: -10%;
-    filter: blur(80px);
-    opacity: 0.45;
+    width: 90%;
+    height: 80%;
+    left: -20%;
+    top: 10%;
+    bottom: auto;
+    filter: blur(70px);
+    opacity: 0.5;
   }
 
   .hero-e13 {
-    width: 80%;
-    height: 70%;
-    right: -15%;
-    bottom: -10%;
-    filter: blur(80px);
-    opacity: 0.35;
+    width: 90%;
+    height: 80%;
+    right: -20%;
+    top: 10%;
+    bottom: auto;
+    filter: blur(70px);
+    opacity: 0.4;
   }
 
   .hero-e56 {
-    width: 70%;
-    height: 60%;
-    left: 15%;
-    bottom: 0;
-    filter: blur(70px);
-    opacity: 0.3;
+    width: 80%;
+    height: 70%;
+    left: 10%;
+    top: 20%;
+    bottom: auto;
+    filter: blur(60px);
+    opacity: 0.35;
   }
 
   .hero-e10 {
-    width: 60%;
-    height: 50%;
-    left: 20%;
-    bottom: 5%;
-    filter: blur(60px);
-    opacity: 0.2;
+    width: 70%;
+    height: 60%;
+    left: 15%;
+    top: 25%;
+    bottom: auto;
+    filter: blur(50px);
+    opacity: 0.25;
   }
 }
 
