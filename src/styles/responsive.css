@@ -40,9 +40,10 @@
   .goai-columns { flex-direction: column; gap: 48px; }
   .goai-title { font-size: 40px; }
   .goai-diagram { flex-direction: column; gap: 24px; }
-  .goai-layers-col { flex: 0 0 auto; flex-direction: row; gap: 0; padding: 0; }
-  .goai-diamond { width: 120px; height: 60px; margin-top: 0; margin-left: -18px; }
+  .goai-layers-col { flex: 0 0 auto; flex-direction: row; gap: 0; padding: 16px 0; justify-content: center; }
+  .goai-diamond { width: 100px; height: 50px; margin-top: 0; margin-left: -14px; }
   .goai-diamond:first-child { margin-left: 0; }
+  .goai-diamond-icon { transform: scaleY(0.7) rotate(45deg); }
 
   /* Promos */
   .promos-section { padding: 64px 24px; }
@@ -127,8 +128,9 @@
   .goai-card-icon { width: 32px; height: 32px; border-radius: 8px; }
   .goai-card-title { font-size: 13px; }
   .goai-card-desc { font-size: 12px; }
-  .goai-layers-col { flex: 0 0 auto; }
-  .goai-diamond { width: 80px; height: 40px; margin-left: -12px; }
+  .goai-layers-col { flex: 0 0 auto; justify-content: center; }
+  .goai-diamond { width: 80px; height: 40px; margin-left: -10px; }
+  .goai-diamond-icon { transform: scaleY(0.7) rotate(45deg); }
 
   /* Promos */
   .promos-section { padding: 48px 20px; }
