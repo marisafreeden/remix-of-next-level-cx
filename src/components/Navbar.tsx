@@ -153,42 +153,70 @@ const Navbar = () => {
       </div>
 
       {mobileOpen && (
-        <div className="hero-nav-mobile-menu">
+        <div className="mobile-nav-overlay" onClick={() => setMobileOpen(false)} />
+      )}
+      <div className={`mobile-nav-panel ${mobileOpen ? "mobile-nav-panel-open" : ""}`}>
+        <div className="mobile-nav-panel-header">
+          <img src={logo} alt="Broadvoice" width={120} height={24} />
+          <button className="mobile-nav-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">
+            <X size={22} />
+          </button>
+        </div>
+
+        <div className="mobile-nav-body">
           <button
-            className="hero-nav-mobile-link mobile-products-toggle"
+            className="mobile-nav-item"
             onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
           >
-            {t("nav.products")}
-            <ChevronDown size={16} className={mobileProductsOpen ? "mega-chevron-open" : ""} />
+            <span>{t("nav.products")}</span>
+            <ChevronDown size={16} className={`mobile-nav-chevron ${mobileProductsOpen ? "mobile-nav-chevron-open" : ""}`} />
           </button>
+
           {mobileProductsOpen && (
-            <div className="mobile-mega-menu">
+            <div className="mobile-nav-sub">
               {megaMenuColumns.map((col) => (
-                <div key={col.heading} className="mobile-mega-group">
-                  <p className="mobile-mega-heading">{col.heading}</p>
-                  {col.items.map((item) => (
-                    <a key={item.title} href={item.href} className="mobile-mega-item" onClick={() => setMobileOpen(false)}>
-                      {item.title}
-                      {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
-                    </a>
-                  ))}
+                <div key={col.heading} className="mobile-nav-group">
+                  <button
+                    className="mobile-nav-group-header"
+                    onClick={() => setExpandedGroup(expandedGroup === col.heading ? null : col.heading)}
+                  >
+                    <span>{col.heading}</span>
+                    <ChevronRight size={14} className={`mobile-nav-group-chevron ${expandedGroup === col.heading ? "mobile-nav-group-chevron-open" : ""}`} />
+                  </button>
+                  {expandedGroup === col.heading && (
+                    <div className="mobile-nav-group-items">
+                      {col.items.map((item) => {
+                        const isInternal = item.href.startsWith("/");
+                        const onClick = () => { setMobileOpen(false); setMobileProductsOpen(false); setExpandedGroup(null); };
+                        return isInternal ? (
+                          <Link key={item.title} to={item.href} className="mobile-nav-subitem" onClick={onClick}>
+                            {item.title}
+                            {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                          </Link>
+                        ) : (
+                          <a key={item.title} href={item.href} className="mobile-nav-subitem" onClick={onClick}>
+                            {item.title}
+                            {item.badge && <span className="mega-coming-soon">{item.badge}</span>}
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
               ))}
-              <a href="#" className="mobile-mega-cta" onClick={() => setMobileOpen(false)}>
-                <Sparkles size={14} />
-                Calculate the ROI of using an AI Agent in your Business
-              </a>
             </div>
           )}
-          <Link to="/pricing" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</Link>
-          <Link to="/resources" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.resources")}</Link>
-          <Link to="/partners" className="hero-nav-mobile-link" onClick={() => setMobileOpen(false)}>{t("nav.partners")}</Link>
-          <div className="hero-nav-mobile-actions">
-            <a href="#" className="hero-nav-login">{t("nav.login")}</a>
-            <a href="#" className="hero-nav-cta">{t("nav.demo")}</a>
-          </div>
+
+          <Link to="/pricing" className="mobile-nav-item" onClick={() => setMobileOpen(false)}>{t("nav.pricing")}</Link>
+          <Link to="/resources" className="mobile-nav-item" onClick={() => setMobileOpen(false)}>{t("nav.resources")}</Link>
+          <Link to="/partners" className="mobile-nav-item" onClick={() => setMobileOpen(false)}>{t("nav.partners")}</Link>
         </div>
-      )}
+
+        <div className="mobile-nav-footer">
+          <a href="#" className="mobile-nav-login">{t("nav.login")}</a>
+          <a href="#" className="mobile-nav-cta-btn">{t("nav.demo")}</a>
+        </div>
+      </div>
 
       <div className="hero-nav-divider" />
     </nav>
