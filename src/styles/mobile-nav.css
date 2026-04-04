@@ -209,8 +209,8 @@
     font-weight: 500;
     color: rgba(10, 15, 24, 0.7);
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding: 10px 0;
     transition: color 0.2s;
   }
 
@@ -225,7 +225,7 @@
     font-weight: 600;
     color: #ffffff;
     background: #43B5BF;
-    text-align: center;
+    text-align: left;
     padding: 12px 24px;
     border-radius: 10px;
     text-decoration: none;
