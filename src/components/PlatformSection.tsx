@@ -52,7 +52,8 @@ const PlatformSection = () => {
           <span className="platform-h2-italic">{t("platform.title_line2")}</span>
         </h2>
 
-        <div className="platform-grid">
+        {/* Desktop: tab interface */}
+        <div className="platform-grid platform-desktop">
           <nav className="platform-nav">
             {platforms.map((p, i) => {
               const Icon = p.icon;
@@ -85,6 +86,35 @@ const PlatformSection = () => {
               {t("platform.learn_more")} <span>→</span>
             </button>
           </div>
+        </div>
+
+        {/* Mobile: stacked tiles */}
+        <div className="platform-tiles-mobile">
+          {platforms.map((p) => {
+            const Icon = p.icon;
+            return (
+              <div key={p.id} className="platform-tile">
+                <div className="platform-tile-header">
+                  <Icon size={20} strokeWidth={1.5} />
+                  <h3 className="platform-tile-label">{p.label}</h3>
+                </div>
+                <p className="platform-tile-desc">{p.description}</p>
+                <div className="platform-img-wrap">
+                  <img
+                    src={p.image}
+                    alt={p.label}
+                    loading="lazy"
+                    width={1280}
+                    height={800}
+                    className="platform-img"
+                  />
+                </div>
+                <button className="platform-cta">
+                  {t("platform.learn_more")} <span>→</span>
+                </button>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
