@@ -116,3 +116,5 @@ html, body {
     @apply bg-background text-foreground;
   }
 }
+
+@import "@/styles/mobile-nav.css";
