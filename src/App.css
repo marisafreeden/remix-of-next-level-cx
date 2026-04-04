@@ -682,44 +682,55 @@
 }
 @media (max-width: 768px) {
   .hero-bg-wrap {
-    height: 60%;
-    -webkit-mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, black 0%, black 40%, transparent 90%);
-    mask-image: radial-gradient(ellipse 100% 100% at 50% 100%, black 0%, black 40%, transparent 90%);
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero-e52 {
-    width: 80%;
-    height: 70%;
-    left: -15%;
-    bottom: -10%;
+    width: 70%;
+    height: 50%;
+    left: -10%;
+    top: 40%;
+    bottom: auto;
+    background: #43b5bf;
     filter: blur(80px);
-    opacity: 0.45;
+    opacity: 0.4;
   }
 
   .hero-e13 {
-    width: 80%;
-    height: 70%;
-    right: -15%;
-    bottom: -10%;
+    width: 70%;
+    height: 50%;
+    right: -10%;
+    left: auto;
+    top: 35%;
+    bottom: auto;
+    background: #7a6fd4;
     filter: blur(80px);
-    opacity: 0.35;
+    opacity: 0.3;
   }
 
   .hero-e56 {
-    width: 70%;
-    height: 60%;
-    left: 15%;
-    bottom: 0;
-    filter: blur(70px);
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    top: 50%;
+    bottom: auto;
+    background: #3da8b2;
+    filter: blur(60px);
     opacity: 0.3;
   }
 
   .hero-e10 {
-    width: 60%;
-    height: 50%;
-    left: 20%;
-    bottom: 5%;
-    filter: blur(60px);
+    width: 50%;
+    height: 35%;
+    left: 25%;
+    top: 45%;
+    bottom: auto;
+    background: #5ec4cb;
+    filter: blur(50px);
     opacity: 0.2;
   }
 }
