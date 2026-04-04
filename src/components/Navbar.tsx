@@ -177,13 +177,21 @@ const Navbar = () => {
             <div className="mobile-nav-sub">
               {megaMenuColumns.map((col) => (
                 <div key={col.heading} className="mobile-nav-group">
-                  <button
-                    className="mobile-nav-group-header"
-                    onClick={() => setExpandedGroup(expandedGroup === col.heading ? null : col.heading)}
-                  >
-                    <span>{col.heading}</span>
-                    <ChevronRight size={14} className={`mobile-nav-group-chevron ${expandedGroup === col.heading ? "mobile-nav-group-chevron-open" : ""}`} />
-                  </button>
+                  <div className="mobile-nav-group-header">
+                    <Link
+                      to={col.href}
+                      className="mobile-nav-group-header-link"
+                      onClick={() => { setMobileOpen(false); setMobileProductsOpen(false); setExpandedGroup(null); }}
+                    >
+                      {col.heading}
+                    </Link>
+                    <button
+                      className="mobile-nav-group-toggle"
+                      onClick={() => setExpandedGroup(expandedGroup === col.heading ? null : col.heading)}
+                    >
+                      <ChevronRight size={14} className={`mobile-nav-group-chevron ${expandedGroup === col.heading ? "mobile-nav-group-chevron-open" : ""}`} />
+                    </button>
+                  </div>
                   {expandedGroup === col.heading && (
                     <div className="mobile-nav-group-items">
                       {col.items.map((item) => {
