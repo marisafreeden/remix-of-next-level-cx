@@ -177,23 +177,23 @@ const Navbar = () => {
             <div className="mobile-nav-sub">
               {megaMenuColumns.map((col) => (
                 <div key={col.heading} className="mobile-nav-group">
-                  <div className="mobile-nav-group-header">
-                    <Link
-                      to={col.href}
-                      className="mobile-nav-group-header-link"
-                      onClick={() => { setMobileOpen(false); setMobileProductsOpen(false); setExpandedGroup(null); }}
-                    >
+                  <button
+                    className="mobile-nav-group-header"
+                    onClick={() => setExpandedGroup(expandedGroup === col.heading ? null : col.heading)}
+                    style={{ cursor: 'pointer', border: 'none', background: 'none', width: '100%' }}
+                  >
+                    <span className="mobile-nav-group-header-link" style={{ pointerEvents: 'none' }}>
                       {col.heading}
-                    </Link>
-                    <button
-                      className="mobile-nav-group-toggle"
-                      onClick={() => setExpandedGroup(expandedGroup === col.heading ? null : col.heading)}
-                    >
+                    </span>
+                    <span className="mobile-nav-group-toggle" style={{ pointerEvents: 'none' }}>
                       <ChevronRight size={14} className={`mobile-nav-group-chevron ${expandedGroup === col.heading ? "mobile-nav-group-chevron-open" : ""}`} />
-                    </button>
-                  </div>
+                    </span>
+                  </button>
                   {expandedGroup === col.heading && (
                     <div className="mobile-nav-group-items">
+                      <Link to={col.href} className="mobile-nav-subitem" onClick={() => { setMobileOpen(false); setMobileProductsOpen(false); setExpandedGroup(null); }}>
+                        Overview
+                      </Link>
                       {col.items.map((item) => {
                         const isInternal = item.href.startsWith("/");
                         const onClick = () => { setMobileOpen(false); setMobileProductsOpen(false); setExpandedGroup(null); };
