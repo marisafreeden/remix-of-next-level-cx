@@ -2268,17 +2268,25 @@
     padding: 0 20px;
   }
 
+  .cc-hero-stage {
+    overflow: visible;
+    width: 100%;
+  }
+
   .cc-glass-widgets {
-    grid-template-columns: 1fr;
-    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+    transform: scale(0.45);
+    transform-origin: top center;
+    margin-bottom: -55%;
+    padding: 16px;
   }
 
   .cc-glass-tall {
-    grid-row: auto;
+    grid-row: span 2;
   }
 
   .cc-glass-wide {
-    grid-column: 1 / -1;
+    grid-column: span 2;
   }
 
   .cc-glass-big-number {
