@@ -87,10 +87,10 @@ const Omnichannel = () => {
           <p className="promos-eyebrow" style={{ textAlign: "center" }}>OMNICHANNEL CONTACT CENTER</p>
           <h1 className="cc-hero-heading" style={{ fontSize: "56px", marginTop: "16px", marginBottom: "20px" }}>
             <span className="cc-hero-heading-line" style={{ paddingBottom: "2px" }}>Customers don't think in channels.</span>
-            <span className="cc-hero-heading-accent">Your contact center shouldn't either.</span>
+            <span className="cc-hero-heading-accent">You shouldn't either.</span>
           </h1>
           <p className="cc-hero-desc" style={{ maxWidth: "640px", margin: "0 auto 40px" }}>
-            GoContact keeps conversations connected across voice, chat, email, and SMS — so agents focus on the customer, not the tool.
+            GoContact keeps conversations connected across voice, chat, email, and SMS, so agents can focus on the customer, not the tool.
           </p>
           <div className="intg-hero-ctas">
             <button className="btn-hero-a">Request a Demo <span style={{ fontSize: "18px" }}>→</span></button>
