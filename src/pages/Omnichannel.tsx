@@ -13,6 +13,12 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 
 import ctaBg from "@/assets/cta-bg.png";
+import omniFragmented from "@/assets/omni-fragmented-channels.jpg";
+import omniUnified from "@/assets/omni-unified-workspace.jpg";
+import omniSingle from "@/assets/omni-single-workspace.jpg";
+import omniManager from "@/assets/omni-manager-analytics.jpg";
+import omniAdmin from "@/assets/omni-it-admin.jpg";
+import omniFlow from "@/assets/omni-conversation-flow.jpg";
 import ctaOverlay from "@/assets/cta-overlay.png";
 import {
   MessageSquare, Headphones, Mail, Smartphone, Monitor,
