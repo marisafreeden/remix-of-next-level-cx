@@ -30,16 +30,6 @@ import Footer from "@/components/Footer";
 import FAQSection from "@/components/FAQSection";
 import CTABlock from "@/components/CTABlock";
 
-const PlaceholderImage = () => (
-  <div className="intg-placeholder">
-    <div className="intg-placeholder-inner">
-      {Array.from({ length: 9 }).map((_, i) => (
-        <div key={i} className="intg-placeholder-sq" />
-      ))}
-    </div>
-  </div>
-);
-
 const faqs = [
   { q: "What channels does the omnichannel platform support?", a: "GoContact supports voice, chat, email, and SMS in a single unified workspace. Agents manage all interactions from one interface without switching tools." },
   { q: "How does omnichannel differ from multichannel?", a: "Multichannel means offering multiple channels separately. Omnichannel connects them — so conversation history, context, and customer records carry across every channel seamlessly." },
