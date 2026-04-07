@@ -121,14 +121,14 @@ const Omnichannel = () => {
               GoContact brings those interactions together so your team can see the whole picture.
             </p>
           </div>
-          <PlaceholderImage />
+          <img src={omniFragmented} alt="Fragmented contact center channels" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
         </div>
       </section>
 
       {/* ─── SOLUTION: All Channels Working Together ─── */}
       <section className="uc-benefits-section">
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <PlaceholderImage />
+          <img src={omniUnified} alt="Unified omnichannel workspace" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">UNIFIED PLATFORM</p>
             <h2 className="promos-title">
@@ -170,14 +170,14 @@ const Omnichannel = () => {
               })}
             </div>
           </div>
-          <PlaceholderImage />
+          <img src={omniSingle} alt="Single agent workspace" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
         </div>
       </section>
 
       {/* ─── PERSONA: Managers ─── */}
       <section className="uc-benefits-section">
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <PlaceholderImage />
+          <img src={omniManager} alt="Manager analytics dashboard" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">FOR MANAGERS</p>
             <h2 className="promos-title">
@@ -204,7 +204,7 @@ const Omnichannel = () => {
               GoContact centralizes channels, routing, and administration in one place — so teams can manage operations without added systems or overhead.
             </p>
           </div>
-          <PlaceholderImage />
+          <img src={omniAdmin} alt="IT admin channel management" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
         </div>
       </section>
 
@@ -243,7 +243,7 @@ const Omnichannel = () => {
       {/* ─── OPERATIONAL SHIFT ─── */}
       <section className="uc-benefits-section" style={{ background: "#ffffff" }}>
         <div className="intg-outcome-inner" style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <PlaceholderImage />
+          <img src={omniFlow} alt="Conversation flowing across channels" loading="lazy" width={1024} height={768} style={{ borderRadius: "16px", maxWidth: "480px", width: "100%" }} />
           <div className="intg-outcome-text">
             <p className="promos-eyebrow">WHERE CONVERSATIONS CONNECT</p>
             <h2 className="promos-title">
