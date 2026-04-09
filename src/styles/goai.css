@@ -156,12 +156,15 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(67, 181, 191, 0.12);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: #43B5BF;
+}
+
+.goai-card-icon svg {
+  stroke: url(#goai-icon-gradient);
 }
 
 .goai-card-title {

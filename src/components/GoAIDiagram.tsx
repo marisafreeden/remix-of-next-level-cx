@@ -17,6 +17,14 @@ const layerIcons: LucideIcon[] = [Brain, Database, Workflow, Shield, BarChart3, 
 const GoAIDiagram = () => {
   return (
     <div className="goai-diagram">
+      <svg width="0" height="0" style={{ position: 'absolute' }}>
+        <defs>
+          <linearGradient id="goai-icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#43B5BF" />
+            <stop offset="100%" stopColor="#7042D2" />
+          </linearGradient>
+        </defs>
+      </svg>
       <div className="goai-diagram-col">
         {leftCards.map((card) => (
           <div key={card.title} className="goai-card">
