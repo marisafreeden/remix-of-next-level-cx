@@ -9,7 +9,7 @@ const GoAISection = () => {
       <div className="goai-inner">
         <div className="goai-columns">
           <div className="goai-col-left">
-            <p className="goai-eyebrow">{t("goai.eyebrow")}</p>
+            
             <h2 className="goai-title">
               {t("goai.title_line1")}<br />
               <span className="goai-title-italic">{t("goai.title_line2")}</span>
