@@ -583,6 +583,7 @@
   gap: 40px;
   max-width: 1450px;
   margin: 0 auto;
+  padding-left: 100px;
 }
 
 .logo-strip-label {
