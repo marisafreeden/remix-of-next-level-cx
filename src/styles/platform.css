@@ -126,6 +126,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-left: 6px;
   transition: color 0.2s;
   display: inline;
 }
