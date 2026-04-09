@@ -62,9 +62,6 @@ const Index = () => {
             <button className="btn-hero-a">
               {t("hero.cta_platform")} <span style={{fontSize: '18px'}}>→</span>
             </button>
-            <button className="btn-hero-b">
-              {t("hero.cta_video")} <span>▶</span>
-            </button>
           </div>
           <DashboardPreview />
         </div>
