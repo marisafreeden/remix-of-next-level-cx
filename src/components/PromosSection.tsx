@@ -3,9 +3,9 @@ import promoChartsImg from "@/assets/promo-charts.png";
 import promoTimelineImg from "@/assets/promo-timeline.png";
 
 const promoData = [
-  { key: "promo1", image: promoChartsImg, eyebrow: "FAST DEPLOYMENT" },
-  { key: "promo2", image: promoTimelineImg, eyebrow: "ONGOING SUPPORT" },
-  { key: "promo3", image: promoChartsImg, eyebrow: "BUILT TO SCALE" },
+  { key: "promo1", image: promoChartsImg, eyebrow: "FAST DEPLOYMENT", titleMain: "Deploy in Days,", titleItalic: "Not Months" },
+  { key: "promo2", image: promoTimelineImg, eyebrow: "ONGOING SUPPORT", titleMain: "Support That", titleItalic: "Stays With You" },
+  { key: "promo3", image: promoChartsImg, eyebrow: "BUILT TO SCALE", titleMain: "Scale With", titleItalic: "Confidence" },
 ];
 
 const PromosSection = () => {
