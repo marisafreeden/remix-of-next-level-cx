@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
   return (
     <section className="testimonials-wrapper" style={{ background: 'linear-gradient(130.54deg, #FCF6FF 5.82%, #E8FCFF 113.26%)', position: 'relative', overflow: 'hidden' }}>
       <div className="testimonials-inner" style={{ position: 'relative', zIndex: 1 }}>
-        <h2 className="cc-alt-heading" style={{ textAlign: 'center', marginBottom: '48px' }}>What Customers <span className="cc-alt-heading-italic">Say</span></h2>
+        <h2 className="promos-title" style={{ textAlign: 'center', marginBottom: '48px' }}>What Customers <span className="promos-title-italic">Say</span></h2>
         <div className="testimonials-carousel-track">
           <div className="testimonials-carousel-slider">
             {testimonials.map((item) => (
