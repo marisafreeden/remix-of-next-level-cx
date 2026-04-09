@@ -71,14 +71,17 @@ const Index = () => {
       </section>
 
       <section className="logo-strip">
-        <p className="logo-strip-label">{t("logos.label")}</p>
-        <div className="logo-strip-logos">
-          <span className="logo-strip-item">Pfizer</span>
-          <span className="logo-strip-item">UPS</span>
-          <span className="logo-strip-item">L'Oréal</span>
-          <span className="logo-strip-item">Hertz</span>
-          <span className="logo-strip-item">Toyota</span>
-          <span className="logo-strip-item">Deloitte</span>
+        <div className="logo-strip-inner">
+          <p className="logo-strip-label">Powering conversations for thousands of businesses</p>
+          <div className="logo-strip-divider" />
+          <div className="logo-strip-logos">
+            <span className="logo-strip-item">Pfizer</span>
+            <span className="logo-strip-item">UPS</span>
+            <span className="logo-strip-item">L'Oréal</span>
+            <span className="logo-strip-item">Hertz</span>
+            <span className="logo-strip-item">Toyota</span>
+            <span className="logo-strip-item">Deloitte</span>
+          </div>
         </div>
       </section>
 
