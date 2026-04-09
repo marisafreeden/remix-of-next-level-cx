@@ -47,13 +47,10 @@ const PlatformSection = () => {
     <section className="platform-section">
       <div className="platform-inner">
         <p className="platform-label">{t("platform.label")}</p>
-        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}>
-          <h2 className="platform-h2" style={{ marginBottom: 0 }}>
-            {t("platform.title_line1")}{" "}
-            <span className="platform-h2-italic">{t("platform.title_line2")}</span>
-          </h2>
-          <button className="platform-cta">{t("platform.learn_more")} <span>→</span></button>
-        </div>
+        <h2 className="platform-h2">
+          {t("platform.title_line1")}<br />
+          <span className="platform-h2-italic">{t("platform.title_line2")}</span>
+        </h2>
 
         {/* Desktop: tab interface */}
         <div className="platform-grid platform-desktop">
@@ -85,6 +82,9 @@ const PlatformSection = () => {
                 className="platform-img"
               />
             </div>
+            <button className="platform-cta">
+              {t("platform.learn_more")} <span>→</span>
+            </button>
           </div>
         </div>
 
