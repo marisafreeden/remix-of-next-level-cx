@@ -575,27 +575,42 @@
   border-top: 1px solid rgba(10, 15, 24, 0.06);
   border-bottom: none;
   padding: 72px 48px;
-  text-align: center;
+}
+
+.logo-strip-inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .logo-strip-label {
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
-  color: rgba(10, 15, 24, 0.4);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  margin-bottom: 32px;
+  color: rgba(10, 15, 24, 0.5);
+  line-height: 1.5;
+  flex: 0 0 260px;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.logo-strip-divider {
+  width: 1px;
+  height: 48px;
+  background: rgba(10, 15, 24, 0.12);
+  flex-shrink: 0;
 }
 
 .logo-strip-logos {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 64px;
+  justify-content: flex-start;
+  gap: 48px;
   flex-wrap: wrap;
-  max-width: 1600px;
-  margin: 0 auto;
+  flex: 1;
 }
 
 .logo-strip-item {
