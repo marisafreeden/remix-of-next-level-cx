@@ -21,11 +21,11 @@ const PromosSection = () => {
         </h2>
       </div>
       <div className="cc-alt-features">
-        {promoData.map(({ key, image, eyebrow }, i) => (
+        {promoData.map(({ key, image, eyebrow, titleMain, titleItalic }, i) => (
           <div key={key} className={`cc-alt-row ${i % 2 === 1 ? "cc-alt-row-reverse" : ""}`}>
             <div className="cc-alt-text">
               <p className="promos-eyebrow">{eyebrow}</p>
-              <h3 className="cc-alt-heading">{t(`promos.${key}_title`)}</h3>
+              <h3 className="cc-alt-heading">{titleMain} <span className="cc-alt-heading-italic">{titleItalic}</span></h3>
               <p className="cc-alt-desc">{t(`promos.${key}_desc`)}</p>
               <button className="cc-alt-cta">
                 Learn more <span>→</span>
