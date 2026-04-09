@@ -71,7 +71,12 @@ const PlatformSection = () => {
           </nav>
 
           <div className="platform-display">
-            <p className="platform-desc">{current.description}</p>
+            <p className="platform-desc">
+              {current.description}{" "}
+              <button className="platform-cta-inline">
+                {t("platform.learn_more")} <span>→</span>
+              </button>
+            </p>
             <div className="platform-img-wrap">
               <img
                 src={current.image}
@@ -82,9 +87,6 @@ const PlatformSection = () => {
                 className="platform-img"
               />
             </div>
-            <button className="platform-cta">
-              {t("platform.learn_more")} <span>→</span>
-            </button>
           </div>
         </div>
 
