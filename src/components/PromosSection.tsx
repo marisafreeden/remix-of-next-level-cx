@@ -14,7 +14,7 @@ const PromosSection = () => {
   return (
     <section className="promos-section">
       <div className="promos-header">
-        <p className="promos-eyebrow">WHY BROADVOICE</p>
+        
         <h2 className="promos-title">
           {t("promos.title_line1")}<br />
           <span className="promos-title-italic">{t("promos.title_line2")}</span>
