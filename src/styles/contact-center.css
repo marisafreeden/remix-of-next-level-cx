@@ -878,9 +878,19 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 1.36;
-  color: #151D48;
   letter-spacing: -0.3px;
   white-space: pre-line;
+  background: linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cc-alt-heading .cc-alt-heading-italic {
+  font-family: 'Besley', serif;
+  font-weight: 400;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
 }
 
 .cc-alt-desc {
