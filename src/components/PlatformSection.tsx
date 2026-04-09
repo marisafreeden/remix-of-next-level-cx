@@ -46,7 +46,7 @@ const PlatformSection = () => {
   return (
     <section className="platform-section">
       <div className="platform-inner">
-        <p className="platform-label">{t("platform.label")}</p>
+        
         <h2 className="platform-h2">
           {t("platform.title_line1")}<br />
           <span className="platform-h2-italic">{t("platform.title_line2")}</span>
