@@ -60,7 +60,7 @@ const Index = () => {
 
           <div className="hero-ctas">
             <button className="btn-hero-a">
-              {t("hero.cta_platform")} <span style={{fontSize: '18px'}}>→</span>
+              Get a Demo <span style={{fontSize: '18px'}}>→</span>
             </button>
           </div>
           <DashboardPreview />
