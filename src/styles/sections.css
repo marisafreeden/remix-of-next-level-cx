@@ -16,8 +16,12 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #338FAD;
+  color: #ffffff;
   margin-bottom: 16px;
+  background: #17181A;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 100px;
 }
 
 .promos-title {
