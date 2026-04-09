@@ -907,15 +907,15 @@
   align-items: center;
   gap: 10px;
   padding: 14px 28px;
-  background: linear-gradient(90deg, #3FABBA 0%, #2B7BA3 100%);
+  background: #ffffff;
   border-radius: 999px;
-  border: none;
+  border: 1.5px solid #3FABBA;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 17px;
-  color: #F8FAFC;
-  transition: opacity 0.2s;
+  color: #3FABBA;
+  transition: all 0.2s;
   width: fit-content;
 }
 
