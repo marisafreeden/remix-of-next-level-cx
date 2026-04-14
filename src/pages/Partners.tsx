@@ -14,6 +14,7 @@ import "@fontsource/inter/600.css";
 
 import ctaBg from "@/assets/cta-bg.png";
 import ctaOverlay from "@/assets/cta-overlay.png";
+import presidentsClubImg from "@/assets/presidents-club-beach.jpg";
 import {
   Users, Shield, Headphones, Lightbulb, Rocket, Award,
   DollarSign, Target, BookOpen, Briefcase, TrendingUp, Gift,
@@ -445,6 +446,27 @@ const Partners = () => {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* ─── PRESIDENT'S CLUB PROMO ─── */}
+      <section style={{ position: 'relative', width: '100%', minHeight: '520px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src={presidentsClubImg} alt="Luxury beach resort" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%', zIndex: 0 }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,15,24,0.35) 0%, rgba(10,15,24,0.6) 100%)', zIndex: 1 }} />
+        <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '96px 48px', maxWidth: '800px' }}>
+          <p className="promos-eyebrow" style={{ color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', marginBottom: '20px' }}>EXCLUSIVE INCENTIVE</p>
+          <h2 style={{ fontFamily: "'Instrument Sans', sans-serif", fontWeight: 500, fontSize: '52px', lineHeight: 1.15, letterSpacing: '-1.5px', color: '#ffffff', marginBottom: '8px' }}>
+            President's Club
+          </h2>
+          <p style={{ fontFamily: "'Besley', serif", fontWeight: 400, fontStyle: 'italic', fontSize: '44px', lineHeight: 1.15, color: '#ffffff', marginBottom: '24px' }}>
+            at a Luxury Resort
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '17px', lineHeight: 1.7, color: 'rgba(255,255,255,0.75)', marginBottom: '36px', maxWidth: '560px', margin: '0 auto 36px' }}>
+            Our top-performing partners earn an all-expenses-paid retreat to an exclusive beachside resort — because exceptional results deserve exceptional rewards.
+          </p>
+          <a href="#" className="cta-block-primary" style={{ display: 'inline-flex' }}>
+            Learn How to Qualify <span style={{ fontSize: '18px' }}>→</span>
+          </a>
         </div>
       </section>
 
