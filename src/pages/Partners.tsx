@@ -402,6 +402,27 @@ const Partners = () => {
         </div>
       </section>
 
+      {/* ─── PRESIDENT'S CLUB PROMO ─── */}
+      <section style={{ position: 'relative', width: '100%', minHeight: '520px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <img src={presidentsClubImg} alt="Luxury beach resort" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%', zIndex: 0 }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,15,24,0.35) 0%, rgba(10,15,24,0.6) 100%)', zIndex: 1 }} />
+        <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '96px 48px', maxWidth: '800px' }}>
+          <p className="promos-eyebrow" style={{ color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', marginBottom: '20px' }}>EXCLUSIVE INCENTIVE</p>
+          <h2 style={{ fontFamily: "'Instrument Sans', sans-serif", fontWeight: 500, fontSize: '52px', lineHeight: 1.15, letterSpacing: '-1.5px', color: '#ffffff', marginBottom: '8px' }}>
+            President's Club
+          </h2>
+          <p style={{ fontFamily: "'Besley', serif", fontWeight: 400, fontStyle: 'italic', fontSize: '44px', lineHeight: 1.15, color: '#ffffff', marginBottom: '24px' }}>
+            at a Luxury Resort
+          </p>
+          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '17px', lineHeight: 1.7, color: 'rgba(255,255,255,0.75)', marginBottom: '36px', maxWidth: '560px', margin: '0 auto 36px' }}>
+            Our top-performing partners earn an all-expenses-paid retreat to an exclusive beachside resort — because exceptional results deserve exceptional rewards.
+          </p>
+          <a href="#" className="cta-block-primary" style={{ display: 'inline-flex' }}>
+            Learn How to Qualify <span style={{ fontSize: '18px' }}>→</span>
+          </a>
+        </div>
+      </section>
+
       {/* ─── COMMISSIONS ─── */}
       <section className="uc-features-section cc-features-gray">
         <div className="uc-features-header" style={{ textAlign: "center" }}>
@@ -423,50 +444,6 @@ const Partners = () => {
               <p className="uc-benefit-desc">{step.desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ─── HOW IT WORKS ─── */}
-      <section className="uc-features-section">
-        <div className="uc-features-header" style={{ textAlign: "center" }}>
-          <p className="promos-eyebrow" style={{ textAlign: "center" }}>HOW IT WORKS</p>
-          <h2 className="promos-title" style={{ textAlign: "center", background: 'linear-gradient(90.4deg, #43B5BF 2.76%, #27698F 41.13%, #C686F8 82.58%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-            Start fast. <span className="promos-title-italic" style={{ display: "inline", WebkitTextFillColor: 'inherit' }}>Scale faster.</span>
-          </h2>
-        </div>
-        <div style={{ maxWidth: "800px", margin: "48px auto 0", display: "flex", flexDirection: "column", gap: "0" }}>
-          {howItWorks.map((step, i) => (
-            <div key={i} style={{ display: "grid", gridTemplateColumns: "60px 1fr", gap: "24px", padding: "32px 0", borderBottom: i < howItWorks.length - 1 ? "1px solid rgba(10,15,24,0.06)" : "none" }}>
-              <div style={{ fontFamily: "'Instrument Sans', sans-serif", fontSize: "32px", fontWeight: 600, background: 'linear-gradient(105.96deg, #43B5BF 0%, #1D5B94 65.07%, #7042D2 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                {String(i + 1).padStart(2, "0")}
-              </div>
-              <div>
-                <h3 style={{ fontFamily: "'Instrument Sans', sans-serif", fontWeight: 500, fontSize: "20px", letterSpacing: "-0.3px", color: "#0a0f18", marginBottom: "8px" }}>{step.title}</h3>
-                <p style={{ fontFamily: "'Inter', sans-serif", fontSize: "15px", lineHeight: 1.65, color: "#4a5568" }}>{step.desc}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ─── PRESIDENT'S CLUB PROMO ─── */}
-      <section style={{ position: 'relative', width: '100%', minHeight: '520px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <img src={presidentsClubImg} alt="Luxury beach resort" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%', zIndex: 0 }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(10,15,24,0.35) 0%, rgba(10,15,24,0.6) 100%)', zIndex: 1 }} />
-        <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '96px 48px', maxWidth: '800px' }}>
-          <p className="promos-eyebrow" style={{ color: 'rgba(255,255,255,0.8)', letterSpacing: '3px', marginBottom: '20px' }}>EXCLUSIVE INCENTIVE</p>
-          <h2 style={{ fontFamily: "'Instrument Sans', sans-serif", fontWeight: 500, fontSize: '52px', lineHeight: 1.15, letterSpacing: '-1.5px', color: '#ffffff', marginBottom: '8px' }}>
-            President's Club
-          </h2>
-          <p style={{ fontFamily: "'Besley', serif", fontWeight: 400, fontStyle: 'italic', fontSize: '44px', lineHeight: 1.15, color: '#ffffff', marginBottom: '24px' }}>
-            at a Luxury Resort
-          </p>
-          <p style={{ fontFamily: "'Inter', sans-serif", fontSize: '17px', lineHeight: 1.7, color: 'rgba(255,255,255,0.75)', marginBottom: '36px', maxWidth: '560px', margin: '0 auto 36px' }}>
-            Our top-performing partners earn an all-expenses-paid retreat to an exclusive beachside resort — because exceptional results deserve exceptional rewards.
-          </p>
-          <a href="#" className="cta-block-primary" style={{ display: 'inline-flex' }}>
-            Learn How to Qualify <span style={{ fontSize: '18px' }}>→</span>
-          </a>
         </div>
       </section>
 
