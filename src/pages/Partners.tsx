@@ -14,6 +14,7 @@ import "@fontsource/inter/600.css";
 
 import ctaBg from "@/assets/cta-bg.png";
 import ctaOverlay from "@/assets/cta-overlay.png";
+import presidentsClubImg from "@/assets/presidents-club-beach.jpg";
 import {
   Users, Shield, Headphones, Lightbulb, Rocket, Award,
   DollarSign, Target, BookOpen, Briefcase, TrendingUp, Gift,
